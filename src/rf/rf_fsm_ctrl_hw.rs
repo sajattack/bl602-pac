@@ -1,52 +1,18 @@
-#[doc = "Register `rf_fsm_ctrl_hw` reader"]
-pub struct R(crate::R<RF_FSM_CTRL_HW_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RF_FSM_CTRL_HW_SPEC>;
+#[doc = "Reader of register rf_fsm_ctrl_hw"]
+pub type R = crate::R<u32, super::RF_FSM_CTRL_HW>;
+#[doc = "Writer for register rf_fsm_ctrl_hw"]
+pub type W = crate::W<u32, super::RF_FSM_CTRL_HW>;
+#[doc = "Register rf_fsm_ctrl_hw `reset()`'s with value 0"]
+impl crate::ResetValue for super::RF_FSM_CTRL_HW {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RF_FSM_CTRL_HW_SPEC>> for R {
-    fn from(reader: crate::R<RF_FSM_CTRL_HW_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rf_fsm_ctrl_hw` writer"]
-pub struct W(crate::W<RF_FSM_CTRL_HW_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RF_FSM_CTRL_HW_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RF_FSM_CTRL_HW_SPEC>> for W {
-    fn from(writer: crate::W<RF_FSM_CTRL_HW_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rf_rc_state_value` reader - "]
-pub struct RF_RC_STATE_VALUE_R(crate::FieldReader<u8, u8>);
-impl RF_RC_STATE_VALUE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_RC_STATE_VALUE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_RC_STATE_VALUE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_rc_state_value` writer - "]
+#[doc = "Reader of field `rf_rc_state_value`"]
+pub type RF_RC_STATE_VALUE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_rc_state_value`"]
 pub struct RF_RC_STATE_VALUE_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RF_RC_STATE_VALUE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_st_int_set` reader - "]
-pub struct RF_FSM_ST_INT_SET_R(crate::FieldReader<bool, bool>);
-impl RF_FSM_ST_INT_SET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_FSM_ST_INT_SET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_ST_INT_SET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_st_int_set` writer - "]
+#[doc = "Reader of field `rf_fsm_st_int_set`"]
+pub type RF_FSM_ST_INT_SET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_fsm_st_int_set`"]
 pub struct RF_FSM_ST_INT_SET_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> RF_FSM_ST_INT_SET_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_st_int_clr` reader - "]
-pub struct RF_FSM_ST_INT_CLR_R(crate::FieldReader<bool, bool>);
-impl RF_FSM_ST_INT_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_FSM_ST_INT_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_ST_INT_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_st_int_clr` writer - "]
+#[doc = "Reader of field `rf_fsm_st_int_clr`"]
+pub type RF_FSM_ST_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_fsm_st_int_clr`"]
 pub struct RF_FSM_ST_INT_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> RF_FSM_ST_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_st_int` reader - "]
-pub struct RF_FSM_ST_INT_R(crate::FieldReader<bool, bool>);
-impl RF_FSM_ST_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_FSM_ST_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_ST_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_st_int` writer - "]
+#[doc = "Reader of field `rf_fsm_st_int`"]
+pub type RF_FSM_ST_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_fsm_st_int`"]
 pub struct RF_FSM_ST_INT_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> RF_FSM_ST_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_st_int_sel` reader - "]
-pub struct RF_FSM_ST_INT_SEL_R(crate::FieldReader<u8, u8>);
-impl RF_FSM_ST_INT_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_FSM_ST_INT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_ST_INT_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_st_int_sel` writer - "]
+#[doc = "Reader of field `rf_fsm_st_int_sel`"]
+pub type RF_FSM_ST_INT_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_fsm_st_int_sel`"]
 pub struct RF_FSM_ST_INT_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> RF_FSM_ST_INT_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_rc_state_dbg_en` reader - "]
-pub struct RF_RC_STATE_DBG_EN_R(crate::FieldReader<bool, bool>);
-impl RF_RC_STATE_DBG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_RC_STATE_DBG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_RC_STATE_DBG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_rc_state_dbg_en` writer - "]
+#[doc = "Reader of field `rf_rc_state_dbg_en`"]
+pub type RF_RC_STATE_DBG_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_rc_state_dbg_en`"]
 pub struct RF_RC_STATE_DBG_EN_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> RF_RC_STATE_DBG_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_rc_state_dbg` reader - "]
-pub struct RF_RC_STATE_DBG_R(crate::FieldReader<u8, u8>);
-impl RF_RC_STATE_DBG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_RC_STATE_DBG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_RC_STATE_DBG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_rc_state_dbg` writer - "]
+#[doc = "Reader of field `rf_rc_state_dbg`"]
+pub type RF_RC_STATE_DBG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_rc_state_dbg`"]
 pub struct RF_RC_STATE_DBG_W<'a> {
     w: &'a mut W,
 }
@@ -254,21 +148,9 @@ impl<'a> RF_RC_STATE_DBG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_state` reader - "]
-pub struct RF_FSM_STATE_R(crate::FieldReader<u8, u8>);
-impl RF_FSM_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_FSM_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_state` writer - "]
+#[doc = "Reader of field `rf_fsm_state`"]
+pub type RF_FSM_STATE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_fsm_state`"]
 pub struct RF_FSM_STATE_W<'a> {
     w: &'a mut W,
 }
@@ -280,21 +162,9 @@ impl<'a> RF_FSM_STATE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_t2r_cal_mode` reader - "]
-pub struct RF_FSM_T2R_CAL_MODE_R(crate::FieldReader<u8, u8>);
-impl RF_FSM_T2R_CAL_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_FSM_T2R_CAL_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_T2R_CAL_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_t2r_cal_mode` writer - "]
+#[doc = "Reader of field `rf_fsm_t2r_cal_mode`"]
+pub type RF_FSM_T2R_CAL_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_fsm_t2r_cal_mode`"]
 pub struct RF_FSM_T2R_CAL_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -306,21 +176,9 @@ impl<'a> RF_FSM_T2R_CAL_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_ctrl_en` reader - "]
-pub struct RF_FSM_CTRL_EN_R(crate::FieldReader<bool, bool>);
-impl RF_FSM_CTRL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_FSM_CTRL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_CTRL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_ctrl_en` writer - "]
+#[doc = "Reader of field `rf_fsm_ctrl_en`"]
+pub type RF_FSM_CTRL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_fsm_ctrl_en`"]
 pub struct RF_FSM_CTRL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -444,30 +302,5 @@ impl W {
     #[inline(always)]
     pub fn rf_fsm_ctrl_en(&mut self) -> RF_FSM_CTRL_EN_W {
         RF_FSM_CTRL_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "Digital Control\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rf_fsm_ctrl_hw](index.html) module"]
-pub struct RF_FSM_CTRL_HW_SPEC;
-impl crate::RegisterSpec for RF_FSM_CTRL_HW_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rf_fsm_ctrl_hw::R](R) reader structure"]
-impl crate::Readable for RF_FSM_CTRL_HW_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rf_fsm_ctrl_hw::W](W) writer structure"]
-impl crate::Writable for RF_FSM_CTRL_HW_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rf_fsm_ctrl_hw to value 0"]
-impl crate::Resettable for RF_FSM_CTRL_HW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

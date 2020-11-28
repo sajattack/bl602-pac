@@ -1,52 +1,18 @@
-#[doc = "Register `adda2` reader"]
-pub struct R(crate::R<ADDA2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<ADDA2_SPEC>;
+#[doc = "Reader of register adda2"]
+pub type R = crate::R<u32, super::ADDA2>;
+#[doc = "Writer for register adda2"]
+pub type W = crate::W<u32, super::ADDA2>;
+#[doc = "Register adda2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::ADDA2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<ADDA2_SPEC>> for R {
-    fn from(reader: crate::R<ADDA2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `adda2` writer"]
-pub struct W(crate::W<ADDA2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<ADDA2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<ADDA2_SPEC>> for W {
-    fn from(writer: crate::W<ADDA2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `adc_clk_div_sel` reader - "]
-pub struct ADC_CLK_DIV_SEL_R(crate::FieldReader<bool, bool>);
-impl ADC_CLK_DIV_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_CLK_DIV_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_CLK_DIV_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_clk_div_sel` writer - "]
+#[doc = "Reader of field `adc_clk_div_sel`"]
+pub type ADC_CLK_DIV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_clk_div_sel`"]
 pub struct ADC_CLK_DIV_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> ADC_CLK_DIV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_clk_inv` reader - "]
-pub struct ADC_CLK_INV_R(crate::FieldReader<bool, bool>);
-impl ADC_CLK_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_CLK_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_CLK_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_clk_inv` writer - "]
+#[doc = "Reader of field `adc_clk_inv`"]
+pub type ADC_CLK_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_clk_inv`"]
 pub struct ADC_CLK_INV_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> ADC_CLK_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_clk_sync_inv` reader - "]
-pub struct ADC_CLK_SYNC_INV_R(crate::FieldReader<bool, bool>);
-impl ADC_CLK_SYNC_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_CLK_SYNC_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_CLK_SYNC_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_clk_sync_inv` writer - "]
+#[doc = "Reader of field `adc_clk_sync_inv`"]
+pub type ADC_CLK_SYNC_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_clk_sync_inv`"]
 pub struct ADC_CLK_SYNC_INV_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> ADC_CLK_SYNC_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_gt_rm` reader - "]
-pub struct ADC_GT_RM_R(crate::FieldReader<bool, bool>);
-impl ADC_GT_RM_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_GT_RM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_GT_RM_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_gt_rm` writer - "]
+#[doc = "Reader of field `adc_gt_rm`"]
+pub type ADC_GT_RM_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_gt_rm`"]
 pub struct ADC_GT_RM_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> ADC_GT_RM_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_sar_ascal_en` reader - "]
-pub struct ADC_SAR_ASCAL_EN_R(crate::FieldReader<bool, bool>);
-impl ADC_SAR_ASCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_SAR_ASCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_SAR_ASCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_sar_ascal_en` writer - "]
+#[doc = "Reader of field `adc_sar_ascal_en`"]
+pub type ADC_SAR_ASCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_sar_ascal_en`"]
 pub struct ADC_SAR_ASCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> ADC_SAR_ASCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_dvdd_sel` reader - "]
-pub struct ADC_DVDD_SEL_R(crate::FieldReader<u8, u8>);
-impl ADC_DVDD_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADC_DVDD_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_DVDD_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_dvdd_sel` writer - "]
+#[doc = "Reader of field `adc_dvdd_sel`"]
+pub type ADC_DVDD_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adc_dvdd_sel`"]
 pub struct ADC_DVDD_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> ADC_DVDD_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_dly_ctl` reader - "]
-pub struct ADC_DLY_CTL_R(crate::FieldReader<u8, u8>);
-impl ADC_DLY_CTL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADC_DLY_CTL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_DLY_CTL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_dly_ctl` writer - "]
+#[doc = "Reader of field `adc_dly_ctl`"]
+pub type ADC_DLY_CTL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adc_dly_ctl`"]
 pub struct ADC_DLY_CTL_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> ADC_DLY_CTL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_vref_sel` reader - "]
-pub struct ADC_VREF_SEL_R(crate::FieldReader<u8, u8>);
-impl ADC_VREF_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADC_VREF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_VREF_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_vref_sel` writer - "]
+#[doc = "Reader of field `adc_vref_sel`"]
+pub type ADC_VREF_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adc_vref_sel`"]
 pub struct ADC_VREF_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -372,30 +254,5 @@ impl W {
     #[inline(always)]
     pub fn adc_vref_sel(&mut self) -> ADC_VREF_SEL_W {
         ADC_VREF_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "adda2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [adda2](index.html) module"]
-pub struct ADDA2_SPEC;
-impl crate::RegisterSpec for ADDA2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [adda2::R](R) reader structure"]
-impl crate::Readable for ADDA2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [adda2::W](W) writer structure"]
-impl crate::Writable for ADDA2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets adda2 to value 0"]
-impl crate::Resettable for ADDA2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

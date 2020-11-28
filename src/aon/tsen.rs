@@ -1,52 +1,18 @@
-#[doc = "Register `tsen` reader"]
-pub struct R(crate::R<TSEN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TSEN_SPEC>;
+#[doc = "Reader of register tsen"]
+pub type R = crate::R<u32, super::TSEN>;
+#[doc = "Writer for register tsen"]
+pub type W = crate::W<u32, super::TSEN>;
+#[doc = "Register tsen `reset()`'s with value 0"]
+impl crate::ResetValue for super::TSEN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TSEN_SPEC>> for R {
-    fn from(reader: crate::R<TSEN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `tsen` writer"]
-pub struct W(crate::W<TSEN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TSEN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TSEN_SPEC>> for W {
-    fn from(writer: crate::W<TSEN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `xtal_rdy_int_sel_aon` reader - "]
-pub struct XTAL_RDY_INT_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl XTAL_RDY_INT_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        XTAL_RDY_INT_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL_RDY_INT_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal_rdy_int_sel_aon` writer - "]
+#[doc = "Reader of field `xtal_rdy_int_sel_aon`"]
+pub type XTAL_RDY_INT_SEL_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `xtal_rdy_int_sel_aon`"]
 pub struct XTAL_RDY_INT_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> XTAL_RDY_INT_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal_inn_cfg_en_aon` reader - "]
-pub struct XTAL_INN_CFG_EN_AON_R(crate::FieldReader<bool, bool>);
-impl XTAL_INN_CFG_EN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL_INN_CFG_EN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL_INN_CFG_EN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal_inn_cfg_en_aon` writer - "]
+#[doc = "Reader of field `xtal_inn_cfg_en_aon`"]
+pub type XTAL_INN_CFG_EN_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal_inn_cfg_en_aon`"]
 pub struct XTAL_INN_CFG_EN_AON_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> XTAL_INN_CFG_EN_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal_rdy` reader - "]
-pub struct XTAL_RDY_R(crate::FieldReader<bool, bool>);
-impl XTAL_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal_rdy` writer - "]
+#[doc = "Reader of field `xtal_rdy`"]
+pub type XTAL_RDY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal_rdy`"]
 pub struct XTAL_RDY_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> XTAL_RDY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tsen_refcode_rfcal` reader - "]
-pub struct TSEN_REFCODE_RFCAL_R(crate::FieldReader<u16, u16>);
-impl TSEN_REFCODE_RFCAL_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TSEN_REFCODE_RFCAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TSEN_REFCODE_RFCAL_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tsen_refcode_rfcal` writer - "]
+#[doc = "Reader of field `tsen_refcode_rfcal`"]
+pub type TSEN_REFCODE_RFCAL_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `tsen_refcode_rfcal`"]
 pub struct TSEN_REFCODE_RFCAL_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> TSEN_REFCODE_RFCAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tsen_refcode_corner` reader - "]
-pub struct TSEN_REFCODE_CORNER_R(crate::FieldReader<u16, u16>);
-impl TSEN_REFCODE_CORNER_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TSEN_REFCODE_CORNER_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TSEN_REFCODE_CORNER_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tsen_refcode_corner` writer - "]
+#[doc = "Reader of field `tsen_refcode_corner`"]
+pub type TSEN_REFCODE_CORNER_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `tsen_refcode_corner`"]
 pub struct TSEN_REFCODE_CORNER_W<'a> {
     w: &'a mut W,
 }
@@ -234,30 +152,5 @@ impl W {
     #[inline(always)]
     pub fn tsen_refcode_corner(&mut self) -> TSEN_REFCODE_CORNER_W {
         TSEN_REFCODE_CORNER_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "tsen.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tsen](index.html) module"]
-pub struct TSEN_SPEC;
-impl crate::RegisterSpec for TSEN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tsen::R](R) reader structure"]
-impl crate::Readable for TSEN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tsen::W](W) writer structure"]
-impl crate::Writable for TSEN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets tsen to value 0"]
-impl crate::Resettable for TSEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

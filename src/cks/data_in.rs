@@ -1,52 +1,18 @@
-#[doc = "Register `data_in` reader"]
-pub struct R(crate::R<DATA_IN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DATA_IN_SPEC>;
+#[doc = "Reader of register data_in"]
+pub type R = crate::R<u32, super::DATA_IN>;
+#[doc = "Writer for register data_in"]
+pub type W = crate::W<u32, super::DATA_IN>;
+#[doc = "Register data_in `reset()`'s with value 0"]
+impl crate::ResetValue for super::DATA_IN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DATA_IN_SPEC>> for R {
-    fn from(reader: crate::R<DATA_IN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `data_in` writer"]
-pub struct W(crate::W<DATA_IN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DATA_IN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DATA_IN_SPEC>> for W {
-    fn from(writer: crate::W<DATA_IN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `data_in` reader - "]
-pub struct DATA_IN_R(crate::FieldReader<u8, u8>);
-impl DATA_IN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DATA_IN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DATA_IN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `data_in` writer - "]
+#[doc = "Reader of field `data_in`"]
+pub type DATA_IN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `data_in`"]
 pub struct DATA_IN_W<'a> {
     w: &'a mut W,
 }
@@ -70,30 +36,5 @@ impl W {
     #[inline(always)]
     pub fn data_in(&mut self) -> DATA_IN_W {
         DATA_IN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "data_in.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [data_in](index.html) module"]
-pub struct DATA_IN_SPEC;
-impl crate::RegisterSpec for DATA_IN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [data_in::R](R) reader structure"]
-impl crate::Readable for DATA_IN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [data_in::W](W) writer structure"]
-impl crate::Writable for DATA_IN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets data_in to value 0"]
-impl crate::Resettable for DATA_IN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `WIFI_BT_COEX_CTRL` reader"]
-pub struct R(crate::R<WIFI_BT_COEX_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<WIFI_BT_COEX_CTRL_SPEC>;
+#[doc = "Reader of register WIFI_BT_COEX_CTRL"]
+pub type R = crate::R<u32, super::WIFI_BT_COEX_CTRL>;
+#[doc = "Writer for register WIFI_BT_COEX_CTRL"]
+pub type W = crate::W<u32, super::WIFI_BT_COEX_CTRL>;
+#[doc = "Register WIFI_BT_COEX_CTRL `reset()`'s with value 0"]
+impl crate::ResetValue for super::WIFI_BT_COEX_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<WIFI_BT_COEX_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<WIFI_BT_COEX_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `WIFI_BT_COEX_CTRL` writer"]
-pub struct W(crate::W<WIFI_BT_COEX_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<WIFI_BT_COEX_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<WIFI_BT_COEX_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<WIFI_BT_COEX_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `en_gpio_bt_coex` reader - "]
-pub struct EN_GPIO_BT_COEX_R(crate::FieldReader<bool, bool>);
-impl EN_GPIO_BT_COEX_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EN_GPIO_BT_COEX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EN_GPIO_BT_COEX_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `en_gpio_bt_coex` writer - "]
+#[doc = "Reader of field `en_gpio_bt_coex`"]
+pub type EN_GPIO_BT_COEX_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `en_gpio_bt_coex`"]
 pub struct EN_GPIO_BT_COEX_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> EN_GPIO_BT_COEX_W<'a> {
         self.w
     }
 }
-#[doc = "Field `coex_bt_bw` reader - "]
-pub struct COEX_BT_BW_R(crate::FieldReader<bool, bool>);
-impl COEX_BT_BW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        COEX_BT_BW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for COEX_BT_BW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `coex_bt_bw` writer - "]
+#[doc = "Reader of field `coex_bt_bw`"]
+pub type COEX_BT_BW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `coex_bt_bw`"]
 pub struct COEX_BT_BW_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> COEX_BT_BW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `coex_bt_pti` reader - "]
-pub struct COEX_BT_PTI_R(crate::FieldReader<u8, u8>);
-impl COEX_BT_PTI_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        COEX_BT_PTI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for COEX_BT_PTI_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `coex_bt_pti` writer - "]
+#[doc = "Reader of field `coex_bt_pti`"]
+pub type COEX_BT_PTI_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `coex_bt_pti`"]
 pub struct COEX_BT_PTI_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> COEX_BT_PTI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `coex_bt_channel` reader - "]
-pub struct COEX_BT_CHANNEL_R(crate::FieldReader<u8, u8>);
-impl COEX_BT_CHANNEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        COEX_BT_CHANNEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for COEX_BT_CHANNEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `coex_bt_channel` writer - "]
+#[doc = "Reader of field `coex_bt_channel`"]
+pub type COEX_BT_CHANNEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `coex_bt_channel`"]
 pub struct COEX_BT_CHANNEL_W<'a> {
     w: &'a mut W,
 }
@@ -198,30 +128,5 @@ impl W {
     #[inline(always)]
     pub fn coex_bt_channel(&mut self) -> COEX_BT_CHANNEL_W {
         COEX_BT_CHANNEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "WIFI_BT_COEX_CTRL.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wifi_bt_coex_ctrl](index.html) module"]
-pub struct WIFI_BT_COEX_CTRL_SPEC;
-impl crate::RegisterSpec for WIFI_BT_COEX_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [wifi_bt_coex_ctrl::R](R) reader structure"]
-impl crate::Readable for WIFI_BT_COEX_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [wifi_bt_coex_ctrl::W](W) writer structure"]
-impl crate::Writable for WIFI_BT_COEX_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets WIFI_BT_COEX_CTRL to value 0"]
-impl crate::Resettable for WIFI_BT_COEX_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

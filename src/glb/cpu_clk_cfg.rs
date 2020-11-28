@@ -1,52 +1,18 @@
-#[doc = "Register `CPU_CLK_CFG` reader"]
-pub struct R(crate::R<CPU_CLK_CFG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CPU_CLK_CFG_SPEC>;
+#[doc = "Reader of register CPU_CLK_CFG"]
+pub type R = crate::R<u32, super::CPU_CLK_CFG>;
+#[doc = "Writer for register CPU_CLK_CFG"]
+pub type W = crate::W<u32, super::CPU_CLK_CFG>;
+#[doc = "Register CPU_CLK_CFG `reset()`'s with value 0"]
+impl crate::ResetValue for super::CPU_CLK_CFG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CPU_CLK_CFG_SPEC>> for R {
-    fn from(reader: crate::R<CPU_CLK_CFG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `CPU_CLK_CFG` writer"]
-pub struct W(crate::W<CPU_CLK_CFG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CPU_CLK_CFG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CPU_CLK_CFG_SPEC>> for W {
-    fn from(writer: crate::W<CPU_CLK_CFG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `debug_ndreset_gate` reader - "]
-pub struct DEBUG_NDRESET_GATE_R(crate::FieldReader<bool, bool>);
-impl DEBUG_NDRESET_GATE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DEBUG_NDRESET_GATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DEBUG_NDRESET_GATE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `debug_ndreset_gate` writer - "]
+#[doc = "Reader of field `debug_ndreset_gate`"]
+pub type DEBUG_NDRESET_GATE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `debug_ndreset_gate`"]
 pub struct DEBUG_NDRESET_GATE_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> DEBUG_NDRESET_GATE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cpu_rtc_sel` reader - "]
-pub struct CPU_RTC_SEL_R(crate::FieldReader<bool, bool>);
-impl CPU_RTC_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CPU_RTC_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CPU_RTC_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cpu_rtc_sel` writer - "]
+#[doc = "Reader of field `cpu_rtc_sel`"]
+pub type CPU_RTC_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cpu_rtc_sel`"]
 pub struct CPU_RTC_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CPU_RTC_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cpu_rtc_en` reader - "]
-pub struct CPU_RTC_EN_R(crate::FieldReader<bool, bool>);
-impl CPU_RTC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CPU_RTC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CPU_RTC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cpu_rtc_en` writer - "]
+#[doc = "Reader of field `cpu_rtc_en`"]
+pub type CPU_RTC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cpu_rtc_en`"]
 pub struct CPU_RTC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CPU_RTC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cpu_rtc_div` reader - "]
-pub struct CPU_RTC_DIV_R(crate::FieldReader<u32, u32>);
-impl CPU_RTC_DIV_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        CPU_RTC_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CPU_RTC_DIV_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cpu_rtc_div` writer - "]
+#[doc = "Reader of field `cpu_rtc_div`"]
+pub type CPU_RTC_DIV_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `cpu_rtc_div`"]
 pub struct CPU_RTC_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -208,30 +138,5 @@ impl W {
     #[inline(always)]
     pub fn cpu_rtc_div(&mut self) -> CPU_RTC_DIV_W {
         CPU_RTC_DIV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "CPU_CLK_CFG.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cpu_clk_cfg](index.html) module"]
-pub struct CPU_CLK_CFG_SPEC;
-impl crate::RegisterSpec for CPU_CLK_CFG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [cpu_clk_cfg::R](R) reader structure"]
-impl crate::Readable for CPU_CLK_CFG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [cpu_clk_cfg::W](W) writer structure"]
-impl crate::Writable for CPU_CLK_CFG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets CPU_CLK_CFG to value 0"]
-impl crate::Resettable for CPU_CLK_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

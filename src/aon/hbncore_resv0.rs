@@ -1,52 +1,18 @@
-#[doc = "Register `hbncore_resv0` reader"]
-pub struct R(crate::R<HBNCORE_RESV0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBNCORE_RESV0_SPEC>;
+#[doc = "Reader of register hbncore_resv0"]
+pub type R = crate::R<u32, super::HBNCORE_RESV0>;
+#[doc = "Writer for register hbncore_resv0"]
+pub type W = crate::W<u32, super::HBNCORE_RESV0>;
+#[doc = "Register hbncore_resv0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBNCORE_RESV0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBNCORE_RESV0_SPEC>> for R {
-    fn from(reader: crate::R<HBNCORE_RESV0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `hbncore_resv0` writer"]
-pub struct W(crate::W<HBNCORE_RESV0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBNCORE_RESV0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBNCORE_RESV0_SPEC>> for W {
-    fn from(writer: crate::W<HBNCORE_RESV0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hbncore_resv0_data` reader - "]
-pub struct HBNCORE_RESV0_DATA_R(crate::FieldReader<u32, u32>);
-impl HBNCORE_RESV0_DATA_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        HBNCORE_RESV0_DATA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBNCORE_RESV0_DATA_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbncore_resv0_data` writer - "]
+#[doc = "Reader of field `hbncore_resv0_data`"]
+pub type HBNCORE_RESV0_DATA_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `hbncore_resv0_data`"]
 pub struct HBNCORE_RESV0_DATA_W<'a> {
     w: &'a mut W,
 }
@@ -70,30 +36,5 @@ impl W {
     #[inline(always)]
     pub fn hbncore_resv0_data(&mut self) -> HBNCORE_RESV0_DATA_W {
         HBNCORE_RESV0_DATA_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "hbncore_resv0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbncore_resv0](index.html) module"]
-pub struct HBNCORE_RESV0_SPEC;
-impl crate::RegisterSpec for HBNCORE_RESV0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbncore_resv0::R](R) reader structure"]
-impl crate::Readable for HBNCORE_RESV0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbncore_resv0::W](W) writer structure"]
-impl crate::Writable for HBNCORE_RESV0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets hbncore_resv0 to value 0"]
-impl crate::Resettable for HBNCORE_RESV0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

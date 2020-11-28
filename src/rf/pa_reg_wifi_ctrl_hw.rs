@@ -1,52 +1,18 @@
-#[doc = "Register `pa_reg_wifi_ctrl_hw` reader"]
-pub struct R(crate::R<PA_REG_WIFI_CTRL_HW_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PA_REG_WIFI_CTRL_HW_SPEC>;
+#[doc = "Reader of register pa_reg_wifi_ctrl_hw"]
+pub type R = crate::R<u32, super::PA_REG_WIFI_CTRL_HW>;
+#[doc = "Writer for register pa_reg_wifi_ctrl_hw"]
+pub type W = crate::W<u32, super::PA_REG_WIFI_CTRL_HW>;
+#[doc = "Register pa_reg_wifi_ctrl_hw `reset()`'s with value 0"]
+impl crate::ResetValue for super::PA_REG_WIFI_CTRL_HW {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PA_REG_WIFI_CTRL_HW_SPEC>> for R {
-    fn from(reader: crate::R<PA_REG_WIFI_CTRL_HW_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `pa_reg_wifi_ctrl_hw` writer"]
-pub struct W(crate::W<PA_REG_WIFI_CTRL_HW_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PA_REG_WIFI_CTRL_HW_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PA_REG_WIFI_CTRL_HW_SPEC>> for W {
-    fn from(writer: crate::W<PA_REG_WIFI_CTRL_HW_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pa_ib_fix_wifi` reader - "]
-pub struct PA_IB_FIX_WIFI_R(crate::FieldReader<bool, bool>);
-impl PA_IB_FIX_WIFI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_IB_FIX_WIFI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_IB_FIX_WIFI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_ib_fix_wifi` writer - "]
+#[doc = "Reader of field `pa_ib_fix_wifi`"]
+pub type PA_IB_FIX_WIFI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pa_ib_fix_wifi`"]
 pub struct PA_IB_FIX_WIFI_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PA_IB_FIX_WIFI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_etb_en_wifi` reader - "]
-pub struct PA_ETB_EN_WIFI_R(crate::FieldReader<bool, bool>);
-impl PA_ETB_EN_WIFI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_ETB_EN_WIFI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_ETB_EN_WIFI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_etb_en_wifi` writer - "]
+#[doc = "Reader of field `pa_etb_en_wifi`"]
+pub type PA_ETB_EN_WIFI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pa_etb_en_wifi`"]
 pub struct PA_ETB_EN_WIFI_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PA_ETB_EN_WIFI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_half_on_wifi` reader - "]
-pub struct PA_HALF_ON_WIFI_R(crate::FieldReader<bool, bool>);
-impl PA_HALF_ON_WIFI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PA_HALF_ON_WIFI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_HALF_ON_WIFI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_half_on_wifi` writer - "]
+#[doc = "Reader of field `pa_half_on_wifi`"]
+pub type PA_HALF_ON_WIFI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pa_half_on_wifi`"]
 pub struct PA_HALF_ON_WIFI_W<'a> {
     w: &'a mut W,
 }
@@ -172,30 +114,5 @@ impl W {
     #[inline(always)]
     pub fn pa_half_on_wifi(&mut self) -> PA_HALF_ON_WIFI_W {
         PA_HALF_ON_WIFI_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "pa_reg_wifi_ctrl_hw.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pa_reg_wifi_ctrl_hw](index.html) module"]
-pub struct PA_REG_WIFI_CTRL_HW_SPEC;
-impl crate::RegisterSpec for PA_REG_WIFI_CTRL_HW_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pa_reg_wifi_ctrl_hw::R](R) reader structure"]
-impl crate::Readable for PA_REG_WIFI_CTRL_HW_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pa_reg_wifi_ctrl_hw::W](W) writer structure"]
-impl crate::Writable for PA_REG_WIFI_CTRL_HW_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets pa_reg_wifi_ctrl_hw to value 0"]
-impl crate::Resettable for PA_REG_WIFI_CTRL_HW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

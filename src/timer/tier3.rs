@@ -1,52 +1,18 @@
-#[doc = "Register `TIER3` reader"]
-pub struct R(crate::R<TIER3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TIER3_SPEC>;
+#[doc = "Reader of register TIER3"]
+pub type R = crate::R<u32, super::TIER3>;
+#[doc = "Writer for register TIER3"]
+pub type W = crate::W<u32, super::TIER3>;
+#[doc = "Register TIER3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TIER3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TIER3_SPEC>> for R {
-    fn from(reader: crate::R<TIER3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `TIER3` writer"]
-pub struct W(crate::W<TIER3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TIER3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TIER3_SPEC>> for W {
-    fn from(writer: crate::W<TIER3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tier_2` reader - "]
-pub struct TIER_2_R(crate::FieldReader<bool, bool>);
-impl TIER_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tier_2` writer - "]
+#[doc = "Reader of field `tier_2`"]
+pub type TIER_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tier_2`"]
 pub struct TIER_2_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TIER_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tier_1` reader - "]
-pub struct TIER_1_R(crate::FieldReader<bool, bool>);
-impl TIER_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tier_1` writer - "]
+#[doc = "Reader of field `tier_1`"]
+pub type TIER_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tier_1`"]
 pub struct TIER_1_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> TIER_1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tier_0` reader - "]
-pub struct TIER_0_R(crate::FieldReader<bool, bool>);
-impl TIER_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIER_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIER_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tier_0` writer - "]
+#[doc = "Reader of field `tier_0`"]
+pub type TIER_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tier_0`"]
 pub struct TIER_0_W<'a> {
     w: &'a mut W,
 }
@@ -172,30 +114,5 @@ impl W {
     #[inline(always)]
     pub fn tier_0(&mut self) -> TIER_0_W {
         TIER_0_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "TIER3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tier3](index.html) module"]
-pub struct TIER3_SPEC;
-impl crate::RegisterSpec for TIER3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tier3::R](R) reader structure"]
-impl crate::Readable for TIER3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tier3::W](W) writer structure"]
-impl crate::Writable for TIER3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets TIER3 to value 0"]
-impl crate::Resettable for TIER3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

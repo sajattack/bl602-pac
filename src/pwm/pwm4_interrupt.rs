@@ -1,52 +1,18 @@
-#[doc = "Register `pwm4_interrupt` reader"]
-pub struct R(crate::R<PWM4_INTERRUPT_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PWM4_INTERRUPT_SPEC>;
+#[doc = "Reader of register pwm4_interrupt"]
+pub type R = crate::R<u32, super::PWM4_INTERRUPT>;
+#[doc = "Writer for register pwm4_interrupt"]
+pub type W = crate::W<u32, super::PWM4_INTERRUPT>;
+#[doc = "Register pwm4_interrupt `reset()`'s with value 0"]
+impl crate::ResetValue for super::PWM4_INTERRUPT {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PWM4_INTERRUPT_SPEC>> for R {
-    fn from(reader: crate::R<PWM4_INTERRUPT_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `pwm4_interrupt` writer"]
-pub struct W(crate::W<PWM4_INTERRUPT_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PWM4_INTERRUPT_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PWM4_INTERRUPT_SPEC>> for W {
-    fn from(writer: crate::W<PWM4_INTERRUPT_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pwm_int_enable` reader - "]
-pub struct PWM_INT_ENABLE_R(crate::FieldReader<bool, bool>);
-impl PWM_INT_ENABLE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_INT_ENABLE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_INT_ENABLE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_int_enable` writer - "]
+#[doc = "Reader of field `pwm_int_enable`"]
+pub type PWM_INT_ENABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_int_enable`"]
 pub struct PWM_INT_ENABLE_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PWM_INT_ENABLE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_int_period_cnt` reader - "]
-pub struct PWM_INT_PERIOD_CNT_R(crate::FieldReader<u16, u16>);
-impl PWM_INT_PERIOD_CNT_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        PWM_INT_PERIOD_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_INT_PERIOD_CNT_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_int_period_cnt` writer - "]
+#[doc = "Reader of field `pwm_int_period_cnt`"]
+pub type PWM_INT_PERIOD_CNT_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `pwm_int_period_cnt`"]
 pub struct PWM_INT_PERIOD_CNT_W<'a> {
     w: &'a mut W,
 }
@@ -116,30 +70,5 @@ impl W {
     #[inline(always)]
     pub fn pwm_int_period_cnt(&mut self) -> PWM_INT_PERIOD_CNT_W {
         PWM_INT_PERIOD_CNT_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "pwm4_interrupt.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pwm4_interrupt](index.html) module"]
-pub struct PWM4_INTERRUPT_SPEC;
-impl crate::RegisterSpec for PWM4_INTERRUPT_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pwm4_interrupt::R](R) reader structure"]
-impl crate::Readable for PWM4_INTERRUPT_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pwm4_interrupt::W](W) writer structure"]
-impl crate::Writable for PWM4_INTERRUPT_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets pwm4_interrupt to value 0"]
-impl crate::Resettable for PWM4_INTERRUPT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

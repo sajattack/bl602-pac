@@ -1,52 +1,18 @@
-#[doc = "Register `tzc_glb_ctrl_2` reader"]
-pub struct R(crate::R<TZC_GLB_CTRL_2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TZC_GLB_CTRL_2_SPEC>;
+#[doc = "Reader of register tzc_glb_ctrl_2"]
+pub type R = crate::R<u32, super::TZC_GLB_CTRL_2>;
+#[doc = "Writer for register tzc_glb_ctrl_2"]
+pub type W = crate::W<u32, super::TZC_GLB_CTRL_2>;
+#[doc = "Register tzc_glb_ctrl_2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TZC_GLB_CTRL_2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TZC_GLB_CTRL_2_SPEC>> for R {
-    fn from(reader: crate::R<TZC_GLB_CTRL_2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `tzc_glb_ctrl_2` writer"]
-pub struct W(crate::W<TZC_GLB_CTRL_2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TZC_GLB_CTRL_2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TZC_GLB_CTRL_2_SPEC>> for W {
-    fn from(writer: crate::W<TZC_GLB_CTRL_2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tzc_glb_gpio_28_lock` reader - "]
-pub struct TZC_GLB_GPIO_28_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_28_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_28_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_28_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_28_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_28_lock`"]
+pub type TZC_GLB_GPIO_28_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_28_lock`"]
 pub struct TZC_GLB_GPIO_28_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TZC_GLB_GPIO_28_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_27_lock` reader - "]
-pub struct TZC_GLB_GPIO_27_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_27_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_27_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_27_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_27_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_27_lock`"]
+pub type TZC_GLB_GPIO_27_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_27_lock`"]
 pub struct TZC_GLB_GPIO_27_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> TZC_GLB_GPIO_27_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_26_lock` reader - "]
-pub struct TZC_GLB_GPIO_26_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_26_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_26_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_26_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_26_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_26_lock`"]
+pub type TZC_GLB_GPIO_26_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_26_lock`"]
 pub struct TZC_GLB_GPIO_26_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> TZC_GLB_GPIO_26_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_25_lock` reader - "]
-pub struct TZC_GLB_GPIO_25_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_25_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_25_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_25_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_25_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_25_lock`"]
+pub type TZC_GLB_GPIO_25_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_25_lock`"]
 pub struct TZC_GLB_GPIO_25_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> TZC_GLB_GPIO_25_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_24_lock` reader - "]
-pub struct TZC_GLB_GPIO_24_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_24_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_24_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_24_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_24_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_24_lock`"]
+pub type TZC_GLB_GPIO_24_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_24_lock`"]
 pub struct TZC_GLB_GPIO_24_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> TZC_GLB_GPIO_24_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_23_lock` reader - "]
-pub struct TZC_GLB_GPIO_23_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_23_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_23_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_23_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_23_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_23_lock`"]
+pub type TZC_GLB_GPIO_23_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_23_lock`"]
 pub struct TZC_GLB_GPIO_23_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> TZC_GLB_GPIO_23_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_22_lock` reader - "]
-pub struct TZC_GLB_GPIO_22_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_22_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_22_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_22_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_22_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_22_lock`"]
+pub type TZC_GLB_GPIO_22_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_22_lock`"]
 pub struct TZC_GLB_GPIO_22_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> TZC_GLB_GPIO_22_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_21_lock` reader - "]
-pub struct TZC_GLB_GPIO_21_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_21_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_21_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_21_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_21_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_21_lock`"]
+pub type TZC_GLB_GPIO_21_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_21_lock`"]
 pub struct TZC_GLB_GPIO_21_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> TZC_GLB_GPIO_21_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_20_lock` reader - "]
-pub struct TZC_GLB_GPIO_20_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_20_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_20_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_20_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_20_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_20_lock`"]
+pub type TZC_GLB_GPIO_20_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_20_lock`"]
 pub struct TZC_GLB_GPIO_20_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> TZC_GLB_GPIO_20_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_19_lock` reader - "]
-pub struct TZC_GLB_GPIO_19_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_19_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_19_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_19_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_19_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_19_lock`"]
+pub type TZC_GLB_GPIO_19_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_19_lock`"]
 pub struct TZC_GLB_GPIO_19_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> TZC_GLB_GPIO_19_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_18_lock` reader - "]
-pub struct TZC_GLB_GPIO_18_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_18_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_18_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_18_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_18_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_18_lock`"]
+pub type TZC_GLB_GPIO_18_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_18_lock`"]
 pub struct TZC_GLB_GPIO_18_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> TZC_GLB_GPIO_18_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_17_lock` reader - "]
-pub struct TZC_GLB_GPIO_17_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_17_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_17_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_17_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_17_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_17_lock`"]
+pub type TZC_GLB_GPIO_17_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_17_lock`"]
 pub struct TZC_GLB_GPIO_17_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -464,21 +298,9 @@ impl<'a> TZC_GLB_GPIO_17_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_16_lock` reader - "]
-pub struct TZC_GLB_GPIO_16_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_16_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_16_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_16_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_16_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_16_lock`"]
+pub type TZC_GLB_GPIO_16_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_16_lock`"]
 pub struct TZC_GLB_GPIO_16_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -500,21 +322,9 @@ impl<'a> TZC_GLB_GPIO_16_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_15_lock` reader - "]
-pub struct TZC_GLB_GPIO_15_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_15_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_15_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_15_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_15_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_15_lock`"]
+pub type TZC_GLB_GPIO_15_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_15_lock`"]
 pub struct TZC_GLB_GPIO_15_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -536,21 +346,9 @@ impl<'a> TZC_GLB_GPIO_15_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_14_lock` reader - "]
-pub struct TZC_GLB_GPIO_14_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_14_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_14_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_14_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_14_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_14_lock`"]
+pub type TZC_GLB_GPIO_14_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_14_lock`"]
 pub struct TZC_GLB_GPIO_14_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -572,21 +370,9 @@ impl<'a> TZC_GLB_GPIO_14_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_13_lock` reader - "]
-pub struct TZC_GLB_GPIO_13_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_13_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_13_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_13_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_13_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_13_lock`"]
+pub type TZC_GLB_GPIO_13_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_13_lock`"]
 pub struct TZC_GLB_GPIO_13_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -608,21 +394,9 @@ impl<'a> TZC_GLB_GPIO_13_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_12_lock` reader - "]
-pub struct TZC_GLB_GPIO_12_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_12_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_12_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_12_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_12_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_12_lock`"]
+pub type TZC_GLB_GPIO_12_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_12_lock`"]
 pub struct TZC_GLB_GPIO_12_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -644,21 +418,9 @@ impl<'a> TZC_GLB_GPIO_12_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_11_lock` reader - "]
-pub struct TZC_GLB_GPIO_11_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_11_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_11_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_11_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_11_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_11_lock`"]
+pub type TZC_GLB_GPIO_11_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_11_lock`"]
 pub struct TZC_GLB_GPIO_11_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -680,21 +442,9 @@ impl<'a> TZC_GLB_GPIO_11_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_10_lock` reader - "]
-pub struct TZC_GLB_GPIO_10_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_10_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_10_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_10_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_10_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_10_lock`"]
+pub type TZC_GLB_GPIO_10_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_10_lock`"]
 pub struct TZC_GLB_GPIO_10_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -716,21 +466,9 @@ impl<'a> TZC_GLB_GPIO_10_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_9_lock` reader - "]
-pub struct TZC_GLB_GPIO_9_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_9_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_9_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_9_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_9_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_9_lock`"]
+pub type TZC_GLB_GPIO_9_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_9_lock`"]
 pub struct TZC_GLB_GPIO_9_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -752,21 +490,9 @@ impl<'a> TZC_GLB_GPIO_9_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_8_lock` reader - "]
-pub struct TZC_GLB_GPIO_8_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_8_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_8_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_8_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_8_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_8_lock`"]
+pub type TZC_GLB_GPIO_8_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_8_lock`"]
 pub struct TZC_GLB_GPIO_8_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -788,21 +514,9 @@ impl<'a> TZC_GLB_GPIO_8_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_7_lock` reader - "]
-pub struct TZC_GLB_GPIO_7_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_7_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_7_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_7_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_7_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_7_lock`"]
+pub type TZC_GLB_GPIO_7_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_7_lock`"]
 pub struct TZC_GLB_GPIO_7_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -824,21 +538,9 @@ impl<'a> TZC_GLB_GPIO_7_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_6_lock` reader - "]
-pub struct TZC_GLB_GPIO_6_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_6_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_6_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_6_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_6_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_6_lock`"]
+pub type TZC_GLB_GPIO_6_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_6_lock`"]
 pub struct TZC_GLB_GPIO_6_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -860,21 +562,9 @@ impl<'a> TZC_GLB_GPIO_6_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_5_lock` reader - "]
-pub struct TZC_GLB_GPIO_5_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_5_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_5_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_5_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_5_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_5_lock`"]
+pub type TZC_GLB_GPIO_5_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_5_lock`"]
 pub struct TZC_GLB_GPIO_5_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -896,21 +586,9 @@ impl<'a> TZC_GLB_GPIO_5_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_4_lock` reader - "]
-pub struct TZC_GLB_GPIO_4_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_4_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_4_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_4_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_4_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_4_lock`"]
+pub type TZC_GLB_GPIO_4_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_4_lock`"]
 pub struct TZC_GLB_GPIO_4_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -932,21 +610,9 @@ impl<'a> TZC_GLB_GPIO_4_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_3_lock` reader - "]
-pub struct TZC_GLB_GPIO_3_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_3_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_3_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_3_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_3_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_3_lock`"]
+pub type TZC_GLB_GPIO_3_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_3_lock`"]
 pub struct TZC_GLB_GPIO_3_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -968,21 +634,9 @@ impl<'a> TZC_GLB_GPIO_3_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_2_lock` reader - "]
-pub struct TZC_GLB_GPIO_2_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_2_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_2_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_2_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_2_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_2_lock`"]
+pub type TZC_GLB_GPIO_2_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_2_lock`"]
 pub struct TZC_GLB_GPIO_2_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -1004,21 +658,9 @@ impl<'a> TZC_GLB_GPIO_2_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_1_lock` reader - "]
-pub struct TZC_GLB_GPIO_1_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_1_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_1_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_1_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_1_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_1_lock`"]
+pub type TZC_GLB_GPIO_1_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_1_lock`"]
 pub struct TZC_GLB_GPIO_1_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -1040,21 +682,9 @@ impl<'a> TZC_GLB_GPIO_1_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_glb_gpio_0_lock` reader - "]
-pub struct TZC_GLB_GPIO_0_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_GLB_GPIO_0_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_GLB_GPIO_0_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_GLB_GPIO_0_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_glb_gpio_0_lock` writer - "]
+#[doc = "Reader of field `tzc_glb_gpio_0_lock`"]
+pub type TZC_GLB_GPIO_0_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_glb_gpio_0_lock`"]
 pub struct TZC_GLB_GPIO_0_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -1368,30 +998,5 @@ impl W {
     #[inline(always)]
     pub fn tzc_glb_gpio_0_lock(&mut self) -> TZC_GLB_GPIO_0_LOCK_W {
         TZC_GLB_GPIO_0_LOCK_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "tzc_glb_ctrl_2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tzc_glb_ctrl_2](index.html) module"]
-pub struct TZC_GLB_CTRL_2_SPEC;
-impl crate::RegisterSpec for TZC_GLB_CTRL_2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tzc_glb_ctrl_2::R](R) reader structure"]
-impl crate::Readable for TZC_GLB_CTRL_2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tzc_glb_ctrl_2::W](W) writer structure"]
-impl crate::Writable for TZC_GLB_CTRL_2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets tzc_glb_ctrl_2 to value 0"]
-impl crate::Resettable for TZC_GLB_CTRL_2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

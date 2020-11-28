@@ -1,52 +1,18 @@
-#[doc = "Register `uart_status` reader"]
-pub struct R(crate::R<UART_STATUS_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<UART_STATUS_SPEC>;
+#[doc = "Reader of register uart_status"]
+pub type R = crate::R<u32, super::UART_STATUS>;
+#[doc = "Writer for register uart_status"]
+pub type W = crate::W<u32, super::UART_STATUS>;
+#[doc = "Register uart_status `reset()`'s with value 0"]
+impl crate::ResetValue for super::UART_STATUS {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<UART_STATUS_SPEC>> for R {
-    fn from(reader: crate::R<UART_STATUS_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `uart_status` writer"]
-pub struct W(crate::W<UART_STATUS_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<UART_STATUS_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<UART_STATUS_SPEC>> for W {
-    fn from(writer: crate::W<UART_STATUS_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `sts_urx_bus_busy` reader - "]
-pub struct STS_URX_BUS_BUSY_R(crate::FieldReader<bool, bool>);
-impl STS_URX_BUS_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_URX_BUS_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_URX_BUS_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_urx_bus_busy` writer - "]
+#[doc = "Reader of field `sts_urx_bus_busy`"]
+pub type STS_URX_BUS_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sts_urx_bus_busy`"]
 pub struct STS_URX_BUS_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> STS_URX_BUS_BUSY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sts_utx_bus_busy` reader - "]
-pub struct STS_UTX_BUS_BUSY_R(crate::FieldReader<bool, bool>);
-impl STS_UTX_BUS_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        STS_UTX_BUS_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for STS_UTX_BUS_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sts_utx_bus_busy` writer - "]
+#[doc = "Reader of field `sts_utx_bus_busy`"]
+pub type STS_UTX_BUS_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sts_utx_bus_busy`"]
 pub struct STS_UTX_BUS_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -126,30 +80,5 @@ impl W {
     #[inline(always)]
     pub fn sts_utx_bus_busy(&mut self) -> STS_UTX_BUS_BUSY_W {
         STS_UTX_BUS_BUSY_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "uart_status.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [uart_status](index.html) module"]
-pub struct UART_STATUS_SPEC;
-impl crate::RegisterSpec for UART_STATUS_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [uart_status::R](R) reader structure"]
-impl crate::Readable for UART_STATUS_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [uart_status::W](W) writer structure"]
-impl crate::Writable for UART_STATUS_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets uart_status to value 0"]
-impl crate::Resettable for UART_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

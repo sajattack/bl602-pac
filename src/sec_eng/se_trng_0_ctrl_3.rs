@@ -1,52 +1,18 @@
-#[doc = "Register `se_trng_0_ctrl_3` reader"]
-pub struct R(crate::R<SE_TRNG_0_CTRL_3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SE_TRNG_0_CTRL_3_SPEC>;
+#[doc = "Reader of register se_trng_0_ctrl_3"]
+pub type R = crate::R<u32, super::SE_TRNG_0_CTRL_3>;
+#[doc = "Writer for register se_trng_0_ctrl_3"]
+pub type W = crate::W<u32, super::SE_TRNG_0_CTRL_3>;
+#[doc = "Register se_trng_0_ctrl_3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SE_TRNG_0_CTRL_3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SE_TRNG_0_CTRL_3_SPEC>> for R {
-    fn from(reader: crate::R<SE_TRNG_0_CTRL_3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `se_trng_0_ctrl_3` writer"]
-pub struct W(crate::W<SE_TRNG_0_CTRL_3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SE_TRNG_0_CTRL_3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SE_TRNG_0_CTRL_3_SPEC>> for W {
-    fn from(writer: crate::W<SE_TRNG_0_CTRL_3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `se_trng_0_rosc_en` reader - "]
-pub struct SE_TRNG_0_ROSC_EN_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_ROSC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_ROSC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_ROSC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_rosc_en` writer - "]
+#[doc = "Reader of field `se_trng_0_rosc_en`"]
+pub type SE_TRNG_0_ROSC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_rosc_en`"]
 pub struct SE_TRNG_0_ROSC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> SE_TRNG_0_ROSC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_ht_od_en` reader - "]
-pub struct SE_TRNG_0_HT_OD_EN_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_HT_OD_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_HT_OD_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_HT_OD_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_ht_od_en` writer - "]
+#[doc = "Reader of field `se_trng_0_ht_od_en`"]
+pub type SE_TRNG_0_HT_OD_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_ht_od_en`"]
 pub struct SE_TRNG_0_HT_OD_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> SE_TRNG_0_HT_OD_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_ht_apt_c` reader - "]
-pub struct SE_TRNG_0_HT_APT_C_R(crate::FieldReader<u16, u16>);
-impl SE_TRNG_0_HT_APT_C_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SE_TRNG_0_HT_APT_C_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_HT_APT_C_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_ht_apt_c` writer - "]
+#[doc = "Reader of field `se_trng_0_ht_apt_c`"]
+pub type SE_TRNG_0_HT_APT_C_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `se_trng_0_ht_apt_c`"]
 pub struct SE_TRNG_0_HT_APT_C_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SE_TRNG_0_HT_APT_C_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_ht_rct_c` reader - "]
-pub struct SE_TRNG_0_HT_RCT_C_R(crate::FieldReader<u8, u8>);
-impl SE_TRNG_0_HT_RCT_C_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_TRNG_0_HT_RCT_C_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_HT_RCT_C_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_ht_rct_c` writer - "]
+#[doc = "Reader of field `se_trng_0_ht_rct_c`"]
+pub type SE_TRNG_0_HT_RCT_C_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `se_trng_0_ht_rct_c`"]
 pub struct SE_TRNG_0_HT_RCT_C_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> SE_TRNG_0_HT_RCT_C_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_cp_ratio` reader - "]
-pub struct SE_TRNG_0_CP_RATIO_R(crate::FieldReader<u8, u8>);
-impl SE_TRNG_0_CP_RATIO_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_TRNG_0_CP_RATIO_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_CP_RATIO_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_cp_ratio` writer - "]
+#[doc = "Reader of field `se_trng_0_cp_ratio`"]
+pub type SE_TRNG_0_CP_RATIO_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `se_trng_0_cp_ratio`"]
 pub struct SE_TRNG_0_CP_RATIO_W<'a> {
     w: &'a mut W,
 }
@@ -234,30 +152,5 @@ impl W {
     #[inline(always)]
     pub fn se_trng_0_cp_ratio(&mut self) -> SE_TRNG_0_CP_RATIO_W {
         SE_TRNG_0_CP_RATIO_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "se_trng_0_ctrl_3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [se_trng_0_ctrl_3](index.html) module"]
-pub struct SE_TRNG_0_CTRL_3_SPEC;
-impl crate::RegisterSpec for SE_TRNG_0_CTRL_3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [se_trng_0_ctrl_3::R](R) reader structure"]
-impl crate::Readable for SE_TRNG_0_CTRL_3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [se_trng_0_ctrl_3::W](W) writer structure"]
-impl crate::Writable for SE_TRNG_0_CTRL_3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets se_trng_0_ctrl_3 to value 0"]
-impl crate::Resettable for SE_TRNG_0_CTRL_3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

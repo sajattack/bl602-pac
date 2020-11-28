@@ -1,52 +1,18 @@
-#[doc = "Register `sdm1` reader"]
-pub struct R(crate::R<SDM1_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SDM1_SPEC>;
+#[doc = "Reader of register sdm1"]
+pub type R = crate::R<u32, super::SDM1>;
+#[doc = "Writer for register sdm1"]
+pub type W = crate::W<u32, super::SDM1>;
+#[doc = "Register sdm1 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SDM1 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SDM1_SPEC>> for R {
-    fn from(reader: crate::R<SDM1_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `sdm1` writer"]
-pub struct W(crate::W<SDM1_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SDM1_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SDM1_SPEC>> for W {
-    fn from(writer: crate::W<SDM1_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `lo_sdm_flag` reader - "]
-pub struct LO_SDM_FLAG_R(crate::FieldReader<bool, bool>);
-impl LO_SDM_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_SDM_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_flag` writer - "]
+#[doc = "Reader of field `lo_sdm_flag`"]
+pub type LO_SDM_FLAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_sdm_flag`"]
 pub struct LO_SDM_FLAG_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> LO_SDM_FLAG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_rstb_hw` reader - "]
-pub struct LO_SDM_RSTB_HW_R(crate::FieldReader<bool, bool>);
-impl LO_SDM_RSTB_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_SDM_RSTB_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_RSTB_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_rstb_hw` writer - "]
+#[doc = "Reader of field `lo_sdm_rstb_hw`"]
+pub type LO_SDM_RSTB_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_sdm_rstb_hw`"]
 pub struct LO_SDM_RSTB_HW_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> LO_SDM_RSTB_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_rstb` reader - "]
-pub struct LO_SDM_RSTB_R(crate::FieldReader<bool, bool>);
-impl LO_SDM_RSTB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_SDM_RSTB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_RSTB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_rstb` writer - "]
+#[doc = "Reader of field `lo_sdm_rstb`"]
+pub type LO_SDM_RSTB_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_sdm_rstb`"]
 pub struct LO_SDM_RSTB_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> LO_SDM_RSTB_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_bypass` reader - "]
-pub struct LO_SDM_BYPASS_R(crate::FieldReader<bool, bool>);
-impl LO_SDM_BYPASS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_SDM_BYPASS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_BYPASS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_bypass` writer - "]
+#[doc = "Reader of field `lo_sdm_bypass`"]
+pub type LO_SDM_BYPASS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_sdm_bypass`"]
 pub struct LO_SDM_BYPASS_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> LO_SDM_BYPASS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel` reader - "]
-pub struct LO_SDM_DITHER_SEL_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel`"]
+pub type LO_SDM_DITHER_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel`"]
 pub struct LO_SDM_DITHER_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> LO_SDM_DITHER_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_bypass_hw` reader - "]
-pub struct LO_SDM_BYPASS_HW_R(crate::FieldReader<bool, bool>);
-impl LO_SDM_BYPASS_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_SDM_BYPASS_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_BYPASS_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_bypass_hw` writer - "]
+#[doc = "Reader of field `lo_sdm_bypass_hw`"]
+pub type LO_SDM_BYPASS_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_sdm_bypass_hw`"]
 pub struct LO_SDM_BYPASS_HW_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> LO_SDM_BYPASS_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_hw` reader - "]
-pub struct LO_SDM_DITHER_SEL_HW_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_hw` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_hw`"]
+pub type LO_SDM_DITHER_SEL_HW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_hw`"]
 pub struct LO_SDM_DITHER_SEL_HW_W<'a> {
     w: &'a mut W,
 }
@@ -336,30 +230,5 @@ impl W {
     #[inline(always)]
     pub fn lo_sdm_dither_sel_hw(&mut self) -> LO_SDM_DITHER_SEL_HW_W {
         LO_SDM_DITHER_SEL_HW_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "sdm1.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sdm1](index.html) module"]
-pub struct SDM1_SPEC;
-impl crate::RegisterSpec for SDM1_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [sdm1::R](R) reader structure"]
-impl crate::Readable for SDM1_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [sdm1::W](W) writer structure"]
-impl crate::Writable for SDM1_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets sdm1 to value 0"]
-impl crate::Resettable for SDM1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

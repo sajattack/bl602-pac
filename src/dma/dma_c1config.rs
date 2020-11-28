@@ -1,52 +1,18 @@
-#[doc = "Register `DMA_C1Config` reader"]
-pub struct R(crate::R<DMA_C1CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DMA_C1CONFIG_SPEC>;
+#[doc = "Reader of register DMA_C1Config"]
+pub type R = crate::R<u32, super::DMA_C1CONFIG>;
+#[doc = "Writer for register DMA_C1Config"]
+pub type W = crate::W<u32, super::DMA_C1CONFIG>;
+#[doc = "Register DMA_C1Config `reset()`'s with value 0"]
+impl crate::ResetValue for super::DMA_C1CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DMA_C1CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<DMA_C1CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `DMA_C1Config` writer"]
-pub struct W(crate::W<DMA_C1CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DMA_C1CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DMA_C1CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<DMA_C1CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `H` reader - "]
-pub struct H_R(crate::FieldReader<bool, bool>);
-impl H_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for H_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `H` writer - "]
+#[doc = "Reader of field `H`"]
+pub type H_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `H`"]
 pub struct H_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> H_W<'a> {
         self.w
     }
 }
-#[doc = "Field `A` reader - "]
-pub struct A_R(crate::FieldReader<bool, bool>);
-impl A_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        A_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for A_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `A` writer - "]
+#[doc = "Reader of field `A`"]
+pub type A_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `A`"]
 pub struct A_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> A_W<'a> {
         self.w
     }
 }
-#[doc = "Field `L` reader - "]
-pub struct L_R(crate::FieldReader<bool, bool>);
-impl L_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `L` writer - "]
+#[doc = "Reader of field `L`"]
+pub type L_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `L`"]
 pub struct L_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> L_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ITC` reader - "]
-pub struct ITC_R(crate::FieldReader<bool, bool>);
-impl ITC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ITC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ITC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ITC` writer - "]
+#[doc = "Reader of field `ITC`"]
+pub type ITC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ITC`"]
 pub struct ITC_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> ITC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `IE` reader - "]
-pub struct IE_R(crate::FieldReader<bool, bool>);
-impl IE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `IE` writer - "]
+#[doc = "Reader of field `IE`"]
+pub type IE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `IE`"]
 pub struct IE_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> IE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `FlowCntrl` reader - "]
-pub struct FLOWCNTRL_R(crate::FieldReader<u8, u8>);
-impl FLOWCNTRL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FLOWCNTRL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FLOWCNTRL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `FlowCntrl` writer - "]
+#[doc = "Reader of field `FlowCntrl`"]
+pub type FLOWCNTRL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `FlowCntrl`"]
 pub struct FLOWCNTRL_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> FLOWCNTRL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `DstPeripheral` reader - "]
-pub struct DSTPERIPHERAL_R(crate::FieldReader<u8, u8>);
-impl DSTPERIPHERAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DSTPERIPHERAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DSTPERIPHERAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DstPeripheral` writer - "]
+#[doc = "Reader of field `DstPeripheral`"]
+pub type DSTPERIPHERAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DstPeripheral`"]
 pub struct DSTPERIPHERAL_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> DSTPERIPHERAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `SrcPeripheral` reader - "]
-pub struct SRCPERIPHERAL_R(crate::FieldReader<u8, u8>);
-impl SRCPERIPHERAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SRCPERIPHERAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SRCPERIPHERAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SrcPeripheral` writer - "]
+#[doc = "Reader of field `SrcPeripheral`"]
+pub type SRCPERIPHERAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SrcPeripheral`"]
 pub struct SRCPERIPHERAL_W<'a> {
     w: &'a mut W,
 }
@@ -290,21 +172,9 @@ impl<'a> SRCPERIPHERAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `E` reader - "]
-pub struct E_R(crate::FieldReader<bool, bool>);
-impl E_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        E_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for E_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `E` writer - "]
+#[doc = "Reader of field `E`"]
+pub type E_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `E`"]
 pub struct E_W<'a> {
     w: &'a mut W,
 }
@@ -418,30 +288,5 @@ impl W {
     #[inline(always)]
     pub fn e(&mut self) -> E_W {
         E_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "DMA_C1Config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma_c1config](index.html) module"]
-pub struct DMA_C1CONFIG_SPEC;
-impl crate::RegisterSpec for DMA_C1CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [dma_c1config::R](R) reader structure"]
-impl crate::Readable for DMA_C1CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [dma_c1config::W](W) writer structure"]
-impl crate::Writable for DMA_C1CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets DMA_C1Config to value 0"]
-impl crate::Resettable for DMA_C1CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

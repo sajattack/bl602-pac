@@ -1,52 +1,18 @@
-#[doc = "Register `ef_if_0_manual` reader"]
-pub struct R(crate::R<EF_IF_0_MANUAL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<EF_IF_0_MANUAL_SPEC>;
+#[doc = "Reader of register ef_if_0_manual"]
+pub type R = crate::R<u32, super::EF_IF_0_MANUAL>;
+#[doc = "Writer for register ef_if_0_manual"]
+pub type W = crate::W<u32, super::EF_IF_0_MANUAL>;
+#[doc = "Register ef_if_0_manual `reset()`'s with value 0"]
+impl crate::ResetValue for super::EF_IF_0_MANUAL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<EF_IF_0_MANUAL_SPEC>> for R {
-    fn from(reader: crate::R<EF_IF_0_MANUAL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `ef_if_0_manual` writer"]
-pub struct W(crate::W<EF_IF_0_MANUAL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<EF_IF_0_MANUAL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<EF_IF_0_MANUAL_SPEC>> for W {
-    fn from(writer: crate::W<EF_IF_0_MANUAL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `ef_if_prot_code_manual` reader - "]
-pub struct EF_IF_PROT_CODE_MANUAL_R(crate::FieldReader<u8, u8>);
-impl EF_IF_PROT_CODE_MANUAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EF_IF_PROT_CODE_MANUAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_PROT_CODE_MANUAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_prot_code_manual` writer - "]
+#[doc = "Reader of field `ef_if_prot_code_manual`"]
+pub type EF_IF_PROT_CODE_MANUAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ef_if_prot_code_manual`"]
 pub struct EF_IF_PROT_CODE_MANUAL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> EF_IF_PROT_CODE_MANUAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_0_q` reader - "]
-pub struct EF_IF_0_Q_R(crate::FieldReader<u8, u8>);
-impl EF_IF_0_Q_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        EF_IF_0_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_0_Q_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_0_q` writer - "]
+#[doc = "Reader of field `ef_if_0_q`"]
+pub type EF_IF_0_Q_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ef_if_0_q`"]
 pub struct EF_IF_0_Q_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> EF_IF_0_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_csb` reader - "]
-pub struct EF_IF_CSB_R(crate::FieldReader<bool, bool>);
-impl EF_IF_CSB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_CSB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_CSB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_csb` writer - "]
+#[doc = "Reader of field `ef_if_csb`"]
+pub type EF_IF_CSB_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_csb`"]
 pub struct EF_IF_CSB_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> EF_IF_CSB_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_load` reader - "]
-pub struct EF_IF_LOAD_R(crate::FieldReader<bool, bool>);
-impl EF_IF_LOAD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_LOAD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_LOAD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_load` writer - "]
+#[doc = "Reader of field `ef_if_load`"]
+pub type EF_IF_LOAD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_load`"]
 pub struct EF_IF_LOAD_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> EF_IF_LOAD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_pgenb` reader - "]
-pub struct EF_IF_PGENB_R(crate::FieldReader<bool, bool>);
-impl EF_IF_PGENB_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_PGENB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_PGENB_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_pgenb` writer - "]
+#[doc = "Reader of field `ef_if_pgenb`"]
+pub type EF_IF_PGENB_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_pgenb`"]
 pub struct EF_IF_PGENB_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> EF_IF_PGENB_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_strobe` reader - "]
-pub struct EF_IF_STROBE_R(crate::FieldReader<bool, bool>);
-impl EF_IF_STROBE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_STROBE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_STROBE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_strobe` writer - "]
+#[doc = "Reader of field `ef_if_strobe`"]
+pub type EF_IF_STROBE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_strobe`"]
 pub struct EF_IF_STROBE_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> EF_IF_STROBE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_ps` reader - "]
-pub struct EF_IF_PS_R(crate::FieldReader<bool, bool>);
-impl EF_IF_PS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_PS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_PS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_ps` writer - "]
+#[doc = "Reader of field `ef_if_ps`"]
+pub type EF_IF_PS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_ps`"]
 pub struct EF_IF_PS_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> EF_IF_PS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_pd` reader - "]
-pub struct EF_IF_PD_R(crate::FieldReader<bool, bool>);
-impl EF_IF_PD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_IF_PD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_PD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_pd` writer - "]
+#[doc = "Reader of field `ef_if_pd`"]
+pub type EF_IF_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_if_pd`"]
 pub struct EF_IF_PD_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> EF_IF_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_if_a` reader - "]
-pub struct EF_IF_A_R(crate::FieldReader<u16, u16>);
-impl EF_IF_A_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        EF_IF_A_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_IF_A_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_if_a` writer - "]
+#[doc = "Reader of field `ef_if_a`"]
+pub type EF_IF_A_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `ef_if_a`"]
 pub struct EF_IF_A_W<'a> {
     w: &'a mut W,
 }
@@ -418,30 +288,5 @@ impl W {
     #[inline(always)]
     pub fn ef_if_a(&mut self) -> EF_IF_A_W {
         EF_IF_A_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "ef_if_0_manual.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ef_if_0_manual](index.html) module"]
-pub struct EF_IF_0_MANUAL_SPEC;
-impl crate::RegisterSpec for EF_IF_0_MANUAL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [ef_if_0_manual::R](R) reader structure"]
-impl crate::Readable for EF_IF_0_MANUAL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [ef_if_0_manual::W](W) writer structure"]
-impl crate::Writable for EF_IF_0_MANUAL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets ef_if_0_manual to value 0"]
-impl crate::Resettable for EF_IF_0_MANUAL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

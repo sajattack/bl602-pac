@@ -1,52 +1,18 @@
-#[doc = "Register `TCVSYN3` reader"]
-pub struct R(crate::R<TCVSYN3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TCVSYN3_SPEC>;
+#[doc = "Reader of register TCVSYN3"]
+pub type R = crate::R<u32, super::TCVSYN3>;
+#[doc = "Writer for register TCVSYN3"]
+pub type W = crate::W<u32, super::TCVSYN3>;
+#[doc = "Register TCVSYN3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TCVSYN3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TCVSYN3_SPEC>> for R {
-    fn from(reader: crate::R<TCVSYN3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `TCVSYN3` writer"]
-pub struct W(crate::W<TCVSYN3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TCVSYN3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TCVSYN3_SPEC>> for W {
-    fn from(writer: crate::W<TCVSYN3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tcvsyn3` reader - "]
-pub struct TCVSYN3_R(crate::FieldReader<u32, u32>);
-impl TCVSYN3_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        TCVSYN3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TCVSYN3_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tcvsyn3` writer - "]
+#[doc = "Reader of field `tcvsyn3`"]
+pub type TCVSYN3_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `tcvsyn3`"]
 pub struct TCVSYN3_W<'a> {
     w: &'a mut W,
 }
@@ -70,30 +36,5 @@ impl W {
     #[inline(always)]
     pub fn tcvsyn3(&mut self) -> TCVSYN3_W {
         TCVSYN3_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "TCVSYN3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tcvsyn3](index.html) module"]
-pub struct TCVSYN3_SPEC;
-impl crate::RegisterSpec for TCVSYN3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tcvsyn3::R](R) reader structure"]
-impl crate::Readable for TCVSYN3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tcvsyn3::W](W) writer structure"]
-impl crate::Writable for TCVSYN3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets TCVSYN3 to value 0"]
-impl crate::Resettable for TCVSYN3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

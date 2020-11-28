@@ -1,52 +1,18 @@
-#[doc = "Register `irtx_int_sts` reader"]
-pub struct R(crate::R<IRTX_INT_STS_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<IRTX_INT_STS_SPEC>;
+#[doc = "Reader of register irtx_int_sts"]
+pub type R = crate::R<u32, super::IRTX_INT_STS>;
+#[doc = "Writer for register irtx_int_sts"]
+pub type W = crate::W<u32, super::IRTX_INT_STS>;
+#[doc = "Register irtx_int_sts `reset()`'s with value 0"]
+impl crate::ResetValue for super::IRTX_INT_STS {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<IRTX_INT_STS_SPEC>> for R {
-    fn from(reader: crate::R<IRTX_INT_STS_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `irtx_int_sts` writer"]
-pub struct W(crate::W<IRTX_INT_STS_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<IRTX_INT_STS_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<IRTX_INT_STS_SPEC>> for W {
-    fn from(writer: crate::W<IRTX_INT_STS_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_irtx_end_en` reader - "]
-pub struct CR_IRTX_END_EN_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_en` writer - "]
+#[doc = "Reader of field `cr_irtx_end_en`"]
+pub type CR_IRTX_END_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_irtx_end_en`"]
 pub struct CR_IRTX_END_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CR_IRTX_END_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_irtx_end_clr` reader - "]
-pub struct CR_IRTX_END_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_clr` writer - "]
+#[doc = "Reader of field `cr_irtx_end_clr`"]
+pub type CR_IRTX_END_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_irtx_end_clr`"]
 pub struct CR_IRTX_END_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CR_IRTX_END_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_irtx_end_mask` reader - "]
-pub struct CR_IRTX_END_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_IRTX_END_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_IRTX_END_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_IRTX_END_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_irtx_end_mask` writer - "]
+#[doc = "Reader of field `cr_irtx_end_mask`"]
+pub type CR_IRTX_END_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_irtx_end_mask`"]
 pub struct CR_IRTX_END_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CR_IRTX_END_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irtx_end_int` reader - "]
-pub struct IRTX_END_INT_R(crate::FieldReader<bool, bool>);
-impl IRTX_END_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IRTX_END_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IRTX_END_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irtx_end_int` writer - "]
+#[doc = "Reader of field `irtx_end_int`"]
+pub type IRTX_END_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irtx_end_int`"]
 pub struct IRTX_END_INT_W<'a> {
     w: &'a mut W,
 }
@@ -218,30 +148,5 @@ impl W {
     #[inline(always)]
     pub fn irtx_end_int(&mut self) -> IRTX_END_INT_W {
         IRTX_END_INT_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "irtx_int_sts.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [irtx_int_sts](index.html) module"]
-pub struct IRTX_INT_STS_SPEC;
-impl crate::RegisterSpec for IRTX_INT_STS_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [irtx_int_sts::R](R) reader structure"]
-impl crate::Readable for IRTX_INT_STS_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [irtx_int_sts::W](W) writer structure"]
-impl crate::Writable for IRTX_INT_STS_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets irtx_int_sts to value 0"]
-impl crate::Resettable for IRTX_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

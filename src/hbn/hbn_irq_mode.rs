@@ -1,52 +1,18 @@
-#[doc = "Register `HBN_IRQ_MODE` reader"]
-pub struct R(crate::R<HBN_IRQ_MODE_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBN_IRQ_MODE_SPEC>;
+#[doc = "Reader of register HBN_IRQ_MODE"]
+pub type R = crate::R<u32, super::HBN_IRQ_MODE>;
+#[doc = "Writer for register HBN_IRQ_MODE"]
+pub type W = crate::W<u32, super::HBN_IRQ_MODE>;
+#[doc = "Register HBN_IRQ_MODE `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBN_IRQ_MODE {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBN_IRQ_MODE_SPEC>> for R {
-    fn from(reader: crate::R<HBN_IRQ_MODE_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `HBN_IRQ_MODE` writer"]
-pub struct W(crate::W<HBN_IRQ_MODE_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBN_IRQ_MODE_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBN_IRQ_MODE_SPEC>> for W {
-    fn from(writer: crate::W<HBN_IRQ_MODE_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pin_wakeup_en` reader - "]
-pub struct PIN_WAKEUP_EN_R(crate::FieldReader<bool, bool>);
-impl PIN_WAKEUP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PIN_WAKEUP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIN_WAKEUP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pin_wakeup_en` writer - "]
+#[doc = "Reader of field `pin_wakeup_en`"]
+pub type PIN_WAKEUP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pin_wakeup_en`"]
 pub struct PIN_WAKEUP_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PIN_WAKEUP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pin_wakeup_sel` reader - "]
-pub struct PIN_WAKEUP_SEL_R(crate::FieldReader<u8, u8>);
-impl PIN_WAKEUP_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PIN_WAKEUP_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIN_WAKEUP_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pin_wakeup_sel` writer - "]
+#[doc = "Reader of field `pin_wakeup_sel`"]
+pub type PIN_WAKEUP_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pin_wakeup_sel`"]
 pub struct PIN_WAKEUP_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> PIN_WAKEUP_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irq_acomp1_en` reader - "]
-pub struct IRQ_ACOMP1_EN_R(crate::FieldReader<u8, u8>);
-impl IRQ_ACOMP1_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        IRQ_ACOMP1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IRQ_ACOMP1_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irq_acomp1_en` writer - "]
+#[doc = "Reader of field `irq_acomp1_en`"]
+pub type IRQ_ACOMP1_EN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `irq_acomp1_en`"]
 pub struct IRQ_ACOMP1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> IRQ_ACOMP1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irq_acomp0_en` reader - "]
-pub struct IRQ_ACOMP0_EN_R(crate::FieldReader<u8, u8>);
-impl IRQ_ACOMP0_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        IRQ_ACOMP0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IRQ_ACOMP0_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irq_acomp0_en` writer - "]
+#[doc = "Reader of field `irq_acomp0_en`"]
+pub type IRQ_ACOMP0_EN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `irq_acomp0_en`"]
 pub struct IRQ_ACOMP0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> IRQ_ACOMP0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irq_bor_en` reader - "]
-pub struct IRQ_BOR_EN_R(crate::FieldReader<bool, bool>);
-impl IRQ_BOR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IRQ_BOR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IRQ_BOR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irq_bor_en` writer - "]
+#[doc = "Reader of field `irq_bor_en`"]
+pub type IRQ_BOR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irq_bor_en`"]
 pub struct IRQ_BOR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -182,21 +100,9 @@ impl<'a> IRQ_BOR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_en_hw_pu_pd` reader - "]
-pub struct REG_EN_HW_PU_PD_R(crate::FieldReader<bool, bool>);
-impl REG_EN_HW_PU_PD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_EN_HW_PU_PD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_EN_HW_PU_PD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_en_hw_pu_pd` writer - "]
+#[doc = "Reader of field `reg_en_hw_pu_pd`"]
+pub type REG_EN_HW_PU_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_en_hw_pu_pd`"]
 pub struct REG_EN_HW_PU_PD_W<'a> {
     w: &'a mut W,
 }
@@ -218,21 +124,9 @@ impl<'a> REG_EN_HW_PU_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_aon_pad_ie_smt` reader - "]
-pub struct REG_AON_PAD_IE_SMT_R(crate::FieldReader<bool, bool>);
-impl REG_AON_PAD_IE_SMT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_AON_PAD_IE_SMT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_AON_PAD_IE_SMT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_aon_pad_ie_smt` writer - "]
+#[doc = "Reader of field `reg_aon_pad_ie_smt`"]
+pub type REG_AON_PAD_IE_SMT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_aon_pad_ie_smt`"]
 pub struct REG_AON_PAD_IE_SMT_W<'a> {
     w: &'a mut W,
 }
@@ -254,21 +148,9 @@ impl<'a> REG_AON_PAD_IE_SMT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_pin_wakeup_mask` reader - "]
-pub struct HBN_PIN_WAKEUP_MASK_R(crate::FieldReader<u8, u8>);
-impl HBN_PIN_WAKEUP_MASK_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_PIN_WAKEUP_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_PIN_WAKEUP_MASK_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_pin_wakeup_mask` writer - "]
+#[doc = "Reader of field `hbn_pin_wakeup_mask`"]
+pub type HBN_PIN_WAKEUP_MASK_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_pin_wakeup_mask`"]
 pub struct HBN_PIN_WAKEUP_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -280,21 +162,9 @@ impl<'a> HBN_PIN_WAKEUP_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_pin_wakeup_mode` reader - "]
-pub struct HBN_PIN_WAKEUP_MODE_R(crate::FieldReader<u8, u8>);
-impl HBN_PIN_WAKEUP_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_PIN_WAKEUP_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_PIN_WAKEUP_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_pin_wakeup_mode` writer - "]
+#[doc = "Reader of field `hbn_pin_wakeup_mode`"]
+pub type HBN_PIN_WAKEUP_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_pin_wakeup_mode`"]
 pub struct HBN_PIN_WAKEUP_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -398,30 +268,5 @@ impl W {
     #[inline(always)]
     pub fn hbn_pin_wakeup_mode(&mut self) -> HBN_PIN_WAKEUP_MODE_W {
         HBN_PIN_WAKEUP_MODE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "HBN_IRQ_MODE.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbn_irq_mode](index.html) module"]
-pub struct HBN_IRQ_MODE_SPEC;
-impl crate::RegisterSpec for HBN_IRQ_MODE_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbn_irq_mode::R](R) reader structure"]
-impl crate::Readable for HBN_IRQ_MODE_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbn_irq_mode::W](W) writer structure"]
-impl crate::Writable for HBN_IRQ_MODE_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets HBN_IRQ_MODE to value 0"]
-impl crate::Resettable for HBN_IRQ_MODE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `clkpll_sdm` reader"]
-pub struct R(crate::R<CLKPLL_SDM_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CLKPLL_SDM_SPEC>;
+#[doc = "Reader of register clkpll_sdm"]
+pub type R = crate::R<u32, super::CLKPLL_SDM>;
+#[doc = "Writer for register clkpll_sdm"]
+pub type W = crate::W<u32, super::CLKPLL_SDM>;
+#[doc = "Register clkpll_sdm `reset()`'s with value 0"]
+impl crate::ResetValue for super::CLKPLL_SDM {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CLKPLL_SDM_SPEC>> for R {
-    fn from(reader: crate::R<CLKPLL_SDM_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `clkpll_sdm` writer"]
-pub struct W(crate::W<CLKPLL_SDM_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CLKPLL_SDM_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CLKPLL_SDM_SPEC>> for W {
-    fn from(writer: crate::W<CLKPLL_SDM_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `clkpll_sdm_bypass` reader - "]
-pub struct CLKPLL_SDM_BYPASS_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_SDM_BYPASS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_SDM_BYPASS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDM_BYPASS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_sdm_bypass` writer - "]
+#[doc = "Reader of field `clkpll_sdm_bypass`"]
+pub type CLKPLL_SDM_BYPASS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_sdm_bypass`"]
 pub struct CLKPLL_SDM_BYPASS_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CLKPLL_SDM_BYPASS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_sdm_flag` reader - "]
-pub struct CLKPLL_SDM_FLAG_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_SDM_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_SDM_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDM_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_sdm_flag` writer - "]
+#[doc = "Reader of field `clkpll_sdm_flag`"]
+pub type CLKPLL_SDM_FLAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_sdm_flag`"]
 pub struct CLKPLL_SDM_FLAG_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CLKPLL_SDM_FLAG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_dither_sel` reader - "]
-pub struct CLKPLL_DITHER_SEL_R(crate::FieldReader<u8, u8>);
-impl CLKPLL_DITHER_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CLKPLL_DITHER_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_DITHER_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_dither_sel` writer - "]
+#[doc = "Reader of field `clkpll_dither_sel`"]
+pub type CLKPLL_DITHER_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `clkpll_dither_sel`"]
 pub struct CLKPLL_DITHER_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> CLKPLL_DITHER_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_sdmin` reader - "]
-pub struct CLKPLL_SDMIN_R(crate::FieldReader<u32, u32>);
-impl CLKPLL_SDMIN_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        CLKPLL_SDMIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_SDMIN_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_sdmin` writer - "]
+#[doc = "Reader of field `clkpll_sdmin`"]
+pub type CLKPLL_SDMIN_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `clkpll_sdmin`"]
 pub struct CLKPLL_SDMIN_W<'a> {
     w: &'a mut W,
 }
@@ -198,30 +128,5 @@ impl W {
     #[inline(always)]
     pub fn clkpll_sdmin(&mut self) -> CLKPLL_SDMIN_W {
         CLKPLL_SDMIN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "clkpll_sdm.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [clkpll_sdm](index.html) module"]
-pub struct CLKPLL_SDM_SPEC;
-impl crate::RegisterSpec for CLKPLL_SDM_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [clkpll_sdm::R](R) reader structure"]
-impl crate::Readable for CLKPLL_SDM_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [clkpll_sdm::W](W) writer structure"]
-impl crate::Writable for CLKPLL_SDM_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets clkpll_sdm to value 0"]
-impl crate::Resettable for CLKPLL_SDM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

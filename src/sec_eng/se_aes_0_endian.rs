@@ -1,52 +1,18 @@
-#[doc = "Register `se_aes_0_endian` reader"]
-pub struct R(crate::R<SE_AES_0_ENDIAN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SE_AES_0_ENDIAN_SPEC>;
+#[doc = "Reader of register se_aes_0_endian"]
+pub type R = crate::R<u32, super::SE_AES_0_ENDIAN>;
+#[doc = "Writer for register se_aes_0_endian"]
+pub type W = crate::W<u32, super::SE_AES_0_ENDIAN>;
+#[doc = "Register se_aes_0_endian `reset()`'s with value 0"]
+impl crate::ResetValue for super::SE_AES_0_ENDIAN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SE_AES_0_ENDIAN_SPEC>> for R {
-    fn from(reader: crate::R<SE_AES_0_ENDIAN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `se_aes_0_endian` writer"]
-pub struct W(crate::W<SE_AES_0_ENDIAN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SE_AES_0_ENDIAN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SE_AES_0_ENDIAN_SPEC>> for W {
-    fn from(writer: crate::W<SE_AES_0_ENDIAN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `se_aes_0_ctr_len` reader - "]
-pub struct SE_AES_0_CTR_LEN_R(crate::FieldReader<u8, u8>);
-impl SE_AES_0_CTR_LEN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_AES_0_CTR_LEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_CTR_LEN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_ctr_len` writer - "]
+#[doc = "Reader of field `se_aes_0_ctr_len`"]
+pub type SE_AES_0_CTR_LEN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `se_aes_0_ctr_len`"]
 pub struct SE_AES_0_CTR_LEN_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> SE_AES_0_CTR_LEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_iv_endian` reader - "]
-pub struct SE_AES_0_IV_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_IV_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_IV_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_IV_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_iv_endian` writer - "]
+#[doc = "Reader of field `se_aes_0_iv_endian`"]
+pub type SE_AES_0_IV_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_iv_endian`"]
 pub struct SE_AES_0_IV_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> SE_AES_0_IV_ENDIAN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_key_endian` reader - "]
-pub struct SE_AES_0_KEY_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_KEY_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_KEY_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_KEY_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_key_endian` writer - "]
+#[doc = "Reader of field `se_aes_0_key_endian`"]
+pub type SE_AES_0_KEY_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_key_endian`"]
 pub struct SE_AES_0_KEY_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SE_AES_0_KEY_ENDIAN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_din_endian` reader - "]
-pub struct SE_AES_0_DIN_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_DIN_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_DIN_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_DIN_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_din_endian` writer - "]
+#[doc = "Reader of field `se_aes_0_din_endian`"]
+pub type SE_AES_0_DIN_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_din_endian`"]
 pub struct SE_AES_0_DIN_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> SE_AES_0_DIN_ENDIAN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_dout_endian` reader - "]
-pub struct SE_AES_0_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_DOUT_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_DOUT_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_dout_endian` writer - "]
+#[doc = "Reader of field `se_aes_0_dout_endian`"]
+pub type SE_AES_0_DOUT_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_dout_endian`"]
 pub struct SE_AES_0_DOUT_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -254,30 +172,5 @@ impl W {
     #[inline(always)]
     pub fn se_aes_0_dout_endian(&mut self) -> SE_AES_0_DOUT_ENDIAN_W {
         SE_AES_0_DOUT_ENDIAN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "se_aes_0_endian.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [se_aes_0_endian](index.html) module"]
-pub struct SE_AES_0_ENDIAN_SPEC;
-impl crate::RegisterSpec for SE_AES_0_ENDIAN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [se_aes_0_endian::R](R) reader structure"]
-impl crate::Readable for SE_AES_0_ENDIAN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [se_aes_0_endian::W](W) writer structure"]
-impl crate::Writable for SE_AES_0_ENDIAN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets se_aes_0_endian to value 0"]
-impl crate::Resettable for SE_AES_0_ENDIAN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

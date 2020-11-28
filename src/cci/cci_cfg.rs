@@ -1,52 +1,18 @@
-#[doc = "Register `cci_cfg` reader"]
-pub struct R(crate::R<CCI_CFG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CCI_CFG_SPEC>;
+#[doc = "Reader of register cci_cfg"]
+pub type R = crate::R<u32, super::CCI_CFG>;
+#[doc = "Writer for register cci_cfg"]
+pub type W = crate::W<u32, super::CCI_CFG>;
+#[doc = "Register cci_cfg `reset()`'s with value 0"]
+impl crate::ResetValue for super::CCI_CFG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CCI_CFG_SPEC>> for R {
-    fn from(reader: crate::R<CCI_CFG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `cci_cfg` writer"]
-pub struct W(crate::W<CCI_CFG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CCI_CFG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CCI_CFG_SPEC>> for W {
-    fn from(writer: crate::W<CCI_CFG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `reg_mcci_clk_inv` reader - "]
-pub struct REG_MCCI_CLK_INV_R(crate::FieldReader<bool, bool>);
-impl REG_MCCI_CLK_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_MCCI_CLK_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_MCCI_CLK_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_mcci_clk_inv` writer - "]
+#[doc = "Reader of field `reg_mcci_clk_inv`"]
+pub type REG_MCCI_CLK_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_mcci_clk_inv`"]
 pub struct REG_MCCI_CLK_INV_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> REG_MCCI_CLK_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_scci_clk_inv` reader - "]
-pub struct REG_SCCI_CLK_INV_R(crate::FieldReader<bool, bool>);
-impl REG_SCCI_CLK_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_SCCI_CLK_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_SCCI_CLK_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_scci_clk_inv` writer - "]
+#[doc = "Reader of field `reg_scci_clk_inv`"]
+pub type REG_SCCI_CLK_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_scci_clk_inv`"]
 pub struct REG_SCCI_CLK_INV_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> REG_SCCI_CLK_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cfg_cci1_pre_read` reader - "]
-pub struct CFG_CCI1_PRE_READ_R(crate::FieldReader<bool, bool>);
-impl CFG_CCI1_PRE_READ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CFG_CCI1_PRE_READ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CFG_CCI1_PRE_READ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cfg_cci1_pre_read` writer - "]
+#[doc = "Reader of field `cfg_cci1_pre_read`"]
+pub type CFG_CCI1_PRE_READ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cfg_cci1_pre_read`"]
 pub struct CFG_CCI1_PRE_READ_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CFG_CCI1_PRE_READ_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_div_m_cci_sclk` reader - "]
-pub struct REG_DIV_M_CCI_SCLK_R(crate::FieldReader<u8, u8>);
-impl REG_DIV_M_CCI_SCLK_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_DIV_M_CCI_SCLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_DIV_M_CCI_SCLK_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_div_m_cci_sclk` writer - "]
+#[doc = "Reader of field `reg_div_m_cci_sclk`"]
+pub type REG_DIV_M_CCI_SCLK_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `reg_div_m_cci_sclk`"]
 pub struct REG_DIV_M_CCI_SCLK_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> REG_DIV_M_CCI_SCLK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_m_cci_sclk_en` reader - "]
-pub struct REG_M_CCI_SCLK_EN_R(crate::FieldReader<bool, bool>);
-impl REG_M_CCI_SCLK_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_M_CCI_SCLK_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_M_CCI_SCLK_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_m_cci_sclk_en` writer - "]
+#[doc = "Reader of field `reg_m_cci_sclk_en`"]
+pub type REG_M_CCI_SCLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_m_cci_sclk_en`"]
 pub struct REG_M_CCI_SCLK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> REG_M_CCI_SCLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_mas_hw_mode` reader - "]
-pub struct CCI_MAS_HW_MODE_R(crate::FieldReader<bool, bool>);
-impl CCI_MAS_HW_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_MAS_HW_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_MAS_HW_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_mas_hw_mode` writer - "]
+#[doc = "Reader of field `cci_mas_hw_mode`"]
+pub type CCI_MAS_HW_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_mas_hw_mode`"]
 pub struct CCI_MAS_HW_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> CCI_MAS_HW_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_mas_sel_cci2` reader - "]
-pub struct CCI_MAS_SEL_CCI2_R(crate::FieldReader<bool, bool>);
-impl CCI_MAS_SEL_CCI2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_MAS_SEL_CCI2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_MAS_SEL_CCI2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_mas_sel_cci2` writer - "]
+#[doc = "Reader of field `cci_mas_sel_cci2`"]
+pub type CCI_MAS_SEL_CCI2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_mas_sel_cci2`"]
 pub struct CCI_MAS_SEL_CCI2_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> CCI_MAS_SEL_CCI2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_slv_sel_cci2` reader - "]
-pub struct CCI_SLV_SEL_CCI2_R(crate::FieldReader<bool, bool>);
-impl CCI_SLV_SEL_CCI2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_SLV_SEL_CCI2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_SLV_SEL_CCI2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_slv_sel_cci2` writer - "]
+#[doc = "Reader of field `cci_slv_sel_cci2`"]
+pub type CCI_SLV_SEL_CCI2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_slv_sel_cci2`"]
 pub struct CCI_SLV_SEL_CCI2_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> CCI_SLV_SEL_CCI2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_en` reader - "]
-pub struct CCI_EN_R(crate::FieldReader<bool, bool>);
-impl CCI_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_en` writer - "]
+#[doc = "Reader of field `cci_en`"]
+pub type CCI_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_en`"]
 pub struct CCI_EN_W<'a> {
     w: &'a mut W,
 }
@@ -438,30 +308,5 @@ impl W {
     #[inline(always)]
     pub fn cci_en(&mut self) -> CCI_EN_W {
         CCI_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "cci_cfg.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cci_cfg](index.html) module"]
-pub struct CCI_CFG_SPEC;
-impl crate::RegisterSpec for CCI_CFG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [cci_cfg::R](R) reader structure"]
-impl crate::Readable for CCI_CFG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [cci_cfg::W](W) writer structure"]
-impl crate::Writable for CCI_CFG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets cci_cfg to value 0"]
-impl crate::Resettable for CCI_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

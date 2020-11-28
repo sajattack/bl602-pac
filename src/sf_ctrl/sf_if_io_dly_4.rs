@@ -1,52 +1,18 @@
-#[doc = "Register `sf_if_io_dly_4` reader"]
-pub struct R(crate::R<SF_IF_IO_DLY_4_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SF_IF_IO_DLY_4_SPEC>;
+#[doc = "Reader of register sf_if_io_dly_4"]
+pub type R = crate::R<u32, super::SF_IF_IO_DLY_4>;
+#[doc = "Writer for register sf_if_io_dly_4"]
+pub type W = crate::W<u32, super::SF_IF_IO_DLY_4>;
+#[doc = "Register sf_if_io_dly_4 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SF_IF_IO_DLY_4 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SF_IF_IO_DLY_4_SPEC>> for R {
-    fn from(reader: crate::R<SF_IF_IO_DLY_4_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `sf_if_io_dly_4` writer"]
-pub struct W(crate::W<SF_IF_IO_DLY_4_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SF_IF_IO_DLY_4_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SF_IF_IO_DLY_4_SPEC>> for W {
-    fn from(writer: crate::W<SF_IF_IO_DLY_4_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `sf_io_3_do_dly_sel` reader - "]
-pub struct SF_IO_3_DO_DLY_SEL_R(crate::FieldReader<u8, u8>);
-impl SF_IO_3_DO_DLY_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IO_3_DO_DLY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IO_3_DO_DLY_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_io_3_do_dly_sel` writer - "]
+#[doc = "Reader of field `sf_io_3_do_dly_sel`"]
+pub type SF_IO_3_DO_DLY_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_io_3_do_dly_sel`"]
 pub struct SF_IO_3_DO_DLY_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> SF_IO_3_DO_DLY_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_io_3_di_dly_sel` reader - "]
-pub struct SF_IO_3_DI_DLY_SEL_R(crate::FieldReader<u8, u8>);
-impl SF_IO_3_DI_DLY_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IO_3_DI_DLY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IO_3_DI_DLY_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_io_3_di_dly_sel` writer - "]
+#[doc = "Reader of field `sf_io_3_di_dly_sel`"]
+pub type SF_IO_3_DI_DLY_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_io_3_di_dly_sel`"]
 pub struct SF_IO_3_DI_DLY_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> SF_IO_3_DI_DLY_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_io_3_oe_dly_sel` reader - "]
-pub struct SF_IO_3_OE_DLY_SEL_R(crate::FieldReader<u8, u8>);
-impl SF_IO_3_OE_DLY_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IO_3_OE_DLY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IO_3_OE_DLY_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_io_3_oe_dly_sel` writer - "]
+#[doc = "Reader of field `sf_io_3_oe_dly_sel`"]
+pub type SF_IO_3_OE_DLY_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_io_3_oe_dly_sel`"]
 pub struct SF_IO_3_OE_DLY_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -142,30 +84,5 @@ impl W {
     #[inline(always)]
     pub fn sf_io_3_oe_dly_sel(&mut self) -> SF_IO_3_OE_DLY_SEL_W {
         SF_IO_3_OE_DLY_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "sf_if_io_dly_4.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sf_if_io_dly_4](index.html) module"]
-pub struct SF_IF_IO_DLY_4_SPEC;
-impl crate::RegisterSpec for SF_IF_IO_DLY_4_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [sf_if_io_dly_4::R](R) reader structure"]
-impl crate::Readable for SF_IF_IO_DLY_4_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [sf_if_io_dly_4::W](W) writer structure"]
-impl crate::Writable for SF_IF_IO_DLY_4_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets sf_if_io_dly_4 to value 0"]
-impl crate::Resettable for SF_IF_IO_DLY_4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `WMER` reader"]
-pub struct R(crate::R<WMER_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<WMER_SPEC>;
+#[doc = "Reader of register WMER"]
+pub type R = crate::R<u32, super::WMER>;
+#[doc = "Writer for register WMER"]
+pub type W = crate::W<u32, super::WMER>;
+#[doc = "Register WMER `reset()`'s with value 0"]
+impl crate::ResetValue for super::WMER {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<WMER_SPEC>> for R {
-    fn from(reader: crate::R<WMER_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `WMER` writer"]
-pub struct W(crate::W<WMER_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<WMER_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<WMER_SPEC>> for W {
-    fn from(writer: crate::W<WMER_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `wrie` reader - "]
-pub struct WRIE_R(crate::FieldReader<bool, bool>);
-impl WRIE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WRIE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WRIE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wrie` writer - "]
+#[doc = "Reader of field `wrie`"]
+pub type WRIE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wrie`"]
 pub struct WRIE_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> WRIE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `we` reader - "]
-pub struct WE_R(crate::FieldReader<bool, bool>);
-impl WE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `we` writer - "]
+#[doc = "Reader of field `we`"]
+pub type WE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `we`"]
 pub struct WE_W<'a> {
     w: &'a mut W,
 }
@@ -126,30 +80,5 @@ impl W {
     #[inline(always)]
     pub fn we(&mut self) -> WE_W {
         WE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "WMER.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wmer](index.html) module"]
-pub struct WMER_SPEC;
-impl crate::RegisterSpec for WMER_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [wmer::R](R) reader structure"]
-impl crate::Readable for WMER_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [wmer::W](W) writer structure"]
-impl crate::Writable for WMER_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets WMER to value 0"]
-impl crate::Resettable for WMER_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

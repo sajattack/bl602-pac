@@ -1,78 +1,20 @@
-#[doc = "Register `clk_cfg0` reader"]
-pub struct R(crate::R<CLK_CFG0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CLK_CFG0_SPEC>;
+#[doc = "Reader of register clk_cfg0"]
+pub type R = crate::R<u32, super::CLK_CFG0>;
+#[doc = "Writer for register clk_cfg0"]
+pub type W = crate::W<u32, super::CLK_CFG0>;
+#[doc = "Register clk_cfg0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::CLK_CFG0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CLK_CFG0_SPEC>> for R {
-    fn from(reader: crate::R<CLK_CFG0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `clk_cfg0` writer"]
-pub struct W(crate::W<CLK_CFG0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CLK_CFG0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CLK_CFG0_SPEC>> for W {
-    fn from(writer: crate::W<CLK_CFG0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `glb_id` reader - "]
-pub struct GLB_ID_R(crate::FieldReader<u8, u8>);
-impl GLB_ID_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GLB_ID_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GLB_ID_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `glb_id` writer - "]
-pub struct GLB_ID_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> GLB_ID_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
-    #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x0f << 28)) | (((value as u32) & 0x0f) << 28);
-        self.w
-    }
-}
-#[doc = "Field `chip_rdy` reader - "]
-pub struct CHIP_RDY_R(crate::FieldReader<bool, bool>);
-impl CHIP_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CHIP_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CHIP_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `chip_rdy` writer - "]
+#[doc = "Reader of field `glb_id`"]
+pub type GLB_ID_R = crate::R<u8, u8>;
+#[doc = "Reader of field `chip_rdy`"]
+pub type CHIP_RDY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `chip_rdy`"]
 pub struct CHIP_RDY_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +36,9 @@ impl<'a> CHIP_RDY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fclk_sw_state` reader - "]
-pub struct FCLK_SW_STATE_R(crate::FieldReader<u8, u8>);
-impl FCLK_SW_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCLK_SW_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCLK_SW_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fclk_sw_state` writer - "]
+#[doc = "Reader of field `fclk_sw_state`"]
+pub type FCLK_SW_STATE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `fclk_sw_state`"]
 pub struct FCLK_SW_STATE_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +50,9 @@ impl<'a> FCLK_SW_STATE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_bclk_div` reader - "]
-pub struct REG_BCLK_DIV_R(crate::FieldReader<u8, u8>);
-impl REG_BCLK_DIV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_BCLK_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_BCLK_DIV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_bclk_div` writer - "]
+#[doc = "Reader of field `reg_bclk_div`"]
+pub type REG_BCLK_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `reg_bclk_div`"]
 pub struct REG_BCLK_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +64,9 @@ impl<'a> REG_BCLK_DIV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_hclk_div` reader - "]
-pub struct REG_HCLK_DIV_R(crate::FieldReader<u8, u8>);
-impl REG_HCLK_DIV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_HCLK_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_HCLK_DIV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_hclk_div` writer - "]
+#[doc = "Reader of field `reg_hclk_div`"]
+pub type REG_HCLK_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `reg_hclk_div`"]
 pub struct REG_HCLK_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -172,73 +78,149 @@ impl<'a> REG_HCLK_DIV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_root_clk_sel` reader - "]
-pub struct HBN_ROOT_CLK_SEL_R(crate::FieldReader<u8, u8>);
+#[doc = "\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
+pub enum HBN_ROOT_CLK_SEL_A {
+    #[doc = "0: `0`"]
+    RC32M = 0,
+    #[doc = "1: `1`"]
+    XTAL = 1,
+    #[doc = "2: `10`"]
+    PLL = 2,
+}
+impl From<HBN_ROOT_CLK_SEL_A> for u8 {
+    #[inline(always)]
+    fn from(variant: HBN_ROOT_CLK_SEL_A) -> Self {
+        variant as _
+    }
+}
+#[doc = "Reader of field `hbn_root_clk_sel`"]
+pub type HBN_ROOT_CLK_SEL_R = crate::R<u8, HBN_ROOT_CLK_SEL_A>;
 impl HBN_ROOT_CLK_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_ROOT_CLK_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_ROOT_CLK_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
+    #[doc = r"Get enumerated values variant"]
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    pub fn variant(&self) -> crate::Variant<u8, HBN_ROOT_CLK_SEL_A> {
+        use crate::Variant::*;
+        match self.bits {
+            0 => Val(HBN_ROOT_CLK_SEL_A::RC32M),
+            1 => Val(HBN_ROOT_CLK_SEL_A::XTAL),
+            2 => Val(HBN_ROOT_CLK_SEL_A::PLL),
+            i => Res(i),
+        }
     }
-}
-#[doc = "Field `hbn_root_clk_sel` writer - "]
-pub struct HBN_ROOT_CLK_SEL_W<'a> {
-    w: &'a mut W,
-}
-impl<'a> HBN_ROOT_CLK_SEL_W<'a> {
-    #[doc = r"Writes raw bits to the field"]
+    #[doc = "Checks if the value of the field is `RC32M`"]
     #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x03 << 6)) | (((value as u32) & 0x03) << 6);
-        self.w
+    pub fn is_rc32m(&self) -> bool {
+        *self == HBN_ROOT_CLK_SEL_A::RC32M
+    }
+    #[doc = "Checks if the value of the field is `XTAL`"]
+    #[inline(always)]
+    pub fn is_xtal(&self) -> bool {
+        *self == HBN_ROOT_CLK_SEL_A::XTAL
+    }
+    #[doc = "Checks if the value of the field is `PLL`"]
+    #[inline(always)]
+    pub fn is_pll(&self) -> bool {
+        *self == HBN_ROOT_CLK_SEL_A::PLL
     }
 }
-#[doc = "Field `reg_pll_sel` reader - "]
-pub struct REG_PLL_SEL_R(crate::FieldReader<u8, u8>);
+#[doc = "\n\nValue on reset: 0"]
+#[derive(Clone, Copy, Debug, PartialEq)]
+#[repr(u8)]
+pub enum REG_PLL_SEL_A {
+    #[doc = "0: `0`"]
+    _48M = 0,
+    #[doc = "1: `1`"]
+    _120M = 1,
+    #[doc = "2: `10`"]
+    _160M = 2,
+    #[doc = "3: `11`"]
+    _192M = 3,
+}
+impl From<REG_PLL_SEL_A> for u8 {
+    #[inline(always)]
+    fn from(variant: REG_PLL_SEL_A) -> Self {
+        variant as _
+    }
+}
+#[doc = "Reader of field `reg_pll_sel`"]
+pub type REG_PLL_SEL_R = crate::R<u8, REG_PLL_SEL_A>;
 impl REG_PLL_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_PLL_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PLL_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
+    #[doc = r"Get enumerated values variant"]
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    pub fn variant(&self) -> REG_PLL_SEL_A {
+        match self.bits {
+            0 => REG_PLL_SEL_A::_48M,
+            1 => REG_PLL_SEL_A::_120M,
+            2 => REG_PLL_SEL_A::_160M,
+            3 => REG_PLL_SEL_A::_192M,
+            _ => unreachable!(),
+        }
+    }
+    #[doc = "Checks if the value of the field is `_48M`"]
+    #[inline(always)]
+    pub fn is_48m(&self) -> bool {
+        *self == REG_PLL_SEL_A::_48M
+    }
+    #[doc = "Checks if the value of the field is `_120M`"]
+    #[inline(always)]
+    pub fn is_120m(&self) -> bool {
+        *self == REG_PLL_SEL_A::_120M
+    }
+    #[doc = "Checks if the value of the field is `_160M`"]
+    #[inline(always)]
+    pub fn is_160m(&self) -> bool {
+        *self == REG_PLL_SEL_A::_160M
+    }
+    #[doc = "Checks if the value of the field is `_192M`"]
+    #[inline(always)]
+    pub fn is_192m(&self) -> bool {
+        *self == REG_PLL_SEL_A::_192M
     }
 }
-#[doc = "Field `reg_pll_sel` writer - "]
+#[doc = "Write proxy for field `reg_pll_sel`"]
 pub struct REG_PLL_SEL_W<'a> {
     w: &'a mut W,
 }
 impl<'a> REG_PLL_SEL_W<'a> {
+    #[doc = r"Writes `variant` to the field"]
+    #[inline(always)]
+    pub fn variant(self, variant: REG_PLL_SEL_A) -> &'a mut W {
+        {
+            self.bits(variant.into())
+        }
+    }
+    #[doc = "`0`"]
+    #[inline(always)]
+    pub fn _48m(self) -> &'a mut W {
+        self.variant(REG_PLL_SEL_A::_48M)
+    }
+    #[doc = "`1`"]
+    #[inline(always)]
+    pub fn _120m(self) -> &'a mut W {
+        self.variant(REG_PLL_SEL_A::_120M)
+    }
+    #[doc = "`10`"]
+    #[inline(always)]
+    pub fn _160m(self) -> &'a mut W {
+        self.variant(REG_PLL_SEL_A::_160M)
+    }
+    #[doc = "`11`"]
+    #[inline(always)]
+    pub fn _192m(self) -> &'a mut W {
+        self.variant(REG_PLL_SEL_A::_192M)
+    }
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
-    pub unsafe fn bits(self, value: u8) -> &'a mut W {
+    pub fn bits(self, value: u8) -> &'a mut W {
         self.w.bits = (self.w.bits & !(0x03 << 4)) | (((value as u32) & 0x03) << 4);
         self.w
     }
 }
-#[doc = "Field `reg_bclk_en` reader - "]
-pub struct REG_BCLK_EN_R(crate::FieldReader<bool, bool>);
-impl REG_BCLK_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_BCLK_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_BCLK_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_bclk_en` writer - "]
+#[doc = "Reader of field `reg_bclk_en`"]
+pub type REG_BCLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_bclk_en`"]
 pub struct REG_BCLK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -260,21 +242,9 @@ impl<'a> REG_BCLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_hclk_en` reader - "]
-pub struct REG_HCLK_EN_R(crate::FieldReader<bool, bool>);
-impl REG_HCLK_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_HCLK_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_HCLK_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_hclk_en` writer - "]
+#[doc = "Reader of field `reg_hclk_en`"]
+pub type REG_HCLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_hclk_en`"]
 pub struct REG_HCLK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -296,21 +266,9 @@ impl<'a> REG_HCLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_fclk_en` reader - "]
-pub struct REG_FCLK_EN_R(crate::FieldReader<bool, bool>);
-impl REG_FCLK_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_FCLK_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_FCLK_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_fclk_en` writer - "]
+#[doc = "Reader of field `reg_fclk_en`"]
+pub type REG_FCLK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_fclk_en`"]
 pub struct REG_FCLK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -332,21 +290,9 @@ impl<'a> REG_FCLK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_pll_en` reader - "]
-pub struct REG_PLL_EN_R(crate::FieldReader<bool, bool>);
-impl REG_PLL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_PLL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_PLL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_pll_en` writer - "]
+#[doc = "Reader of field `reg_pll_en`"]
+pub type REG_PLL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_pll_en`"]
 pub struct REG_PLL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -384,12 +330,12 @@ impl R {
     pub fn fclk_sw_state(&self) -> FCLK_SW_STATE_R {
         FCLK_SW_STATE_R::new(((self.bits >> 24) & 0x07) as u8)
     }
-    #[doc = "Bits 16:23"]
+    #[doc = "Bits 16:23 - bclk divider from hclk"]
     #[inline(always)]
     pub fn reg_bclk_div(&self) -> REG_BCLK_DIV_R {
         REG_BCLK_DIV_R::new(((self.bits >> 16) & 0xff) as u8)
     }
-    #[doc = "Bits 8:15"]
+    #[doc = "Bits 8:15 - hclk divider from root clock"]
     #[inline(always)]
     pub fn reg_hclk_div(&self) -> REG_HCLK_DIV_R {
         REG_HCLK_DIV_R::new(((self.bits >> 8) & 0xff) as u8)
@@ -426,11 +372,6 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 28:31"]
-    #[inline(always)]
-    pub fn glb_id(&mut self) -> GLB_ID_W {
-        GLB_ID_W { w: self }
-    }
     #[doc = "Bit 27"]
     #[inline(always)]
     pub fn chip_rdy(&mut self) -> CHIP_RDY_W {
@@ -441,20 +382,15 @@ impl W {
     pub fn fclk_sw_state(&mut self) -> FCLK_SW_STATE_W {
         FCLK_SW_STATE_W { w: self }
     }
-    #[doc = "Bits 16:23"]
+    #[doc = "Bits 16:23 - bclk divider from hclk"]
     #[inline(always)]
     pub fn reg_bclk_div(&mut self) -> REG_BCLK_DIV_W {
         REG_BCLK_DIV_W { w: self }
     }
-    #[doc = "Bits 8:15"]
+    #[doc = "Bits 8:15 - hclk divider from root clock"]
     #[inline(always)]
     pub fn reg_hclk_div(&mut self) -> REG_HCLK_DIV_W {
         REG_HCLK_DIV_W { w: self }
-    }
-    #[doc = "Bits 6:7"]
-    #[inline(always)]
-    pub fn hbn_root_clk_sel(&mut self) -> HBN_ROOT_CLK_SEL_W {
-        HBN_ROOT_CLK_SEL_W { w: self }
     }
     #[doc = "Bits 4:5"]
     #[inline(always)]
@@ -480,30 +416,5 @@ impl W {
     #[inline(always)]
     pub fn reg_pll_en(&mut self) -> REG_PLL_EN_W {
         REG_PLL_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "clk_cfg0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [clk_cfg0](index.html) module"]
-pub struct CLK_CFG0_SPEC;
-impl crate::RegisterSpec for CLK_CFG0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [clk_cfg0::R](R) reader structure"]
-impl crate::Readable for CLK_CFG0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [clk_cfg0::W](W) writer structure"]
-impl crate::Writable for CLK_CFG0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets clk_cfg0 to value 0"]
-impl crate::Resettable for CLK_CFG0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `dcdc18_top_1` reader"]
-pub struct R(crate::R<DCDC18_TOP_1_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DCDC18_TOP_1_SPEC>;
+#[doc = "Reader of register dcdc18_top_1"]
+pub type R = crate::R<u32, super::DCDC18_TOP_1>;
+#[doc = "Writer for register dcdc18_top_1"]
+pub type W = crate::W<u32, super::DCDC18_TOP_1>;
+#[doc = "Register dcdc18_top_1 `reset()`'s with value 0"]
+impl crate::ResetValue for super::DCDC18_TOP_1 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DCDC18_TOP_1_SPEC>> for R {
-    fn from(reader: crate::R<DCDC18_TOP_1_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `dcdc18_top_1` writer"]
-pub struct W(crate::W<DCDC18_TOP_1_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DCDC18_TOP_1_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DCDC18_TOP_1_SPEC>> for W {
-    fn from(writer: crate::W<DCDC18_TOP_1_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `dcdc18_pulldown_aon` reader - "]
-pub struct DCDC18_PULLDOWN_AON_R(crate::FieldReader<bool, bool>);
-impl DCDC18_PULLDOWN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DCDC18_PULLDOWN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_PULLDOWN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_pulldown_aon` writer - "]
+#[doc = "Reader of field `dcdc18_pulldown_aon`"]
+pub type DCDC18_PULLDOWN_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dcdc18_pulldown_aon`"]
 pub struct DCDC18_PULLDOWN_AON_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> DCDC18_PULLDOWN_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_en_antiring_aon` reader - "]
-pub struct DCDC18_EN_ANTIRING_AON_R(crate::FieldReader<bool, bool>);
-impl DCDC18_EN_ANTIRING_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DCDC18_EN_ANTIRING_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_EN_ANTIRING_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_en_antiring_aon` writer - "]
+#[doc = "Reader of field `dcdc18_en_antiring_aon`"]
+pub type DCDC18_EN_ANTIRING_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dcdc18_en_antiring_aon`"]
 pub struct DCDC18_EN_ANTIRING_AON_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> DCDC18_EN_ANTIRING_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_cfb_sel_aon` reader - "]
-pub struct DCDC18_CFB_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_CFB_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_CFB_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_CFB_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_cfb_sel_aon` writer - "]
+#[doc = "Reader of field `dcdc18_cfb_sel_aon`"]
+pub type DCDC18_CFB_SEL_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_cfb_sel_aon`"]
 pub struct DCDC18_CFB_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> DCDC18_CFB_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_chf_sel_aon` reader - "]
-pub struct DCDC18_CHF_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_CHF_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_CHF_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_CHF_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_chf_sel_aon` writer - "]
+#[doc = "Reader of field `dcdc18_chf_sel_aon`"]
+pub type DCDC18_CHF_SEL_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_chf_sel_aon`"]
 pub struct DCDC18_CHF_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> DCDC18_CHF_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_rc_sel_aon` reader - "]
-pub struct DCDC18_RC_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_RC_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_RC_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_RC_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_rc_sel_aon` writer - "]
+#[doc = "Reader of field `dcdc18_rc_sel_aon`"]
+pub type DCDC18_RC_SEL_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_rc_sel_aon`"]
 pub struct DCDC18_RC_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -182,21 +100,9 @@ impl<'a> DCDC18_RC_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_nonoverlap_td_aon` reader - "]
-pub struct DCDC18_NONOVERLAP_TD_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_NONOVERLAP_TD_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_NONOVERLAP_TD_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_NONOVERLAP_TD_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_nonoverlap_td_aon` writer - "]
+#[doc = "Reader of field `dcdc18_nonoverlap_td_aon`"]
+pub type DCDC18_NONOVERLAP_TD_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_nonoverlap_td_aon`"]
 pub struct DCDC18_NONOVERLAP_TD_AON_W<'a> {
     w: &'a mut W,
 }
@@ -208,21 +114,9 @@ impl<'a> DCDC18_NONOVERLAP_TD_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_zvs_td_opt_aon` reader - "]
-pub struct DCDC18_ZVS_TD_OPT_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_ZVS_TD_OPT_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_ZVS_TD_OPT_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_ZVS_TD_OPT_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_zvs_td_opt_aon` writer - "]
+#[doc = "Reader of field `dcdc18_zvs_td_opt_aon`"]
+pub type DCDC18_ZVS_TD_OPT_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_zvs_td_opt_aon`"]
 pub struct DCDC18_ZVS_TD_OPT_AON_W<'a> {
     w: &'a mut W,
 }
@@ -234,21 +128,9 @@ impl<'a> DCDC18_ZVS_TD_OPT_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_cs_delay_aon` reader - "]
-pub struct DCDC18_CS_DELAY_AON_R(crate::FieldReader<u8, u8>);
-impl DCDC18_CS_DELAY_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DCDC18_CS_DELAY_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_CS_DELAY_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_cs_delay_aon` writer - "]
+#[doc = "Reader of field `dcdc18_cs_delay_aon`"]
+pub type DCDC18_CS_DELAY_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dcdc18_cs_delay_aon`"]
 pub struct DCDC18_CS_DELAY_AON_W<'a> {
     w: &'a mut W,
 }
@@ -260,21 +142,9 @@ impl<'a> DCDC18_CS_DELAY_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dcdc18_force_cs_zvs_aon` reader - "]
-pub struct DCDC18_FORCE_CS_ZVS_AON_R(crate::FieldReader<bool, bool>);
-impl DCDC18_FORCE_CS_ZVS_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DCDC18_FORCE_CS_ZVS_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DCDC18_FORCE_CS_ZVS_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dcdc18_force_cs_zvs_aon` writer - "]
+#[doc = "Reader of field `dcdc18_force_cs_zvs_aon`"]
+pub type DCDC18_FORCE_CS_ZVS_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dcdc18_force_cs_zvs_aon`"]
 pub struct DCDC18_FORCE_CS_ZVS_AON_W<'a> {
     w: &'a mut W,
 }
@@ -388,30 +258,5 @@ impl W {
     #[inline(always)]
     pub fn dcdc18_force_cs_zvs_aon(&mut self) -> DCDC18_FORCE_CS_ZVS_AON_W {
         DCDC18_FORCE_CS_ZVS_AON_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "dcdc18_top_1.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dcdc18_top_1](index.html) module"]
-pub struct DCDC18_TOP_1_SPEC;
-impl crate::RegisterSpec for DCDC18_TOP_1_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [dcdc18_top_1::R](R) reader structure"]
-impl crate::Readable for DCDC18_TOP_1_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [dcdc18_top_1::W](W) writer structure"]
-impl crate::Writable for DCDC18_TOP_1_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets dcdc18_top_1 to value 0"]
-impl crate::Resettable for DCDC18_TOP_1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

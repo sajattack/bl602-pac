@@ -1,52 +1,18 @@
-#[doc = "Register `tmx` reader"]
-pub struct R(crate::R<TMX_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TMX_SPEC>;
+#[doc = "Reader of register tmx"]
+pub type R = crate::R<u32, super::TMX>;
+#[doc = "Writer for register tmx"]
+pub type W = crate::W<u32, super::TMX>;
+#[doc = "Register tmx `reset()`'s with value 0"]
+impl crate::ResetValue for super::TMX {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TMX_SPEC>> for R {
-    fn from(reader: crate::R<TMX_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `tmx` writer"]
-pub struct W(crate::W<TMX_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TMX_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TMX_SPEC>> for W {
-    fn from(writer: crate::W<TMX_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tx_tsense_en` reader - "]
-pub struct TX_TSENSE_EN_R(crate::FieldReader<bool, bool>);
-impl TX_TSENSE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TX_TSENSE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_TSENSE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_tsense_en` writer - "]
+#[doc = "Reader of field `tx_tsense_en`"]
+pub type TX_TSENSE_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tx_tsense_en`"]
 pub struct TX_TSENSE_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TX_TSENSE_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmx_bm_cas_bulk` reader - "]
-pub struct TMX_BM_CAS_BULK_R(crate::FieldReader<u8, u8>);
-impl TMX_BM_CAS_BULK_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TMX_BM_CAS_BULK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMX_BM_CAS_BULK_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmx_bm_cas_bulk` writer - "]
+#[doc = "Reader of field `tmx_bm_cas_bulk`"]
+pub type TMX_BM_CAS_BULK_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tmx_bm_cas_bulk`"]
 pub struct TMX_BM_CAS_BULK_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> TMX_BM_CAS_BULK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmx_bm_cas` reader - "]
-pub struct TMX_BM_CAS_R(crate::FieldReader<u8, u8>);
-impl TMX_BM_CAS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TMX_BM_CAS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMX_BM_CAS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmx_bm_cas` writer - "]
+#[doc = "Reader of field `tmx_bm_cas`"]
+pub type TMX_BM_CAS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tmx_bm_cas`"]
 pub struct TMX_BM_CAS_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> TMX_BM_CAS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmx_bm_sw` reader - "]
-pub struct TMX_BM_SW_R(crate::FieldReader<u8, u8>);
-impl TMX_BM_SW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TMX_BM_SW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMX_BM_SW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmx_bm_sw` writer - "]
+#[doc = "Reader of field `tmx_bm_sw`"]
+pub type TMX_BM_SW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tmx_bm_sw`"]
 pub struct TMX_BM_SW_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> TMX_BM_SW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmx_cs` reader - "]
-pub struct TMX_CS_R(crate::FieldReader<u8, u8>);
-impl TMX_CS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TMX_CS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMX_CS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmx_cs` writer - "]
+#[doc = "Reader of field `tmx_cs`"]
+pub type TMX_CS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tmx_cs`"]
 pub struct TMX_CS_W<'a> {
     w: &'a mut W,
 }
@@ -224,30 +142,5 @@ impl W {
     #[inline(always)]
     pub fn tmx_cs(&mut self) -> TMX_CS_W {
         TMX_CS_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "tmx.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tmx](index.html) module"]
-pub struct TMX_SPEC;
-impl crate::RegisterSpec for TMX_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tmx::R](R) reader structure"]
-impl crate::Readable for TMX_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tmx::W](W) writer structure"]
-impl crate::Writable for TMX_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets tmx to value 0"]
-impl crate::Resettable for TMX_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

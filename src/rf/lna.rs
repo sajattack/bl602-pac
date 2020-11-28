@@ -1,52 +1,18 @@
-#[doc = "Register `lna` reader"]
-pub struct R(crate::R<LNA_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<LNA_SPEC>;
+#[doc = "Reader of register lna"]
+pub type R = crate::R<u32, super::LNA>;
+#[doc = "Writer for register lna"]
+pub type W = crate::W<u32, super::LNA>;
+#[doc = "Register lna `reset()`'s with value 0"]
+impl crate::ResetValue for super::LNA {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<LNA_SPEC>> for R {
-    fn from(reader: crate::R<LNA_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `lna` writer"]
-pub struct W(crate::W<LNA_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<LNA_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<LNA_SPEC>> for W {
-    fn from(writer: crate::W<LNA_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `lna_lg_gsel` reader - "]
-pub struct LNA_LG_GSEL_R(crate::FieldReader<u8, u8>);
-impl LNA_LG_GSEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_LG_GSEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_LG_GSEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_lg_gsel` writer - "]
+#[doc = "Reader of field `lna_lg_gsel`"]
+pub type LNA_LG_GSEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_lg_gsel`"]
 pub struct LNA_LG_GSEL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> LNA_LG_GSEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_cap_lg` reader - "]
-pub struct LNA_CAP_LG_R(crate::FieldReader<u8, u8>);
-impl LNA_CAP_LG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_CAP_LG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_CAP_LG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_cap_lg` writer - "]
+#[doc = "Reader of field `lna_cap_lg`"]
+pub type LNA_CAP_LG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_cap_lg`"]
 pub struct LNA_CAP_LG_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> LNA_CAP_LG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_rfb_match` reader - "]
-pub struct LNA_RFB_MATCH_R(crate::FieldReader<u8, u8>);
-impl LNA_RFB_MATCH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_RFB_MATCH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_RFB_MATCH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_rfb_match` writer - "]
+#[doc = "Reader of field `lna_rfb_match`"]
+pub type LNA_RFB_MATCH_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_rfb_match`"]
 pub struct LNA_RFB_MATCH_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> LNA_RFB_MATCH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_load_csw_hw` reader - "]
-pub struct LNA_LOAD_CSW_HW_R(crate::FieldReader<u8, u8>);
-impl LNA_LOAD_CSW_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_LOAD_CSW_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_LOAD_CSW_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_load_csw_hw` writer - "]
+#[doc = "Reader of field `lna_load_csw_hw`"]
+pub type LNA_LOAD_CSW_HW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_load_csw_hw`"]
 pub struct LNA_LOAD_CSW_HW_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> LNA_LOAD_CSW_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_load_csw` reader - "]
-pub struct LNA_LOAD_CSW_R(crate::FieldReader<u8, u8>);
-impl LNA_LOAD_CSW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_LOAD_CSW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_LOAD_CSW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_load_csw` writer - "]
+#[doc = "Reader of field `lna_load_csw`"]
+pub type LNA_LOAD_CSW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_load_csw`"]
 pub struct LNA_LOAD_CSW_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> LNA_LOAD_CSW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_bm_hw` reader - "]
-pub struct LNA_BM_HW_R(crate::FieldReader<u8, u8>);
-impl LNA_BM_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_BM_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_BM_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_bm_hw` writer - "]
+#[doc = "Reader of field `lna_bm_hw`"]
+pub type LNA_BM_HW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_bm_hw`"]
 pub struct LNA_BM_HW_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> LNA_BM_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lna_bm` reader - "]
-pub struct LNA_BM_R(crate::FieldReader<u8, u8>);
-impl LNA_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LNA_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LNA_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lna_bm` writer - "]
+#[doc = "Reader of field `lna_bm`"]
+pub type LNA_BM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lna_bm`"]
 pub struct LNA_BM_W<'a> {
     w: &'a mut W,
 }
@@ -286,30 +180,5 @@ impl W {
     #[inline(always)]
     pub fn lna_bm(&mut self) -> LNA_BM_W {
         LNA_BM_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "lna.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lna](index.html) module"]
-pub struct LNA_SPEC;
-impl crate::RegisterSpec for LNA_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [lna::R](R) reader structure"]
-impl crate::Readable for LNA_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [lna::W](W) writer structure"]
-impl crate::Writable for LNA_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets lna to value 0"]
-impl crate::Resettable for LNA_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `rfcal_stateen` reader"]
-pub struct R(crate::R<RFCAL_STATEEN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RFCAL_STATEEN_SPEC>;
+#[doc = "Reader of register rfcal_stateen"]
+pub type R = crate::R<u32, super::RFCAL_STATEEN>;
+#[doc = "Writer for register rfcal_stateen"]
+pub type W = crate::W<u32, super::RFCAL_STATEEN>;
+#[doc = "Register rfcal_stateen `reset()`'s with value 0"]
+impl crate::ResetValue for super::RFCAL_STATEEN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RFCAL_STATEEN_SPEC>> for R {
-    fn from(reader: crate::R<RFCAL_STATEEN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rfcal_stateen` writer"]
-pub struct W(crate::W<RFCAL_STATEEN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RFCAL_STATEEN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RFCAL_STATEEN_SPEC>> for W {
-    fn from(writer: crate::W<RFCAL_STATEEN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rfcal_level` reader - "]
-pub struct RFCAL_LEVEL_R(crate::FieldReader<u8, u8>);
-impl RFCAL_LEVEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RFCAL_LEVEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RFCAL_LEVEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rfcal_level` writer - "]
+#[doc = "Reader of field `rfcal_level`"]
+pub type RFCAL_LEVEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rfcal_level`"]
 pub struct RFCAL_LEVEL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RFCAL_LEVEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dpd_sten` reader - "]
-pub struct DPD_STEN_R(crate::FieldReader<bool, bool>);
-impl DPD_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DPD_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DPD_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dpd_sten` writer - "]
+#[doc = "Reader of field `dpd_sten`"]
+pub type DPD_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dpd_sten`"]
 pub struct DPD_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> DPD_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tsencal_sten` reader - "]
-pub struct TSENCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl TSENCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TSENCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TSENCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tsencal_sten` writer - "]
+#[doc = "Reader of field `tsencal_sten`"]
+pub type TSENCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tsencal_sten`"]
 pub struct TSENCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> TSENCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwdet_cal_sten` reader - "]
-pub struct PWDET_CAL_STEN_R(crate::FieldReader<bool, bool>);
-impl PWDET_CAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWDET_CAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWDET_CAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwdet_cal_sten` writer - "]
+#[doc = "Reader of field `pwdet_cal_sten`"]
+pub type PWDET_CAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwdet_cal_sten`"]
 pub struct PWDET_CAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> PWDET_CAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `riqcal_sten` reader - "]
-pub struct RIQCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl RIQCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RIQCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RIQCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `riqcal_sten` writer - "]
+#[doc = "Reader of field `riqcal_sten`"]
+pub type RIQCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `riqcal_sten`"]
 pub struct RIQCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> RIQCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tiqcal_sten` reader - "]
-pub struct TIQCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl TIQCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIQCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIQCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tiqcal_sten` writer - "]
+#[doc = "Reader of field `tiqcal_sten`"]
+pub type TIQCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tiqcal_sten`"]
 pub struct TIQCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> TIQCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_leakcal_sten` reader - "]
-pub struct LO_LEAKCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl LO_LEAKCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_LEAKCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_LEAKCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_leakcal_sten` writer - "]
+#[doc = "Reader of field `lo_leakcal_sten`"]
+pub type LO_LEAKCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_leakcal_sten`"]
 pub struct LO_LEAKCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> LO_LEAKCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rccal_sten` reader - "]
-pub struct RCCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl RCCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rccal_sten` writer - "]
+#[doc = "Reader of field `rccal_sten`"]
+pub type RCCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rccal_sten`"]
 pub struct RCCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> RCCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `toscal_sten_resv` reader - "]
-pub struct TOSCAL_STEN_RESV_R(crate::FieldReader<bool, bool>);
-impl TOSCAL_STEN_RESV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TOSCAL_STEN_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TOSCAL_STEN_RESV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `toscal_sten_resv` writer - "]
+#[doc = "Reader of field `toscal_sten_resv`"]
+pub type TOSCAL_STEN_RESV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `toscal_sten_resv`"]
 pub struct TOSCAL_STEN_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -346,21 +216,9 @@ impl<'a> TOSCAL_STEN_RESV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `roscal_sten` reader - "]
-pub struct ROSCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl ROSCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `roscal_sten` writer - "]
+#[doc = "Reader of field `roscal_sten`"]
+pub type ROSCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `roscal_sten`"]
 pub struct ROSCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -382,21 +240,9 @@ impl<'a> ROSCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_cal_sten` reader - "]
-pub struct CLKPLL_CAL_STEN_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_CAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_CAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_CAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_cal_sten` writer - "]
+#[doc = "Reader of field `clkpll_cal_sten`"]
+pub type CLKPLL_CAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_cal_sten`"]
 pub struct CLKPLL_CAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -418,21 +264,9 @@ impl<'a> CLKPLL_CAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `inc_acal_sten` reader - "]
-pub struct INC_ACAL_STEN_R(crate::FieldReader<bool, bool>);
-impl INC_ACAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_ACAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_ACAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_acal_sten` writer - "]
+#[doc = "Reader of field `inc_acal_sten`"]
+pub type INC_ACAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `inc_acal_sten`"]
 pub struct INC_ACAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -454,21 +288,9 @@ impl<'a> INC_ACAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `inc_fcal_sten` reader - "]
-pub struct INC_FCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl INC_FCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_FCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_sten` writer - "]
+#[doc = "Reader of field `inc_fcal_sten`"]
+pub type INC_FCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `inc_fcal_sten`"]
 pub struct INC_FCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -490,21 +312,9 @@ impl<'a> INC_FCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_sten` reader - "]
-pub struct ACAL_STEN_R(crate::FieldReader<bool, bool>);
-impl ACAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_sten` writer - "]
+#[doc = "Reader of field `acal_sten`"]
+pub type ACAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acal_sten`"]
 pub struct ACAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -526,21 +336,9 @@ impl<'a> ACAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fcal_sten` reader - "]
-pub struct FCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl FCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_sten` writer - "]
+#[doc = "Reader of field `fcal_sten`"]
+pub type FCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `fcal_sten`"]
 pub struct FCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -562,21 +360,9 @@ impl<'a> FCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dl_rfcal_table_sten` reader - "]
-pub struct DL_RFCAL_TABLE_STEN_R(crate::FieldReader<bool, bool>);
-impl DL_RFCAL_TABLE_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DL_RFCAL_TABLE_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DL_RFCAL_TABLE_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dl_rfcal_table_sten` writer - "]
+#[doc = "Reader of field `dl_rfcal_table_sten`"]
+pub type DL_RFCAL_TABLE_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dl_rfcal_table_sten`"]
 pub struct DL_RFCAL_TABLE_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -598,21 +384,9 @@ impl<'a> DL_RFCAL_TABLE_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_oscal_sten` reader - "]
-pub struct ADC_OSCAL_STEN_R(crate::FieldReader<bool, bool>);
-impl ADC_OSCAL_STEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_OSCAL_STEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_OSCAL_STEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_oscal_sten` writer - "]
+#[doc = "Reader of field `adc_oscal_sten`"]
+pub type ADC_OSCAL_STEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_oscal_sten`"]
 pub struct ADC_OSCAL_STEN_W<'a> {
     w: &'a mut W,
 }
@@ -634,21 +408,9 @@ impl<'a> ADC_OSCAL_STEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rcal_sten_resv` reader - "]
-pub struct RCAL_STEN_RESV_R(crate::FieldReader<bool, bool>);
-impl RCAL_STEN_RESV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCAL_STEN_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCAL_STEN_RESV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rcal_sten_resv` writer - "]
+#[doc = "Reader of field `rcal_sten_resv`"]
+pub type RCAL_STEN_RESV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rcal_sten_resv`"]
 pub struct RCAL_STEN_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -852,30 +614,5 @@ impl W {
     #[inline(always)]
     pub fn rcal_sten_resv(&mut self) -> RCAL_STEN_RESV_W {
         RCAL_STEN_RESV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rf calibration state enabl in full cal list\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rfcal_stateen](index.html) module"]
-pub struct RFCAL_STATEEN_SPEC;
-impl crate::RegisterSpec for RFCAL_STATEEN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rfcal_stateen::R](R) reader structure"]
-impl crate::Readable for RFCAL_STATEEN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rfcal_stateen::W](W) writer structure"]
-impl crate::Writable for RFCAL_STATEEN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rfcal_stateen to value 0"]
-impl crate::Resettable for RFCAL_STATEEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

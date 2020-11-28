@@ -1,52 +1,18 @@
-#[doc = "Register `hit_cnt_lsb` reader"]
-pub struct R(crate::R<HIT_CNT_LSB_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HIT_CNT_LSB_SPEC>;
+#[doc = "Reader of register hit_cnt_lsb"]
+pub type R = crate::R<u32, super::HIT_CNT_LSB>;
+#[doc = "Writer for register hit_cnt_lsb"]
+pub type W = crate::W<u32, super::HIT_CNT_LSB>;
+#[doc = "Register hit_cnt_lsb `reset()`'s with value 0"]
+impl crate::ResetValue for super::HIT_CNT_LSB {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HIT_CNT_LSB_SPEC>> for R {
-    fn from(reader: crate::R<HIT_CNT_LSB_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `hit_cnt_lsb` writer"]
-pub struct W(crate::W<HIT_CNT_LSB_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HIT_CNT_LSB_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HIT_CNT_LSB_SPEC>> for W {
-    fn from(writer: crate::W<HIT_CNT_LSB_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hit_cnt_lsb` reader - "]
-pub struct HIT_CNT_LSB_R(crate::FieldReader<u32, u32>);
-impl HIT_CNT_LSB_R {
-    pub(crate) fn new(bits: u32) -> Self {
-        HIT_CNT_LSB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HIT_CNT_LSB_R {
-    type Target = crate::FieldReader<u32, u32>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hit_cnt_lsb` writer - "]
+#[doc = "Reader of field `hit_cnt_lsb`"]
+pub type HIT_CNT_LSB_R = crate::R<u32, u32>;
+#[doc = "Write proxy for field `hit_cnt_lsb`"]
 pub struct HIT_CNT_LSB_W<'a> {
     w: &'a mut W,
 }
@@ -70,30 +36,5 @@ impl W {
     #[inline(always)]
     pub fn hit_cnt_lsb(&mut self) -> HIT_CNT_LSB_W {
         HIT_CNT_LSB_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "hit_cnt_lsb.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hit_cnt_lsb](index.html) module"]
-pub struct HIT_CNT_LSB_SPEC;
-impl crate::RegisterSpec for HIT_CNT_LSB_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hit_cnt_lsb::R](R) reader structure"]
-impl crate::Readable for HIT_CNT_LSB_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hit_cnt_lsb::W](W) writer structure"]
-impl crate::Writable for HIT_CNT_LSB_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets hit_cnt_lsb to value 0"]
-impl crate::Resettable for HIT_CNT_LSB_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `irrx_swm_fifo_config_0` reader"]
-pub struct R(crate::R<IRRX_SWM_FIFO_CONFIG_0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<IRRX_SWM_FIFO_CONFIG_0_SPEC>;
+#[doc = "Reader of register irrx_swm_fifo_config_0"]
+pub type R = crate::R<u32, super::IRRX_SWM_FIFO_CONFIG_0>;
+#[doc = "Writer for register irrx_swm_fifo_config_0"]
+pub type W = crate::W<u32, super::IRRX_SWM_FIFO_CONFIG_0>;
+#[doc = "Register irrx_swm_fifo_config_0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::IRRX_SWM_FIFO_CONFIG_0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<IRRX_SWM_FIFO_CONFIG_0_SPEC>> for R {
-    fn from(reader: crate::R<IRRX_SWM_FIFO_CONFIG_0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `irrx_swm_fifo_config_0` writer"]
-pub struct W(crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>> for W {
-    fn from(writer: crate::W<IRRX_SWM_FIFO_CONFIG_0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rx_fifo_cnt` reader - "]
-pub struct RX_FIFO_CNT_R(crate::FieldReader<u8, u8>);
-impl RX_FIFO_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RX_FIFO_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_cnt` writer - "]
+#[doc = "Reader of field `rx_fifo_cnt`"]
+pub type RX_FIFO_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rx_fifo_cnt`"]
 pub struct RX_FIFO_CNT_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RX_FIFO_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rx_fifo_underflow` reader - "]
-pub struct RX_FIFO_UNDERFLOW_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_UNDERFLOW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_UNDERFLOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_UNDERFLOW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_underflow` writer - "]
+#[doc = "Reader of field `rx_fifo_underflow`"]
+pub type RX_FIFO_UNDERFLOW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rx_fifo_underflow`"]
 pub struct RX_FIFO_UNDERFLOW_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> RX_FIFO_UNDERFLOW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rx_fifo_overflow` reader - "]
-pub struct RX_FIFO_OVERFLOW_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_OVERFLOW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_OVERFLOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_OVERFLOW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_overflow` writer - "]
+#[doc = "Reader of field `rx_fifo_overflow`"]
+pub type RX_FIFO_OVERFLOW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rx_fifo_overflow`"]
 pub struct RX_FIFO_OVERFLOW_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> RX_FIFO_OVERFLOW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rx_fifo_clr` reader - "]
-pub struct RX_FIFO_CLR_R(crate::FieldReader<bool, bool>);
-impl RX_FIFO_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RX_FIFO_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RX_FIFO_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rx_fifo_clr` writer - "]
+#[doc = "Reader of field `rx_fifo_clr`"]
+pub type RX_FIFO_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rx_fifo_clr`"]
 pub struct RX_FIFO_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -208,30 +138,5 @@ impl W {
     #[inline(always)]
     pub fn rx_fifo_clr(&mut self) -> RX_FIFO_CLR_W {
         RX_FIFO_CLR_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "irrx_swm_fifo_config_0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [irrx_swm_fifo_config_0](index.html) module"]
-pub struct IRRX_SWM_FIFO_CONFIG_0_SPEC;
-impl crate::RegisterSpec for IRRX_SWM_FIFO_CONFIG_0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [irrx_swm_fifo_config_0::R](R) reader structure"]
-impl crate::Readable for IRRX_SWM_FIFO_CONFIG_0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [irrx_swm_fifo_config_0::W](W) writer structure"]
-impl crate::Writable for IRRX_SWM_FIFO_CONFIG_0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets irrx_swm_fifo_config_0 to value 0"]
-impl crate::Resettable for IRRX_SWM_FIFO_CONFIG_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

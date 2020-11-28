@@ -1,52 +1,18 @@
-#[doc = "Register `DIG32K_WAKEUP_CTRL` reader"]
-pub struct R(crate::R<DIG32K_WAKEUP_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DIG32K_WAKEUP_CTRL_SPEC>;
+#[doc = "Reader of register DIG32K_WAKEUP_CTRL"]
+pub type R = crate::R<u32, super::DIG32K_WAKEUP_CTRL>;
+#[doc = "Writer for register DIG32K_WAKEUP_CTRL"]
+pub type W = crate::W<u32, super::DIG32K_WAKEUP_CTRL>;
+#[doc = "Register DIG32K_WAKEUP_CTRL `reset()`'s with value 0"]
+impl crate::ResetValue for super::DIG32K_WAKEUP_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DIG32K_WAKEUP_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<DIG32K_WAKEUP_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `DIG32K_WAKEUP_CTRL` writer"]
-pub struct W(crate::W<DIG32K_WAKEUP_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DIG32K_WAKEUP_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DIG32K_WAKEUP_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<DIG32K_WAKEUP_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `reg_en_platform_wakeup` reader - "]
-pub struct REG_EN_PLATFORM_WAKEUP_R(crate::FieldReader<bool, bool>);
-impl REG_EN_PLATFORM_WAKEUP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_EN_PLATFORM_WAKEUP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_EN_PLATFORM_WAKEUP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_en_platform_wakeup` writer - "]
+#[doc = "Reader of field `reg_en_platform_wakeup`"]
+pub type REG_EN_PLATFORM_WAKEUP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_en_platform_wakeup`"]
 pub struct REG_EN_PLATFORM_WAKEUP_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> REG_EN_PLATFORM_WAKEUP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_clk_src_sel` reader - "]
-pub struct DIG_CLK_SRC_SEL_R(crate::FieldReader<bool, bool>);
-impl DIG_CLK_SRC_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DIG_CLK_SRC_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_CLK_SRC_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_clk_src_sel` writer - "]
+#[doc = "Reader of field `dig_clk_src_sel`"]
+pub type DIG_CLK_SRC_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dig_clk_src_sel`"]
 pub struct DIG_CLK_SRC_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> DIG_CLK_SRC_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_512k_comp` reader - "]
-pub struct DIG_512K_COMP_R(crate::FieldReader<bool, bool>);
-impl DIG_512K_COMP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DIG_512K_COMP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_512K_COMP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_512k_comp` writer - "]
+#[doc = "Reader of field `dig_512k_comp`"]
+pub type DIG_512K_COMP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dig_512k_comp`"]
 pub struct DIG_512K_COMP_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> DIG_512K_COMP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_512k_en` reader - "]
-pub struct DIG_512K_EN_R(crate::FieldReader<bool, bool>);
-impl DIG_512K_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DIG_512K_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_512K_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_512k_en` writer - "]
+#[doc = "Reader of field `dig_512k_en`"]
+pub type DIG_512K_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dig_512k_en`"]
 pub struct DIG_512K_EN_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> DIG_512K_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_512k_div` reader - "]
-pub struct DIG_512K_DIV_R(crate::FieldReader<u8, u8>);
-impl DIG_512K_DIV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DIG_512K_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_512K_DIV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_512k_div` writer - "]
+#[doc = "Reader of field `dig_512k_div`"]
+pub type DIG_512K_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dig_512k_div`"]
 pub struct DIG_512K_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> DIG_512K_DIV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_32k_comp` reader - "]
-pub struct DIG_32K_COMP_R(crate::FieldReader<bool, bool>);
-impl DIG_32K_COMP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DIG_32K_COMP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_32K_COMP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_32k_comp` writer - "]
+#[doc = "Reader of field `dig_32k_comp`"]
+pub type DIG_32K_COMP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dig_32k_comp`"]
 pub struct DIG_32K_COMP_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> DIG_32K_COMP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_32k_en` reader - "]
-pub struct DIG_32K_EN_R(crate::FieldReader<bool, bool>);
-impl DIG_32K_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DIG_32K_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_32K_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_32k_en` writer - "]
+#[doc = "Reader of field `dig_32k_en`"]
+pub type DIG_32K_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dig_32k_en`"]
 pub struct DIG_32K_EN_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> DIG_32K_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dig_32k_div` reader - "]
-pub struct DIG_32K_DIV_R(crate::FieldReader<u16, u16>);
-impl DIG_32K_DIV_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        DIG_32K_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DIG_32K_DIV_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dig_32k_div` writer - "]
+#[doc = "Reader of field `dig_32k_div`"]
+pub type DIG_32K_DIV_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `dig_32k_div`"]
 pub struct DIG_32K_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -382,30 +264,5 @@ impl W {
     #[inline(always)]
     pub fn dig_32k_div(&mut self) -> DIG_32K_DIV_W {
         DIG_32K_DIV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "DIG32K_WAKEUP_CTRL.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dig32k_wakeup_ctrl](index.html) module"]
-pub struct DIG32K_WAKEUP_CTRL_SPEC;
-impl crate::RegisterSpec for DIG32K_WAKEUP_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [dig32k_wakeup_ctrl::R](R) reader structure"]
-impl crate::Readable for DIG32K_WAKEUP_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [dig32k_wakeup_ctrl::W](W) writer structure"]
-impl crate::Writable for DIG32K_WAKEUP_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets DIG32K_WAKEUP_CTRL to value 0"]
-impl crate::Resettable for DIG32K_WAKEUP_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

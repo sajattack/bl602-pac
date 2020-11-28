@@ -1,52 +1,18 @@
-#[doc = "Register `glb_parm` reader"]
-pub struct R(crate::R<GLB_PARM_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<GLB_PARM_SPEC>;
+#[doc = "Reader of register glb_parm"]
+pub type R = crate::R<u32, super::GLB_PARM>;
+#[doc = "Writer for register glb_parm"]
+pub type W = crate::W<u32, super::GLB_PARM>;
+#[doc = "Register glb_parm `reset()`'s with value 0"]
+impl crate::ResetValue for super::GLB_PARM {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<GLB_PARM_SPEC>> for R {
-    fn from(reader: crate::R<GLB_PARM_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `glb_parm` writer"]
-pub struct W(crate::W<GLB_PARM_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<GLB_PARM_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<GLB_PARM_SPEC>> for W {
-    fn from(writer: crate::W<GLB_PARM_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `uart_swap_set` reader - "]
-pub struct UART_SWAP_SET_R(crate::FieldReader<u8, u8>);
-impl UART_SWAP_SET_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SWAP_SET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SWAP_SET_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_swap_set` writer - "]
+#[doc = "Reader of field `uart_swap_set`"]
+pub type UART_SWAP_SET_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_swap_set`"]
 pub struct UART_SWAP_SET_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> UART_SWAP_SET_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p7_jtag_use_io_2_5` reader - "]
-pub struct P7_JTAG_USE_IO_2_5_R(crate::FieldReader<bool, bool>);
-impl P7_JTAG_USE_IO_2_5_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P7_JTAG_USE_IO_2_5_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P7_JTAG_USE_IO_2_5_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p7_jtag_use_io_2_5` writer - "]
+#[doc = "Reader of field `p7_jtag_use_io_2_5`"]
+pub type P7_JTAG_USE_IO_2_5_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p7_jtag_use_io_2_5`"]
 pub struct P7_JTAG_USE_IO_2_5_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> P7_JTAG_USE_IO_2_5_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p6_sdio_use_io_0_5` reader - "]
-pub struct P6_SDIO_USE_IO_0_5_R(crate::FieldReader<bool, bool>);
-impl P6_SDIO_USE_IO_0_5_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P6_SDIO_USE_IO_0_5_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P6_SDIO_USE_IO_0_5_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p6_sdio_use_io_0_5` writer - "]
+#[doc = "Reader of field `p6_sdio_use_io_0_5`"]
+pub type P6_SDIO_USE_IO_0_5_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p6_sdio_use_io_0_5`"]
 pub struct P6_SDIO_USE_IO_0_5_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> P6_SDIO_USE_IO_0_5_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p5_dac_test_with_jtag` reader - "]
-pub struct P5_DAC_TEST_WITH_JTAG_R(crate::FieldReader<bool, bool>);
-impl P5_DAC_TEST_WITH_JTAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P5_DAC_TEST_WITH_JTAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P5_DAC_TEST_WITH_JTAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p5_dac_test_with_jtag` writer - "]
+#[doc = "Reader of field `p5_dac_test_with_jtag`"]
+pub type P5_DAC_TEST_WITH_JTAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p5_dac_test_with_jtag`"]
 pub struct P5_DAC_TEST_WITH_JTAG_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> P5_DAC_TEST_WITH_JTAG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p4_adc_test_with_jtag` reader - "]
-pub struct P4_ADC_TEST_WITH_JTAG_R(crate::FieldReader<bool, bool>);
-impl P4_ADC_TEST_WITH_JTAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P4_ADC_TEST_WITH_JTAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P4_ADC_TEST_WITH_JTAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p4_adc_test_with_jtag` writer - "]
+#[doc = "Reader of field `p4_adc_test_with_jtag`"]
+pub type P4_ADC_TEST_WITH_JTAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p4_adc_test_with_jtag`"]
 pub struct P4_ADC_TEST_WITH_JTAG_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> P4_ADC_TEST_WITH_JTAG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p3_cci_use_io_2_5` reader - "]
-pub struct P3_CCI_USE_IO_2_5_R(crate::FieldReader<bool, bool>);
-impl P3_CCI_USE_IO_2_5_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P3_CCI_USE_IO_2_5_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P3_CCI_USE_IO_2_5_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p3_cci_use_io_2_5` writer - "]
+#[doc = "Reader of field `p3_cci_use_io_2_5`"]
+pub type P3_CCI_USE_IO_2_5_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p3_cci_use_io_2_5`"]
 pub struct P3_CCI_USE_IO_2_5_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> P3_CCI_USE_IO_2_5_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p2_dac_test_with_cci` reader - "]
-pub struct P2_DAC_TEST_WITH_CCI_R(crate::FieldReader<bool, bool>);
-impl P2_DAC_TEST_WITH_CCI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P2_DAC_TEST_WITH_CCI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P2_DAC_TEST_WITH_CCI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p2_dac_test_with_cci` writer - "]
+#[doc = "Reader of field `p2_dac_test_with_cci`"]
+pub type P2_DAC_TEST_WITH_CCI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p2_dac_test_with_cci`"]
 pub struct P2_DAC_TEST_WITH_CCI_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> P2_DAC_TEST_WITH_CCI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `p1_adc_test_with_cci` reader - "]
-pub struct P1_ADC_TEST_WITH_CCI_R(crate::FieldReader<bool, bool>);
-impl P1_ADC_TEST_WITH_CCI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        P1_ADC_TEST_WITH_CCI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for P1_ADC_TEST_WITH_CCI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `p1_adc_test_with_cci` writer - "]
+#[doc = "Reader of field `p1_adc_test_with_cci`"]
+pub type P1_ADC_TEST_WITH_CCI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `p1_adc_test_with_cci`"]
 pub struct P1_ADC_TEST_WITH_CCI_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> P1_ADC_TEST_WITH_CCI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_cci_use_sdio_pin` reader - "]
-pub struct REG_CCI_USE_SDIO_PIN_R(crate::FieldReader<bool, bool>);
-impl REG_CCI_USE_SDIO_PIN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_CCI_USE_SDIO_PIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_CCI_USE_SDIO_PIN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_cci_use_sdio_pin` writer - "]
+#[doc = "Reader of field `reg_cci_use_sdio_pin`"]
+pub type REG_CCI_USE_SDIO_PIN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_cci_use_sdio_pin`"]
 pub struct REG_CCI_USE_SDIO_PIN_W<'a> {
     w: &'a mut W,
 }
@@ -346,21 +216,9 @@ impl<'a> REG_CCI_USE_SDIO_PIN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_cci_use_jtag_pin` reader - "]
-pub struct REG_CCI_USE_JTAG_PIN_R(crate::FieldReader<bool, bool>);
-impl REG_CCI_USE_JTAG_PIN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_CCI_USE_JTAG_PIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_CCI_USE_JTAG_PIN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_cci_use_jtag_pin` writer - "]
+#[doc = "Reader of field `reg_cci_use_jtag_pin`"]
+pub type REG_CCI_USE_JTAG_PIN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_cci_use_jtag_pin`"]
 pub struct REG_CCI_USE_JTAG_PIN_W<'a> {
     w: &'a mut W,
 }
@@ -382,21 +240,9 @@ impl<'a> REG_CCI_USE_JTAG_PIN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_spi_0_swap` reader - "]
-pub struct REG_SPI_0_SWAP_R(crate::FieldReader<bool, bool>);
-impl REG_SPI_0_SWAP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_SPI_0_SWAP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_SPI_0_SWAP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_spi_0_swap` writer - "]
+#[doc = "Reader of field `reg_spi_0_swap`"]
+pub type REG_SPI_0_SWAP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_spi_0_swap`"]
 pub struct REG_SPI_0_SWAP_W<'a> {
     w: &'a mut W,
 }
@@ -418,21 +264,9 @@ impl<'a> REG_SPI_0_SWAP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_spi_0_master_mode` reader - "]
-pub struct REG_SPI_0_MASTER_MODE_R(crate::FieldReader<bool, bool>);
-impl REG_SPI_0_MASTER_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_SPI_0_MASTER_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_SPI_0_MASTER_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_spi_0_master_mode` writer - "]
+#[doc = "Reader of field `reg_spi_0_master_mode`"]
+pub type REG_SPI_0_MASTER_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_spi_0_master_mode`"]
 pub struct REG_SPI_0_MASTER_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -454,21 +288,9 @@ impl<'a> REG_SPI_0_MASTER_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sel_embedded_sflash` reader - "]
-pub struct SEL_EMBEDDED_SFLASH_R(crate::FieldReader<bool, bool>);
-impl SEL_EMBEDDED_SFLASH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SEL_EMBEDDED_SFLASH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SEL_EMBEDDED_SFLASH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sel_embedded_sflash` writer - "]
+#[doc = "Reader of field `sel_embedded_sflash`"]
+pub type SEL_EMBEDDED_SFLASH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sel_embedded_sflash`"]
 pub struct SEL_EMBEDDED_SFLASH_W<'a> {
     w: &'a mut W,
 }
@@ -490,21 +312,9 @@ impl<'a> SEL_EMBEDDED_SFLASH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `swap_sflash_io_3_io_0` reader - "]
-pub struct SWAP_SFLASH_IO_3_IO_0_R(crate::FieldReader<bool, bool>);
-impl SWAP_SFLASH_IO_3_IO_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SWAP_SFLASH_IO_3_IO_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SWAP_SFLASH_IO_3_IO_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `swap_sflash_io_3_io_0` writer - "]
+#[doc = "Reader of field `swap_sflash_io_3_io_0`"]
+pub type SWAP_SFLASH_IO_3_IO_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `swap_sflash_io_3_io_0`"]
 pub struct SWAP_SFLASH_IO_3_IO_0_W<'a> {
     w: &'a mut W,
 }
@@ -526,21 +336,9 @@ impl<'a> SWAP_SFLASH_IO_3_IO_0_W<'a> {
         self.w
     }
 }
-#[doc = "Field `jtag_swap_set` reader - "]
-pub struct JTAG_SWAP_SET_R(crate::FieldReader<u8, u8>);
-impl JTAG_SWAP_SET_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        JTAG_SWAP_SET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for JTAG_SWAP_SET_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `jtag_swap_set` writer - "]
+#[doc = "Reader of field `jtag_swap_set`"]
+pub type JTAG_SWAP_SET_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `jtag_swap_set`"]
 pub struct JTAG_SWAP_SET_W<'a> {
     w: &'a mut W,
 }
@@ -552,21 +350,9 @@ impl<'a> JTAG_SWAP_SET_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_ext_rst_smt` reader - "]
-pub struct REG_EXT_RST_SMT_R(crate::FieldReader<bool, bool>);
-impl REG_EXT_RST_SMT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_EXT_RST_SMT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_EXT_RST_SMT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_ext_rst_smt` writer - "]
+#[doc = "Reader of field `reg_ext_rst_smt`"]
+pub type REG_EXT_RST_SMT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_ext_rst_smt`"]
 pub struct REG_EXT_RST_SMT_W<'a> {
     w: &'a mut W,
 }
@@ -588,21 +374,9 @@ impl<'a> REG_EXT_RST_SMT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_bd_en` reader - "]
-pub struct REG_BD_EN_R(crate::FieldReader<bool, bool>);
-impl REG_BD_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_BD_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_BD_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_bd_en` writer - "]
+#[doc = "Reader of field `reg_bd_en`"]
+pub type REG_BD_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_bd_en`"]
 pub struct REG_BD_EN_W<'a> {
     w: &'a mut W,
 }
@@ -796,30 +570,5 @@ impl W {
     #[inline(always)]
     pub fn reg_bd_en(&mut self) -> REG_BD_EN_W {
         REG_BD_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "glb_parm.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [glb_parm](index.html) module"]
-pub struct GLB_PARM_SPEC;
-impl crate::RegisterSpec for GLB_PARM_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [glb_parm::R](R) reader structure"]
-impl crate::Readable for GLB_PARM_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [glb_parm::W](W) writer structure"]
-impl crate::Writable for GLB_PARM_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets glb_parm to value 0"]
-impl crate::Resettable for GLB_PARM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

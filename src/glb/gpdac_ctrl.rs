@@ -1,52 +1,18 @@
-#[doc = "Register `gpdac_ctrl` reader"]
-pub struct R(crate::R<GPDAC_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<GPDAC_CTRL_SPEC>;
+#[doc = "Reader of register gpdac_ctrl"]
+pub type R = crate::R<u32, super::GPDAC_CTRL>;
+#[doc = "Writer for register gpdac_ctrl"]
+pub type W = crate::W<u32, super::GPDAC_CTRL>;
+#[doc = "Register gpdac_ctrl `reset()`'s with value 0"]
+impl crate::ResetValue for super::GPDAC_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<GPDAC_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<GPDAC_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `gpdac_ctrl` writer"]
-pub struct W(crate::W<GPDAC_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<GPDAC_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<GPDAC_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<GPDAC_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `gpdac_reserved` reader - "]
-pub struct GPDAC_RESERVED_R(crate::FieldReader<u8, u8>);
-impl GPDAC_RESERVED_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPDAC_RESERVED_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_RESERVED_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdac_reserved` writer - "]
+#[doc = "Reader of field `gpdac_reserved`"]
+pub type GPDAC_RESERVED_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpdac_reserved`"]
 pub struct GPDAC_RESERVED_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> GPDAC_RESERVED_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpdac_test_sel` reader - "]
-pub struct GPDAC_TEST_SEL_R(crate::FieldReader<u8, u8>);
-impl GPDAC_TEST_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPDAC_TEST_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_TEST_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdac_test_sel` writer - "]
+#[doc = "Reader of field `gpdac_test_sel`"]
+pub type GPDAC_TEST_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpdac_test_sel`"]
 pub struct GPDAC_TEST_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> GPDAC_TEST_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpdac_ref_sel` reader - "]
-pub struct GPDAC_REF_SEL_R(crate::FieldReader<bool, bool>);
-impl GPDAC_REF_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPDAC_REF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_REF_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdac_ref_sel` writer - "]
+#[doc = "Reader of field `gpdac_ref_sel`"]
+pub type GPDAC_REF_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpdac_ref_sel`"]
 pub struct GPDAC_REF_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> GPDAC_REF_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpdac_test_en` reader - "]
-pub struct GPDAC_TEST_EN_R(crate::FieldReader<bool, bool>);
-impl GPDAC_TEST_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPDAC_TEST_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDAC_TEST_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdac_test_en` writer - "]
+#[doc = "Reader of field `gpdac_test_en`"]
+pub type GPDAC_TEST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpdac_test_en`"]
 pub struct GPDAC_TEST_EN_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> GPDAC_TEST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpdacb_rstn_ana` reader - "]
-pub struct GPDACB_RSTN_ANA_R(crate::FieldReader<bool, bool>);
-impl GPDACB_RSTN_ANA_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPDACB_RSTN_ANA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDACB_RSTN_ANA_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdacb_rstn_ana` writer - "]
+#[doc = "Reader of field `gpdacb_rstn_ana`"]
+pub type GPDACB_RSTN_ANA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpdacb_rstn_ana`"]
 pub struct GPDACB_RSTN_ANA_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> GPDACB_RSTN_ANA_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpdaca_rstn_ana` reader - "]
-pub struct GPDACA_RSTN_ANA_R(crate::FieldReader<bool, bool>);
-impl GPDACA_RSTN_ANA_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPDACA_RSTN_ANA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPDACA_RSTN_ANA_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpdaca_rstn_ana` writer - "]
+#[doc = "Reader of field `gpdaca_rstn_ana`"]
+pub type GPDACA_RSTN_ANA_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpdaca_rstn_ana`"]
 pub struct GPDACA_RSTN_ANA_W<'a> {
     w: &'a mut W,
 }
@@ -290,30 +196,5 @@ impl W {
     #[inline(always)]
     pub fn gpdaca_rstn_ana(&mut self) -> GPDACA_RSTN_ANA_W {
         GPDACA_RSTN_ANA_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "gpdac_ctrl.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gpdac_ctrl](index.html) module"]
-pub struct GPDAC_CTRL_SPEC;
-impl crate::RegisterSpec for GPDAC_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [gpdac_ctrl::R](R) reader structure"]
-impl crate::Readable for GPDAC_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [gpdac_ctrl::W](W) writer structure"]
-impl crate::Writable for GPDAC_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets gpdac_ctrl to value 0"]
-impl crate::Resettable for GPDAC_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

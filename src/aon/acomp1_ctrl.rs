@@ -1,52 +1,18 @@
-#[doc = "Register `acomp1_ctrl` reader"]
-pub struct R(crate::R<ACOMP1_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<ACOMP1_CTRL_SPEC>;
+#[doc = "Reader of register acomp1_ctrl"]
+pub type R = crate::R<u32, super::ACOMP1_CTRL>;
+#[doc = "Writer for register acomp1_ctrl"]
+pub type W = crate::W<u32, super::ACOMP1_CTRL>;
+#[doc = "Register acomp1_ctrl `reset()`'s with value 0"]
+impl crate::ResetValue for super::ACOMP1_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<ACOMP1_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<ACOMP1_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `acomp1_ctrl` writer"]
-pub struct W(crate::W<ACOMP1_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<ACOMP1_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<ACOMP1_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<ACOMP1_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `acomp1_muxen` reader - "]
-pub struct ACOMP1_MUXEN_R(crate::FieldReader<bool, bool>);
-impl ACOMP1_MUXEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACOMP1_MUXEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_MUXEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_muxen` writer - "]
+#[doc = "Reader of field `acomp1_muxen`"]
+pub type ACOMP1_MUXEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acomp1_muxen`"]
 pub struct ACOMP1_MUXEN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> ACOMP1_MUXEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_pos_sel` reader - "]
-pub struct ACOMP1_POS_SEL_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_POS_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_POS_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_POS_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_pos_sel` writer - "]
+#[doc = "Reader of field `acomp1_pos_sel`"]
+pub type ACOMP1_POS_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_pos_sel`"]
 pub struct ACOMP1_POS_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> ACOMP1_POS_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_neg_sel` reader - "]
-pub struct ACOMP1_NEG_SEL_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_NEG_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_NEG_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_NEG_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_neg_sel` writer - "]
+#[doc = "Reader of field `acomp1_neg_sel`"]
+pub type ACOMP1_NEG_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_neg_sel`"]
 pub struct ACOMP1_NEG_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> ACOMP1_NEG_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_level_sel` reader - "]
-pub struct ACOMP1_LEVEL_SEL_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_LEVEL_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_LEVEL_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_LEVEL_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_level_sel` writer - "]
+#[doc = "Reader of field `acomp1_level_sel`"]
+pub type ACOMP1_LEVEL_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_level_sel`"]
 pub struct ACOMP1_LEVEL_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> ACOMP1_LEVEL_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_bias_prog` reader - "]
-pub struct ACOMP1_BIAS_PROG_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_BIAS_PROG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_BIAS_PROG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_BIAS_PROG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_bias_prog` writer - "]
+#[doc = "Reader of field `acomp1_bias_prog`"]
+pub type ACOMP1_BIAS_PROG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_bias_prog`"]
 pub struct ACOMP1_BIAS_PROG_W<'a> {
     w: &'a mut W,
 }
@@ -172,21 +90,9 @@ impl<'a> ACOMP1_BIAS_PROG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_hyst_selp` reader - "]
-pub struct ACOMP1_HYST_SELP_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_HYST_SELP_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_HYST_SELP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_HYST_SELP_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_hyst_selp` writer - "]
+#[doc = "Reader of field `acomp1_hyst_selp`"]
+pub type ACOMP1_HYST_SELP_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_hyst_selp`"]
 pub struct ACOMP1_HYST_SELP_W<'a> {
     w: &'a mut W,
 }
@@ -198,21 +104,9 @@ impl<'a> ACOMP1_HYST_SELP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_hyst_seln` reader - "]
-pub struct ACOMP1_HYST_SELN_R(crate::FieldReader<u8, u8>);
-impl ACOMP1_HYST_SELN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACOMP1_HYST_SELN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_HYST_SELN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_hyst_seln` writer - "]
+#[doc = "Reader of field `acomp1_hyst_seln`"]
+pub type ACOMP1_HYST_SELN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acomp1_hyst_seln`"]
 pub struct ACOMP1_HYST_SELN_W<'a> {
     w: &'a mut W,
 }
@@ -224,21 +118,9 @@ impl<'a> ACOMP1_HYST_SELN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acomp1_en` reader - "]
-pub struct ACOMP1_EN_R(crate::FieldReader<bool, bool>);
-impl ACOMP1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACOMP1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACOMP1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acomp1_en` writer - "]
+#[doc = "Reader of field `acomp1_en`"]
+pub type ACOMP1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acomp1_en`"]
 pub struct ACOMP1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -342,30 +224,5 @@ impl W {
     #[inline(always)]
     pub fn acomp1_en(&mut self) -> ACOMP1_EN_W {
         ACOMP1_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "acomp1_ctrl.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [acomp1_ctrl](index.html) module"]
-pub struct ACOMP1_CTRL_SPEC;
-impl crate::RegisterSpec for ACOMP1_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [acomp1_ctrl::R](R) reader structure"]
-impl crate::Readable for ACOMP1_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [acomp1_ctrl::W](W) writer structure"]
-impl crate::Writable for ACOMP1_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets acomp1_ctrl to value 0"]
-impl crate::Resettable for ACOMP1_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

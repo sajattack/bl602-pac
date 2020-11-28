@@ -1,52 +1,18 @@
-#[doc = "Register `DMA_C3Control` reader"]
-pub struct R(crate::R<DMA_C3CONTROL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DMA_C3CONTROL_SPEC>;
+#[doc = "Reader of register DMA_C3Control"]
+pub type R = crate::R<u32, super::DMA_C3CONTROL>;
+#[doc = "Writer for register DMA_C3Control"]
+pub type W = crate::W<u32, super::DMA_C3CONTROL>;
+#[doc = "Register DMA_C3Control `reset()`'s with value 0"]
+impl crate::ResetValue for super::DMA_C3CONTROL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DMA_C3CONTROL_SPEC>> for R {
-    fn from(reader: crate::R<DMA_C3CONTROL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `DMA_C3Control` writer"]
-pub struct W(crate::W<DMA_C3CONTROL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DMA_C3CONTROL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DMA_C3CONTROL_SPEC>> for W {
-    fn from(writer: crate::W<DMA_C3CONTROL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `I` reader - "]
-pub struct I_R(crate::FieldReader<bool, bool>);
-impl I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `I` writer - "]
+#[doc = "Reader of field `I`"]
+pub type I_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `I`"]
 pub struct I_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `Prot` reader - "]
-pub struct PROT_R(crate::FieldReader<u8, u8>);
-impl PROT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PROT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PROT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `Prot` writer - "]
+#[doc = "Reader of field `Prot`"]
+pub type PROT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `Prot`"]
 pub struct PROT_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> PROT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `DI` reader - "]
-pub struct DI_R(crate::FieldReader<bool, bool>);
-impl DI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DI` writer - "]
+#[doc = "Reader of field `DI`"]
+pub type DI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `DI`"]
 pub struct DI_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> DI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `SI` reader - "]
-pub struct SI_R(crate::FieldReader<bool, bool>);
-impl SI_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SI_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SI_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SI` writer - "]
+#[doc = "Reader of field `SI`"]
+pub type SI_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `SI`"]
 pub struct SI_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> SI_W<'a> {
         self.w
     }
 }
-#[doc = "Field `DWidth` reader - "]
-pub struct DWIDTH_R(crate::FieldReader<u8, u8>);
-impl DWIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DWIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DWIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DWidth` writer - "]
+#[doc = "Reader of field `DWidth`"]
+pub type DWIDTH_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DWidth`"]
 pub struct DWIDTH_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> DWIDTH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `SWidth` reader - "]
-pub struct SWIDTH_R(crate::FieldReader<u8, u8>);
-impl SWIDTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SWIDTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SWIDTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SWidth` writer - "]
+#[doc = "Reader of field `SWidth`"]
+pub type SWIDTH_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SWidth`"]
 pub struct SWIDTH_W<'a> {
     w: &'a mut W,
 }
@@ -218,21 +124,9 @@ impl<'a> SWIDTH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `DBSize` reader - "]
-pub struct DBSIZE_R(crate::FieldReader<u8, u8>);
-impl DBSIZE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DBSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DBSIZE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `DBSize` writer - "]
+#[doc = "Reader of field `DBSize`"]
+pub type DBSIZE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `DBSize`"]
 pub struct DBSIZE_W<'a> {
     w: &'a mut W,
 }
@@ -244,21 +138,9 @@ impl<'a> DBSIZE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `SBSize` reader - "]
-pub struct SBSIZE_R(crate::FieldReader<u8, u8>);
-impl SBSIZE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SBSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SBSIZE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `SBSize` writer - "]
+#[doc = "Reader of field `SBSize`"]
+pub type SBSIZE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `SBSize`"]
 pub struct SBSIZE_W<'a> {
     w: &'a mut W,
 }
@@ -270,21 +152,9 @@ impl<'a> SBSIZE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `TransferSize` reader - "]
-pub struct TRANSFERSIZE_R(crate::FieldReader<u16, u16>);
-impl TRANSFERSIZE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TRANSFERSIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TRANSFERSIZE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `TransferSize` writer - "]
+#[doc = "Reader of field `TransferSize`"]
+pub type TRANSFERSIZE_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `TransferSize`"]
 pub struct TRANSFERSIZE_W<'a> {
     w: &'a mut W,
 }
@@ -388,30 +258,5 @@ impl W {
     #[inline(always)]
     pub fn transfer_size(&mut self) -> TRANSFERSIZE_W {
         TRANSFERSIZE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "DMA_C3Control.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dma_c3control](index.html) module"]
-pub struct DMA_C3CONTROL_SPEC;
-impl crate::RegisterSpec for DMA_C3CONTROL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [dma_c3control::R](R) reader structure"]
-impl crate::Readable for DMA_C3CONTROL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [dma_c3control::W](W) writer structure"]
-impl crate::Writable for DMA_C3CONTROL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets DMA_C3Control to value 0"]
-impl crate::Resettable for DMA_C3CONTROL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `utx_ir_position` reader"]
-pub struct R(crate::R<UTX_IR_POSITION_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<UTX_IR_POSITION_SPEC>;
+#[doc = "Reader of register utx_ir_position"]
+pub type R = crate::R<u32, super::UTX_IR_POSITION>;
+#[doc = "Writer for register utx_ir_position"]
+pub type W = crate::W<u32, super::UTX_IR_POSITION>;
+#[doc = "Register utx_ir_position `reset()`'s with value 0"]
+impl crate::ResetValue for super::UTX_IR_POSITION {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<UTX_IR_POSITION_SPEC>> for R {
-    fn from(reader: crate::R<UTX_IR_POSITION_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `utx_ir_position` writer"]
-pub struct W(crate::W<UTX_IR_POSITION_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<UTX_IR_POSITION_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<UTX_IR_POSITION_SPEC>> for W {
-    fn from(writer: crate::W<UTX_IR_POSITION_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_utx_ir_pos_p` reader - "]
-pub struct CR_UTX_IR_POS_P_R(crate::FieldReader<u16, u16>);
-impl CR_UTX_IR_POS_P_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_UTX_IR_POS_P_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_IR_POS_P_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_ir_pos_p` writer - "]
+#[doc = "Reader of field `cr_utx_ir_pos_p`"]
+pub type CR_UTX_IR_POS_P_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `cr_utx_ir_pos_p`"]
 pub struct CR_UTX_IR_POS_P_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> CR_UTX_IR_POS_P_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_utx_ir_pos_s` reader - "]
-pub struct CR_UTX_IR_POS_S_R(crate::FieldReader<u16, u16>);
-impl CR_UTX_IR_POS_S_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        CR_UTX_IR_POS_S_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_IR_POS_S_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_ir_pos_s` writer - "]
+#[doc = "Reader of field `cr_utx_ir_pos_s`"]
+pub type CR_UTX_IR_POS_S_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `cr_utx_ir_pos_s`"]
 pub struct CR_UTX_IR_POS_S_W<'a> {
     w: &'a mut W,
 }
@@ -106,30 +60,5 @@ impl W {
     #[inline(always)]
     pub fn cr_utx_ir_pos_s(&mut self) -> CR_UTX_IR_POS_S_W {
         CR_UTX_IR_POS_S_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "utx_ir_position.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [utx_ir_position](index.html) module"]
-pub struct UTX_IR_POSITION_SPEC;
-impl crate::RegisterSpec for UTX_IR_POSITION_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [utx_ir_position::R](R) reader structure"]
-impl crate::Readable for UTX_IR_POSITION_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [utx_ir_position::W](W) writer structure"]
-impl crate::Writable for UTX_IR_POSITION_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets utx_ir_position to value 0"]
-impl crate::Resettable for UTX_IR_POSITION_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

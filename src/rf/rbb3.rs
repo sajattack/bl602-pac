@@ -1,52 +1,18 @@
-#[doc = "Register `rbb3` reader"]
-pub struct R(crate::R<RBB3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RBB3_SPEC>;
+#[doc = "Reader of register rbb3"]
+pub type R = crate::R<u32, super::RBB3>;
+#[doc = "Writer for register rbb3"]
+pub type W = crate::W<u32, super::RBB3>;
+#[doc = "Register rbb3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::RBB3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RBB3_SPEC>> for R {
-    fn from(reader: crate::R<RBB3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rbb3` writer"]
-pub struct W(crate::W<RBB3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RBB3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RBB3_SPEC>> for W {
-    fn from(writer: crate::W<RBB3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pwr_det_en` reader - "]
-pub struct PWR_DET_EN_R(crate::FieldReader<bool, bool>);
-impl PWR_DET_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWR_DET_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWR_DET_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwr_det_en` writer - "]
+#[doc = "Reader of field `pwr_det_en`"]
+pub type PWR_DET_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwr_det_en`"]
 pub struct PWR_DET_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PWR_DET_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rxiqcal_en` reader - "]
-pub struct RXIQCAL_EN_R(crate::FieldReader<bool, bool>);
-impl RXIQCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RXIQCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RXIQCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rxiqcal_en` writer - "]
+#[doc = "Reader of field `rxiqcal_en`"]
+pub type RXIQCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rxiqcal_en`"]
 pub struct RXIQCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> RXIQCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bw` reader - "]
-pub struct RBB_BW_R(crate::FieldReader<u8, u8>);
-impl RBB_BW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_BW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bw` writer - "]
+#[doc = "Reader of field `rbb_bw`"]
+pub type RBB_BW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_bw`"]
 pub struct RBB_BW_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> RBB_BW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_tia_iqbias_short` reader - "]
-pub struct RBB_TIA_IQBIAS_SHORT_R(crate::FieldReader<bool, bool>);
-impl RBB_TIA_IQBIAS_SHORT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_TIA_IQBIAS_SHORT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_TIA_IQBIAS_SHORT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_tia_iqbias_short` writer - "]
+#[doc = "Reader of field `rbb_tia_iqbias_short`"]
+pub type RBB_TIA_IQBIAS_SHORT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_tia_iqbias_short`"]
 pub struct RBB_TIA_IQBIAS_SHORT_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> RBB_TIA_IQBIAS_SHORT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bq_iqbias_short` reader - "]
-pub struct RBB_BQ_IQBIAS_SHORT_R(crate::FieldReader<bool, bool>);
-impl RBB_BQ_IQBIAS_SHORT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_BQ_IQBIAS_SHORT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BQ_IQBIAS_SHORT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bq_iqbias_short` writer - "]
+#[doc = "Reader of field `rbb_bq_iqbias_short`"]
+pub type RBB_BQ_IQBIAS_SHORT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_bq_iqbias_short`"]
 pub struct RBB_BQ_IQBIAS_SHORT_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> RBB_BQ_IQBIAS_SHORT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_vcm` reader - "]
-pub struct RBB_VCM_R(crate::FieldReader<u8, u8>);
-impl RBB_VCM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_VCM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_VCM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_vcm` writer - "]
+#[doc = "Reader of field `rbb_vcm`"]
+pub type RBB_VCM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_vcm`"]
 pub struct RBB_VCM_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> RBB_VCM_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bm_op` reader - "]
-pub struct RBB_BM_OP_R(crate::FieldReader<u8, u8>);
-impl RBB_BM_OP_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_BM_OP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BM_OP_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bm_op` writer - "]
+#[doc = "Reader of field `rbb_bm_op`"]
+pub type RBB_BM_OP_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_bm_op`"]
 pub struct RBB_BM_OP_W<'a> {
     w: &'a mut W,
 }
@@ -254,21 +148,9 @@ impl<'a> RBB_BM_OP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_deq` reader - "]
-pub struct RBB_DEQ_R(crate::FieldReader<u8, u8>);
-impl RBB_DEQ_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_DEQ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_DEQ_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_deq` writer - "]
+#[doc = "Reader of field `rbb_deq`"]
+pub type RBB_DEQ_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_deq`"]
 pub struct RBB_DEQ_W<'a> {
     w: &'a mut W,
 }
@@ -280,21 +162,9 @@ impl<'a> RBB_DEQ_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bt_fif_tune` reader - "]
-pub struct RBB_BT_FIF_TUNE_R(crate::FieldReader<u8, u8>);
-impl RBB_BT_FIF_TUNE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_BT_FIF_TUNE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BT_FIF_TUNE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bt_fif_tune` writer - "]
+#[doc = "Reader of field `rbb_bt_fif_tune`"]
+pub type RBB_BT_FIF_TUNE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_bt_fif_tune`"]
 pub struct RBB_BT_FIF_TUNE_W<'a> {
     w: &'a mut W,
 }
@@ -306,21 +176,9 @@ impl<'a> RBB_BT_FIF_TUNE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bt_mode` reader - "]
-pub struct RBB_BT_MODE_R(crate::FieldReader<bool, bool>);
-impl RBB_BT_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_BT_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BT_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bt_mode` writer - "]
+#[doc = "Reader of field `rbb_bt_mode`"]
+pub type RBB_BT_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_bt_mode`"]
 pub struct RBB_BT_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -342,21 +200,9 @@ impl<'a> RBB_BT_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_bt_mode_hw` reader - "]
-pub struct RBB_BT_MODE_HW_R(crate::FieldReader<bool, bool>);
-impl RBB_BT_MODE_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_BT_MODE_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_BT_MODE_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_bt_mode_hw` writer - "]
+#[doc = "Reader of field `rbb_bt_mode_hw`"]
+pub type RBB_BT_MODE_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_bt_mode_hw`"]
 pub struct RBB_BT_MODE_HW_W<'a> {
     w: &'a mut W,
 }
@@ -490,30 +336,5 @@ impl W {
     #[inline(always)]
     pub fn rbb_bt_mode_hw(&mut self) -> RBB_BT_MODE_HW_W {
         RBB_BT_MODE_HW_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rbb3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rbb3](index.html) module"]
-pub struct RBB3_SPEC;
-impl crate::RegisterSpec for RBB3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rbb3::R](R) reader structure"]
-impl crate::Readable for RBB3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rbb3::W](W) writer structure"]
-impl crate::Writable for RBB3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rbb3 to value 0"]
-impl crate::Resettable for RBB3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

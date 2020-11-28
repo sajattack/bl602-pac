@@ -1,52 +1,18 @@
-#[doc = "Register `pfdcp` reader"]
-pub struct R(crate::R<PFDCP_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PFDCP_SPEC>;
+#[doc = "Reader of register pfdcp"]
+pub type R = crate::R<u32, super::PFDCP>;
+#[doc = "Writer for register pfdcp"]
+pub type W = crate::W<u32, super::PFDCP>;
+#[doc = "Register pfdcp `reset()`'s with value 0"]
+impl crate::ResetValue for super::PFDCP {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PFDCP_SPEC>> for R {
-    fn from(reader: crate::R<PFDCP_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `pfdcp` writer"]
-pub struct W(crate::W<PFDCP_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PFDCP_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PFDCP_SPEC>> for W {
-    fn from(writer: crate::W<PFDCP_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `lo_pfd_rst_csd_hw` reader - "]
-pub struct LO_PFD_RST_CSD_HW_R(crate::FieldReader<bool, bool>);
-impl LO_PFD_RST_CSD_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_PFD_RST_CSD_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_PFD_RST_CSD_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_pfd_rst_csd_hw` writer - "]
+#[doc = "Reader of field `lo_pfd_rst_csd_hw`"]
+pub type LO_PFD_RST_CSD_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_pfd_rst_csd_hw`"]
 pub struct LO_PFD_RST_CSD_HW_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> LO_PFD_RST_CSD_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_pfd_rst_csd` reader - "]
-pub struct LO_PFD_RST_CSD_R(crate::FieldReader<bool, bool>);
-impl LO_PFD_RST_CSD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_PFD_RST_CSD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_PFD_RST_CSD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_pfd_rst_csd` writer - "]
+#[doc = "Reader of field `lo_pfd_rst_csd`"]
+pub type LO_PFD_RST_CSD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_pfd_rst_csd`"]
 pub struct LO_PFD_RST_CSD_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> LO_PFD_RST_CSD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_pfd_rvdd_boost` reader - "]
-pub struct LO_PFD_RVDD_BOOST_R(crate::FieldReader<bool, bool>);
-impl LO_PFD_RVDD_BOOST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_PFD_RVDD_BOOST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_PFD_RVDD_BOOST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_pfd_rvdd_boost` writer - "]
+#[doc = "Reader of field `lo_pfd_rvdd_boost`"]
+pub type LO_PFD_RVDD_BOOST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_pfd_rvdd_boost`"]
 pub struct LO_PFD_RVDD_BOOST_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> LO_PFD_RVDD_BOOST_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_hiz` reader - "]
-pub struct LO_CP_HIZ_R(crate::FieldReader<bool, bool>);
-impl LO_CP_HIZ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_HIZ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_HIZ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_hiz` writer - "]
+#[doc = "Reader of field `lo_cp_hiz`"]
+pub type LO_CP_HIZ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_hiz`"]
 pub struct LO_CP_HIZ_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> LO_CP_HIZ_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_opamp_en` reader - "]
-pub struct LO_CP_OPAMP_EN_R(crate::FieldReader<bool, bool>);
-impl LO_CP_OPAMP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_OPAMP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_OPAMP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_opamp_en` writer - "]
+#[doc = "Reader of field `lo_cp_opamp_en`"]
+pub type LO_CP_OPAMP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_opamp_en`"]
 pub struct LO_CP_OPAMP_EN_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> LO_CP_OPAMP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_ota_en` reader - "]
-pub struct LO_CP_OTA_EN_R(crate::FieldReader<bool, bool>);
-impl LO_CP_OTA_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_OTA_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_OTA_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_ota_en` writer - "]
+#[doc = "Reader of field `lo_cp_ota_en`"]
+pub type LO_CP_OTA_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_ota_en`"]
 pub struct LO_CP_OTA_EN_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> LO_CP_OTA_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_startup_en` reader - "]
-pub struct LO_CP_STARTUP_EN_R(crate::FieldReader<bool, bool>);
-impl LO_CP_STARTUP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_STARTUP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_STARTUP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_startup_en` writer - "]
+#[doc = "Reader of field `lo_cp_startup_en`"]
+pub type LO_CP_STARTUP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_startup_en`"]
 pub struct LO_CP_STARTUP_EN_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> LO_CP_STARTUP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_sel_hw` reader - "]
-pub struct LO_CP_SEL_HW_R(crate::FieldReader<bool, bool>);
-impl LO_CP_SEL_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_SEL_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_SEL_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_sel_hw` writer - "]
+#[doc = "Reader of field `lo_cp_sel_hw`"]
+pub type LO_CP_SEL_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_sel_hw`"]
 pub struct LO_CP_SEL_HW_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> LO_CP_SEL_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_cp_sel` reader - "]
-pub struct LO_CP_SEL_R(crate::FieldReader<bool, bool>);
-impl LO_CP_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_CP_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_CP_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_cp_sel` writer - "]
+#[doc = "Reader of field `lo_cp_sel`"]
+pub type LO_CP_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_cp_sel`"]
 pub struct LO_CP_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -448,30 +318,5 @@ impl W {
     #[inline(always)]
     pub fn lo_cp_sel(&mut self) -> LO_CP_SEL_W {
         LO_CP_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "pfdcp.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pfdcp](index.html) module"]
-pub struct PFDCP_SPEC;
-impl crate::RegisterSpec for PFDCP_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pfdcp::R](R) reader structure"]
-impl crate::Readable for PFDCP_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pfdcp::W](W) writer structure"]
-impl crate::Writable for PFDCP_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets pfdcp to value 0"]
-impl crate::Resettable for PFDCP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

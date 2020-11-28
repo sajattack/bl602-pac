@@ -1,52 +1,18 @@
-#[doc = "Register `cpu_clk_gate` reader"]
-pub struct R(crate::R<CPU_CLK_GATE_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CPU_CLK_GATE_SPEC>;
+#[doc = "Reader of register cpu_clk_gate"]
+pub type R = crate::R<u32, super::CPU_CLK_GATE>;
+#[doc = "Writer for register cpu_clk_gate"]
+pub type W = crate::W<u32, super::CPU_CLK_GATE>;
+#[doc = "Register cpu_clk_gate `reset()`'s with value 0"]
+impl crate::ResetValue for super::CPU_CLK_GATE {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CPU_CLK_GATE_SPEC>> for R {
-    fn from(reader: crate::R<CPU_CLK_GATE_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `cpu_clk_gate` writer"]
-pub struct W(crate::W<CPU_CLK_GATE_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CPU_CLK_GATE_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CPU_CLK_GATE_SPEC>> for W {
-    fn from(writer: crate::W<CPU_CLK_GATE_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `force_e21_clock_on_2` reader - "]
-pub struct FORCE_E21_CLOCK_ON_2_R(crate::FieldReader<bool, bool>);
-impl FORCE_E21_CLOCK_ON_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FORCE_E21_CLOCK_ON_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FORCE_E21_CLOCK_ON_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `force_e21_clock_on_2` writer - "]
+#[doc = "Reader of field `force_e21_clock_on_2`"]
+pub type FORCE_E21_CLOCK_ON_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `force_e21_clock_on_2`"]
 pub struct FORCE_E21_CLOCK_ON_2_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> FORCE_E21_CLOCK_ON_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `force_e21_clock_on_1` reader - "]
-pub struct FORCE_E21_CLOCK_ON_1_R(crate::FieldReader<bool, bool>);
-impl FORCE_E21_CLOCK_ON_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FORCE_E21_CLOCK_ON_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FORCE_E21_CLOCK_ON_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `force_e21_clock_on_1` writer - "]
+#[doc = "Reader of field `force_e21_clock_on_1`"]
+pub type FORCE_E21_CLOCK_ON_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `force_e21_clock_on_1`"]
 pub struct FORCE_E21_CLOCK_ON_1_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> FORCE_E21_CLOCK_ON_1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `force_e21_clock_on_0` reader - "]
-pub struct FORCE_E21_CLOCK_ON_0_R(crate::FieldReader<bool, bool>);
-impl FORCE_E21_CLOCK_ON_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FORCE_E21_CLOCK_ON_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FORCE_E21_CLOCK_ON_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `force_e21_clock_on_0` writer - "]
+#[doc = "Reader of field `force_e21_clock_on_0`"]
+pub type FORCE_E21_CLOCK_ON_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `force_e21_clock_on_0`"]
 pub struct FORCE_E21_CLOCK_ON_0_W<'a> {
     w: &'a mut W,
 }
@@ -172,30 +114,5 @@ impl W {
     #[inline(always)]
     pub fn force_e21_clock_on_0(&mut self) -> FORCE_E21_CLOCK_ON_0_W {
         FORCE_E21_CLOCK_ON_0_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "cpu_clk_gate.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cpu_clk_gate](index.html) module"]
-pub struct CPU_CLK_GATE_SPEC;
-impl crate::RegisterSpec for CPU_CLK_GATE_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [cpu_clk_gate::R](R) reader structure"]
-impl crate::Readable for CPU_CLK_GATE_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [cpu_clk_gate::W](W) writer structure"]
-impl crate::Writable for CPU_CLK_GATE_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets cpu_clk_gate to value 0"]
-impl crate::Resettable for CPU_CLK_GATE_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

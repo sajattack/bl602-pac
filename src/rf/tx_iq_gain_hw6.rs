@@ -1,52 +1,18 @@
-#[doc = "Register `tx_iq_gain_hw6` reader"]
-pub struct R(crate::R<TX_IQ_GAIN_HW6_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TX_IQ_GAIN_HW6_SPEC>;
+#[doc = "Reader of register tx_iq_gain_hw6"]
+pub type R = crate::R<u32, super::TX_IQ_GAIN_HW6>;
+#[doc = "Writer for register tx_iq_gain_hw6"]
+pub type W = crate::W<u32, super::TX_IQ_GAIN_HW6>;
+#[doc = "Register tx_iq_gain_hw6 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TX_IQ_GAIN_HW6 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TX_IQ_GAIN_HW6_SPEC>> for R {
-    fn from(reader: crate::R<TX_IQ_GAIN_HW6_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `tx_iq_gain_hw6` writer"]
-pub struct W(crate::W<TX_IQ_GAIN_HW6_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TX_IQ_GAIN_HW6_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TX_IQ_GAIN_HW6_SPEC>> for W {
-    fn from(writer: crate::W<TX_IQ_GAIN_HW6_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tx_iq_gain_comp_gc6` reader - "]
-pub struct TX_IQ_GAIN_COMP_GC6_R(crate::FieldReader<u16, u16>);
-impl TX_IQ_GAIN_COMP_GC6_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TX_IQ_GAIN_COMP_GC6_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_IQ_GAIN_COMP_GC6_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_iq_gain_comp_gc6` writer - "]
+#[doc = "Reader of field `tx_iq_gain_comp_gc6`"]
+pub type TX_IQ_GAIN_COMP_GC6_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `tx_iq_gain_comp_gc6`"]
 pub struct TX_IQ_GAIN_COMP_GC6_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> TX_IQ_GAIN_COMP_GC6_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tx_iq_phase_comp_gc6` reader - "]
-pub struct TX_IQ_PHASE_COMP_GC6_R(crate::FieldReader<u16, u16>);
-impl TX_IQ_PHASE_COMP_GC6_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        TX_IQ_PHASE_COMP_GC6_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TX_IQ_PHASE_COMP_GC6_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tx_iq_phase_comp_gc6` writer - "]
+#[doc = "Reader of field `tx_iq_phase_comp_gc6`"]
+pub type TX_IQ_PHASE_COMP_GC6_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `tx_iq_phase_comp_gc6`"]
 pub struct TX_IQ_PHASE_COMP_GC6_W<'a> {
     w: &'a mut W,
 }
@@ -106,30 +60,5 @@ impl W {
     #[inline(always)]
     pub fn tx_iq_phase_comp_gc6(&mut self) -> TX_IQ_PHASE_COMP_GC6_W {
         TX_IQ_PHASE_COMP_GC6_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "tx_iq_gain_hw6.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tx_iq_gain_hw6](index.html) module"]
-pub struct TX_IQ_GAIN_HW6_SPEC;
-impl crate::RegisterSpec for TX_IQ_GAIN_HW6_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tx_iq_gain_hw6::R](R) reader structure"]
-impl crate::Readable for TX_IQ_GAIN_HW6_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tx_iq_gain_hw6::W](W) writer structure"]
-impl crate::Writable for TX_IQ_GAIN_HW6_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets tx_iq_gain_hw6 to value 0"]
-impl crate::Resettable for TX_IQ_GAIN_HW6_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

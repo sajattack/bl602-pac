@@ -1,52 +1,18 @@
-#[doc = "Register `l1c_config` reader"]
-pub struct R(crate::R<L1C_CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<L1C_CONFIG_SPEC>;
+#[doc = "Reader of register l1c_config"]
+pub type R = crate::R<u32, super::L1C_CONFIG>;
+#[doc = "Writer for register l1c_config"]
+pub type W = crate::W<u32, super::L1C_CONFIG>;
+#[doc = "Register l1c_config `reset()`'s with value 0"]
+impl crate::ResetValue for super::L1C_CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<L1C_CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<L1C_CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `l1c_config` writer"]
-pub struct W(crate::W<L1C_CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<L1C_CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<L1C_CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<L1C_CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `wrap_dis` reader - "]
-pub struct WRAP_DIS_R(crate::FieldReader<bool, bool>);
-impl WRAP_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WRAP_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WRAP_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wrap_dis` writer - "]
+#[doc = "Reader of field `wrap_dis`"]
+pub type WRAP_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wrap_dis`"]
 pub struct WRAP_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> WRAP_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `early_resp_dis` reader - "]
-pub struct EARLY_RESP_DIS_R(crate::FieldReader<bool, bool>);
-impl EARLY_RESP_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EARLY_RESP_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EARLY_RESP_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `early_resp_dis` writer - "]
+#[doc = "Reader of field `early_resp_dis`"]
+pub type EARLY_RESP_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `early_resp_dis`"]
 pub struct EARLY_RESP_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> EARLY_RESP_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_busy_option_dis` reader - "]
-pub struct L1C_BMX_BUSY_OPTION_DIS_R(crate::FieldReader<bool, bool>);
-impl L1C_BMX_BUSY_OPTION_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BMX_BUSY_OPTION_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_BUSY_OPTION_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_busy_option_dis` writer - "]
+#[doc = "Reader of field `l1c_bmx_busy_option_dis`"]
+pub type L1C_BMX_BUSY_OPTION_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bmx_busy_option_dis`"]
 pub struct L1C_BMX_BUSY_OPTION_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> L1C_BMX_BUSY_OPTION_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_timeout_en` reader - "]
-pub struct L1C_BMX_TIMEOUT_EN_R(crate::FieldReader<u8, u8>);
-impl L1C_BMX_TIMEOUT_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        L1C_BMX_TIMEOUT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_TIMEOUT_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_timeout_en` writer - "]
+#[doc = "Reader of field `l1c_bmx_timeout_en`"]
+pub type L1C_BMX_TIMEOUT_EN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `l1c_bmx_timeout_en`"]
 pub struct L1C_BMX_TIMEOUT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> L1C_BMX_TIMEOUT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_arb_mode` reader - "]
-pub struct L1C_BMX_ARB_MODE_R(crate::FieldReader<u8, u8>);
-impl L1C_BMX_ARB_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        L1C_BMX_ARB_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_ARB_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_arb_mode` writer - "]
+#[doc = "Reader of field `l1c_bmx_arb_mode`"]
+pub type L1C_BMX_ARB_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `l1c_bmx_arb_mode`"]
 pub struct L1C_BMX_ARB_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> L1C_BMX_ARB_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_err_en` reader - "]
-pub struct L1C_BMX_ERR_EN_R(crate::FieldReader<bool, bool>);
-impl L1C_BMX_ERR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BMX_ERR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_ERR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_err_en` writer - "]
+#[doc = "Reader of field `l1c_bmx_err_en`"]
+pub type L1C_BMX_ERR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bmx_err_en`"]
 pub struct L1C_BMX_ERR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> L1C_BMX_ERR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bypass` reader - "]
-pub struct L1C_BYPASS_R(crate::FieldReader<bool, bool>);
-impl L1C_BYPASS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BYPASS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BYPASS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bypass` writer - "]
+#[doc = "Reader of field `l1c_bypass`"]
+pub type L1C_BYPASS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bypass`"]
 pub struct L1C_BYPASS_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> L1C_BYPASS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irom_2t_access` reader - "]
-pub struct IROM_2T_ACCESS_R(crate::FieldReader<bool, bool>);
-impl IROM_2T_ACCESS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_2T_ACCESS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_2T_ACCESS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irom_2t_access` writer - "]
+#[doc = "Reader of field `irom_2t_access`"]
+pub type IROM_2T_ACCESS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irom_2t_access`"]
 pub struct IROM_2T_ACCESS_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> IROM_2T_ACCESS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_way_dis` reader - "]
-pub struct L1C_WAY_DIS_R(crate::FieldReader<u8, u8>);
-impl L1C_WAY_DIS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        L1C_WAY_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_WAY_DIS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_way_dis` writer - "]
+#[doc = "Reader of field `l1c_way_dis`"]
+pub type L1C_WAY_DIS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `l1c_way_dis`"]
 pub struct L1C_WAY_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> L1C_WAY_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_invalid_done` reader - "]
-pub struct L1C_INVALID_DONE_R(crate::FieldReader<bool, bool>);
-impl L1C_INVALID_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_INVALID_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_INVALID_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_invalid_done` writer - "]
+#[doc = "Reader of field `l1c_invalid_done`"]
+pub type L1C_INVALID_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_invalid_done`"]
 pub struct L1C_INVALID_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -362,21 +220,9 @@ impl<'a> L1C_INVALID_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_invalid_en` reader - "]
-pub struct L1C_INVALID_EN_R(crate::FieldReader<bool, bool>);
-impl L1C_INVALID_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_INVALID_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_INVALID_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_invalid_en` writer - "]
+#[doc = "Reader of field `l1c_invalid_en`"]
+pub type L1C_INVALID_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_invalid_en`"]
 pub struct L1C_INVALID_EN_W<'a> {
     w: &'a mut W,
 }
@@ -398,21 +244,9 @@ impl<'a> L1C_INVALID_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_cnt_en` reader - "]
-pub struct L1C_CNT_EN_R(crate::FieldReader<bool, bool>);
-impl L1C_CNT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_CNT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_CNT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_cnt_en` writer - "]
+#[doc = "Reader of field `l1c_cnt_en`"]
+pub type L1C_CNT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_cnt_en`"]
 pub struct L1C_CNT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -434,21 +268,9 @@ impl<'a> L1C_CNT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_cacheable` reader - "]
-pub struct L1C_CACHEABLE_R(crate::FieldReader<bool, bool>);
-impl L1C_CACHEABLE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_CACHEABLE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_CACHEABLE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_cacheable` writer - "]
+#[doc = "Reader of field `l1c_cacheable`"]
+pub type L1C_CACHEABLE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_cacheable`"]
 pub struct L1C_CACHEABLE_W<'a> {
     w: &'a mut W,
 }
@@ -602,30 +424,5 @@ impl W {
     #[inline(always)]
     pub fn l1c_cacheable(&mut self) -> L1C_CACHEABLE_W {
         L1C_CACHEABLE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "l1c_config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [l1c_config](index.html) module"]
-pub struct L1C_CONFIG_SPEC;
-impl crate::RegisterSpec for L1C_CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [l1c_config::R](R) reader structure"]
-impl crate::Readable for L1C_CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [l1c_config::W](W) writer structure"]
-impl crate::Writable for L1C_CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets l1c_config to value 0"]
-impl crate::Resettable for L1C_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

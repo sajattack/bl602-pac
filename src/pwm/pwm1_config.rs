@@ -1,52 +1,18 @@
-#[doc = "Register `pwm1_config` reader"]
-pub struct R(crate::R<PWM1_CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PWM1_CONFIG_SPEC>;
+#[doc = "Reader of register pwm1_config"]
+pub type R = crate::R<u32, super::PWM1_CONFIG>;
+#[doc = "Writer for register pwm1_config"]
+pub type W = crate::W<u32, super::PWM1_CONFIG>;
+#[doc = "Register pwm1_config `reset()`'s with value 0"]
+impl crate::ResetValue for super::PWM1_CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PWM1_CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<PWM1_CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `pwm1_config` writer"]
-pub struct W(crate::W<PWM1_CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PWM1_CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PWM1_CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<PWM1_CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pwm_sts_top` reader - "]
-pub struct PWM_STS_TOP_R(crate::FieldReader<bool, bool>);
-impl PWM_STS_TOP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_STS_TOP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_STS_TOP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_sts_top` writer - "]
+#[doc = "Reader of field `pwm_sts_top`"]
+pub type PWM_STS_TOP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_sts_top`"]
 pub struct PWM_STS_TOP_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PWM_STS_TOP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_stop_en` reader - "]
-pub struct PWM_STOP_EN_R(crate::FieldReader<bool, bool>);
-impl PWM_STOP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_STOP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_STOP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_stop_en` writer - "]
+#[doc = "Reader of field `pwm_stop_en`"]
+pub type PWM_STOP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_stop_en`"]
 pub struct PWM_STOP_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PWM_STOP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_sw_mode` reader - "]
-pub struct PWM_SW_MODE_R(crate::FieldReader<bool, bool>);
-impl PWM_SW_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_SW_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_SW_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_sw_mode` writer - "]
+#[doc = "Reader of field `pwm_sw_mode`"]
+pub type PWM_SW_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_sw_mode`"]
 pub struct PWM_SW_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> PWM_SW_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_sw_force_val` reader - "]
-pub struct PWM_SW_FORCE_VAL_R(crate::FieldReader<bool, bool>);
-impl PWM_SW_FORCE_VAL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_SW_FORCE_VAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_SW_FORCE_VAL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_sw_force_val` writer - "]
+#[doc = "Reader of field `pwm_sw_force_val`"]
+pub type PWM_SW_FORCE_VAL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_sw_force_val`"]
 pub struct PWM_SW_FORCE_VAL_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> PWM_SW_FORCE_VAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_stop_mode` reader - "]
-pub struct PWM_STOP_MODE_R(crate::FieldReader<bool, bool>);
-impl PWM_STOP_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_STOP_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_STOP_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_stop_mode` writer - "]
+#[doc = "Reader of field `pwm_stop_mode`"]
+pub type PWM_STOP_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_stop_mode`"]
 pub struct PWM_STOP_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> PWM_STOP_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwm_out_inv` reader - "]
-pub struct PWM_OUT_INV_R(crate::FieldReader<bool, bool>);
-impl PWM_OUT_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWM_OUT_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWM_OUT_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwm_out_inv` writer - "]
+#[doc = "Reader of field `pwm_out_inv`"]
+pub type PWM_OUT_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwm_out_inv`"]
 pub struct PWM_OUT_INV_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> PWM_OUT_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `reg_clk_sel` reader - "]
-pub struct REG_CLK_SEL_R(crate::FieldReader<u8, u8>);
-impl REG_CLK_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        REG_CLK_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_CLK_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_clk_sel` writer - "]
+#[doc = "Reader of field `reg_clk_sel`"]
+pub type REG_CLK_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `reg_clk_sel`"]
 pub struct REG_CLK_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -346,30 +240,5 @@ impl W {
     #[inline(always)]
     pub fn reg_clk_sel(&mut self) -> REG_CLK_SEL_W {
         REG_CLK_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "pwm1_config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pwm1_config](index.html) module"]
-pub struct PWM1_CONFIG_SPEC;
-impl crate::RegisterSpec for PWM1_CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pwm1_config::R](R) reader structure"]
-impl crate::Readable for PWM1_CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pwm1_config::W](W) writer structure"]
-impl crate::Writable for PWM1_CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets pwm1_config to value 0"]
-impl crate::Resettable for PWM1_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

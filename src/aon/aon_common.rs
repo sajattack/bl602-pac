@@ -1,52 +1,18 @@
-#[doc = "Register `aon_common` reader"]
-pub struct R(crate::R<AON_COMMON_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<AON_COMMON_SPEC>;
+#[doc = "Reader of register aon_common"]
+pub type R = crate::R<u32, super::AON_COMMON>;
+#[doc = "Writer for register aon_common"]
+pub type W = crate::W<u32, super::AON_COMMON>;
+#[doc = "Register aon_common `reset()`'s with value 0"]
+impl crate::ResetValue for super::AON_COMMON {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<AON_COMMON_SPEC>> for R {
-    fn from(reader: crate::R<AON_COMMON_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `aon_common` writer"]
-pub struct W(crate::W<AON_COMMON_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<AON_COMMON_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<AON_COMMON_SPEC>> for W {
-    fn from(writer: crate::W<AON_COMMON_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `ten_cip_misc_aon` reader - "]
-pub struct TEN_CIP_MISC_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_CIP_MISC_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_CIP_MISC_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_CIP_MISC_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_cip_misc_aon` writer - "]
+#[doc = "Reader of field `ten_cip_misc_aon`"]
+pub type TEN_CIP_MISC_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_cip_misc_aon`"]
 pub struct TEN_CIP_MISC_AON_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TEN_CIP_MISC_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_mbg_aon` reader - "]
-pub struct TEN_MBG_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_MBG_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_MBG_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_MBG_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_mbg_aon` writer - "]
+#[doc = "Reader of field `ten_mbg_aon`"]
+pub type TEN_MBG_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_mbg_aon`"]
 pub struct TEN_MBG_AON_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> TEN_MBG_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dten_xtal_aon` reader - "]
-pub struct DTEN_XTAL_AON_R(crate::FieldReader<bool, bool>);
-impl DTEN_XTAL_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEN_XTAL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEN_XTAL_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dten_xtal_aon` writer - "]
+#[doc = "Reader of field `dten_xtal_aon`"]
+pub type DTEN_XTAL_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dten_xtal_aon`"]
 pub struct DTEN_XTAL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> DTEN_XTAL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_xtal_aon` reader - "]
-pub struct TEN_XTAL_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_XTAL_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_XTAL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_XTAL_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_xtal_aon` writer - "]
+#[doc = "Reader of field `ten_xtal_aon`"]
+pub type TEN_XTAL_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_xtal_aon`"]
 pub struct TEN_XTAL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> TEN_XTAL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_ldo15rf_aon` reader - "]
-pub struct TEN_LDO15RF_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_LDO15RF_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_LDO15RF_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_LDO15RF_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_ldo15rf_aon` writer - "]
+#[doc = "Reader of field `ten_ldo15rf_aon`"]
+pub type TEN_LDO15RF_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_ldo15rf_aon`"]
 pub struct TEN_LDO15RF_AON_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> TEN_LDO15RF_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_bg_sys_aon` reader - "]
-pub struct TEN_BG_SYS_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_BG_SYS_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_BG_SYS_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_BG_SYS_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_bg_sys_aon` writer - "]
+#[doc = "Reader of field `ten_bg_sys_aon`"]
+pub type TEN_BG_SYS_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_bg_sys_aon`"]
 pub struct TEN_BG_SYS_AON_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> TEN_BG_SYS_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_dcdc18_1_aon` reader - "]
-pub struct TEN_DCDC18_1_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_DCDC18_1_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_DCDC18_1_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_DCDC18_1_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_dcdc18_1_aon` writer - "]
+#[doc = "Reader of field `ten_dcdc18_1_aon`"]
+pub type TEN_DCDC18_1_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_dcdc18_1_aon`"]
 pub struct TEN_DCDC18_1_AON_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> TEN_DCDC18_1_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_dcdc18_0_aon` reader - "]
-pub struct TEN_DCDC18_0_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_DCDC18_0_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_DCDC18_0_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_DCDC18_0_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_dcdc18_0_aon` writer - "]
+#[doc = "Reader of field `ten_dcdc18_0_aon`"]
+pub type TEN_DCDC18_0_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_dcdc18_0_aon`"]
 pub struct TEN_DCDC18_0_AON_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> TEN_DCDC18_0_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_ldo11soc_aon` reader - "]
-pub struct TEN_LDO11SOC_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_LDO11SOC_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_LDO11SOC_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_LDO11SOC_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_ldo11soc_aon` writer - "]
+#[doc = "Reader of field `ten_ldo11soc_aon`"]
+pub type TEN_LDO11SOC_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_ldo11soc_aon`"]
 pub struct TEN_LDO11SOC_AON_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> TEN_LDO11SOC_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_vddcore_aon` reader - "]
-pub struct TEN_VDDCORE_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_VDDCORE_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_VDDCORE_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_VDDCORE_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_vddcore_aon` writer - "]
+#[doc = "Reader of field `ten_vddcore_aon`"]
+pub type TEN_VDDCORE_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_vddcore_aon`"]
 pub struct TEN_VDDCORE_AON_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> TEN_VDDCORE_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_xtal32k` reader - "]
-pub struct TEN_XTAL32K_R(crate::FieldReader<bool, bool>);
-impl TEN_XTAL32K_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_XTAL32K_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_XTAL32K_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_xtal32k` writer - "]
+#[doc = "Reader of field `ten_xtal32k`"]
+pub type TEN_XTAL32K_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_xtal32k`"]
 pub struct TEN_XTAL32K_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> TEN_XTAL32K_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dten_xtal32k` reader - "]
-pub struct DTEN_XTAL32K_R(crate::FieldReader<bool, bool>);
-impl DTEN_XTAL32K_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DTEN_XTAL32K_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DTEN_XTAL32K_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dten_xtal32k` writer - "]
+#[doc = "Reader of field `dten_xtal32k`"]
+pub type DTEN_XTAL32K_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dten_xtal32k`"]
 pub struct DTEN_XTAL32K_W<'a> {
     w: &'a mut W,
 }
@@ -464,21 +298,9 @@ impl<'a> DTEN_XTAL32K_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ten_aon` reader - "]
-pub struct TEN_AON_R(crate::FieldReader<bool, bool>);
-impl TEN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ten_aon` writer - "]
+#[doc = "Reader of field `ten_aon`"]
+pub type TEN_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ten_aon`"]
 pub struct TEN_AON_W<'a> {
     w: &'a mut W,
 }
@@ -500,21 +322,9 @@ impl<'a> TEN_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmux_aon` reader - "]
-pub struct TMUX_AON_R(crate::FieldReader<u8, u8>);
-impl TMUX_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TMUX_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMUX_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmux_aon` writer - "]
+#[doc = "Reader of field `tmux_aon`"]
+pub type TMUX_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tmux_aon`"]
 pub struct TMUX_AON_W<'a> {
     w: &'a mut W,
 }
@@ -668,30 +478,5 @@ impl W {
     #[inline(always)]
     pub fn tmux_aon(&mut self) -> TMUX_AON_W {
         TMUX_AON_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "aon_common.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [aon_common](index.html) module"]
-pub struct AON_COMMON_SPEC;
-impl crate::RegisterSpec for AON_COMMON_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [aon_common::R](R) reader structure"]
-impl crate::Readable for AON_COMMON_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [aon_common::W](W) writer structure"]
-impl crate::Writable for AON_COMMON_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets aon_common to value 0"]
-impl crate::Resettable for AON_COMMON_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

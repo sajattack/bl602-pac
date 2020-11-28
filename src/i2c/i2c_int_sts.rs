@@ -1,52 +1,18 @@
-#[doc = "Register `i2c_int_sts` reader"]
-pub struct R(crate::R<I2C_INT_STS_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<I2C_INT_STS_SPEC>;
+#[doc = "Reader of register i2c_int_sts"]
+pub type R = crate::R<u32, super::I2C_INT_STS>;
+#[doc = "Writer for register i2c_int_sts"]
+pub type W = crate::W<u32, super::I2C_INT_STS>;
+#[doc = "Register i2c_int_sts `reset()`'s with value 0"]
+impl crate::ResetValue for super::I2C_INT_STS {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<I2C_INT_STS_SPEC>> for R {
-    fn from(reader: crate::R<I2C_INT_STS_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `i2c_int_sts` writer"]
-pub struct W(crate::W<I2C_INT_STS_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<I2C_INT_STS_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<I2C_INT_STS_SPEC>> for W {
-    fn from(writer: crate::W<I2C_INT_STS_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_i2c_fer_en` reader - "]
-pub struct CR_I2C_FER_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_FER_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_FER_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_FER_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_fer_en` writer - "]
+#[doc = "Reader of field `cr_i2c_fer_en`"]
+pub type CR_I2C_FER_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_fer_en`"]
 pub struct CR_I2C_FER_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CR_I2C_FER_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_arb_en` reader - "]
-pub struct CR_I2C_ARB_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_ARB_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_ARB_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_ARB_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_arb_en` writer - "]
+#[doc = "Reader of field `cr_i2c_arb_en`"]
+pub type CR_I2C_ARB_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_arb_en`"]
 pub struct CR_I2C_ARB_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CR_I2C_ARB_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_nak_en` reader - "]
-pub struct CR_I2C_NAK_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_NAK_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_NAK_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_NAK_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_nak_en` writer - "]
+#[doc = "Reader of field `cr_i2c_nak_en`"]
+pub type CR_I2C_NAK_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_nak_en`"]
 pub struct CR_I2C_NAK_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CR_I2C_NAK_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_rxf_en` reader - "]
-pub struct CR_I2C_RXF_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_RXF_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_RXF_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_RXF_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_rxf_en` writer - "]
+#[doc = "Reader of field `cr_i2c_rxf_en`"]
+pub type CR_I2C_RXF_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_rxf_en`"]
 pub struct CR_I2C_RXF_EN_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> CR_I2C_RXF_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_txf_en` reader - "]
-pub struct CR_I2C_TXF_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_TXF_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_TXF_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_TXF_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_txf_en` writer - "]
+#[doc = "Reader of field `cr_i2c_txf_en`"]
+pub type CR_I2C_TXF_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_txf_en`"]
 pub struct CR_I2C_TXF_EN_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> CR_I2C_TXF_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_end_en` reader - "]
-pub struct CR_I2C_END_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_END_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_END_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_END_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_end_en` writer - "]
+#[doc = "Reader of field `cr_i2c_end_en`"]
+pub type CR_I2C_END_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_end_en`"]
 pub struct CR_I2C_END_EN_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> CR_I2C_END_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_21` reader - "]
-pub struct RSVD_21_R(crate::FieldReader<bool, bool>);
-impl RSVD_21_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_21_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_21_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_21` writer - "]
+#[doc = "Reader of field `rsvd_21`"]
+pub type RSVD_21_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_21`"]
 pub struct RSVD_21_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> RSVD_21_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_arb_clr` reader - "]
-pub struct CR_I2C_ARB_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_ARB_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_ARB_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_ARB_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_arb_clr` writer - "]
+#[doc = "Reader of field `cr_i2c_arb_clr`"]
+pub type CR_I2C_ARB_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_arb_clr`"]
 pub struct CR_I2C_ARB_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> CR_I2C_ARB_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_nak_clr` reader - "]
-pub struct CR_I2C_NAK_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_NAK_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_NAK_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_NAK_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_nak_clr` writer - "]
+#[doc = "Reader of field `cr_i2c_nak_clr`"]
+pub type CR_I2C_NAK_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_nak_clr`"]
 pub struct CR_I2C_NAK_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> CR_I2C_NAK_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_18` reader - "]
-pub struct RSVD_18_R(crate::FieldReader<bool, bool>);
-impl RSVD_18_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_18_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_18_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_18` writer - "]
+#[doc = "Reader of field `rsvd_18`"]
+pub type RSVD_18_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_18`"]
 pub struct RSVD_18_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> RSVD_18_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_17` reader - "]
-pub struct RSVD_17_R(crate::FieldReader<bool, bool>);
-impl RSVD_17_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_17_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_17_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_17` writer - "]
+#[doc = "Reader of field `rsvd_17`"]
+pub type RSVD_17_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_17`"]
 pub struct RSVD_17_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> RSVD_17_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_end_clr` reader - "]
-pub struct CR_I2C_END_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_END_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_END_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_END_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_end_clr` writer - "]
+#[doc = "Reader of field `cr_i2c_end_clr`"]
+pub type CR_I2C_END_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_end_clr`"]
 pub struct CR_I2C_END_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -464,21 +298,9 @@ impl<'a> CR_I2C_END_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_fer_mask` reader - "]
-pub struct CR_I2C_FER_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_FER_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_FER_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_FER_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_fer_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_fer_mask`"]
+pub type CR_I2C_FER_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_fer_mask`"]
 pub struct CR_I2C_FER_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -500,21 +322,9 @@ impl<'a> CR_I2C_FER_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_arb_mask` reader - "]
-pub struct CR_I2C_ARB_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_ARB_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_ARB_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_ARB_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_arb_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_arb_mask`"]
+pub type CR_I2C_ARB_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_arb_mask`"]
 pub struct CR_I2C_ARB_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -536,21 +346,9 @@ impl<'a> CR_I2C_ARB_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_nak_mask` reader - "]
-pub struct CR_I2C_NAK_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_NAK_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_NAK_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_NAK_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_nak_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_nak_mask`"]
+pub type CR_I2C_NAK_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_nak_mask`"]
 pub struct CR_I2C_NAK_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -572,21 +370,9 @@ impl<'a> CR_I2C_NAK_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_rxf_mask` reader - "]
-pub struct CR_I2C_RXF_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_RXF_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_RXF_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_RXF_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_rxf_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_rxf_mask`"]
+pub type CR_I2C_RXF_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_rxf_mask`"]
 pub struct CR_I2C_RXF_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -608,21 +394,9 @@ impl<'a> CR_I2C_RXF_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_txf_mask` reader - "]
-pub struct CR_I2C_TXF_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_TXF_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_TXF_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_TXF_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_txf_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_txf_mask`"]
+pub type CR_I2C_TXF_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_txf_mask`"]
 pub struct CR_I2C_TXF_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -644,21 +418,9 @@ impl<'a> CR_I2C_TXF_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_end_mask` reader - "]
-pub struct CR_I2C_END_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_END_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_END_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_END_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_end_mask` writer - "]
+#[doc = "Reader of field `cr_i2c_end_mask`"]
+pub type CR_I2C_END_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_end_mask`"]
 pub struct CR_I2C_END_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -680,21 +442,9 @@ impl<'a> CR_I2C_END_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_fer_int` reader - "]
-pub struct I2C_FER_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_FER_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_FER_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_FER_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_fer_int` writer - "]
+#[doc = "Reader of field `i2c_fer_int`"]
+pub type I2C_FER_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_fer_int`"]
 pub struct I2C_FER_INT_W<'a> {
     w: &'a mut W,
 }
@@ -716,21 +466,9 @@ impl<'a> I2C_FER_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_arb_int` reader - "]
-pub struct I2C_ARB_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_ARB_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_ARB_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_ARB_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_arb_int` writer - "]
+#[doc = "Reader of field `i2c_arb_int`"]
+pub type I2C_ARB_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_arb_int`"]
 pub struct I2C_ARB_INT_W<'a> {
     w: &'a mut W,
 }
@@ -752,21 +490,9 @@ impl<'a> I2C_ARB_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_nak_int` reader - "]
-pub struct I2C_NAK_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_NAK_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_NAK_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_NAK_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_nak_int` writer - "]
+#[doc = "Reader of field `i2c_nak_int`"]
+pub type I2C_NAK_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_nak_int`"]
 pub struct I2C_NAK_INT_W<'a> {
     w: &'a mut W,
 }
@@ -788,21 +514,9 @@ impl<'a> I2C_NAK_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_rxf_int` reader - "]
-pub struct I2C_RXF_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_RXF_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_RXF_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_RXF_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_rxf_int` writer - "]
+#[doc = "Reader of field `i2c_rxf_int`"]
+pub type I2C_RXF_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_rxf_int`"]
 pub struct I2C_RXF_INT_W<'a> {
     w: &'a mut W,
 }
@@ -824,21 +538,9 @@ impl<'a> I2C_RXF_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_txf_int` reader - "]
-pub struct I2C_TXF_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_TXF_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_TXF_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_TXF_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_txf_int` writer - "]
+#[doc = "Reader of field `i2c_txf_int`"]
+pub type I2C_TXF_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_txf_int`"]
 pub struct I2C_TXF_INT_W<'a> {
     w: &'a mut W,
 }
@@ -860,21 +562,9 @@ impl<'a> I2C_TXF_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `i2c_end_int` reader - "]
-pub struct I2C_END_INT_R(crate::FieldReader<bool, bool>);
-impl I2C_END_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        I2C_END_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for I2C_END_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `i2c_end_int` writer - "]
+#[doc = "Reader of field `i2c_end_int`"]
+pub type I2C_END_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `i2c_end_int`"]
 pub struct I2C_END_INT_W<'a> {
     w: &'a mut W,
 }
@@ -1138,30 +828,5 @@ impl W {
     #[inline(always)]
     pub fn i2c_end_int(&mut self) -> I2C_END_INT_W {
         I2C_END_INT_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "i2c_int_sts.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [i2c_int_sts](index.html) module"]
-pub struct I2C_INT_STS_SPEC;
-impl crate::RegisterSpec for I2C_INT_STS_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [i2c_int_sts::R](R) reader structure"]
-impl crate::Readable for I2C_INT_STS_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [i2c_int_sts::W](W) writer structure"]
-impl crate::Writable for I2C_INT_STS_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets i2c_int_sts to value 0"]
-impl crate::Resettable for I2C_INT_STS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

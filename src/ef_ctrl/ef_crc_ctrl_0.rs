@@ -1,52 +1,18 @@
-#[doc = "Register `ef_crc_ctrl_0` reader"]
-pub struct R(crate::R<EF_CRC_CTRL_0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<EF_CRC_CTRL_0_SPEC>;
+#[doc = "Reader of register ef_crc_ctrl_0"]
+pub type R = crate::R<u32, super::EF_CRC_CTRL_0>;
+#[doc = "Writer for register ef_crc_ctrl_0"]
+pub type W = crate::W<u32, super::EF_CRC_CTRL_0>;
+#[doc = "Register ef_crc_ctrl_0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::EF_CRC_CTRL_0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<EF_CRC_CTRL_0_SPEC>> for R {
-    fn from(reader: crate::R<EF_CRC_CTRL_0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `ef_crc_ctrl_0` writer"]
-pub struct W(crate::W<EF_CRC_CTRL_0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<EF_CRC_CTRL_0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<EF_CRC_CTRL_0_SPEC>> for W {
-    fn from(writer: crate::W<EF_CRC_CTRL_0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `ef_crc_slp_n` reader - "]
-pub struct EF_CRC_SLP_N_R(crate::FieldReader<u16, u16>);
-impl EF_CRC_SLP_N_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        EF_CRC_SLP_N_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_SLP_N_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_slp_n` writer - "]
+#[doc = "Reader of field `ef_crc_slp_n`"]
+pub type EF_CRC_SLP_N_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `ef_crc_slp_n`"]
 pub struct EF_CRC_SLP_N_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> EF_CRC_SLP_N_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_lock` reader - "]
-pub struct EF_CRC_LOCK_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_lock` writer - "]
+#[doc = "Reader of field `ef_crc_lock`"]
+pub type EF_CRC_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_lock`"]
 pub struct EF_CRC_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> EF_CRC_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_int_set` reader - "]
-pub struct EF_CRC_INT_SET_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_INT_SET_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_INT_SET_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_INT_SET_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_int_set` writer - "]
+#[doc = "Reader of field `ef_crc_int_set`"]
+pub type EF_CRC_INT_SET_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_int_set`"]
 pub struct EF_CRC_INT_SET_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> EF_CRC_INT_SET_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_int_clr` reader - "]
-pub struct EF_CRC_INT_CLR_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_INT_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_INT_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_INT_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_int_clr` writer - "]
+#[doc = "Reader of field `ef_crc_int_clr`"]
+pub type EF_CRC_INT_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_int_clr`"]
 pub struct EF_CRC_INT_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> EF_CRC_INT_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_int` reader - "]
-pub struct EF_CRC_INT_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_int` writer - "]
+#[doc = "Reader of field `ef_crc_int`"]
+pub type EF_CRC_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_int`"]
 pub struct EF_CRC_INT_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> EF_CRC_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_din_endian` reader - "]
-pub struct EF_CRC_DIN_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_DIN_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_DIN_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_DIN_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_din_endian` writer - "]
+#[doc = "Reader of field `ef_crc_din_endian`"]
+pub type EF_CRC_DIN_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_din_endian`"]
 pub struct EF_CRC_DIN_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> EF_CRC_DIN_ENDIAN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_dout_endian` reader - "]
-pub struct EF_CRC_DOUT_ENDIAN_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_DOUT_ENDIAN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_DOUT_ENDIAN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_DOUT_ENDIAN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_dout_endian` writer - "]
+#[doc = "Reader of field `ef_crc_dout_endian`"]
+pub type EF_CRC_DOUT_ENDIAN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_dout_endian`"]
 pub struct EF_CRC_DOUT_ENDIAN_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> EF_CRC_DOUT_ENDIAN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_dout_inv_en` reader - "]
-pub struct EF_CRC_DOUT_INV_EN_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_DOUT_INV_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_DOUT_INV_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_DOUT_INV_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_dout_inv_en` writer - "]
+#[doc = "Reader of field `ef_crc_dout_inv_en`"]
+pub type EF_CRC_DOUT_INV_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_dout_inv_en`"]
 pub struct EF_CRC_DOUT_INV_EN_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> EF_CRC_DOUT_INV_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_error` reader - "]
-pub struct EF_CRC_ERROR_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_ERROR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_ERROR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_ERROR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_error` writer - "]
+#[doc = "Reader of field `ef_crc_error`"]
+pub type EF_CRC_ERROR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_error`"]
 pub struct EF_CRC_ERROR_W<'a> {
     w: &'a mut W,
 }
@@ -346,21 +216,9 @@ impl<'a> EF_CRC_ERROR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_mode` reader - "]
-pub struct EF_CRC_MODE_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_mode` writer - "]
+#[doc = "Reader of field `ef_crc_mode`"]
+pub type EF_CRC_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_mode`"]
 pub struct EF_CRC_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -382,21 +240,9 @@ impl<'a> EF_CRC_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_en` reader - "]
-pub struct EF_CRC_EN_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_en` writer - "]
+#[doc = "Reader of field `ef_crc_en`"]
+pub type EF_CRC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_en`"]
 pub struct EF_CRC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -418,21 +264,9 @@ impl<'a> EF_CRC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_trig` reader - "]
-pub struct EF_CRC_TRIG_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_TRIG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_TRIG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_TRIG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_trig` writer - "]
+#[doc = "Reader of field `ef_crc_trig`"]
+pub type EF_CRC_TRIG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_trig`"]
 pub struct EF_CRC_TRIG_W<'a> {
     w: &'a mut W,
 }
@@ -454,21 +288,9 @@ impl<'a> EF_CRC_TRIG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_crc_busy` reader - "]
-pub struct EF_CRC_BUSY_R(crate::FieldReader<bool, bool>);
-impl EF_CRC_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        EF_CRC_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_CRC_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_crc_busy` writer - "]
+#[doc = "Reader of field `ef_crc_busy`"]
+pub type EF_CRC_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ef_crc_busy`"]
 pub struct EF_CRC_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -622,30 +444,5 @@ impl W {
     #[inline(always)]
     pub fn ef_crc_busy(&mut self) -> EF_CRC_BUSY_W {
         EF_CRC_BUSY_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "ef_crc_ctrl_0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ef_crc_ctrl_0](index.html) module"]
-pub struct EF_CRC_CTRL_0_SPEC;
-impl crate::RegisterSpec for EF_CRC_CTRL_0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [ef_crc_ctrl_0::R](R) reader structure"]
-impl crate::Readable for EF_CRC_CTRL_0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [ef_crc_ctrl_0::W](W) writer structure"]
-impl crate::Writable for EF_CRC_CTRL_0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets ef_crc_ctrl_0 to value 0"]
-impl crate::Resettable for EF_CRC_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

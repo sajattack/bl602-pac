@@ -1,52 +1,18 @@
-#[doc = "Register `MBIST_CTL` reader"]
-pub struct R(crate::R<MBIST_CTL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<MBIST_CTL_SPEC>;
+#[doc = "Reader of register MBIST_CTL"]
+pub type R = crate::R<u32, super::MBIST_CTL>;
+#[doc = "Writer for register MBIST_CTL"]
+pub type W = crate::W<u32, super::MBIST_CTL>;
+#[doc = "Register MBIST_CTL `reset()`'s with value 0"]
+impl crate::ResetValue for super::MBIST_CTL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<MBIST_CTL_SPEC>> for R {
-    fn from(reader: crate::R<MBIST_CTL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `MBIST_CTL` writer"]
-pub struct W(crate::W<MBIST_CTL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<MBIST_CTL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<MBIST_CTL_SPEC>> for W {
-    fn from(writer: crate::W<MBIST_CTL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `reg_mbist_rst_n` reader - "]
-pub struct REG_MBIST_RST_N_R(crate::FieldReader<bool, bool>);
-impl REG_MBIST_RST_N_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        REG_MBIST_RST_N_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for REG_MBIST_RST_N_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `reg_mbist_rst_n` writer - "]
+#[doc = "Reader of field `reg_mbist_rst_n`"]
+pub type REG_MBIST_RST_N_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `reg_mbist_rst_n`"]
 pub struct REG_MBIST_RST_N_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> REG_MBIST_RST_N_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wifi_mbist_mode` reader - "]
-pub struct WIFI_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl WIFI_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WIFI_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WIFI_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wifi_mbist_mode` writer - "]
+#[doc = "Reader of field `wifi_mbist_mode`"]
+pub type WIFI_MBIST_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wifi_mbist_mode`"]
 pub struct WIFI_MBIST_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> WIFI_MBIST_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ocram_mbist_mode` reader - "]
-pub struct OCRAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_mode` writer - "]
+#[doc = "Reader of field `ocram_mbist_mode`"]
+pub type OCRAM_MBIST_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ocram_mbist_mode`"]
 pub struct OCRAM_MBIST_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> OCRAM_MBIST_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tag_mbist_mode` reader - "]
-pub struct TAG_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_mode` writer - "]
+#[doc = "Reader of field `tag_mbist_mode`"]
+pub type TAG_MBIST_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tag_mbist_mode`"]
 pub struct TAG_MBIST_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> TAG_MBIST_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hsram_mbist_mode` reader - "]
-pub struct HSRAM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mbist_mode` writer - "]
+#[doc = "Reader of field `hsram_mbist_mode`"]
+pub type HSRAM_MBIST_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hsram_mbist_mode`"]
 pub struct HSRAM_MBIST_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> HSRAM_MBIST_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irom_mbist_mode` reader - "]
-pub struct IROM_MBIST_MODE_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irom_mbist_mode` writer - "]
+#[doc = "Reader of field `irom_mbist_mode`"]
+pub type IROM_MBIST_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irom_mbist_mode`"]
 pub struct IROM_MBIST_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -310,30 +216,5 @@ impl W {
     #[inline(always)]
     pub fn irom_mbist_mode(&mut self) -> IROM_MBIST_MODE_W {
         IROM_MBIST_MODE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "MBIST_CTL.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mbist_ctl](index.html) module"]
-pub struct MBIST_CTL_SPEC;
-impl crate::RegisterSpec for MBIST_CTL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [mbist_ctl::R](R) reader structure"]
-impl crate::Readable for MBIST_CTL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [mbist_ctl::W](W) writer structure"]
-impl crate::Writable for MBIST_CTL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets MBIST_CTL to value 0"]
-impl crate::Resettable for MBIST_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

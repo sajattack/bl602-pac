@@ -1,52 +1,18 @@
-#[doc = "Register `HBN_CTL` reader"]
-pub struct R(crate::R<HBN_CTL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBN_CTL_SPEC>;
+#[doc = "Reader of register HBN_CTL"]
+pub type R = crate::R<u32, super::HBN_CTL>;
+#[doc = "Writer for register HBN_CTL"]
+pub type W = crate::W<u32, super::HBN_CTL>;
+#[doc = "Register HBN_CTL `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBN_CTL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBN_CTL_SPEC>> for R {
-    fn from(reader: crate::R<HBN_CTL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `HBN_CTL` writer"]
-pub struct W(crate::W<HBN_CTL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBN_CTL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBN_CTL_SPEC>> for W {
-    fn from(writer: crate::W<HBN_CTL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hbn_state` reader - "]
-pub struct HBN_STATE_R(crate::FieldReader<u8, u8>);
-impl HBN_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_state` writer - "]
+#[doc = "Reader of field `hbn_state`"]
+pub type HBN_STATE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_state`"]
 pub struct HBN_STATE_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> HBN_STATE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sram_slp` reader - "]
-pub struct SRAM_SLP_R(crate::FieldReader<bool, bool>);
-impl SRAM_SLP_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SRAM_SLP_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SRAM_SLP_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sram_slp` writer - "]
+#[doc = "Reader of field `sram_slp`"]
+pub type SRAM_SLP_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sram_slp`"]
 pub struct SRAM_SLP_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> SRAM_SLP_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sram_slp_option` reader - "]
-pub struct SRAM_SLP_OPTION_R(crate::FieldReader<bool, bool>);
-impl SRAM_SLP_OPTION_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SRAM_SLP_OPTION_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SRAM_SLP_OPTION_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sram_slp_option` writer - "]
+#[doc = "Reader of field `sram_slp_option`"]
+pub type SRAM_SLP_OPTION_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sram_slp_option`"]
 pub struct SRAM_SLP_OPTION_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SRAM_SLP_OPTION_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwr_on_option` reader - "]
-pub struct PWR_ON_OPTION_R(crate::FieldReader<bool, bool>);
-impl PWR_ON_OPTION_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWR_ON_OPTION_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWR_ON_OPTION_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwr_on_option` writer - "]
+#[doc = "Reader of field `pwr_on_option`"]
+pub type PWR_ON_OPTION_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwr_on_option`"]
 pub struct PWR_ON_OPTION_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> PWR_ON_OPTION_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rtc_dly_option` reader - "]
-pub struct RTC_DLY_OPTION_R(crate::FieldReader<bool, bool>);
-impl RTC_DLY_OPTION_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RTC_DLY_OPTION_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RTC_DLY_OPTION_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rtc_dly_option` writer - "]
+#[doc = "Reader of field `rtc_dly_option`"]
+pub type RTC_DLY_OPTION_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rtc_dly_option`"]
 pub struct RTC_DLY_OPTION_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> RTC_DLY_OPTION_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_dcdc18_aon` reader - "]
-pub struct PU_DCDC18_AON_R(crate::FieldReader<bool, bool>);
-impl PU_DCDC18_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_DCDC18_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_DCDC18_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_dcdc18_aon` writer - "]
+#[doc = "Reader of field `pu_dcdc18_aon`"]
+pub type PU_DCDC18_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_dcdc18_aon`"]
 pub struct PU_DCDC18_AON_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> PU_DCDC18_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_ldo11_aon_vout_sel` reader - "]
-pub struct HBN_LDO11_AON_VOUT_SEL_R(crate::FieldReader<u8, u8>);
-impl HBN_LDO11_AON_VOUT_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_LDO11_AON_VOUT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_LDO11_AON_VOUT_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_ldo11_aon_vout_sel` writer - "]
+#[doc = "Reader of field `hbn_ldo11_aon_vout_sel`"]
+pub type HBN_LDO11_AON_VOUT_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_ldo11_aon_vout_sel`"]
 pub struct HBN_LDO11_AON_VOUT_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> HBN_LDO11_AON_VOUT_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_ldo11_rt_vout_sel` reader - "]
-pub struct HBN_LDO11_RT_VOUT_SEL_R(crate::FieldReader<u8, u8>);
-impl HBN_LDO11_RT_VOUT_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_LDO11_RT_VOUT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_LDO11_RT_VOUT_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_ldo11_rt_vout_sel` writer - "]
+#[doc = "Reader of field `hbn_ldo11_rt_vout_sel`"]
+pub type HBN_LDO11_RT_VOUT_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_ldo11_rt_vout_sel`"]
 pub struct HBN_LDO11_RT_VOUT_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -290,21 +172,9 @@ impl<'a> HBN_LDO11_RT_VOUT_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_dis_pwr_off_ldo11_rt` reader - "]
-pub struct HBN_DIS_PWR_OFF_LDO11_RT_R(crate::FieldReader<bool, bool>);
-impl HBN_DIS_PWR_OFF_LDO11_RT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_DIS_PWR_OFF_LDO11_RT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_DIS_PWR_OFF_LDO11_RT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_dis_pwr_off_ldo11_rt` writer - "]
+#[doc = "Reader of field `hbn_dis_pwr_off_ldo11_rt`"]
+pub type HBN_DIS_PWR_OFF_LDO11_RT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hbn_dis_pwr_off_ldo11_rt`"]
 pub struct HBN_DIS_PWR_OFF_LDO11_RT_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> HBN_DIS_PWR_OFF_LDO11_RT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_dis_pwr_off_ldo11` reader - "]
-pub struct HBN_DIS_PWR_OFF_LDO11_R(crate::FieldReader<bool, bool>);
-impl HBN_DIS_PWR_OFF_LDO11_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_DIS_PWR_OFF_LDO11_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_DIS_PWR_OFF_LDO11_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_dis_pwr_off_ldo11` writer - "]
+#[doc = "Reader of field `hbn_dis_pwr_off_ldo11`"]
+pub type HBN_DIS_PWR_OFF_LDO11_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hbn_dis_pwr_off_ldo11`"]
 pub struct HBN_DIS_PWR_OFF_LDO11_W<'a> {
     w: &'a mut W,
 }
@@ -362,21 +220,9 @@ impl<'a> HBN_DIS_PWR_OFF_LDO11_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sw_rst` reader - "]
-pub struct SW_RST_R(crate::FieldReader<bool, bool>);
-impl SW_RST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SW_RST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_RST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_rst` writer - "]
+#[doc = "Reader of field `sw_rst`"]
+pub type SW_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sw_rst`"]
 pub struct SW_RST_W<'a> {
     w: &'a mut W,
 }
@@ -398,21 +244,9 @@ impl<'a> SW_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwrdn_hbn_rtc` reader - "]
-pub struct PWRDN_HBN_RTC_R(crate::FieldReader<bool, bool>);
-impl PWRDN_HBN_RTC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWRDN_HBN_RTC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWRDN_HBN_RTC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwrdn_hbn_rtc` writer - "]
+#[doc = "Reader of field `pwrdn_hbn_rtc`"]
+pub type PWRDN_HBN_RTC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwrdn_hbn_rtc`"]
 pub struct PWRDN_HBN_RTC_W<'a> {
     w: &'a mut W,
 }
@@ -434,21 +268,9 @@ impl<'a> PWRDN_HBN_RTC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwrdn_hbn_core` reader - "]
-pub struct PWRDN_HBN_CORE_R(crate::FieldReader<bool, bool>);
-impl PWRDN_HBN_CORE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWRDN_HBN_CORE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWRDN_HBN_CORE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwrdn_hbn_core` writer - "]
+#[doc = "Reader of field `pwrdn_hbn_core`"]
+pub type PWRDN_HBN_CORE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwrdn_hbn_core`"]
 pub struct PWRDN_HBN_CORE_W<'a> {
     w: &'a mut W,
 }
@@ -470,21 +292,9 @@ impl<'a> PWRDN_HBN_CORE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `trap_mode` reader - "]
-pub struct TRAP_MODE_R(crate::FieldReader<bool, bool>);
-impl TRAP_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TRAP_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TRAP_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `trap_mode` writer - "]
+#[doc = "Reader of field `trap_mode`"]
+pub type TRAP_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `trap_mode`"]
 pub struct TRAP_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -506,21 +316,9 @@ impl<'a> TRAP_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hbn_mode` reader - "]
-pub struct HBN_MODE_R(crate::FieldReader<bool, bool>);
-impl HBN_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HBN_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_mode` writer - "]
+#[doc = "Reader of field `hbn_mode`"]
+pub type HBN_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hbn_mode`"]
 pub struct HBN_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -542,21 +340,9 @@ impl<'a> HBN_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rtc_ctl` reader - "]
-pub struct RTC_CTL_R(crate::FieldReader<u8, u8>);
-impl RTC_CTL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RTC_CTL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RTC_CTL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rtc_ctl` writer - "]
+#[doc = "Reader of field `rtc_ctl`"]
+pub type RTC_CTL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rtc_ctl`"]
 pub struct RTC_CTL_W<'a> {
     w: &'a mut W,
 }
@@ -730,30 +516,5 @@ impl W {
     #[inline(always)]
     pub fn rtc_ctl(&mut self) -> RTC_CTL_W {
         RTC_CTL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "HBN_CTL.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbn_ctl](index.html) module"]
-pub struct HBN_CTL_SPEC;
-impl crate::RegisterSpec for HBN_CTL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbn_ctl::R](R) reader structure"]
-impl crate::Readable for HBN_CTL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbn_ctl::W](W) writer structure"]
-impl crate::Writable for HBN_CTL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets HBN_CTL to value 0"]
-impl crate::Resettable for HBN_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

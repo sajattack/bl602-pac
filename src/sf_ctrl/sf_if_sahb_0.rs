@@ -1,52 +1,18 @@
-#[doc = "Register `sf_if_sahb_0` reader"]
-pub struct R(crate::R<SF_IF_SAHB_0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SF_IF_SAHB_0_SPEC>;
+#[doc = "Reader of register sf_if_sahb_0"]
+pub type R = crate::R<u32, super::SF_IF_SAHB_0>;
+#[doc = "Writer for register sf_if_sahb_0"]
+pub type W = crate::W<u32, super::SF_IF_SAHB_0>;
+#[doc = "Register sf_if_sahb_0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SF_IF_SAHB_0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SF_IF_SAHB_0_SPEC>> for R {
-    fn from(reader: crate::R<SF_IF_SAHB_0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `sf_if_sahb_0` writer"]
-pub struct W(crate::W<SF_IF_SAHB_0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SF_IF_SAHB_0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SF_IF_SAHB_0_SPEC>> for W {
-    fn from(writer: crate::W<SF_IF_SAHB_0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `sf_if_0_qpi_mode_en` reader - "]
-pub struct SF_IF_0_QPI_MODE_EN_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_QPI_MODE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_QPI_MODE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_QPI_MODE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_qpi_mode_en` writer - "]
+#[doc = "Reader of field `sf_if_0_qpi_mode_en`"]
+pub type SF_IF_0_QPI_MODE_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_qpi_mode_en`"]
 pub struct SF_IF_0_QPI_MODE_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> SF_IF_0_QPI_MODE_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_spi_mode` reader - "]
-pub struct SF_IF_0_SPI_MODE_R(crate::FieldReader<u8, u8>);
-impl SF_IF_0_SPI_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IF_0_SPI_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_SPI_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_spi_mode` writer - "]
+#[doc = "Reader of field `sf_if_0_spi_mode`"]
+pub type SF_IF_0_SPI_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_if_0_spi_mode`"]
 pub struct SF_IF_0_SPI_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> SF_IF_0_SPI_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_cmd_en` reader - "]
-pub struct SF_IF_0_CMD_EN_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_CMD_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_CMD_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_CMD_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_cmd_en` writer - "]
+#[doc = "Reader of field `sf_if_0_cmd_en`"]
+pub type SF_IF_0_CMD_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_cmd_en`"]
 pub struct SF_IF_0_CMD_EN_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SF_IF_0_CMD_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_adr_en` reader - "]
-pub struct SF_IF_0_ADR_EN_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_ADR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_ADR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_ADR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_adr_en` writer - "]
+#[doc = "Reader of field `sf_if_0_adr_en`"]
+pub type SF_IF_0_ADR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_adr_en`"]
 pub struct SF_IF_0_ADR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> SF_IF_0_ADR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_dmy_en` reader - "]
-pub struct SF_IF_0_DMY_EN_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_DMY_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_DMY_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_DMY_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_dmy_en` writer - "]
+#[doc = "Reader of field `sf_if_0_dmy_en`"]
+pub type SF_IF_0_DMY_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_dmy_en`"]
 pub struct SF_IF_0_DMY_EN_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> SF_IF_0_DMY_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_dat_en` reader - "]
-pub struct SF_IF_0_DAT_EN_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_DAT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_DAT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_DAT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_dat_en` writer - "]
+#[doc = "Reader of field `sf_if_0_dat_en`"]
+pub type SF_IF_0_DAT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_dat_en`"]
 pub struct SF_IF_0_DAT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> SF_IF_0_DAT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_dat_rw  ` reader - "]
-pub struct SF_IF_0_DAT_RW_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_DAT_RW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_DAT_RW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_DAT_RW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_dat_rw  ` writer - "]
+#[doc = "Reader of field `sf_if_0_dat_rw  `"]
+pub type SF_IF_0_DAT_RW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_dat_rw  `"]
 pub struct SF_IF_0_DAT_RW_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> SF_IF_0_DAT_RW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_cmd_byte` reader - "]
-pub struct SF_IF_0_CMD_BYTE_R(crate::FieldReader<u8, u8>);
-impl SF_IF_0_CMD_BYTE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IF_0_CMD_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_CMD_BYTE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_cmd_byte` writer - "]
+#[doc = "Reader of field `sf_if_0_cmd_byte`"]
+pub type SF_IF_0_CMD_BYTE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_if_0_cmd_byte`"]
 pub struct SF_IF_0_CMD_BYTE_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> SF_IF_0_CMD_BYTE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_adr_byte` reader - "]
-pub struct SF_IF_0_ADR_BYTE_R(crate::FieldReader<u8, u8>);
-impl SF_IF_0_ADR_BYTE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IF_0_ADR_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_ADR_BYTE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_adr_byte` writer - "]
+#[doc = "Reader of field `sf_if_0_adr_byte`"]
+pub type SF_IF_0_ADR_BYTE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_if_0_adr_byte`"]
 pub struct SF_IF_0_ADR_BYTE_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> SF_IF_0_ADR_BYTE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_dmy_byte` reader - "]
-pub struct SF_IF_0_DMY_BYTE_R(crate::FieldReader<u8, u8>);
-impl SF_IF_0_DMY_BYTE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SF_IF_0_DMY_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_DMY_BYTE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_dmy_byte` writer - "]
+#[doc = "Reader of field `sf_if_0_dmy_byte`"]
+pub type SF_IF_0_DMY_BYTE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `sf_if_0_dmy_byte`"]
 pub struct SF_IF_0_DMY_BYTE_W<'a> {
     w: &'a mut W,
 }
@@ -352,21 +210,9 @@ impl<'a> SF_IF_0_DMY_BYTE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_dat_byte` reader - "]
-pub struct SF_IF_0_DAT_BYTE_R(crate::FieldReader<u16, u16>);
-impl SF_IF_0_DAT_BYTE_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SF_IF_0_DAT_BYTE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_DAT_BYTE_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_dat_byte` writer - "]
+#[doc = "Reader of field `sf_if_0_dat_byte`"]
+pub type SF_IF_0_DAT_BYTE_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `sf_if_0_dat_byte`"]
 pub struct SF_IF_0_DAT_BYTE_W<'a> {
     w: &'a mut W,
 }
@@ -378,21 +224,9 @@ impl<'a> SF_IF_0_DAT_BYTE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_0_trig` reader - "]
-pub struct SF_IF_0_TRIG_R(crate::FieldReader<bool, bool>);
-impl SF_IF_0_TRIG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_0_TRIG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_0_TRIG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_0_trig` writer - "]
+#[doc = "Reader of field `sf_if_0_trig`"]
+pub type SF_IF_0_TRIG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_0_trig`"]
 pub struct SF_IF_0_TRIG_W<'a> {
     w: &'a mut W,
 }
@@ -414,21 +248,9 @@ impl<'a> SF_IF_0_TRIG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `sf_if_busy` reader - "]
-pub struct SF_IF_BUSY_R(crate::FieldReader<bool, bool>);
-impl SF_IF_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SF_IF_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SF_IF_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sf_if_busy` writer - "]
+#[doc = "Reader of field `sf_if_busy`"]
+pub type SF_IF_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sf_if_busy`"]
 pub struct SF_IF_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -582,30 +404,5 @@ impl W {
     #[inline(always)]
     pub fn sf_if_busy(&mut self) -> SF_IF_BUSY_W {
         SF_IF_BUSY_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "sf_if_sahb_0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [sf_if_sahb_0](index.html) module"]
-pub struct SF_IF_SAHB_0_SPEC;
-impl crate::RegisterSpec for SF_IF_SAHB_0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [sf_if_sahb_0::R](R) reader structure"]
-impl crate::Readable for SF_IF_SAHB_0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [sf_if_sahb_0::W](W) writer structure"]
-impl crate::Writable for SF_IF_SAHB_0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets sf_if_sahb_0 to value 0"]
-impl crate::Resettable for SF_IF_SAHB_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

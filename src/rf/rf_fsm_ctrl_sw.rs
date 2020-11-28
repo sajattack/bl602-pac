@@ -1,52 +1,18 @@
-#[doc = "Register `rf_fsm_ctrl_sw` reader"]
-pub struct R(crate::R<RF_FSM_CTRL_SW_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RF_FSM_CTRL_SW_SPEC>;
+#[doc = "Reader of register rf_fsm_ctrl_sw"]
+pub type R = crate::R<u32, super::RF_FSM_CTRL_SW>;
+#[doc = "Writer for register rf_fsm_ctrl_sw"]
+pub type W = crate::W<u32, super::RF_FSM_CTRL_SW>;
+#[doc = "Register rf_fsm_ctrl_sw `reset()`'s with value 0"]
+impl crate::ResetValue for super::RF_FSM_CTRL_SW {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RF_FSM_CTRL_SW_SPEC>> for R {
-    fn from(reader: crate::R<RF_FSM_CTRL_SW_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rf_fsm_ctrl_sw` writer"]
-pub struct W(crate::W<RF_FSM_CTRL_SW_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RF_FSM_CTRL_SW_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RF_FSM_CTRL_SW_SPEC>> for W {
-    fn from(writer: crate::W<RF_FSM_CTRL_SW_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `lo_unlocked` reader - "]
-pub struct LO_UNLOCKED_R(crate::FieldReader<bool, bool>);
-impl LO_UNLOCKED_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_UNLOCKED_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_UNLOCKED_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_unlocked` writer - "]
+#[doc = "Reader of field `lo_unlocked`"]
+pub type LO_UNLOCKED_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_unlocked`"]
 pub struct LO_UNLOCKED_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> LO_UNLOCKED_W<'a> {
         self.w
     }
 }
-#[doc = "Field `inc_cal_timeout` reader - "]
-pub struct INC_CAL_TIMEOUT_R(crate::FieldReader<bool, bool>);
-impl INC_CAL_TIMEOUT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        INC_CAL_TIMEOUT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_CAL_TIMEOUT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_cal_timeout` writer - "]
+#[doc = "Reader of field `inc_cal_timeout`"]
+pub type INC_CAL_TIMEOUT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `inc_cal_timeout`"]
 pub struct INC_CAL_TIMEOUT_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> INC_CAL_TIMEOUT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `full_cal_en` reader - "]
-pub struct FULL_CAL_EN_R(crate::FieldReader<bool, bool>);
-impl FULL_CAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FULL_CAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FULL_CAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `full_cal_en` writer - "]
+#[doc = "Reader of field `full_cal_en`"]
+pub type FULL_CAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `full_cal_en`"]
 pub struct FULL_CAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> FULL_CAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_sw_st_vld` reader - "]
-pub struct RF_FSM_SW_ST_VLD_R(crate::FieldReader<bool, bool>);
-impl RF_FSM_SW_ST_VLD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RF_FSM_SW_ST_VLD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_SW_ST_VLD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_sw_st_vld` writer - "]
+#[doc = "Reader of field `rf_fsm_sw_st_vld`"]
+pub type RF_FSM_SW_ST_VLD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rf_fsm_sw_st_vld`"]
 pub struct RF_FSM_SW_ST_VLD_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> RF_FSM_SW_ST_VLD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_fsm_sw_st` reader - "]
-pub struct RF_FSM_SW_ST_R(crate::FieldReader<u8, u8>);
-impl RF_FSM_SW_ST_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_FSM_SW_ST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_FSM_SW_ST_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_fsm_sw_st` writer - "]
+#[doc = "Reader of field `rf_fsm_sw_st`"]
+pub type RF_FSM_SW_ST_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_fsm_sw_st`"]
 pub struct RF_FSM_SW_ST_W<'a> {
     w: &'a mut W,
 }
@@ -254,30 +172,5 @@ impl W {
     #[inline(always)]
     pub fn rf_fsm_sw_st(&mut self) -> RF_FSM_SW_ST_W {
         RF_FSM_SW_ST_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rfsm status reg\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rf_fsm_ctrl_sw](index.html) module"]
-pub struct RF_FSM_CTRL_SW_SPEC;
-impl crate::RegisterSpec for RF_FSM_CTRL_SW_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rf_fsm_ctrl_sw::R](R) reader structure"]
-impl crate::Readable for RF_FSM_CTRL_SW_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rf_fsm_ctrl_sw::W](W) writer structure"]
-impl crate::Writable for RF_FSM_CTRL_SW_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rf_fsm_ctrl_sw to value 0"]
-impl crate::Resettable for RF_FSM_CTRL_SW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

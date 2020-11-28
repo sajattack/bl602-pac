@@ -1,52 +1,18 @@
-#[doc = "Register `HBN_TIME_H` reader"]
-pub struct R(crate::R<HBN_TIME_H_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBN_TIME_H_SPEC>;
+#[doc = "Reader of register HBN_TIME_H"]
+pub type R = crate::R<u32, super::HBN_TIME_H>;
+#[doc = "Writer for register HBN_TIME_H"]
+pub type W = crate::W<u32, super::HBN_TIME_H>;
+#[doc = "Register HBN_TIME_H `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBN_TIME_H {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBN_TIME_H_SPEC>> for R {
-    fn from(reader: crate::R<HBN_TIME_H_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `HBN_TIME_H` writer"]
-pub struct W(crate::W<HBN_TIME_H_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBN_TIME_H_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBN_TIME_H_SPEC>> for W {
-    fn from(writer: crate::W<HBN_TIME_H_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hbn_time_h` reader - "]
-pub struct HBN_TIME_H_R(crate::FieldReader<u8, u8>);
-impl HBN_TIME_H_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_TIME_H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_TIME_H_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_time_h` writer - "]
+#[doc = "Reader of field `hbn_time_h`"]
+pub type HBN_TIME_H_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_time_h`"]
 pub struct HBN_TIME_H_W<'a> {
     w: &'a mut W,
 }
@@ -70,30 +36,5 @@ impl W {
     #[inline(always)]
     pub fn hbn_time_h(&mut self) -> HBN_TIME_H_W {
         HBN_TIME_H_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "HBN_TIME_H.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbn_time_h](index.html) module"]
-pub struct HBN_TIME_H_SPEC;
-impl crate::RegisterSpec for HBN_TIME_H_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbn_time_h::R](R) reader structure"]
-impl crate::Readable for HBN_TIME_H_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbn_time_h::W](W) writer structure"]
-impl crate::Writable for HBN_TIME_H_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets HBN_TIME_H to value 0"]
-impl crate::Resettable for HBN_TIME_H_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

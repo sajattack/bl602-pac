@@ -1,52 +1,18 @@
-#[doc = "Register `rc32m_ctrl0` reader"]
-pub struct R(crate::R<RC32M_CTRL0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RC32M_CTRL0_SPEC>;
+#[doc = "Reader of register rc32m_ctrl0"]
+pub type R = crate::R<u32, super::RC32M_CTRL0>;
+#[doc = "Writer for register rc32m_ctrl0"]
+pub type W = crate::W<u32, super::RC32M_CTRL0>;
+#[doc = "Register rc32m_ctrl0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::RC32M_CTRL0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RC32M_CTRL0_SPEC>> for R {
-    fn from(reader: crate::R<RC32M_CTRL0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rc32m_ctrl0` writer"]
-pub struct W(crate::W<RC32M_CTRL0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RC32M_CTRL0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RC32M_CTRL0_SPEC>> for W {
-    fn from(writer: crate::W<RC32M_CTRL0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rc32m_code_fr_ext` reader - "]
-pub struct RC32M_CODE_FR_EXT_R(crate::FieldReader<u8, u8>);
-impl RC32M_CODE_FR_EXT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RC32M_CODE_FR_EXT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CODE_FR_EXT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_code_fr_ext` writer - "]
+#[doc = "Reader of field `rc32m_code_fr_ext`"]
+pub type RC32M_CODE_FR_EXT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rc32m_code_fr_ext`"]
 pub struct RC32M_CODE_FR_EXT_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RC32M_CODE_FR_EXT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_pd` reader - "]
-pub struct RC32M_PD_R(crate::FieldReader<bool, bool>);
-impl RC32M_PD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_PD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_PD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_pd` writer - "]
+#[doc = "Reader of field `rc32m_pd`"]
+pub type RC32M_PD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_pd`"]
 pub struct RC32M_PD_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> RC32M_PD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_cal_en` reader - "]
-pub struct RC32M_CAL_EN_R(crate::FieldReader<bool, bool>);
-impl RC32M_CAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_CAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_cal_en` writer - "]
+#[doc = "Reader of field `rc32m_cal_en`"]
+pub type RC32M_CAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_cal_en`"]
 pub struct RC32M_CAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> RC32M_CAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_ext_code_en` reader - "]
-pub struct RC32M_EXT_CODE_EN_R(crate::FieldReader<bool, bool>);
-impl RC32M_EXT_CODE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_EXT_CODE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_EXT_CODE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_ext_code_en` writer - "]
+#[doc = "Reader of field `rc32m_ext_code_en`"]
+pub type RC32M_EXT_CODE_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_ext_code_en`"]
 pub struct RC32M_EXT_CODE_EN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> RC32M_EXT_CODE_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_refclk_half` reader - "]
-pub struct RC32M_REFCLK_HALF_R(crate::FieldReader<bool, bool>);
-impl RC32M_REFCLK_HALF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_REFCLK_HALF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_REFCLK_HALF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_refclk_half` writer - "]
+#[doc = "Reader of field `rc32m_refclk_half`"]
+pub type RC32M_REFCLK_HALF_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_refclk_half`"]
 pub struct RC32M_REFCLK_HALF_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> RC32M_REFCLK_HALF_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_allow_cal` reader - "]
-pub struct RC32M_ALLOW_CAL_R(crate::FieldReader<bool, bool>);
-impl RC32M_ALLOW_CAL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_ALLOW_CAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_ALLOW_CAL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_allow_cal` writer - "]
+#[doc = "Reader of field `rc32m_allow_cal`"]
+pub type RC32M_ALLOW_CAL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_allow_cal`"]
 pub struct RC32M_ALLOW_CAL_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> RC32M_ALLOW_CAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_dig_code_fr_cal` reader - "]
-pub struct RC32M_DIG_CODE_FR_CAL_R(crate::FieldReader<u8, u8>);
-impl RC32M_DIG_CODE_FR_CAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RC32M_DIG_CODE_FR_CAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_DIG_CODE_FR_CAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_dig_code_fr_cal` writer - "]
+#[doc = "Reader of field `rc32m_dig_code_fr_cal`"]
+pub type RC32M_DIG_CODE_FR_CAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rc32m_dig_code_fr_cal`"]
 pub struct RC32M_DIG_CODE_FR_CAL_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> RC32M_DIG_CODE_FR_CAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_cal_precharge` reader - "]
-pub struct RC32M_CAL_PRECHARGE_R(crate::FieldReader<bool, bool>);
-impl RC32M_CAL_PRECHARGE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_CAL_PRECHARGE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CAL_PRECHARGE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_cal_precharge` writer - "]
+#[doc = "Reader of field `rc32m_cal_precharge`"]
+pub type RC32M_CAL_PRECHARGE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_cal_precharge`"]
 pub struct RC32M_CAL_PRECHARGE_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> RC32M_CAL_PRECHARGE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_cal_div` reader - "]
-pub struct RC32M_CAL_DIV_R(crate::FieldReader<u8, u8>);
-impl RC32M_CAL_DIV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RC32M_CAL_DIV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CAL_DIV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_cal_div` writer - "]
+#[doc = "Reader of field `rc32m_cal_div`"]
+pub type RC32M_CAL_DIV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rc32m_cal_div`"]
 pub struct RC32M_CAL_DIV_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> RC32M_CAL_DIV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_cal_inprogress` reader - "]
-pub struct RC32M_CAL_INPROGRESS_R(crate::FieldReader<bool, bool>);
-impl RC32M_CAL_INPROGRESS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_CAL_INPROGRESS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CAL_INPROGRESS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_cal_inprogress` writer - "]
+#[doc = "Reader of field `rc32m_cal_inprogress`"]
+pub type RC32M_CAL_INPROGRESS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_cal_inprogress`"]
 pub struct RC32M_CAL_INPROGRESS_W<'a> {
     w: &'a mut W,
 }
@@ -362,21 +220,9 @@ impl<'a> RC32M_CAL_INPROGRESS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_rdy` reader - "]
-pub struct RC32M_RDY_R(crate::FieldReader<bool, bool>);
-impl RC32M_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_rdy` writer - "]
+#[doc = "Reader of field `rc32m_rdy`"]
+pub type RC32M_RDY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_rdy`"]
 pub struct RC32M_RDY_W<'a> {
     w: &'a mut W,
 }
@@ -398,21 +244,9 @@ impl<'a> RC32M_RDY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rc32m_cal_done` reader - "]
-pub struct RC32M_CAL_DONE_R(crate::FieldReader<bool, bool>);
-impl RC32M_CAL_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RC32M_CAL_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RC32M_CAL_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rc32m_cal_done` writer - "]
+#[doc = "Reader of field `rc32m_cal_done`"]
+pub type RC32M_CAL_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rc32m_cal_done`"]
 pub struct RC32M_CAL_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -556,30 +390,5 @@ impl W {
     #[inline(always)]
     pub fn rc32m_cal_done(&mut self) -> RC32M_CAL_DONE_W {
         RC32M_CAL_DONE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rc32m_ctrl0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rc32m_ctrl0](index.html) module"]
-pub struct RC32M_CTRL0_SPEC;
-impl crate::RegisterSpec for RC32M_CTRL0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rc32m_ctrl0::R](R) reader structure"]
-impl crate::Readable for RC32M_CTRL0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rc32m_ctrl0::W](W) writer structure"]
-impl crate::Writable for RC32M_CTRL0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rc32m_ctrl0 to value 0"]
-impl crate::Resettable for RC32M_CTRL0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

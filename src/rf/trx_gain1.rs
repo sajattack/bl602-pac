@@ -1,52 +1,18 @@
-#[doc = "Register `trx_gain1` reader"]
-pub struct R(crate::R<TRX_GAIN1_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TRX_GAIN1_SPEC>;
+#[doc = "Reader of register trx_gain1"]
+pub type R = crate::R<u32, super::TRX_GAIN1>;
+#[doc = "Writer for register trx_gain1"]
+pub type W = crate::W<u32, super::TRX_GAIN1>;
+#[doc = "Register trx_gain1 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TRX_GAIN1 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TRX_GAIN1_SPEC>> for R {
-    fn from(reader: crate::R<TRX_GAIN1_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `trx_gain1` writer"]
-pub struct W(crate::W<TRX_GAIN1_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TRX_GAIN1_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TRX_GAIN1_SPEC>> for W {
-    fn from(writer: crate::W<TRX_GAIN1_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `gc_tbb_boost` reader - "]
-pub struct GC_TBB_BOOST_R(crate::FieldReader<u8, u8>);
-impl GC_TBB_BOOST_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_TBB_BOOST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_TBB_BOOST_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_tbb_boost` writer - "]
+#[doc = "Reader of field `gc_tbb_boost`"]
+pub type GC_TBB_BOOST_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_tbb_boost`"]
 pub struct GC_TBB_BOOST_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> GC_TBB_BOOST_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_tbb` reader - "]
-pub struct GC_TBB_R(crate::FieldReader<u8, u8>);
-impl GC_TBB_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_TBB_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_TBB_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_tbb` writer - "]
+#[doc = "Reader of field `gc_tbb`"]
+pub type GC_TBB_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_tbb`"]
 pub struct GC_TBB_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> GC_TBB_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_tmx` reader - "]
-pub struct GC_TMX_R(crate::FieldReader<u8, u8>);
-impl GC_TMX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_TMX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_TMX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_tmx` writer - "]
+#[doc = "Reader of field `gc_tmx`"]
+pub type GC_TMX_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_tmx`"]
 pub struct GC_TMX_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> GC_TMX_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_rbb2` reader - "]
-pub struct GC_RBB2_R(crate::FieldReader<u8, u8>);
-impl GC_RBB2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_RBB2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_RBB2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_rbb2` writer - "]
+#[doc = "Reader of field `gc_rbb2`"]
+pub type GC_RBB2_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_rbb2`"]
 pub struct GC_RBB2_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> GC_RBB2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_rbb1` reader - "]
-pub struct GC_RBB1_R(crate::FieldReader<u8, u8>);
-impl GC_RBB1_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_RBB1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_RBB1_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_rbb1` writer - "]
+#[doc = "Reader of field `gc_rbb1`"]
+pub type GC_RBB1_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_rbb1`"]
 pub struct GC_RBB1_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> GC_RBB1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_rmxgm` reader - "]
-pub struct GC_RMXGM_R(crate::FieldReader<u8, u8>);
-impl GC_RMXGM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_RMXGM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_RMXGM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_rmxgm` writer - "]
+#[doc = "Reader of field `gc_rmxgm`"]
+pub type GC_RMXGM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_rmxgm`"]
 pub struct GC_RMXGM_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> GC_RMXGM_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gc_lna` reader - "]
-pub struct GC_LNA_R(crate::FieldReader<u8, u8>);
-impl GC_LNA_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GC_LNA_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GC_LNA_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gc_lna` writer - "]
+#[doc = "Reader of field `gc_lna`"]
+pub type GC_LNA_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gc_lna`"]
 pub struct GC_LNA_W<'a> {
     w: &'a mut W,
 }
@@ -286,30 +180,5 @@ impl W {
     #[inline(always)]
     pub fn gc_lna(&mut self) -> GC_LNA_W {
         GC_LNA_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "gain control1\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trx_gain1](index.html) module"]
-pub struct TRX_GAIN1_SPEC;
-impl crate::RegisterSpec for TRX_GAIN1_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [trx_gain1::R](R) reader structure"]
-impl crate::Readable for TRX_GAIN1_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [trx_gain1::W](W) writer structure"]
-impl crate::Writable for TRX_GAIN1_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets trx_gain1 to value 0"]
-impl crate::Resettable for TRX_GAIN1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `PDS_CTL3` reader"]
-pub struct R(crate::R<PDS_CTL3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PDS_CTL3_SPEC>;
+#[doc = "Reader of register PDS_CTL3"]
+pub type R = crate::R<u32, super::PDS_CTL3>;
+#[doc = "Writer for register PDS_CTL3"]
+pub type W = crate::W<u32, super::PDS_CTL3>;
+#[doc = "Register PDS_CTL3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::PDS_CTL3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PDS_CTL3_SPEC>> for R {
-    fn from(reader: crate::R<PDS_CTL3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `PDS_CTL3` writer"]
-pub struct W(crate::W<PDS_CTL3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PDS_CTL3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PDS_CTL3_SPEC>> for W {
-    fn from(writer: crate::W<PDS_CTL3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_pds_misc_iso_en` reader - "]
-pub struct CR_PDS_MISC_ISO_EN_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_MISC_ISO_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_MISC_ISO_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_MISC_ISO_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_misc_iso_en` writer - "]
+#[doc = "Reader of field `cr_pds_misc_iso_en`"]
+pub type CR_PDS_MISC_ISO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_misc_iso_en`"]
 pub struct CR_PDS_MISC_ISO_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CR_PDS_MISC_ISO_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_wb_iso_en` reader - "]
-pub struct CR_PDS_WB_ISO_EN_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_WB_ISO_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_WB_ISO_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_WB_ISO_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_wb_iso_en` writer - "]
+#[doc = "Reader of field `cr_pds_wb_iso_en`"]
+pub type CR_PDS_WB_ISO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_wb_iso_en`"]
 pub struct CR_PDS_WB_ISO_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CR_PDS_WB_ISO_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_np_iso_en` reader - "]
-pub struct CR_PDS_NP_ISO_EN_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_NP_ISO_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_NP_ISO_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_NP_ISO_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_np_iso_en` writer - "]
+#[doc = "Reader of field `cr_pds_np_iso_en`"]
+pub type CR_PDS_NP_ISO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_np_iso_en`"]
 pub struct CR_PDS_NP_ISO_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CR_PDS_NP_ISO_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_force_misc_gate_clk` reader - "]
-pub struct CR_PDS_FORCE_MISC_GATE_CLK_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_FORCE_MISC_GATE_CLK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_FORCE_MISC_GATE_CLK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_FORCE_MISC_GATE_CLK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_force_misc_gate_clk` writer - "]
+#[doc = "Reader of field `cr_pds_force_misc_gate_clk`"]
+pub type CR_PDS_FORCE_MISC_GATE_CLK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_force_misc_gate_clk`"]
 pub struct CR_PDS_FORCE_MISC_GATE_CLK_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> CR_PDS_FORCE_MISC_GATE_CLK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_force_misc_mem_stby` reader - "]
-pub struct CR_PDS_FORCE_MISC_MEM_STBY_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_FORCE_MISC_MEM_STBY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_FORCE_MISC_MEM_STBY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_FORCE_MISC_MEM_STBY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_force_misc_mem_stby` writer - "]
+#[doc = "Reader of field `cr_pds_force_misc_mem_stby`"]
+pub type CR_PDS_FORCE_MISC_MEM_STBY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_force_misc_mem_stby`"]
 pub struct CR_PDS_FORCE_MISC_MEM_STBY_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> CR_PDS_FORCE_MISC_MEM_STBY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_force_misc_pds_rst` reader - "]
-pub struct CR_PDS_FORCE_MISC_PDS_RST_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_FORCE_MISC_PDS_RST_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_FORCE_MISC_PDS_RST_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_FORCE_MISC_PDS_RST_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_force_misc_pds_rst` writer - "]
+#[doc = "Reader of field `cr_pds_force_misc_pds_rst`"]
+pub type CR_PDS_FORCE_MISC_PDS_RST_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_force_misc_pds_rst`"]
 pub struct CR_PDS_FORCE_MISC_PDS_RST_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> CR_PDS_FORCE_MISC_PDS_RST_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_force_misc_iso_en` reader - "]
-pub struct CR_PDS_FORCE_MISC_ISO_EN_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_FORCE_MISC_ISO_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_FORCE_MISC_ISO_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_FORCE_MISC_ISO_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_force_misc_iso_en` writer - "]
+#[doc = "Reader of field `cr_pds_force_misc_iso_en`"]
+pub type CR_PDS_FORCE_MISC_ISO_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_force_misc_iso_en`"]
 pub struct CR_PDS_FORCE_MISC_ISO_EN_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> CR_PDS_FORCE_MISC_ISO_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_pds_force_misc_pwr_off` reader - "]
-pub struct CR_PDS_FORCE_MISC_PWR_OFF_R(crate::FieldReader<bool, bool>);
-impl CR_PDS_FORCE_MISC_PWR_OFF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_PDS_FORCE_MISC_PWR_OFF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_PDS_FORCE_MISC_PWR_OFF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_pds_force_misc_pwr_off` writer - "]
+#[doc = "Reader of field `cr_pds_force_misc_pwr_off`"]
+pub type CR_PDS_FORCE_MISC_PWR_OFF_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_pds_force_misc_pwr_off`"]
 pub struct CR_PDS_FORCE_MISC_PWR_OFF_W<'a> {
     w: &'a mut W,
 }
@@ -402,30 +284,5 @@ impl W {
     #[inline(always)]
     pub fn cr_pds_force_misc_pwr_off(&mut self) -> CR_PDS_FORCE_MISC_PWR_OFF_W {
         CR_PDS_FORCE_MISC_PWR_OFF_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "PDS_CTL3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pds_ctl3](index.html) module"]
-pub struct PDS_CTL3_SPEC;
-impl crate::RegisterSpec for PDS_CTL3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pds_ctl3::R](R) reader structure"]
-impl crate::Readable for PDS_CTL3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pds_ctl3::W](W) writer structure"]
-impl crate::Writable for PDS_CTL3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets PDS_CTL3 to value 0"]
-impl crate::Resettable for PDS_CTL3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

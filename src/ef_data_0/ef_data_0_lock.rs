@@ -1,52 +1,18 @@
-#[doc = "Register `ef_data_0_lock` reader"]
-pub struct R(crate::R<EF_DATA_0_LOCK_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<EF_DATA_0_LOCK_SPEC>;
+#[doc = "Reader of register ef_data_0_lock"]
+pub type R = crate::R<u32, super::EF_DATA_0_LOCK>;
+#[doc = "Writer for register ef_data_0_lock"]
+pub type W = crate::W<u32, super::EF_DATA_0_LOCK>;
+#[doc = "Register ef_data_0_lock `reset()`'s with value 0"]
+impl crate::ResetValue for super::EF_DATA_0_LOCK {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<EF_DATA_0_LOCK_SPEC>> for R {
-    fn from(reader: crate::R<EF_DATA_0_LOCK_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `ef_data_0_lock` writer"]
-pub struct W(crate::W<EF_DATA_0_LOCK_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<EF_DATA_0_LOCK_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<EF_DATA_0_LOCK_SPEC>> for W {
-    fn from(writer: crate::W<EF_DATA_0_LOCK_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rd_lock_key_slot_5` reader - "]
-pub struct RD_LOCK_KEY_SLOT_5_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_5_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_5_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_5_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_5` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_5`"]
+pub type RD_LOCK_KEY_SLOT_5_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_5`"]
 pub struct RD_LOCK_KEY_SLOT_5_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> RD_LOCK_KEY_SLOT_5_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_key_slot_4` reader - "]
-pub struct RD_LOCK_KEY_SLOT_4_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_4_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_4_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_4_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_4` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_4`"]
+pub type RD_LOCK_KEY_SLOT_4_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_4`"]
 pub struct RD_LOCK_KEY_SLOT_4_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> RD_LOCK_KEY_SLOT_4_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_key_slot_3` reader - "]
-pub struct RD_LOCK_KEY_SLOT_3_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_3_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_3_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_3` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_3`"]
+pub type RD_LOCK_KEY_SLOT_3_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_3`"]
 pub struct RD_LOCK_KEY_SLOT_3_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> RD_LOCK_KEY_SLOT_3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_key_slot_2` reader - "]
-pub struct RD_LOCK_KEY_SLOT_2_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_2` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_2`"]
+pub type RD_LOCK_KEY_SLOT_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_2`"]
 pub struct RD_LOCK_KEY_SLOT_2_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> RD_LOCK_KEY_SLOT_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_key_slot_1` reader - "]
-pub struct RD_LOCK_KEY_SLOT_1_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_1` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_1`"]
+pub type RD_LOCK_KEY_SLOT_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_1`"]
 pub struct RD_LOCK_KEY_SLOT_1_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> RD_LOCK_KEY_SLOT_1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_key_slot_0` reader - "]
-pub struct RD_LOCK_KEY_SLOT_0_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_KEY_SLOT_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_KEY_SLOT_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_KEY_SLOT_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_key_slot_0` writer - "]
+#[doc = "Reader of field `rd_lock_key_slot_0`"]
+pub type RD_LOCK_KEY_SLOT_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_key_slot_0`"]
 pub struct RD_LOCK_KEY_SLOT_0_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> RD_LOCK_KEY_SLOT_0_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rd_lock_dbg_pwd` reader - "]
-pub struct RD_LOCK_DBG_PWD_R(crate::FieldReader<bool, bool>);
-impl RD_LOCK_DBG_PWD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RD_LOCK_DBG_PWD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RD_LOCK_DBG_PWD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rd_lock_dbg_pwd` writer - "]
+#[doc = "Reader of field `rd_lock_dbg_pwd`"]
+pub type RD_LOCK_DBG_PWD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rd_lock_dbg_pwd`"]
 pub struct RD_LOCK_DBG_PWD_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> RD_LOCK_DBG_PWD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_5_h` reader - "]
-pub struct WR_LOCK_KEY_SLOT_5_H_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_5_H_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_5_H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_5_H_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_5_h` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_5_h`"]
+pub type WR_LOCK_KEY_SLOT_5_H_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_5_h`"]
 pub struct WR_LOCK_KEY_SLOT_5_H_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> WR_LOCK_KEY_SLOT_5_H_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_4_h` reader - "]
-pub struct WR_LOCK_KEY_SLOT_4_H_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_4_H_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_4_H_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_4_H_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_4_h` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_4_h`"]
+pub type WR_LOCK_KEY_SLOT_4_H_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_4_h`"]
 pub struct WR_LOCK_KEY_SLOT_4_H_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> WR_LOCK_KEY_SLOT_4_H_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_3` reader - "]
-pub struct WR_LOCK_KEY_SLOT_3_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_3_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_3_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_3` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_3`"]
+pub type WR_LOCK_KEY_SLOT_3_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_3`"]
 pub struct WR_LOCK_KEY_SLOT_3_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> WR_LOCK_KEY_SLOT_3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_2` reader - "]
-pub struct WR_LOCK_KEY_SLOT_2_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_2` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_2`"]
+pub type WR_LOCK_KEY_SLOT_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_2`"]
 pub struct WR_LOCK_KEY_SLOT_2_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> WR_LOCK_KEY_SLOT_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_1` reader - "]
-pub struct WR_LOCK_KEY_SLOT_1_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_1` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_1`"]
+pub type WR_LOCK_KEY_SLOT_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_1`"]
 pub struct WR_LOCK_KEY_SLOT_1_W<'a> {
     w: &'a mut W,
 }
@@ -464,21 +298,9 @@ impl<'a> WR_LOCK_KEY_SLOT_1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_0` reader - "]
-pub struct WR_LOCK_KEY_SLOT_0_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_0` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_0`"]
+pub type WR_LOCK_KEY_SLOT_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_0`"]
 pub struct WR_LOCK_KEY_SLOT_0_W<'a> {
     w: &'a mut W,
 }
@@ -500,21 +322,9 @@ impl<'a> WR_LOCK_KEY_SLOT_0_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_wifi_mac` reader - "]
-pub struct WR_LOCK_WIFI_MAC_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_WIFI_MAC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_WIFI_MAC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_WIFI_MAC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_wifi_mac` writer - "]
+#[doc = "Reader of field `wr_lock_wifi_mac`"]
+pub type WR_LOCK_WIFI_MAC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_wifi_mac`"]
 pub struct WR_LOCK_WIFI_MAC_W<'a> {
     w: &'a mut W,
 }
@@ -536,21 +346,9 @@ impl<'a> WR_LOCK_WIFI_MAC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_sw_usage_0` reader - "]
-pub struct WR_LOCK_SW_USAGE_0_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_SW_USAGE_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_SW_USAGE_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_SW_USAGE_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_sw_usage_0` writer - "]
+#[doc = "Reader of field `wr_lock_sw_usage_0`"]
+pub type WR_LOCK_SW_USAGE_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_sw_usage_0`"]
 pub struct WR_LOCK_SW_USAGE_0_W<'a> {
     w: &'a mut W,
 }
@@ -572,21 +370,9 @@ impl<'a> WR_LOCK_SW_USAGE_0_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_dbg_pwd` reader - "]
-pub struct WR_LOCK_DBG_PWD_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_DBG_PWD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_DBG_PWD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_DBG_PWD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_dbg_pwd` writer - "]
+#[doc = "Reader of field `wr_lock_dbg_pwd`"]
+pub type WR_LOCK_DBG_PWD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_dbg_pwd`"]
 pub struct WR_LOCK_DBG_PWD_W<'a> {
     w: &'a mut W,
 }
@@ -608,21 +394,9 @@ impl<'a> WR_LOCK_DBG_PWD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_boot_mode` reader - "]
-pub struct WR_LOCK_BOOT_MODE_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_BOOT_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_BOOT_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_BOOT_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_boot_mode` writer - "]
+#[doc = "Reader of field `wr_lock_boot_mode`"]
+pub type WR_LOCK_BOOT_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_boot_mode`"]
 pub struct WR_LOCK_BOOT_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -644,21 +418,9 @@ impl<'a> WR_LOCK_BOOT_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_5_l` reader - "]
-pub struct WR_LOCK_KEY_SLOT_5_L_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_5_L_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_5_L_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_5_L_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_5_l` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_5_l`"]
+pub type WR_LOCK_KEY_SLOT_5_L_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_5_l`"]
 pub struct WR_LOCK_KEY_SLOT_5_L_W<'a> {
     w: &'a mut W,
 }
@@ -680,21 +442,9 @@ impl<'a> WR_LOCK_KEY_SLOT_5_L_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wr_lock_key_slot_4_l` reader - "]
-pub struct WR_LOCK_KEY_SLOT_4_L_R(crate::FieldReader<bool, bool>);
-impl WR_LOCK_KEY_SLOT_4_L_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WR_LOCK_KEY_SLOT_4_L_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WR_LOCK_KEY_SLOT_4_L_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wr_lock_key_slot_4_l` writer - "]
+#[doc = "Reader of field `wr_lock_key_slot_4_l`"]
+pub type WR_LOCK_KEY_SLOT_4_L_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wr_lock_key_slot_4_l`"]
 pub struct WR_LOCK_KEY_SLOT_4_L_W<'a> {
     w: &'a mut W,
 }
@@ -716,21 +466,9 @@ impl<'a> WR_LOCK_KEY_SLOT_4_L_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ef_ana_trim_1` reader - "]
-pub struct EF_ANA_TRIM_1_R(crate::FieldReader<u16, u16>);
-impl EF_ANA_TRIM_1_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        EF_ANA_TRIM_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for EF_ANA_TRIM_1_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ef_ana_trim_1` writer - "]
+#[doc = "Reader of field `ef_ana_trim_1`"]
+pub type EF_ANA_TRIM_1_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `ef_ana_trim_1`"]
 pub struct EF_ANA_TRIM_1_W<'a> {
     w: &'a mut W,
 }
@@ -944,30 +682,5 @@ impl W {
     #[inline(always)]
     pub fn ef_ana_trim_1(&mut self) -> EF_ANA_TRIM_1_W {
         EF_ANA_TRIM_1_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "ef_data_0_lock.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ef_data_0_lock](index.html) module"]
-pub struct EF_DATA_0_LOCK_SPEC;
-impl crate::RegisterSpec for EF_DATA_0_LOCK_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [ef_data_0_lock::R](R) reader structure"]
-impl crate::Readable for EF_DATA_0_LOCK_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [ef_data_0_lock::W](W) writer structure"]
-impl crate::Writable for EF_DATA_0_LOCK_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets ef_data_0_lock to value 0"]
-impl crate::Resettable for EF_DATA_0_LOCK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

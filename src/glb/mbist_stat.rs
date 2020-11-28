@@ -1,52 +1,18 @@
-#[doc = "Register `MBIST_STAT` reader"]
-pub struct R(crate::R<MBIST_STAT_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<MBIST_STAT_SPEC>;
+#[doc = "Reader of register MBIST_STAT"]
+pub type R = crate::R<u32, super::MBIST_STAT>;
+#[doc = "Writer for register MBIST_STAT"]
+pub type W = crate::W<u32, super::MBIST_STAT>;
+#[doc = "Register MBIST_STAT `reset()`'s with value 0"]
+impl crate::ResetValue for super::MBIST_STAT {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<MBIST_STAT_SPEC>> for R {
-    fn from(reader: crate::R<MBIST_STAT_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `MBIST_STAT` writer"]
-pub struct W(crate::W<MBIST_STAT_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<MBIST_STAT_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<MBIST_STAT_SPEC>> for W {
-    fn from(writer: crate::W<MBIST_STAT_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `wifi_mbist_fail` reader - "]
-pub struct WIFI_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl WIFI_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WIFI_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WIFI_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wifi_mbist_fail` writer - "]
+#[doc = "Reader of field `wifi_mbist_fail`"]
+pub type WIFI_MBIST_FAIL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wifi_mbist_fail`"]
 pub struct WIFI_MBIST_FAIL_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> WIFI_MBIST_FAIL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ocram_mbist_fail` reader - "]
-pub struct OCRAM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_fail` writer - "]
+#[doc = "Reader of field `ocram_mbist_fail`"]
+pub type OCRAM_MBIST_FAIL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ocram_mbist_fail`"]
 pub struct OCRAM_MBIST_FAIL_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> OCRAM_MBIST_FAIL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tag_mbist_fail` reader - "]
-pub struct TAG_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_fail` writer - "]
+#[doc = "Reader of field `tag_mbist_fail`"]
+pub type TAG_MBIST_FAIL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tag_mbist_fail`"]
 pub struct TAG_MBIST_FAIL_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> TAG_MBIST_FAIL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hsram_mbist_fail` reader - "]
-pub struct HSRAM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mbist_fail` writer - "]
+#[doc = "Reader of field `hsram_mbist_fail`"]
+pub type HSRAM_MBIST_FAIL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hsram_mbist_fail`"]
 pub struct HSRAM_MBIST_FAIL_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> HSRAM_MBIST_FAIL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irom_mbist_fail` reader - "]
-pub struct IROM_MBIST_FAIL_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_FAIL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_FAIL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_FAIL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irom_mbist_fail` writer - "]
+#[doc = "Reader of field `irom_mbist_fail`"]
+pub type IROM_MBIST_FAIL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irom_mbist_fail`"]
 pub struct IROM_MBIST_FAIL_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> IROM_MBIST_FAIL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `wifi_mbist_done` reader - "]
-pub struct WIFI_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl WIFI_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        WIFI_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WIFI_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wifi_mbist_done` writer - "]
+#[doc = "Reader of field `wifi_mbist_done`"]
+pub type WIFI_MBIST_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `wifi_mbist_done`"]
 pub struct WIFI_MBIST_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> WIFI_MBIST_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ocram_mbist_done` reader - "]
-pub struct OCRAM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl OCRAM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        OCRAM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for OCRAM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ocram_mbist_done` writer - "]
+#[doc = "Reader of field `ocram_mbist_done`"]
+pub type OCRAM_MBIST_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ocram_mbist_done`"]
 pub struct OCRAM_MBIST_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> OCRAM_MBIST_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tag_mbist_done` reader - "]
-pub struct TAG_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl TAG_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TAG_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TAG_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tag_mbist_done` writer - "]
+#[doc = "Reader of field `tag_mbist_done`"]
+pub type TAG_MBIST_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tag_mbist_done`"]
 pub struct TAG_MBIST_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> TAG_MBIST_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hsram_mbist_done` reader - "]
-pub struct HSRAM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl HSRAM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        HSRAM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSRAM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsram_mbist_done` writer - "]
+#[doc = "Reader of field `hsram_mbist_done`"]
+pub type HSRAM_MBIST_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `hsram_mbist_done`"]
 pub struct HSRAM_MBIST_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> HSRAM_MBIST_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `irom_mbist_done` reader - "]
-pub struct IROM_MBIST_DONE_R(crate::FieldReader<bool, bool>);
-impl IROM_MBIST_DONE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        IROM_MBIST_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for IROM_MBIST_DONE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `irom_mbist_done` writer - "]
+#[doc = "Reader of field `irom_mbist_done`"]
+pub type IROM_MBIST_DONE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `irom_mbist_done`"]
 pub struct IROM_MBIST_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -494,30 +352,5 @@ impl W {
     #[inline(always)]
     pub fn irom_mbist_done(&mut self) -> IROM_MBIST_DONE_W {
         IROM_MBIST_DONE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "MBIST_STAT.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mbist_stat](index.html) module"]
-pub struct MBIST_STAT_SPEC;
-impl crate::RegisterSpec for MBIST_STAT_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [mbist_stat::R](R) reader structure"]
-impl crate::Readable for MBIST_STAT_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [mbist_stat::W](W) writer structure"]
-impl crate::Writable for MBIST_STAT_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets MBIST_STAT to value 0"]
-impl crate::Resettable for MBIST_STAT_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

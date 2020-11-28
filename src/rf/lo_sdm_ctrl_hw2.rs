@@ -1,52 +1,18 @@
-#[doc = "Register `lo_sdm_ctrl_hw2` reader"]
-pub struct R(crate::R<LO_SDM_CTRL_HW2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<LO_SDM_CTRL_HW2_SPEC>;
+#[doc = "Reader of register lo_sdm_ctrl_hw2"]
+pub type R = crate::R<u32, super::LO_SDM_CTRL_HW2>;
+#[doc = "Writer for register lo_sdm_ctrl_hw2"]
+pub type W = crate::W<u32, super::LO_SDM_CTRL_HW2>;
+#[doc = "Register lo_sdm_ctrl_hw2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::LO_SDM_CTRL_HW2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<LO_SDM_CTRL_HW2_SPEC>> for R {
-    fn from(reader: crate::R<LO_SDM_CTRL_HW2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `lo_sdm_ctrl_hw2` writer"]
-pub struct W(crate::W<LO_SDM_CTRL_HW2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<LO_SDM_CTRL_HW2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<LO_SDM_CTRL_HW2_SPEC>> for W {
-    fn from(writer: crate::W<LO_SDM_CTRL_HW2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2432` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2432_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2432_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2432_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2432_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2432` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2432`"]
+pub type LO_SDM_DITHER_SEL_BLE_2432_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2432`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2432_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2432_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2430` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2430_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2430_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2430_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2430_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2430` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2430`"]
+pub type LO_SDM_DITHER_SEL_BLE_2430_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2430`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2430_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2430_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2428` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2428_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2428_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2428_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2428_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2428` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2428`"]
+pub type LO_SDM_DITHER_SEL_BLE_2428_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2428`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2428_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2428_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2426` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2426_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2426_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2426_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2426_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2426` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2426`"]
+pub type LO_SDM_DITHER_SEL_BLE_2426_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2426`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2426_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2426_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2424` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2424_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2424_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2424_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2424_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2424` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2424`"]
+pub type LO_SDM_DITHER_SEL_BLE_2424_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2424`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2424_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2424_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2422` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2422_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2422_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2422_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2422_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2422` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2422`"]
+pub type LO_SDM_DITHER_SEL_BLE_2422_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2422`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2422_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2422_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2420` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2420_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2420_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2420_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2420_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2420` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2420`"]
+pub type LO_SDM_DITHER_SEL_BLE_2420_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2420`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2420_W<'a> {
     w: &'a mut W,
 }
@@ -214,21 +108,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2420_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2418` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2418_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2418_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2418_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2418_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2418` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2418`"]
+pub type LO_SDM_DITHER_SEL_BLE_2418_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2418`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2418_W<'a> {
     w: &'a mut W,
 }
@@ -240,21 +122,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2418_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2416` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2416_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2416_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2416_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2416_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2416` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2416`"]
+pub type LO_SDM_DITHER_SEL_BLE_2416_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2416`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2416_W<'a> {
     w: &'a mut W,
 }
@@ -266,21 +136,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2416_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2414` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2414_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2414_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2414_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2414_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2414` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2414`"]
+pub type LO_SDM_DITHER_SEL_BLE_2414_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2414`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2414_W<'a> {
     w: &'a mut W,
 }
@@ -292,21 +150,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2414_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2412` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2412_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2412_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2412_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2412_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2412` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2412`"]
+pub type LO_SDM_DITHER_SEL_BLE_2412_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2412`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2412_W<'a> {
     w: &'a mut W,
 }
@@ -318,21 +164,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2412_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2410` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2410_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2410_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2410_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2410_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2410` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2410`"]
+pub type LO_SDM_DITHER_SEL_BLE_2410_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2410`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2410_W<'a> {
     w: &'a mut W,
 }
@@ -344,21 +178,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2410_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2408` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2408_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2408_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2408_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2408_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2408` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2408`"]
+pub type LO_SDM_DITHER_SEL_BLE_2408_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2408`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2408_W<'a> {
     w: &'a mut W,
 }
@@ -370,21 +192,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2408_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2406` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2406_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2406_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2406_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2406_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2406` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2406`"]
+pub type LO_SDM_DITHER_SEL_BLE_2406_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2406`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2406_W<'a> {
     w: &'a mut W,
 }
@@ -396,21 +206,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2406_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2404` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2404_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2404_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2404_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2404_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2404` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2404`"]
+pub type LO_SDM_DITHER_SEL_BLE_2404_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2404`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2404_W<'a> {
     w: &'a mut W,
 }
@@ -422,21 +220,9 @@ impl<'a> LO_SDM_DITHER_SEL_BLE_2404_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_sdm_dither_sel_ble_2402` reader - "]
-pub struct LO_SDM_DITHER_SEL_BLE_2402_R(crate::FieldReader<u8, u8>);
-impl LO_SDM_DITHER_SEL_BLE_2402_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_SDM_DITHER_SEL_BLE_2402_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_SDM_DITHER_SEL_BLE_2402_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_sdm_dither_sel_ble_2402` writer - "]
+#[doc = "Reader of field `lo_sdm_dither_sel_ble_2402`"]
+pub type LO_SDM_DITHER_SEL_BLE_2402_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_sdm_dither_sel_ble_2402`"]
 pub struct LO_SDM_DITHER_SEL_BLE_2402_W<'a> {
     w: &'a mut W,
 }
@@ -610,30 +396,5 @@ impl W {
     #[inline(always)]
     pub fn lo_sdm_dither_sel_ble_2402(&mut self) -> LO_SDM_DITHER_SEL_BLE_2402_W {
         LO_SDM_DITHER_SEL_BLE_2402_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "lo_sdm_ctrl_hw2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lo_sdm_ctrl_hw2](index.html) module"]
-pub struct LO_SDM_CTRL_HW2_SPEC;
-impl crate::RegisterSpec for LO_SDM_CTRL_HW2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [lo_sdm_ctrl_hw2::R](R) reader structure"]
-impl crate::Readable for LO_SDM_CTRL_HW2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [lo_sdm_ctrl_hw2::W](W) writer structure"]
-impl crate::Writable for LO_SDM_CTRL_HW2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets lo_sdm_ctrl_hw2 to value 0"]
-impl crate::Resettable for LO_SDM_CTRL_HW2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

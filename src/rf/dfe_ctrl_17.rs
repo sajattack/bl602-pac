@@ -1,52 +1,18 @@
-#[doc = "Register `dfe_ctrl_17` reader"]
-pub struct R(crate::R<DFE_CTRL_17_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<DFE_CTRL_17_SPEC>;
+#[doc = "Reader of register dfe_ctrl_17"]
+pub type R = crate::R<u32, super::DFE_CTRL_17>;
+#[doc = "Writer for register dfe_ctrl_17"]
+pub type W = crate::W<u32, super::DFE_CTRL_17>;
+#[doc = "Register dfe_ctrl_17 `reset()`'s with value 0"]
+impl crate::ResetValue for super::DFE_CTRL_17 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<DFE_CTRL_17_SPEC>> for R {
-    fn from(reader: crate::R<DFE_CTRL_17_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `dfe_ctrl_17` writer"]
-pub struct W(crate::W<DFE_CTRL_17_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<DFE_CTRL_17_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<DFE_CTRL_17_SPEC>> for W {
-    fn from(writer: crate::W<DFE_CTRL_17_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc15` reader - "]
-pub struct RF_TBB_IND_GC15_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC15_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC15_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC15_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc15` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc15`"]
+pub type RF_TBB_IND_GC15_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc15`"]
 pub struct RF_TBB_IND_GC15_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RF_TBB_IND_GC15_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc14` reader - "]
-pub struct RF_TBB_IND_GC14_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC14_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC14_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC14_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc14` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc14`"]
+pub type RF_TBB_IND_GC14_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc14`"]
 pub struct RF_TBB_IND_GC14_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> RF_TBB_IND_GC14_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc13` reader - "]
-pub struct RF_TBB_IND_GC13_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC13_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC13_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC13_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc13` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc13`"]
+pub type RF_TBB_IND_GC13_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc13`"]
 pub struct RF_TBB_IND_GC13_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> RF_TBB_IND_GC13_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc12` reader - "]
-pub struct RF_TBB_IND_GC12_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC12_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC12_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC12_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc12` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc12`"]
+pub type RF_TBB_IND_GC12_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc12`"]
 pub struct RF_TBB_IND_GC12_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> RF_TBB_IND_GC12_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc11` reader - "]
-pub struct RF_TBB_IND_GC11_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC11_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC11_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC11_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc11` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc11`"]
+pub type RF_TBB_IND_GC11_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc11`"]
 pub struct RF_TBB_IND_GC11_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> RF_TBB_IND_GC11_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc10` reader - "]
-pub struct RF_TBB_IND_GC10_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC10_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC10_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC10_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc10` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc10`"]
+pub type RF_TBB_IND_GC10_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc10`"]
 pub struct RF_TBB_IND_GC10_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> RF_TBB_IND_GC10_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc9` reader - "]
-pub struct RF_TBB_IND_GC9_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC9_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC9_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC9_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc9` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc9`"]
+pub type RF_TBB_IND_GC9_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc9`"]
 pub struct RF_TBB_IND_GC9_W<'a> {
     w: &'a mut W,
 }
@@ -214,21 +108,9 @@ impl<'a> RF_TBB_IND_GC9_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_tbb_ind_gc8` reader - "]
-pub struct RF_TBB_IND_GC8_R(crate::FieldReader<u8, u8>);
-impl RF_TBB_IND_GC8_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_TBB_IND_GC8_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_TBB_IND_GC8_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_tbb_ind_gc8` writer - "]
+#[doc = "Reader of field `rf_tbb_ind_gc8`"]
+pub type RF_TBB_IND_GC8_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_tbb_ind_gc8`"]
 pub struct RF_TBB_IND_GC8_W<'a> {
     w: &'a mut W,
 }
@@ -322,30 +204,5 @@ impl W {
     #[inline(always)]
     pub fn rf_tbb_ind_gc8(&mut self) -> RF_TBB_IND_GC8_W {
         RF_TBB_IND_GC8_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "dfe_ctrl_17.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dfe_ctrl_17](index.html) module"]
-pub struct DFE_CTRL_17_SPEC;
-impl crate::RegisterSpec for DFE_CTRL_17_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [dfe_ctrl_17::R](R) reader structure"]
-impl crate::Readable for DFE_CTRL_17_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [dfe_ctrl_17::W](W) writer structure"]
-impl crate::Writable for DFE_CTRL_17_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets dfe_ctrl_17 to value 0"]
-impl crate::Resettable for DFE_CTRL_17_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

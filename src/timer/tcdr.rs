@@ -1,52 +1,18 @@
-#[doc = "Register `TCDR` reader"]
-pub struct R(crate::R<TCDR_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TCDR_SPEC>;
+#[doc = "Reader of register TCDR"]
+pub type R = crate::R<u32, super::TCDR>;
+#[doc = "Writer for register TCDR"]
+pub type W = crate::W<u32, super::TCDR>;
+#[doc = "Register TCDR `reset()`'s with value 0"]
+impl crate::ResetValue for super::TCDR {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TCDR_SPEC>> for R {
-    fn from(reader: crate::R<TCDR_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `TCDR` writer"]
-pub struct W(crate::W<TCDR_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TCDR_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TCDR_SPEC>> for W {
-    fn from(writer: crate::W<TCDR_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `wcdr` reader - "]
-pub struct WCDR_R(crate::FieldReader<u8, u8>);
-impl WCDR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        WCDR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for WCDR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `wcdr` writer - "]
+#[doc = "Reader of field `wcdr`"]
+pub type WCDR_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `wcdr`"]
 pub struct WCDR_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> WCDR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tcdr3` reader - "]
-pub struct TCDR3_R(crate::FieldReader<u8, u8>);
-impl TCDR3_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TCDR3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TCDR3_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tcdr3` writer - "]
+#[doc = "Reader of field `tcdr3`"]
+pub type TCDR3_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tcdr3`"]
 pub struct TCDR3_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> TCDR3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tcdr2` reader - "]
-pub struct TCDR2_R(crate::FieldReader<u8, u8>);
-impl TCDR2_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TCDR2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TCDR2_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tcdr2` writer - "]
+#[doc = "Reader of field `tcdr2`"]
+pub type TCDR2_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tcdr2`"]
 pub struct TCDR2_W<'a> {
     w: &'a mut W,
 }
@@ -142,30 +84,5 @@ impl W {
     #[inline(always)]
     pub fn tcdr2(&mut self) -> TCDR2_W {
         TCDR2_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "TCDR.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tcdr](index.html) module"]
-pub struct TCDR_SPEC;
-impl crate::RegisterSpec for TCDR_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tcdr::R](R) reader structure"]
-impl crate::Readable for TCDR_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tcdr::W](W) writer structure"]
-impl crate::Writable for TCDR_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets TCDR to value 0"]
-impl crate::Resettable for TCDR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `aon` reader"]
-pub struct R(crate::R<AON_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<AON_SPEC>;
+#[doc = "Reader of register aon"]
+pub type R = crate::R<u32, super::AON>;
+#[doc = "Writer for register aon"]
+pub type W = crate::W<u32, super::AON>;
+#[doc = "Register aon `reset()`'s with value 0"]
+impl crate::ResetValue for super::AON {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<AON_SPEC>> for R {
-    fn from(reader: crate::R<AON_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `aon` writer"]
-pub struct W(crate::W<AON_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<AON_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<AON_SPEC>> for W {
-    fn from(writer: crate::W<AON_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `sw_pu_ldo11_rt` reader - "]
-pub struct SW_PU_LDO11_RT_R(crate::FieldReader<bool, bool>);
-impl SW_PU_LDO11_RT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SW_PU_LDO11_RT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SW_PU_LDO11_RT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `sw_pu_ldo11_rt` writer - "]
+#[doc = "Reader of field `sw_pu_ldo11_rt`"]
+pub type SW_PU_LDO11_RT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `sw_pu_ldo11_rt`"]
 pub struct SW_PU_LDO11_RT_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> SW_PU_LDO11_RT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11_rt_pulldown_sel` reader - "]
-pub struct LDO11_RT_PULLDOWN_SEL_R(crate::FieldReader<bool, bool>);
-impl LDO11_RT_PULLDOWN_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11_RT_PULLDOWN_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11_RT_PULLDOWN_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11_rt_pulldown_sel` writer - "]
+#[doc = "Reader of field `ldo11_rt_pulldown_sel`"]
+pub type LDO11_RT_PULLDOWN_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11_rt_pulldown_sel`"]
 pub struct LDO11_RT_PULLDOWN_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> LDO11_RT_PULLDOWN_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11_rt_pulldown` reader - "]
-pub struct LDO11_RT_PULLDOWN_R(crate::FieldReader<bool, bool>);
-impl LDO11_RT_PULLDOWN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11_RT_PULLDOWN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11_RT_PULLDOWN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11_rt_pulldown` writer - "]
+#[doc = "Reader of field `ldo11_rt_pulldown`"]
+pub type LDO11_RT_PULLDOWN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11_rt_pulldown`"]
 pub struct LDO11_RT_PULLDOWN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> LDO11_RT_PULLDOWN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_aon_dc_tbuf` reader - "]
-pub struct PU_AON_DC_TBUF_R(crate::FieldReader<bool, bool>);
-impl PU_AON_DC_TBUF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_AON_DC_TBUF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_AON_DC_TBUF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_aon_dc_tbuf` writer - "]
+#[doc = "Reader of field `pu_aon_dc_tbuf`"]
+pub type PU_AON_DC_TBUF_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_aon_dc_tbuf`"]
 pub struct PU_AON_DC_TBUF_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> PU_AON_DC_TBUF_W<'a> {
         self.w
     }
 }
-#[doc = "Field `aon_resv` reader - "]
-pub struct AON_RESV_R(crate::FieldReader<u8, u8>);
-impl AON_RESV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        AON_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for AON_RESV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `aon_resv` writer - "]
+#[doc = "Reader of field `aon_resv`"]
+pub type AON_RESV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `aon_resv`"]
 pub struct AON_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -254,30 +172,5 @@ impl W {
     #[inline(always)]
     pub fn aon_resv(&mut self) -> AON_RESV_W {
         AON_RESV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "aon.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [aon](index.html) module"]
-pub struct AON_SPEC;
-impl crate::RegisterSpec for AON_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [aon::R](R) reader structure"]
-impl crate::Readable for AON_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [aon::W](W) writer structure"]
-impl crate::Writable for AON_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets aon to value 0"]
-impl crate::Resettable for AON_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

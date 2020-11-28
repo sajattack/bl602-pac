@@ -1,52 +1,18 @@
-#[doc = "Register `cgen_cfg2` reader"]
-pub struct R(crate::R<CGEN_CFG2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CGEN_CFG2_SPEC>;
+#[doc = "Reader of register cgen_cfg2"]
+pub type R = crate::R<u32, super::CGEN_CFG2>;
+#[doc = "Writer for register cgen_cfg2"]
+pub type W = crate::W<u32, super::CGEN_CFG2>;
+#[doc = "Register cgen_cfg2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::CGEN_CFG2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CGEN_CFG2_SPEC>> for R {
-    fn from(reader: crate::R<CGEN_CFG2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `cgen_cfg2` writer"]
-pub struct W(crate::W<CGEN_CFG2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CGEN_CFG2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CGEN_CFG2_SPEC>> for W {
-    fn from(writer: crate::W<CGEN_CFG2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cgen_s3` reader - "]
-pub struct CGEN_S3_R(crate::FieldReader<bool, bool>);
-impl CGEN_S3_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CGEN_S3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S3_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s3` writer - "]
+#[doc = "Reader of field `cgen_s3`"]
+pub type CGEN_S3_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cgen_s3`"]
 pub struct CGEN_S3_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CGEN_S3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cgen_s2` reader - "]
-pub struct CGEN_S2_R(crate::FieldReader<bool, bool>);
-impl CGEN_S2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CGEN_S2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CGEN_S2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cgen_s2` writer - "]
+#[doc = "Reader of field `cgen_s2`"]
+pub type CGEN_S2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cgen_s2`"]
 pub struct CGEN_S2_W<'a> {
     w: &'a mut W,
 }
@@ -126,30 +80,5 @@ impl W {
     #[inline(always)]
     pub fn cgen_s2(&mut self) -> CGEN_S2_W {
         CGEN_S2_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "cgen_cfg2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cgen_cfg2](index.html) module"]
-pub struct CGEN_CFG2_SPEC;
-impl crate::RegisterSpec for CGEN_CFG2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [cgen_cfg2::R](R) reader structure"]
-impl crate::Readable for CGEN_CFG2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [cgen_cfg2::W](W) writer structure"]
-impl crate::Writable for CGEN_CFG2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets cgen_cfg2 to value 0"]
-impl crate::Resettable for CGEN_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

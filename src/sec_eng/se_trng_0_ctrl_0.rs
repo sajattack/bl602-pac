@@ -1,52 +1,18 @@
-#[doc = "Register `se_trng_0_ctrl_0` reader"]
-pub struct R(crate::R<SE_TRNG_0_CTRL_0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SE_TRNG_0_CTRL_0_SPEC>;
+#[doc = "Reader of register se_trng_0_ctrl_0"]
+pub type R = crate::R<u32, super::SE_TRNG_0_CTRL_0>;
+#[doc = "Writer for register se_trng_0_ctrl_0"]
+pub type W = crate::W<u32, super::SE_TRNG_0_CTRL_0>;
+#[doc = "Register se_trng_0_ctrl_0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SE_TRNG_0_CTRL_0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SE_TRNG_0_CTRL_0_SPEC>> for R {
-    fn from(reader: crate::R<SE_TRNG_0_CTRL_0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `se_trng_0_ctrl_0` writer"]
-pub struct W(crate::W<SE_TRNG_0_CTRL_0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SE_TRNG_0_CTRL_0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SE_TRNG_0_CTRL_0_SPEC>> for W {
-    fn from(writer: crate::W<SE_TRNG_0_CTRL_0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `se_trng_0_manual_en` reader - "]
-pub struct SE_TRNG_0_MANUAL_EN_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_MANUAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_MANUAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_MANUAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_manual_en` writer - "]
+#[doc = "Reader of field `se_trng_0_manual_en`"]
+pub type SE_TRNG_0_MANUAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_manual_en`"]
 pub struct SE_TRNG_0_MANUAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> SE_TRNG_0_MANUAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_manual_reseed` reader - "]
-pub struct SE_TRNG_0_MANUAL_RESEED_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_MANUAL_RESEED_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_MANUAL_RESEED_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_MANUAL_RESEED_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_manual_reseed` writer - "]
+#[doc = "Reader of field `se_trng_0_manual_reseed`"]
+pub type SE_TRNG_0_MANUAL_RESEED_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_manual_reseed`"]
 pub struct SE_TRNG_0_MANUAL_RESEED_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> SE_TRNG_0_MANUAL_RESEED_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_manual_fun_sel` reader - "]
-pub struct SE_TRNG_0_MANUAL_FUN_SEL_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_MANUAL_FUN_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_MANUAL_FUN_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_MANUAL_FUN_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_manual_fun_sel` writer - "]
+#[doc = "Reader of field `se_trng_0_manual_fun_sel`"]
+pub type SE_TRNG_0_MANUAL_FUN_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_manual_fun_sel`"]
 pub struct SE_TRNG_0_MANUAL_FUN_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> SE_TRNG_0_MANUAL_FUN_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_int_mask` reader - "]
-pub struct SE_TRNG_0_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_int_mask` writer - "]
+#[doc = "Reader of field `se_trng_0_int_mask`"]
+pub type SE_TRNG_0_INT_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_int_mask`"]
 pub struct SE_TRNG_0_INT_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> SE_TRNG_0_INT_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_int_set_1t` reader - "]
-pub struct SE_TRNG_0_INT_SET_1T_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_INT_SET_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_INT_SET_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_INT_SET_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_int_set_1t` writer - "]
+#[doc = "Reader of field `se_trng_0_int_set_1t`"]
+pub type SE_TRNG_0_INT_SET_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_int_set_1t`"]
 pub struct SE_TRNG_0_INT_SET_1T_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> SE_TRNG_0_INT_SET_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_int_clr_1t` reader - "]
-pub struct SE_TRNG_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_INT_CLR_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_INT_CLR_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_int_clr_1t` writer - "]
+#[doc = "Reader of field `se_trng_0_int_clr_1t`"]
+pub type SE_TRNG_0_INT_CLR_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_int_clr_1t`"]
 pub struct SE_TRNG_0_INT_CLR_1T_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> SE_TRNG_0_INT_CLR_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_int` reader - "]
-pub struct SE_TRNG_0_INT_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_int` writer - "]
+#[doc = "Reader of field `se_trng_0_int`"]
+pub type SE_TRNG_0_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_int`"]
 pub struct SE_TRNG_0_INT_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> SE_TRNG_0_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_ht_error` reader - "]
-pub struct SE_TRNG_0_HT_ERROR_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_HT_ERROR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_HT_ERROR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_HT_ERROR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_ht_error` writer - "]
+#[doc = "Reader of field `se_trng_0_ht_error`"]
+pub type SE_TRNG_0_HT_ERROR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_ht_error`"]
 pub struct SE_TRNG_0_HT_ERROR_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> SE_TRNG_0_HT_ERROR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_dout_clr_1t` reader - "]
-pub struct SE_TRNG_0_DOUT_CLR_1T_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_DOUT_CLR_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_DOUT_CLR_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_DOUT_CLR_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_dout_clr_1t` writer - "]
+#[doc = "Reader of field `se_trng_0_dout_clr_1t`"]
+pub type SE_TRNG_0_DOUT_CLR_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_dout_clr_1t`"]
 pub struct SE_TRNG_0_DOUT_CLR_1T_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> SE_TRNG_0_DOUT_CLR_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_en` reader - "]
-pub struct SE_TRNG_0_EN_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_en` writer - "]
+#[doc = "Reader of field `se_trng_0_en`"]
+pub type SE_TRNG_0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_en`"]
 pub struct SE_TRNG_0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> SE_TRNG_0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_trig_1t` reader - "]
-pub struct SE_TRNG_0_TRIG_1T_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_TRIG_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_TRIG_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_TRIG_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_trig_1t` writer - "]
+#[doc = "Reader of field `se_trng_0_trig_1t`"]
+pub type SE_TRNG_0_TRIG_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_trig_1t`"]
 pub struct SE_TRNG_0_TRIG_1T_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> SE_TRNG_0_TRIG_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_trng_0_busy` reader - "]
-pub struct SE_TRNG_0_BUSY_R(crate::FieldReader<bool, bool>);
-impl SE_TRNG_0_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_TRNG_0_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_TRNG_0_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_trng_0_busy` writer - "]
+#[doc = "Reader of field `se_trng_0_busy`"]
+pub type SE_TRNG_0_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_trng_0_busy`"]
 pub struct SE_TRNG_0_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -586,30 +420,5 @@ impl W {
     #[inline(always)]
     pub fn se_trng_0_busy(&mut self) -> SE_TRNG_0_BUSY_W {
         SE_TRNG_0_BUSY_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "se_trng_0_ctrl_0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [se_trng_0_ctrl_0](index.html) module"]
-pub struct SE_TRNG_0_CTRL_0_SPEC;
-impl crate::RegisterSpec for SE_TRNG_0_CTRL_0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [se_trng_0_ctrl_0::R](R) reader structure"]
-impl crate::Readable for SE_TRNG_0_CTRL_0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [se_trng_0_ctrl_0::W](W) writer structure"]
-impl crate::Writable for SE_TRNG_0_CTRL_0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets se_trng_0_ctrl_0 to value 0"]
-impl crate::Resettable for SE_TRNG_0_CTRL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

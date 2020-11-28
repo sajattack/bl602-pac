@@ -1,52 +1,18 @@
-#[doc = "Register `tzc_rom_ctrl` reader"]
-pub struct R(crate::R<TZC_ROM_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TZC_ROM_CTRL_SPEC>;
+#[doc = "Reader of register tzc_rom_ctrl"]
+pub type R = crate::R<u32, super::TZC_ROM_CTRL>;
+#[doc = "Writer for register tzc_rom_ctrl"]
+pub type W = crate::W<u32, super::TZC_ROM_CTRL>;
+#[doc = "Register tzc_rom_ctrl `reset()`'s with value 0"]
+impl crate::ResetValue for super::TZC_ROM_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TZC_ROM_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<TZC_ROM_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `tzc_rom_ctrl` writer"]
-pub struct W(crate::W<TZC_ROM_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TZC_ROM_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TZC_ROM_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<TZC_ROM_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tzc_sboot_done` reader - "]
-pub struct TZC_SBOOT_DONE_R(crate::FieldReader<u8, u8>);
-impl TZC_SBOOT_DONE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TZC_SBOOT_DONE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_SBOOT_DONE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_sboot_done` writer - "]
+#[doc = "Reader of field `tzc_sboot_done`"]
+pub type TZC_SBOOT_DONE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tzc_sboot_done`"]
 pub struct TZC_SBOOT_DONE_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> TZC_SBOOT_DONE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r1_lock` reader - "]
-pub struct TZC_ROM1_R1_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R1_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R1_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R1_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r1_lock` writer - "]
+#[doc = "Reader of field `tzc_rom1_r1_lock`"]
+pub type TZC_ROM1_R1_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r1_lock`"]
 pub struct TZC_ROM1_R1_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> TZC_ROM1_R1_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r0_lock` reader - "]
-pub struct TZC_ROM1_R0_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R0_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R0_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R0_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r0_lock` writer - "]
+#[doc = "Reader of field `tzc_rom1_r0_lock`"]
+pub type TZC_ROM1_R0_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r0_lock`"]
 pub struct TZC_ROM1_R0_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> TZC_ROM1_R0_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r1_lock` reader - "]
-pub struct TZC_ROM0_R1_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R1_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R1_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R1_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r1_lock` writer - "]
+#[doc = "Reader of field `tzc_rom0_r1_lock`"]
+pub type TZC_ROM0_R1_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r1_lock`"]
 pub struct TZC_ROM0_R1_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> TZC_ROM0_R1_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r0_lock` reader - "]
-pub struct TZC_ROM0_R0_LOCK_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R0_LOCK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R0_LOCK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_LOCK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r0_lock` writer - "]
+#[doc = "Reader of field `tzc_rom0_r0_lock`"]
+pub type TZC_ROM0_R0_LOCK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r0_lock`"]
 pub struct TZC_ROM0_R0_LOCK_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> TZC_ROM0_R0_LOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r1_en` reader - "]
-pub struct TZC_ROM1_R1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r1_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r1_en`"]
+pub type TZC_ROM1_R1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r1_en`"]
 pub struct TZC_ROM1_R1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> TZC_ROM1_R1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r0_en` reader - "]
-pub struct TZC_ROM1_R0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r0_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r0_en`"]
+pub type TZC_ROM1_R0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r0_en`"]
 pub struct TZC_ROM1_R0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> TZC_ROM1_R0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r1_en` reader - "]
-pub struct TZC_ROM0_R1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r1_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r1_en`"]
+pub type TZC_ROM0_R1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r1_en`"]
 pub struct TZC_ROM0_R1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> TZC_ROM0_R1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r0_en` reader - "]
-pub struct TZC_ROM0_R0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r0_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r0_en`"]
+pub type TZC_ROM0_R0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r0_en`"]
 pub struct TZC_ROM0_R0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -346,21 +216,9 @@ impl<'a> TZC_ROM0_R0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r1_id1_en` reader - "]
-pub struct TZC_ROM1_R1_ID1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R1_ID1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R1_ID1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R1_ID1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r1_id1_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r1_id1_en`"]
+pub type TZC_ROM1_R1_ID1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r1_id1_en`"]
 pub struct TZC_ROM1_R1_ID1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -382,21 +240,9 @@ impl<'a> TZC_ROM1_R1_ID1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r0_id1_en` reader - "]
-pub struct TZC_ROM1_R0_ID1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R0_ID1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R0_ID1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R0_ID1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r0_id1_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r0_id1_en`"]
+pub type TZC_ROM1_R0_ID1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r0_id1_en`"]
 pub struct TZC_ROM1_R0_ID1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -418,21 +264,9 @@ impl<'a> TZC_ROM1_R0_ID1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r1_id1_en` reader - "]
-pub struct TZC_ROM0_R1_ID1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R1_ID1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R1_ID1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R1_ID1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r1_id1_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r1_id1_en`"]
+pub type TZC_ROM0_R1_ID1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r1_id1_en`"]
 pub struct TZC_ROM0_R1_ID1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -454,21 +288,9 @@ impl<'a> TZC_ROM0_R1_ID1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r0_id1_en` reader - "]
-pub struct TZC_ROM0_R0_ID1_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R0_ID1_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R0_ID1_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_ID1_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r0_id1_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r0_id1_en`"]
+pub type TZC_ROM0_R0_ID1_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r0_id1_en`"]
 pub struct TZC_ROM0_R0_ID1_EN_W<'a> {
     w: &'a mut W,
 }
@@ -490,21 +312,9 @@ impl<'a> TZC_ROM0_R0_ID1_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r1_id0_en` reader - "]
-pub struct TZC_ROM1_R1_ID0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R1_ID0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R1_ID0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R1_ID0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r1_id0_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r1_id0_en`"]
+pub type TZC_ROM1_R1_ID0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r1_id0_en`"]
 pub struct TZC_ROM1_R1_ID0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -526,21 +336,9 @@ impl<'a> TZC_ROM1_R1_ID0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom1_r0_id0_en` reader - "]
-pub struct TZC_ROM1_R0_ID0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM1_R0_ID0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM1_R0_ID0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM1_R0_ID0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom1_r0_id0_en` writer - "]
+#[doc = "Reader of field `tzc_rom1_r0_id0_en`"]
+pub type TZC_ROM1_R0_ID0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom1_r0_id0_en`"]
 pub struct TZC_ROM1_R0_ID0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -562,21 +360,9 @@ impl<'a> TZC_ROM1_R0_ID0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r1_id0_en` reader - "]
-pub struct TZC_ROM0_R1_ID0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R1_ID0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R1_ID0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R1_ID0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r1_id0_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r1_id0_en`"]
+pub type TZC_ROM0_R1_ID0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r1_id0_en`"]
 pub struct TZC_ROM0_R1_ID0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -598,21 +384,9 @@ impl<'a> TZC_ROM0_R1_ID0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tzc_rom0_r0_id0_en` reader - "]
-pub struct TZC_ROM0_R0_ID0_EN_R(crate::FieldReader<bool, bool>);
-impl TZC_ROM0_R0_ID0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TZC_ROM0_R0_ID0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TZC_ROM0_R0_ID0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tzc_rom0_r0_id0_en` writer - "]
+#[doc = "Reader of field `tzc_rom0_r0_id0_en`"]
+pub type TZC_ROM0_R0_ID0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tzc_rom0_r0_id0_en`"]
 pub struct TZC_ROM0_R0_ID0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -806,30 +580,5 @@ impl W {
     #[inline(always)]
     pub fn tzc_rom0_r0_id0_en(&mut self) -> TZC_ROM0_R0_ID0_EN_W {
         TZC_ROM0_R0_ID0_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "tzc_rom_ctrl.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tzc_rom_ctrl](index.html) module"]
-pub struct TZC_ROM_CTRL_SPEC;
-impl crate::RegisterSpec for TZC_ROM_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tzc_rom_ctrl::R](R) reader structure"]
-impl crate::Readable for TZC_ROM_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tzc_rom_ctrl::W](W) writer structure"]
-impl crate::Writable for TZC_ROM_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets tzc_rom_ctrl to value 0"]
-impl crate::Resettable for TZC_ROM_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

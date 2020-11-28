@@ -1,52 +1,18 @@
-#[doc = "Register `HBN_PIR_CFG` reader"]
-pub struct R(crate::R<HBN_PIR_CFG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBN_PIR_CFG_SPEC>;
+#[doc = "Reader of register HBN_PIR_CFG"]
+pub type R = crate::R<u32, super::HBN_PIR_CFG>;
+#[doc = "Writer for register HBN_PIR_CFG"]
+pub type W = crate::W<u32, super::HBN_PIR_CFG>;
+#[doc = "Register HBN_PIR_CFG `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBN_PIR_CFG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBN_PIR_CFG_SPEC>> for R {
-    fn from(reader: crate::R<HBN_PIR_CFG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `HBN_PIR_CFG` writer"]
-pub struct W(crate::W<HBN_PIR_CFG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBN_PIR_CFG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBN_PIR_CFG_SPEC>> for W {
-    fn from(writer: crate::W<HBN_PIR_CFG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `gpadc_nosync` reader - "]
-pub struct GPADC_NOSYNC_R(crate::FieldReader<bool, bool>);
-impl GPADC_NOSYNC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_NOSYNC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_NOSYNC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_nosync` writer - "]
+#[doc = "Reader of field `gpadc_nosync`"]
+pub type GPADC_NOSYNC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_nosync`"]
 pub struct GPADC_NOSYNC_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> GPADC_NOSYNC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_cgen` reader - "]
-pub struct GPADC_CGEN_R(crate::FieldReader<bool, bool>);
-impl GPADC_CGEN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_CGEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_CGEN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_cgen` writer - "]
+#[doc = "Reader of field `gpadc_cgen`"]
+pub type GPADC_CGEN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_cgen`"]
 pub struct GPADC_CGEN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> GPADC_CGEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pir_en` reader - "]
-pub struct PIR_EN_R(crate::FieldReader<bool, bool>);
-impl PIR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PIR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_en` writer - "]
+#[doc = "Reader of field `pir_en`"]
+pub type PIR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pir_en`"]
 pub struct PIR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> PIR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pir_dis` reader - "]
-pub struct PIR_DIS_R(crate::FieldReader<u8, u8>);
-impl PIR_DIS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PIR_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_DIS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_dis` writer - "]
+#[doc = "Reader of field `pir_dis`"]
+pub type PIR_DIS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pir_dis`"]
 pub struct PIR_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> PIR_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pir_lpf_sel` reader - "]
-pub struct PIR_LPF_SEL_R(crate::FieldReader<bool, bool>);
-impl PIR_LPF_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PIR_LPF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_LPF_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_lpf_sel` writer - "]
+#[doc = "Reader of field `pir_lpf_sel`"]
+pub type PIR_LPF_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pir_lpf_sel`"]
 pub struct PIR_LPF_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> PIR_LPF_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pir_hpf_sel` reader - "]
-pub struct PIR_HPF_SEL_R(crate::FieldReader<u8, u8>);
-impl PIR_HPF_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PIR_HPF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PIR_HPF_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pir_hpf_sel` writer - "]
+#[doc = "Reader of field `pir_hpf_sel`"]
+pub type PIR_HPF_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pir_hpf_sel`"]
 pub struct PIR_HPF_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -290,30 +196,5 @@ impl W {
     #[inline(always)]
     pub fn pir_hpf_sel(&mut self) -> PIR_HPF_SEL_W {
         PIR_HPF_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "HBN_PIR_CFG.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbn_pir_cfg](index.html) module"]
-pub struct HBN_PIR_CFG_SPEC;
-impl crate::RegisterSpec for HBN_PIR_CFG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbn_pir_cfg::R](R) reader structure"]
-impl crate::Readable for HBN_PIR_CFG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbn_pir_cfg::W](W) writer structure"]
-impl crate::Writable for HBN_PIR_CFG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets HBN_PIR_CFG to value 0"]
-impl crate::Resettable for HBN_PIR_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

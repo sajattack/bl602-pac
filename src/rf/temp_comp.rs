@@ -1,52 +1,18 @@
-#[doc = "Register `temp_comp` reader"]
-pub struct R(crate::R<TEMP_COMP_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TEMP_COMP_SPEC>;
+#[doc = "Reader of register temp_comp"]
+pub type R = crate::R<u32, super::TEMP_COMP>;
+#[doc = "Writer for register temp_comp"]
+pub type W = crate::W<u32, super::TEMP_COMP>;
+#[doc = "Register temp_comp `reset()`'s with value 0"]
+impl crate::ResetValue for super::TEMP_COMP {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TEMP_COMP_SPEC>> for R {
-    fn from(reader: crate::R<TEMP_COMP_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `temp_comp` writer"]
-pub struct W(crate::W<TEMP_COMP_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TEMP_COMP_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TEMP_COMP_SPEC>> for W {
-    fn from(writer: crate::W<TEMP_COMP_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `temp_comp_en` reader - "]
-pub struct TEMP_COMP_EN_R(crate::FieldReader<bool, bool>);
-impl TEMP_COMP_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TEMP_COMP_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TEMP_COMP_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `temp_comp_en` writer - "]
+#[doc = "Reader of field `temp_comp_en`"]
+pub type TEMP_COMP_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `temp_comp_en`"]
 pub struct TEMP_COMP_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TEMP_COMP_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `const_fcal` reader - "]
-pub struct CONST_FCAL_R(crate::FieldReader<u8, u8>);
-impl CONST_FCAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CONST_FCAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CONST_FCAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `const_fcal` writer - "]
+#[doc = "Reader of field `const_fcal`"]
+pub type CONST_FCAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `const_fcal`"]
 pub struct CONST_FCAL_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> CONST_FCAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `const_acal` reader - "]
-pub struct CONST_ACAL_R(crate::FieldReader<u8, u8>);
-impl CONST_ACAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CONST_ACAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CONST_ACAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `const_acal` writer - "]
+#[doc = "Reader of field `const_acal`"]
+pub type CONST_ACAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `const_acal`"]
 pub struct CONST_ACAL_W<'a> {
     w: &'a mut W,
 }
@@ -152,30 +94,5 @@ impl W {
     #[inline(always)]
     pub fn const_acal(&mut self) -> CONST_ACAL_W {
         CONST_ACAL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "temp_comp.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [temp_comp](index.html) module"]
-pub struct TEMP_COMP_SPEC;
-impl crate::RegisterSpec for TEMP_COMP_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [temp_comp::R](R) reader structure"]
-impl crate::Readable for TEMP_COMP_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [temp_comp::W](W) writer structure"]
-impl crate::Writable for TEMP_COMP_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets temp_comp to value 0"]
-impl crate::Resettable for TEMP_COMP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

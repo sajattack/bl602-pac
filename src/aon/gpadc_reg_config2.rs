@@ -1,52 +1,18 @@
-#[doc = "Register `gpadc_reg_config2` reader"]
-pub struct R(crate::R<GPADC_REG_CONFIG2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<GPADC_REG_CONFIG2_SPEC>;
+#[doc = "Reader of register gpadc_reg_config2"]
+pub type R = crate::R<u32, super::GPADC_REG_CONFIG2>;
+#[doc = "Writer for register gpadc_reg_config2"]
+pub type W = crate::W<u32, super::GPADC_REG_CONFIG2>;
+#[doc = "Register gpadc_reg_config2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::GPADC_REG_CONFIG2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<GPADC_REG_CONFIG2_SPEC>> for R {
-    fn from(reader: crate::R<GPADC_REG_CONFIG2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `gpadc_reg_config2` writer"]
-pub struct W(crate::W<GPADC_REG_CONFIG2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<GPADC_REG_CONFIG2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<GPADC_REG_CONFIG2_SPEC>> for W {
-    fn from(writer: crate::W<GPADC_REG_CONFIG2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `gpadc_tsvbe_low` reader - "]
-pub struct GPADC_TSVBE_LOW_R(crate::FieldReader<bool, bool>);
-impl GPADC_TSVBE_LOW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_TSVBE_LOW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_TSVBE_LOW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_tsvbe_low` writer - "]
+#[doc = "Reader of field `gpadc_tsvbe_low`"]
+pub type GPADC_TSVBE_LOW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_tsvbe_low`"]
 pub struct GPADC_TSVBE_LOW_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> GPADC_TSVBE_LOW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_dly_sel` reader - "]
-pub struct GPADC_DLY_SEL_R(crate::FieldReader<u8, u8>);
-impl GPADC_DLY_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_DLY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_DLY_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_dly_sel` writer - "]
+#[doc = "Reader of field `gpadc_dly_sel`"]
+pub type GPADC_DLY_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_dly_sel`"]
 pub struct GPADC_DLY_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> GPADC_DLY_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga1_gain` reader - "]
-pub struct GPADC_PGA1_GAIN_R(crate::FieldReader<u8, u8>);
-impl GPADC_PGA1_GAIN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_PGA1_GAIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA1_GAIN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga1_gain` writer - "]
+#[doc = "Reader of field `gpadc_pga1_gain`"]
+pub type GPADC_PGA1_GAIN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_pga1_gain`"]
 pub struct GPADC_PGA1_GAIN_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> GPADC_PGA1_GAIN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga2_gain` reader - "]
-pub struct GPADC_PGA2_GAIN_R(crate::FieldReader<u8, u8>);
-impl GPADC_PGA2_GAIN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_PGA2_GAIN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA2_GAIN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga2_gain` writer - "]
+#[doc = "Reader of field `gpadc_pga2_gain`"]
+pub type GPADC_PGA2_GAIN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_pga2_gain`"]
 pub struct GPADC_PGA2_GAIN_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> GPADC_PGA2_GAIN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_test_sel` reader - "]
-pub struct GPADC_TEST_SEL_R(crate::FieldReader<u8, u8>);
-impl GPADC_TEST_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_TEST_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_TEST_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_test_sel` writer - "]
+#[doc = "Reader of field `gpadc_test_sel`"]
+pub type GPADC_TEST_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_test_sel`"]
 pub struct GPADC_TEST_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -172,21 +90,9 @@ impl<'a> GPADC_TEST_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_test_en` reader - "]
-pub struct GPADC_TEST_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_TEST_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_TEST_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_TEST_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_test_en` writer - "]
+#[doc = "Reader of field `gpadc_test_en`"]
+pub type GPADC_TEST_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_test_en`"]
 pub struct GPADC_TEST_EN_W<'a> {
     w: &'a mut W,
 }
@@ -208,21 +114,9 @@ impl<'a> GPADC_TEST_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_bias_sel` reader - "]
-pub struct GPADC_BIAS_SEL_R(crate::FieldReader<bool, bool>);
-impl GPADC_BIAS_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_BIAS_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_BIAS_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_bias_sel` writer - "]
+#[doc = "Reader of field `gpadc_bias_sel`"]
+pub type GPADC_BIAS_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_bias_sel`"]
 pub struct GPADC_BIAS_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -244,21 +138,9 @@ impl<'a> GPADC_BIAS_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_chop_mode` reader - "]
-pub struct GPADC_CHOP_MODE_R(crate::FieldReader<u8, u8>);
-impl GPADC_CHOP_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_CHOP_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_CHOP_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_chop_mode` writer - "]
+#[doc = "Reader of field `gpadc_chop_mode`"]
+pub type GPADC_CHOP_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_chop_mode`"]
 pub struct GPADC_CHOP_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -270,21 +152,9 @@ impl<'a> GPADC_CHOP_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga_vcmi_en` reader - "]
-pub struct GPADC_PGA_VCMI_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_PGA_VCMI_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_PGA_VCMI_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA_VCMI_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga_vcmi_en` writer - "]
+#[doc = "Reader of field `gpadc_pga_vcmi_en`"]
+pub type GPADC_PGA_VCMI_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_pga_vcmi_en`"]
 pub struct GPADC_PGA_VCMI_EN_W<'a> {
     w: &'a mut W,
 }
@@ -306,21 +176,9 @@ impl<'a> GPADC_PGA_VCMI_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga_en` reader - "]
-pub struct GPADC_PGA_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_PGA_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_PGA_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga_en` writer - "]
+#[doc = "Reader of field `gpadc_pga_en`"]
+pub type GPADC_PGA_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_pga_en`"]
 pub struct GPADC_PGA_EN_W<'a> {
     w: &'a mut W,
 }
@@ -342,21 +200,9 @@ impl<'a> GPADC_PGA_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga_os_cal` reader - "]
-pub struct GPADC_PGA_OS_CAL_R(crate::FieldReader<u8, u8>);
-impl GPADC_PGA_OS_CAL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_PGA_OS_CAL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA_OS_CAL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga_os_cal` writer - "]
+#[doc = "Reader of field `gpadc_pga_os_cal`"]
+pub type GPADC_PGA_OS_CAL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_pga_os_cal`"]
 pub struct GPADC_PGA_OS_CAL_W<'a> {
     w: &'a mut W,
 }
@@ -368,21 +214,9 @@ impl<'a> GPADC_PGA_OS_CAL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_pga_vcm` reader - "]
-pub struct GPADC_PGA_VCM_R(crate::FieldReader<u8, u8>);
-impl GPADC_PGA_VCM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_PGA_VCM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_PGA_VCM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_pga_vcm` writer - "]
+#[doc = "Reader of field `gpadc_pga_vcm`"]
+pub type GPADC_PGA_VCM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_pga_vcm`"]
 pub struct GPADC_PGA_VCM_W<'a> {
     w: &'a mut W,
 }
@@ -394,21 +228,9 @@ impl<'a> GPADC_PGA_VCM_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_ts_en` reader - "]
-pub struct GPADC_TS_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_TS_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_TS_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_TS_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_ts_en` writer - "]
+#[doc = "Reader of field `gpadc_ts_en`"]
+pub type GPADC_TS_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_ts_en`"]
 pub struct GPADC_TS_EN_W<'a> {
     w: &'a mut W,
 }
@@ -430,21 +252,9 @@ impl<'a> GPADC_TS_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_tsext_sel` reader - "]
-pub struct GPADC_TSEXT_SEL_R(crate::FieldReader<bool, bool>);
-impl GPADC_TSEXT_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_TSEXT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_TSEXT_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_tsext_sel` writer - "]
+#[doc = "Reader of field `gpadc_tsext_sel`"]
+pub type GPADC_TSEXT_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_tsext_sel`"]
 pub struct GPADC_TSEXT_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -466,21 +276,9 @@ impl<'a> GPADC_TSEXT_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_vbat_en` reader - "]
-pub struct GPADC_VBAT_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_VBAT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_VBAT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_VBAT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_vbat_en` writer - "]
+#[doc = "Reader of field `gpadc_vbat_en`"]
+pub type GPADC_VBAT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_vbat_en`"]
 pub struct GPADC_VBAT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -502,21 +300,9 @@ impl<'a> GPADC_VBAT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_vref_sel` reader - "]
-pub struct GPADC_VREF_SEL_R(crate::FieldReader<bool, bool>);
-impl GPADC_VREF_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_VREF_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_VREF_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_vref_sel` writer - "]
+#[doc = "Reader of field `gpadc_vref_sel`"]
+pub type GPADC_VREF_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_vref_sel`"]
 pub struct GPADC_VREF_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -538,21 +324,9 @@ impl<'a> GPADC_VREF_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_diff_mode` reader - "]
-pub struct GPADC_DIFF_MODE_R(crate::FieldReader<bool, bool>);
-impl GPADC_DIFF_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_DIFF_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_DIFF_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_diff_mode` writer - "]
+#[doc = "Reader of field `gpadc_diff_mode`"]
+pub type GPADC_DIFF_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_diff_mode`"]
 pub struct GPADC_DIFF_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -746,30 +520,5 @@ impl W {
     #[inline(always)]
     pub fn gpadc_diff_mode(&mut self) -> GPADC_DIFF_MODE_W {
         GPADC_DIFF_MODE_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "gpadc_reg_config2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gpadc_reg_config2](index.html) module"]
-pub struct GPADC_REG_CONFIG2_SPEC;
-impl crate::RegisterSpec for GPADC_REG_CONFIG2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [gpadc_reg_config2::R](R) reader structure"]
-impl crate::Readable for GPADC_REG_CONFIG2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [gpadc_reg_config2::W](W) writer structure"]
-impl crate::Writable for GPADC_REG_CONFIG2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets gpadc_reg_config2 to value 0"]
-impl crate::Resettable for GPADC_REG_CONFIG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

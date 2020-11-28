@@ -1,52 +1,18 @@
-#[doc = "Register `spi_config` reader"]
-pub struct R(crate::R<SPI_CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SPI_CONFIG_SPEC>;
+#[doc = "Reader of register spi_config"]
+pub type R = crate::R<u32, super::SPI_CONFIG>;
+#[doc = "Writer for register spi_config"]
+pub type W = crate::W<u32, super::SPI_CONFIG>;
+#[doc = "Register spi_config `reset()`'s with value 0"]
+impl crate::ResetValue for super::SPI_CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SPI_CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<SPI_CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `spi_config` writer"]
-pub struct W(crate::W<SPI_CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SPI_CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SPI_CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<SPI_CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_spi_deg_cnt` reader - "]
-pub struct CR_SPI_DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_deg_cnt` writer - "]
+#[doc = "Reader of field `cr_spi_deg_cnt`"]
+pub type CR_SPI_DEG_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_spi_deg_cnt`"]
 pub struct CR_SPI_DEG_CNT_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> CR_SPI_DEG_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_deg_en` reader - "]
-pub struct CR_SPI_DEG_EN_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_deg_en` writer - "]
+#[doc = "Reader of field `cr_spi_deg_en`"]
+pub type CR_SPI_DEG_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_deg_en`"]
 pub struct CR_SPI_DEG_EN_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> CR_SPI_DEG_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_m_cont_en` reader - "]
-pub struct CR_SPI_M_CONT_EN_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_M_CONT_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_M_CONT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_M_CONT_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_m_cont_en` writer - "]
+#[doc = "Reader of field `cr_spi_m_cont_en`"]
+pub type CR_SPI_M_CONT_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_m_cont_en`"]
 pub struct CR_SPI_M_CONT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> CR_SPI_M_CONT_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_rxd_ignr_en` reader - "]
-pub struct CR_SPI_RXD_IGNR_EN_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_RXD_IGNR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_RXD_IGNR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_RXD_IGNR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_rxd_ignr_en` writer - "]
+#[doc = "Reader of field `cr_spi_rxd_ignr_en`"]
+pub type CR_SPI_RXD_IGNR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_rxd_ignr_en`"]
 pub struct CR_SPI_RXD_IGNR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> CR_SPI_RXD_IGNR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_byte_inv` reader - "]
-pub struct CR_SPI_BYTE_INV_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_BYTE_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_BYTE_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_BYTE_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_byte_inv` writer - "]
+#[doc = "Reader of field `cr_spi_byte_inv`"]
+pub type CR_SPI_BYTE_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_byte_inv`"]
 pub struct CR_SPI_BYTE_INV_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> CR_SPI_BYTE_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_bit_inv` reader - "]
-pub struct CR_SPI_BIT_INV_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_BIT_INV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_BIT_INV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_BIT_INV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_bit_inv` writer - "]
+#[doc = "Reader of field `cr_spi_bit_inv`"]
+pub type CR_SPI_BIT_INV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_bit_inv`"]
 pub struct CR_SPI_BIT_INV_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> CR_SPI_BIT_INV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_sclk_ph` reader - "]
-pub struct CR_SPI_SCLK_PH_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_SCLK_PH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_SCLK_PH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_SCLK_PH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_sclk_ph` writer - "]
+#[doc = "Reader of field `cr_spi_sclk_ph`"]
+pub type CR_SPI_SCLK_PH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_sclk_ph`"]
 pub struct CR_SPI_SCLK_PH_W<'a> {
     w: &'a mut W,
 }
@@ -274,21 +168,9 @@ impl<'a> CR_SPI_SCLK_PH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_sclk_pol` reader - "]
-pub struct CR_SPI_SCLK_POL_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_SCLK_POL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_SCLK_POL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_SCLK_POL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_sclk_pol` writer - "]
+#[doc = "Reader of field `cr_spi_sclk_pol`"]
+pub type CR_SPI_SCLK_POL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_sclk_pol`"]
 pub struct CR_SPI_SCLK_POL_W<'a> {
     w: &'a mut W,
 }
@@ -310,21 +192,9 @@ impl<'a> CR_SPI_SCLK_POL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_frame_size` reader - "]
-pub struct CR_SPI_FRAME_SIZE_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_FRAME_SIZE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_FRAME_SIZE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_FRAME_SIZE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_frame_size` writer - "]
+#[doc = "Reader of field `cr_spi_frame_size`"]
+pub type CR_SPI_FRAME_SIZE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_spi_frame_size`"]
 pub struct CR_SPI_FRAME_SIZE_W<'a> {
     w: &'a mut W,
 }
@@ -336,21 +206,9 @@ impl<'a> CR_SPI_FRAME_SIZE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_s_en` reader - "]
-pub struct CR_SPI_S_EN_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_S_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_S_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_S_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_s_en` writer - "]
+#[doc = "Reader of field `cr_spi_s_en`"]
+pub type CR_SPI_S_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_s_en`"]
 pub struct CR_SPI_S_EN_W<'a> {
     w: &'a mut W,
 }
@@ -372,21 +230,9 @@ impl<'a> CR_SPI_S_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_m_en` reader - "]
-pub struct CR_SPI_M_EN_R(crate::FieldReader<bool, bool>);
-impl CR_SPI_M_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_SPI_M_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_M_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_m_en` writer - "]
+#[doc = "Reader of field `cr_spi_m_en`"]
+pub type CR_SPI_M_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_spi_m_en`"]
 pub struct CR_SPI_M_EN_W<'a> {
     w: &'a mut W,
 }
@@ -520,30 +366,5 @@ impl W {
     #[inline(always)]
     pub fn cr_spi_m_en(&mut self) -> CR_SPI_M_EN_W {
         CR_SPI_M_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "spi_config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [spi_config](index.html) module"]
-pub struct SPI_CONFIG_SPEC;
-impl crate::RegisterSpec for SPI_CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [spi_config::R](R) reader structure"]
-impl crate::Readable for SPI_CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [spi_config::W](W) writer structure"]
-impl crate::Writable for SPI_CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets spi_config to value 0"]
-impl crate::Resettable for SPI_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

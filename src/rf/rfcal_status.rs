@@ -1,52 +1,18 @@
-#[doc = "Register `rfcal_status` reader"]
-pub struct R(crate::R<RFCAL_STATUS_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RFCAL_STATUS_SPEC>;
+#[doc = "Reader of register rfcal_status"]
+pub type R = crate::R<u32, super::RFCAL_STATUS>;
+#[doc = "Writer for register rfcal_status"]
+pub type W = crate::W<u32, super::RFCAL_STATUS>;
+#[doc = "Register rfcal_status `reset()`'s with value 0"]
+impl crate::ResetValue for super::RFCAL_STATUS {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RFCAL_STATUS_SPEC>> for R {
-    fn from(reader: crate::R<RFCAL_STATUS_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rfcal_status` writer"]
-pub struct W(crate::W<RFCAL_STATUS_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RFCAL_STATUS_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RFCAL_STATUS_SPEC>> for W {
-    fn from(writer: crate::W<RFCAL_STATUS_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `dpd_status` reader - "]
-pub struct DPD_STATUS_R(crate::FieldReader<u8, u8>);
-impl DPD_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        DPD_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DPD_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dpd_status` writer - "]
+#[doc = "Reader of field `dpd_status`"]
+pub type DPD_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `dpd_status`"]
 pub struct DPD_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> DPD_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tenscal_status` reader - "]
-pub struct TENSCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl TENSCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TENSCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TENSCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tenscal_status` writer - "]
+#[doc = "Reader of field `tenscal_status`"]
+pub type TENSCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tenscal_status`"]
 pub struct TENSCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> TENSCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwdet_cal_status` reader - "]
-pub struct PWDET_CAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl PWDET_CAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PWDET_CAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWDET_CAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwdet_cal_status` writer - "]
+#[doc = "Reader of field `pwdet_cal_status`"]
+pub type PWDET_CAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pwdet_cal_status`"]
 pub struct PWDET_CAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> PWDET_CAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `riqcal_status_resv` reader - "]
-pub struct RIQCAL_STATUS_RESV_R(crate::FieldReader<u8, u8>);
-impl RIQCAL_STATUS_RESV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RIQCAL_STATUS_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RIQCAL_STATUS_RESV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `riqcal_status_resv` writer - "]
+#[doc = "Reader of field `riqcal_status_resv`"]
+pub type RIQCAL_STATUS_RESV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `riqcal_status_resv`"]
 pub struct RIQCAL_STATUS_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> RIQCAL_STATUS_RESV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tiqcal_status_resv` reader - "]
-pub struct TIQCAL_STATUS_RESV_R(crate::FieldReader<u8, u8>);
-impl TIQCAL_STATUS_RESV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TIQCAL_STATUS_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIQCAL_STATUS_RESV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tiqcal_status_resv` writer - "]
+#[doc = "Reader of field `tiqcal_status_resv`"]
+pub type TIQCAL_STATUS_RESV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tiqcal_status_resv`"]
 pub struct TIQCAL_STATUS_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> TIQCAL_STATUS_RESV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_leakcal_status` reader - "]
-pub struct LO_LEAKCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl LO_LEAKCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_LEAKCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_LEAKCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_leakcal_status` writer - "]
+#[doc = "Reader of field `lo_leakcal_status`"]
+pub type LO_LEAKCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_leakcal_status`"]
 pub struct LO_LEAKCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> LO_LEAKCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rccal_status` reader - "]
-pub struct RCCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl RCCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RCCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rccal_status` writer - "]
+#[doc = "Reader of field `rccal_status`"]
+pub type RCCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rccal_status`"]
 pub struct RCCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -214,21 +108,9 @@ impl<'a> RCCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tos_status` reader - "]
-pub struct TOS_STATUS_R(crate::FieldReader<u8, u8>);
-impl TOS_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        TOS_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TOS_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tos_status` writer - "]
+#[doc = "Reader of field `tos_status`"]
+pub type TOS_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `tos_status`"]
 pub struct TOS_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -240,21 +122,9 @@ impl<'a> TOS_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ros_status` reader - "]
-pub struct ROS_STATUS_R(crate::FieldReader<u8, u8>);
-impl ROS_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROS_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROS_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ros_status` writer - "]
+#[doc = "Reader of field `ros_status`"]
+pub type ROS_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ros_status`"]
 pub struct ROS_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -266,21 +136,9 @@ impl<'a> ROS_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_cal_status` reader - "]
-pub struct CLKPLL_CAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl CLKPLL_CAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CLKPLL_CAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_CAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_cal_status` writer - "]
+#[doc = "Reader of field `clkpll_cal_status`"]
+pub type CLKPLL_CAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `clkpll_cal_status`"]
 pub struct CLKPLL_CAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -292,21 +150,9 @@ impl<'a> CLKPLL_CAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `inc_acal_status` reader - "]
-pub struct INC_ACAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl INC_ACAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        INC_ACAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_ACAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_acal_status` writer - "]
+#[doc = "Reader of field `inc_acal_status`"]
+pub type INC_ACAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `inc_acal_status`"]
 pub struct INC_ACAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -318,21 +164,9 @@ impl<'a> INC_ACAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `inc_fcal_status` reader - "]
-pub struct INC_FCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl INC_FCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        INC_FCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for INC_FCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `inc_fcal_status` writer - "]
+#[doc = "Reader of field `inc_fcal_status`"]
+pub type INC_FCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `inc_fcal_status`"]
 pub struct INC_FCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -344,21 +178,9 @@ impl<'a> INC_FCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_status` reader - "]
-pub struct ACAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl ACAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_status` writer - "]
+#[doc = "Reader of field `acal_status`"]
+pub type ACAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acal_status`"]
 pub struct ACAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -370,21 +192,9 @@ impl<'a> ACAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fcal_status` reader - "]
-pub struct FCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl FCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_status` writer - "]
+#[doc = "Reader of field `fcal_status`"]
+pub type FCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `fcal_status`"]
 pub struct FCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -396,21 +206,9 @@ impl<'a> FCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_oscal_status` reader - "]
-pub struct ADC_OSCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl ADC_OSCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADC_OSCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_OSCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_oscal_status` writer - "]
+#[doc = "Reader of field `adc_oscal_status`"]
+pub type ADC_OSCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adc_oscal_status`"]
 pub struct ADC_OSCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -422,21 +220,9 @@ impl<'a> ADC_OSCAL_STATUS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rcal_status` reader - "]
-pub struct RCAL_STATUS_R(crate::FieldReader<u8, u8>);
-impl RCAL_STATUS_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RCAL_STATUS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCAL_STATUS_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rcal_status` writer - "]
+#[doc = "Reader of field `rcal_status`"]
+pub type RCAL_STATUS_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rcal_status`"]
 pub struct RCAL_STATUS_W<'a> {
     w: &'a mut W,
 }
@@ -610,30 +396,5 @@ impl W {
     #[inline(always)]
     pub fn rcal_status(&mut self) -> RCAL_STATUS_W {
         RCAL_STATUS_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rfcal_status.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rfcal_status](index.html) module"]
-pub struct RFCAL_STATUS_SPEC;
-impl crate::RegisterSpec for RFCAL_STATUS_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rfcal_status::R](R) reader structure"]
-impl crate::Readable for RFCAL_STATUS_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rfcal_status::W](W) writer structure"]
-impl crate::Writable for RFCAL_STATUS_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rfcal_status to value 0"]
-impl crate::Resettable for RFCAL_STATUS_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

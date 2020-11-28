@@ -1,52 +1,18 @@
-#[doc = "Register `spi_rxd_ignr` reader"]
-pub struct R(crate::R<SPI_RXD_IGNR_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SPI_RXD_IGNR_SPEC>;
+#[doc = "Reader of register spi_rxd_ignr"]
+pub type R = crate::R<u32, super::SPI_RXD_IGNR>;
+#[doc = "Writer for register spi_rxd_ignr"]
+pub type W = crate::W<u32, super::SPI_RXD_IGNR>;
+#[doc = "Register spi_rxd_ignr `reset()`'s with value 0"]
+impl crate::ResetValue for super::SPI_RXD_IGNR {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SPI_RXD_IGNR_SPEC>> for R {
-    fn from(reader: crate::R<SPI_RXD_IGNR_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `spi_rxd_ignr` writer"]
-pub struct W(crate::W<SPI_RXD_IGNR_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SPI_RXD_IGNR_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SPI_RXD_IGNR_SPEC>> for W {
-    fn from(writer: crate::W<SPI_RXD_IGNR_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_spi_rxd_ignr_s` reader - "]
-pub struct CR_SPI_RXD_IGNR_S_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_RXD_IGNR_S_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_RXD_IGNR_S_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_RXD_IGNR_S_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_rxd_ignr_s` writer - "]
+#[doc = "Reader of field `cr_spi_rxd_ignr_s`"]
+pub type CR_SPI_RXD_IGNR_S_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_spi_rxd_ignr_s`"]
 pub struct CR_SPI_RXD_IGNR_S_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> CR_SPI_RXD_IGNR_S_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_spi_rxd_ignr_p` reader - "]
-pub struct CR_SPI_RXD_IGNR_P_R(crate::FieldReader<u8, u8>);
-impl CR_SPI_RXD_IGNR_P_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_SPI_RXD_IGNR_P_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_SPI_RXD_IGNR_P_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_spi_rxd_ignr_p` writer - "]
+#[doc = "Reader of field `cr_spi_rxd_ignr_p`"]
+pub type CR_SPI_RXD_IGNR_P_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_spi_rxd_ignr_p`"]
 pub struct CR_SPI_RXD_IGNR_P_W<'a> {
     w: &'a mut W,
 }
@@ -106,30 +60,5 @@ impl W {
     #[inline(always)]
     pub fn cr_spi_rxd_ignr_p(&mut self) -> CR_SPI_RXD_IGNR_P_W {
         CR_SPI_RXD_IGNR_P_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "spi_rxd_ignr.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [spi_rxd_ignr](index.html) module"]
-pub struct SPI_RXD_IGNR_SPEC;
-impl crate::RegisterSpec for SPI_RXD_IGNR_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [spi_rxd_ignr::R](R) reader structure"]
-impl crate::Readable for SPI_RXD_IGNR_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [spi_rxd_ignr::W](W) writer structure"]
-impl crate::Writable for SPI_RXD_IGNR_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets spi_rxd_ignr to value 0"]
-impl crate::Resettable for SPI_RXD_IGNR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

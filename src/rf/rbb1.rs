@@ -1,52 +1,18 @@
-#[doc = "Register `rbb1` reader"]
-pub struct R(crate::R<RBB1_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RBB1_SPEC>;
+#[doc = "Reader of register rbb1"]
+pub type R = crate::R<u32, super::RBB1>;
+#[doc = "Writer for register rbb1"]
+pub type W = crate::W<u32, super::RBB1>;
+#[doc = "Register rbb1 `reset()`'s with value 0"]
+impl crate::ResetValue for super::RBB1 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RBB1_SPEC>> for R {
-    fn from(reader: crate::R<RBB1_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rbb1` writer"]
-pub struct W(crate::W<RBB1_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RBB1_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RBB1_SPEC>> for W {
-    fn from(writer: crate::W<RBB1_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rosdac_range` reader - "]
-pub struct ROSDAC_RANGE_R(crate::FieldReader<bool, bool>);
-impl ROSDAC_RANGE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSDAC_RANGE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_RANGE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_range` writer - "]
+#[doc = "Reader of field `rosdac_range`"]
+pub type ROSDAC_RANGE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rosdac_range`"]
 pub struct ROSDAC_RANGE_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> ROSDAC_RANGE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rosdac_i_hw` reader - "]
-pub struct ROSDAC_I_HW_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_I_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_I_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_I_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_i_hw` writer - "]
+#[doc = "Reader of field `rosdac_i_hw`"]
+pub type ROSDAC_I_HW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rosdac_i_hw`"]
 pub struct ROSDAC_I_HW_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> ROSDAC_I_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rosdac_q_hw` reader - "]
-pub struct ROSDAC_Q_HW_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_Q_HW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_Q_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_Q_HW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_q_hw` writer - "]
+#[doc = "Reader of field `rosdac_q_hw`"]
+pub type ROSDAC_Q_HW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rosdac_q_hw`"]
 pub struct ROSDAC_Q_HW_W<'a> {
     w: &'a mut W,
 }
@@ -120,21 +62,9 @@ impl<'a> ROSDAC_Q_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rosdac_i` reader - "]
-pub struct ROSDAC_I_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_I_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_I_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_i` writer - "]
+#[doc = "Reader of field `rosdac_i`"]
+pub type ROSDAC_I_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rosdac_i`"]
 pub struct ROSDAC_I_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> ROSDAC_I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rosdac_q` reader - "]
-pub struct ROSDAC_Q_R(crate::FieldReader<u8, u8>);
-impl ROSDAC_Q_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ROSDAC_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSDAC_Q_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rosdac_q` writer - "]
+#[doc = "Reader of field `rosdac_q`"]
+pub type ROSDAC_Q_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rosdac_q`"]
 pub struct ROSDAC_Q_W<'a> {
     w: &'a mut W,
 }
@@ -224,30 +142,5 @@ impl W {
     #[inline(always)]
     pub fn rosdac_q(&mut self) -> ROSDAC_Q_W {
         ROSDAC_Q_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rbb1.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rbb1](index.html) module"]
-pub struct RBB1_SPEC;
-impl crate::RegisterSpec for RBB1_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rbb1::R](R) reader structure"]
-impl crate::Readable for RBB1_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rbb1::W](W) writer structure"]
-impl crate::Writable for RBB1_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rbb1 to value 0"]
-impl crate::Resettable for RBB1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

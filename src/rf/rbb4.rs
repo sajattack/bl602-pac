@@ -1,52 +1,18 @@
-#[doc = "Register `rbb4` reader"]
-pub struct R(crate::R<RBB4_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RBB4_SPEC>;
+#[doc = "Reader of register rbb4"]
+pub type R = crate::R<u32, super::RBB4>;
+#[doc = "Writer for register rbb4"]
+pub type W = crate::W<u32, super::RBB4>;
+#[doc = "Register rbb4 `reset()`'s with value 0"]
+impl crate::ResetValue for super::RBB4 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RBB4_SPEC>> for R {
-    fn from(reader: crate::R<RBB4_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rbb4` writer"]
-pub struct W(crate::W<RBB4_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RBB4_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RBB4_SPEC>> for W {
-    fn from(writer: crate::W<RBB4_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pkdet_out_latch` reader - "]
-pub struct PKDET_OUT_LATCH_R(crate::FieldReader<bool, bool>);
-impl PKDET_OUT_LATCH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PKDET_OUT_LATCH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PKDET_OUT_LATCH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pkdet_out_latch` writer - "]
+#[doc = "Reader of field `pkdet_out_latch`"]
+pub type PKDET_OUT_LATCH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pkdet_out_latch`"]
 pub struct PKDET_OUT_LATCH_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PKDET_OUT_LATCH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pkdet_out_raw` reader - "]
-pub struct PKDET_OUT_RAW_R(crate::FieldReader<bool, bool>);
-impl PKDET_OUT_RAW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PKDET_OUT_RAW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PKDET_OUT_RAW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pkdet_out_raw` writer - "]
+#[doc = "Reader of field `pkdet_out_raw`"]
+pub type PKDET_OUT_RAW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pkdet_out_raw`"]
 pub struct PKDET_OUT_RAW_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PKDET_OUT_RAW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_pkdet_en_hw` reader - "]
-pub struct RBB_PKDET_EN_HW_R(crate::FieldReader<bool, bool>);
-impl RBB_PKDET_EN_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_PKDET_EN_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_PKDET_EN_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_pkdet_en_hw` writer - "]
+#[doc = "Reader of field `rbb_pkdet_en_hw`"]
+pub type RBB_PKDET_EN_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_pkdet_en_hw`"]
 pub struct RBB_PKDET_EN_HW_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> RBB_PKDET_EN_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_pkdet_out_rstn_hw` reader - "]
-pub struct RBB_PKDET_OUT_RSTN_HW_R(crate::FieldReader<bool, bool>);
-impl RBB_PKDET_OUT_RSTN_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_PKDET_OUT_RSTN_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_PKDET_OUT_RSTN_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_pkdet_out_rstn_hw` writer - "]
+#[doc = "Reader of field `rbb_pkdet_out_rstn_hw`"]
+pub type RBB_PKDET_OUT_RSTN_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_pkdet_out_rstn_hw`"]
 pub struct RBB_PKDET_OUT_RSTN_HW_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> RBB_PKDET_OUT_RSTN_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_pkdet_en` reader - "]
-pub struct RBB_PKDET_EN_R(crate::FieldReader<bool, bool>);
-impl RBB_PKDET_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_PKDET_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_PKDET_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_pkdet_en` writer - "]
+#[doc = "Reader of field `rbb_pkdet_en`"]
+pub type RBB_PKDET_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_pkdet_en`"]
 pub struct RBB_PKDET_EN_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> RBB_PKDET_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_pkdet_out_rstn` reader - "]
-pub struct RBB_PKDET_OUT_RSTN_R(crate::FieldReader<bool, bool>);
-impl RBB_PKDET_OUT_RSTN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RBB_PKDET_OUT_RSTN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_PKDET_OUT_RSTN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_pkdet_out_rstn` writer - "]
+#[doc = "Reader of field `rbb_pkdet_out_rstn`"]
+pub type RBB_PKDET_OUT_RSTN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rbb_pkdet_out_rstn`"]
 pub struct RBB_PKDET_OUT_RSTN_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> RBB_PKDET_OUT_RSTN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_pkdet_vth` reader - "]
-pub struct RBB_PKDET_VTH_R(crate::FieldReader<u8, u8>);
-impl RBB_PKDET_VTH_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_PKDET_VTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_PKDET_VTH_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_pkdet_vth` writer - "]
+#[doc = "Reader of field `rbb_pkdet_vth`"]
+pub type RBB_PKDET_VTH_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_pkdet_vth`"]
 pub struct RBB_PKDET_VTH_W<'a> {
     w: &'a mut W,
 }
@@ -346,30 +240,5 @@ impl W {
     #[inline(always)]
     pub fn rbb_pkdet_vth(&mut self) -> RBB_PKDET_VTH_W {
         RBB_PKDET_VTH_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rbb4.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rbb4](index.html) module"]
-pub struct RBB4_SPEC;
-impl crate::RegisterSpec for RBB4_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rbb4::R](R) reader structure"]
-impl crate::Readable for RBB4_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rbb4::W](W) writer structure"]
-impl crate::Writable for RBB4_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rbb4 to value 0"]
-impl crate::Resettable for RBB4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

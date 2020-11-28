@@ -1,52 +1,18 @@
-#[doc = "Register `l1c_bmx_err_addr_en` reader"]
-pub struct R(crate::R<L1C_BMX_ERR_ADDR_EN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<L1C_BMX_ERR_ADDR_EN_SPEC>;
+#[doc = "Reader of register l1c_bmx_err_addr_en"]
+pub type R = crate::R<u32, super::L1C_BMX_ERR_ADDR_EN>;
+#[doc = "Writer for register l1c_bmx_err_addr_en"]
+pub type W = crate::W<u32, super::L1C_BMX_ERR_ADDR_EN>;
+#[doc = "Register l1c_bmx_err_addr_en `reset()`'s with value 0"]
+impl crate::ResetValue for super::L1C_BMX_ERR_ADDR_EN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<L1C_BMX_ERR_ADDR_EN_SPEC>> for R {
-    fn from(reader: crate::R<L1C_BMX_ERR_ADDR_EN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `l1c_bmx_err_addr_en` writer"]
-pub struct W(crate::W<L1C_BMX_ERR_ADDR_EN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<L1C_BMX_ERR_ADDR_EN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<L1C_BMX_ERR_ADDR_EN_SPEC>> for W {
-    fn from(writer: crate::W<L1C_BMX_ERR_ADDR_EN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `l1c_hsel_option` reader - "]
-pub struct L1C_HSEL_OPTION_R(crate::FieldReader<u8, u8>);
-impl L1C_HSEL_OPTION_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        L1C_HSEL_OPTION_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_HSEL_OPTION_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_hsel_option` writer - "]
+#[doc = "Reader of field `l1c_hsel_option`"]
+pub type L1C_HSEL_OPTION_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `l1c_hsel_option`"]
 pub struct L1C_HSEL_OPTION_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> L1C_HSEL_OPTION_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_err_tz` reader - "]
-pub struct L1C_BMX_ERR_TZ_R(crate::FieldReader<bool, bool>);
-impl L1C_BMX_ERR_TZ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BMX_ERR_TZ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_ERR_TZ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_err_tz` writer - "]
+#[doc = "Reader of field `l1c_bmx_err_tz`"]
+pub type L1C_BMX_ERR_TZ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bmx_err_tz`"]
 pub struct L1C_BMX_ERR_TZ_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> L1C_BMX_ERR_TZ_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_err_dec` reader - "]
-pub struct L1C_BMX_ERR_DEC_R(crate::FieldReader<bool, bool>);
-impl L1C_BMX_ERR_DEC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BMX_ERR_DEC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_ERR_DEC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_err_dec` writer - "]
+#[doc = "Reader of field `l1c_bmx_err_dec`"]
+pub type L1C_BMX_ERR_DEC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bmx_err_dec`"]
 pub struct L1C_BMX_ERR_DEC_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> L1C_BMX_ERR_DEC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `l1c_bmx_err_addr_dis` reader - "]
-pub struct L1C_BMX_ERR_ADDR_DIS_R(crate::FieldReader<bool, bool>);
-impl L1C_BMX_ERR_ADDR_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        L1C_BMX_ERR_ADDR_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for L1C_BMX_ERR_ADDR_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `l1c_bmx_err_addr_dis` writer - "]
+#[doc = "Reader of field `l1c_bmx_err_addr_dis`"]
+pub type L1C_BMX_ERR_ADDR_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `l1c_bmx_err_addr_dis`"]
 pub struct L1C_BMX_ERR_ADDR_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -208,30 +138,5 @@ impl W {
     #[inline(always)]
     pub fn l1c_bmx_err_addr_dis(&mut self) -> L1C_BMX_ERR_ADDR_DIS_W {
         L1C_BMX_ERR_ADDR_DIS_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "l1c_bmx_err_addr_en.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [l1c_bmx_err_addr_en](index.html) module"]
-pub struct L1C_BMX_ERR_ADDR_EN_SPEC;
-impl crate::RegisterSpec for L1C_BMX_ERR_ADDR_EN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [l1c_bmx_err_addr_en::R](R) reader structure"]
-impl crate::Readable for L1C_BMX_ERR_ADDR_EN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [l1c_bmx_err_addr_en::W](W) writer structure"]
-impl crate::Writable for L1C_BMX_ERR_ADDR_EN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets l1c_bmx_err_addr_en to value 0"]
-impl crate::Resettable for L1C_BMX_ERR_ADDR_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

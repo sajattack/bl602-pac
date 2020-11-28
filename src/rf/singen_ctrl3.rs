@@ -1,52 +1,18 @@
-#[doc = "Register `singen_ctrl3` reader"]
-pub struct R(crate::R<SINGEN_CTRL3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SINGEN_CTRL3_SPEC>;
+#[doc = "Reader of register singen_ctrl3"]
+pub type R = crate::R<u32, super::SINGEN_CTRL3>;
+#[doc = "Writer for register singen_ctrl3"]
+pub type W = crate::W<u32, super::SINGEN_CTRL3>;
+#[doc = "Register singen_ctrl3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SINGEN_CTRL3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SINGEN_CTRL3_SPEC>> for R {
-    fn from(reader: crate::R<SINGEN_CTRL3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `singen_ctrl3` writer"]
-pub struct W(crate::W<SINGEN_CTRL3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SINGEN_CTRL3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SINGEN_CTRL3_SPEC>> for W {
-    fn from(writer: crate::W<SINGEN_CTRL3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `singen_start_addr0_q` reader - "]
-pub struct SINGEN_START_ADDR0_Q_R(crate::FieldReader<u16, u16>);
-impl SINGEN_START_ADDR0_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_START_ADDR0_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_START_ADDR0_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_start_addr0_q` writer - "]
+#[doc = "Reader of field `singen_start_addr0_q`"]
+pub type SINGEN_START_ADDR0_Q_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `singen_start_addr0_q`"]
 pub struct SINGEN_START_ADDR0_Q_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> SINGEN_START_ADDR0_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Field `singen_start_addr1_q` reader - "]
-pub struct SINGEN_START_ADDR1_Q_R(crate::FieldReader<u16, u16>);
-impl SINGEN_START_ADDR1_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_START_ADDR1_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_START_ADDR1_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_start_addr1_q` writer - "]
+#[doc = "Reader of field `singen_start_addr1_q`"]
+pub type SINGEN_START_ADDR1_Q_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `singen_start_addr1_q`"]
 pub struct SINGEN_START_ADDR1_Q_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> SINGEN_START_ADDR1_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Field `singen_gain_q` reader - "]
-pub struct SINGEN_GAIN_Q_R(crate::FieldReader<u16, u16>);
-impl SINGEN_GAIN_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_GAIN_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_GAIN_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_gain_q` writer - "]
+#[doc = "Reader of field `singen_gain_q`"]
+pub type SINGEN_GAIN_Q_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `singen_gain_q`"]
 pub struct SINGEN_GAIN_Q_W<'a> {
     w: &'a mut W,
 }
@@ -142,30 +84,5 @@ impl W {
     #[inline(always)]
     pub fn singen_gain_q(&mut self) -> SINGEN_GAIN_Q_W {
         SINGEN_GAIN_Q_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "singen_ctrl3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [singen_ctrl3](index.html) module"]
-pub struct SINGEN_CTRL3_SPEC;
-impl crate::RegisterSpec for SINGEN_CTRL3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [singen_ctrl3::R](R) reader structure"]
-impl crate::Readable for SINGEN_CTRL3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [singen_ctrl3::W](W) writer structure"]
-impl crate::Writable for SINGEN_CTRL3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets singen_ctrl3 to value 0"]
-impl crate::Resettable for SINGEN_CTRL3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

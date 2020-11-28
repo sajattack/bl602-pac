@@ -1,52 +1,18 @@
-#[doc = "Register `uart_int_clear` reader"]
-pub struct R(crate::R<UART_INT_CLEAR_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<UART_INT_CLEAR_SPEC>;
+#[doc = "Reader of register uart_int_clear"]
+pub type R = crate::R<u32, super::UART_INT_CLEAR>;
+#[doc = "Writer for register uart_int_clear"]
+pub type W = crate::W<u32, super::UART_INT_CLEAR>;
+#[doc = "Register uart_int_clear `reset()`'s with value 0"]
+impl crate::ResetValue for super::UART_INT_CLEAR {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<UART_INT_CLEAR_SPEC>> for R {
-    fn from(reader: crate::R<UART_INT_CLEAR_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `uart_int_clear` writer"]
-pub struct W(crate::W<UART_INT_CLEAR_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<UART_INT_CLEAR_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<UART_INT_CLEAR_SPEC>> for W {
-    fn from(writer: crate::W<UART_INT_CLEAR_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rsvd_7` reader - "]
-pub struct RSVD_7_R(crate::FieldReader<bool, bool>);
-impl RSVD_7_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_7_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_7_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_7` writer - "]
+#[doc = "Reader of field `rsvd_7`"]
+pub type RSVD_7_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_7`"]
 pub struct RSVD_7_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> RSVD_7_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_6` reader - "]
-pub struct RSVD_6_R(crate::FieldReader<bool, bool>);
-impl RSVD_6_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_6_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_6_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_6` writer - "]
+#[doc = "Reader of field `rsvd_6`"]
+pub type RSVD_6_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_6`"]
 pub struct RSVD_6_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> RSVD_6_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_pce_clr` reader - "]
-pub struct CR_URX_PCE_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_URX_PCE_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_PCE_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_PCE_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_pce_clr` writer - "]
+#[doc = "Reader of field `cr_urx_pce_clr`"]
+pub type CR_URX_PCE_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_pce_clr`"]
 pub struct CR_URX_PCE_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CR_URX_PCE_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_rto_clr` reader - "]
-pub struct CR_URX_RTO_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_URX_RTO_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_RTO_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_RTO_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_rto_clr` writer - "]
+#[doc = "Reader of field `cr_urx_rto_clr`"]
+pub type CR_URX_RTO_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_rto_clr`"]
 pub struct CR_URX_RTO_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> CR_URX_RTO_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_3` reader - "]
-pub struct RSVD_3_R(crate::FieldReader<bool, bool>);
-impl RSVD_3_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_3_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_3_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_3` writer - "]
+#[doc = "Reader of field `rsvd_3`"]
+pub type RSVD_3_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_3`"]
 pub struct RSVD_3_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> RSVD_3_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rsvd_2` reader - "]
-pub struct RSVD_2_R(crate::FieldReader<bool, bool>);
-impl RSVD_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RSVD_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_2` writer - "]
+#[doc = "Reader of field `rsvd_2`"]
+pub type RSVD_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rsvd_2`"]
 pub struct RSVD_2_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> RSVD_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_end_clr` reader - "]
-pub struct CR_URX_END_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_URX_END_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_END_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_END_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_end_clr` writer - "]
+#[doc = "Reader of field `cr_urx_end_clr`"]
+pub type CR_URX_END_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_end_clr`"]
 pub struct CR_URX_END_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> CR_URX_END_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_utx_end_clr` reader - "]
-pub struct CR_UTX_END_CLR_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_END_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_END_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_END_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_end_clr` writer - "]
+#[doc = "Reader of field `cr_utx_end_clr`"]
+pub type CR_UTX_END_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_utx_end_clr`"]
 pub struct CR_UTX_END_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -402,30 +284,5 @@ impl W {
     #[inline(always)]
     pub fn cr_utx_end_clr(&mut self) -> CR_UTX_END_CLR_W {
         CR_UTX_END_CLR_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "UART interrupt clear\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [uart_int_clear](index.html) module"]
-pub struct UART_INT_CLEAR_SPEC;
-impl crate::RegisterSpec for UART_INT_CLEAR_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [uart_int_clear::R](R) reader structure"]
-impl crate::Readable for UART_INT_CLEAR_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [uart_int_clear::W](W) writer structure"]
-impl crate::Writable for UART_INT_CLEAR_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets uart_int_clear to value 0"]
-impl crate::Resettable for UART_INT_CLEAR_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

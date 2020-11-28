@@ -1,52 +1,18 @@
-#[doc = "Register `vco2` reader"]
-pub struct R(crate::R<VCO2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<VCO2_SPEC>;
+#[doc = "Reader of register vco2"]
+pub type R = crate::R<u32, super::VCO2>;
+#[doc = "Writer for register vco2"]
+pub type W = crate::W<u32, super::VCO2>;
+#[doc = "Register vco2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::VCO2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<VCO2_SPEC>> for R {
-    fn from(reader: crate::R<VCO2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `vco2` writer"]
-pub struct W(crate::W<VCO2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<VCO2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<VCO2_SPEC>> for W {
-    fn from(writer: crate::W<VCO2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `acal_inc_en_hw` reader - "]
-pub struct ACAL_INC_EN_HW_R(crate::FieldReader<bool, bool>);
-impl ACAL_INC_EN_HW_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_INC_EN_HW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_INC_EN_HW_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_inc_en_hw` writer - "]
+#[doc = "Reader of field `acal_inc_en_hw`"]
+pub type ACAL_INC_EN_HW_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acal_inc_en_hw`"]
 pub struct ACAL_INC_EN_HW_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> ACAL_INC_EN_HW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_vco_ud` reader - "]
-pub struct ACAL_VCO_UD_R(crate::FieldReader<bool, bool>);
-impl ACAL_VCO_UD_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_VCO_UD_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_VCO_UD_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_vco_ud` writer - "]
+#[doc = "Reader of field `acal_vco_ud`"]
+pub type ACAL_VCO_UD_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acal_vco_ud`"]
 pub struct ACAL_VCO_UD_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> ACAL_VCO_UD_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_vref_cw` reader - "]
-pub struct ACAL_VREF_CW_R(crate::FieldReader<u8, u8>);
-impl ACAL_VREF_CW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ACAL_VREF_CW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_VREF_CW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_vref_cw` writer - "]
+#[doc = "Reader of field `acal_vref_cw`"]
+pub type ACAL_VREF_CW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `acal_vref_cw`"]
 pub struct ACAL_VREF_CW_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> ACAL_VREF_CW_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_vco_short_idac_filter` reader - "]
-pub struct LO_VCO_SHORT_IDAC_FILTER_R(crate::FieldReader<bool, bool>);
-impl LO_VCO_SHORT_IDAC_FILTER_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_VCO_SHORT_IDAC_FILTER_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_VCO_SHORT_IDAC_FILTER_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_vco_short_idac_filter` writer - "]
+#[doc = "Reader of field `lo_vco_short_idac_filter`"]
+pub type LO_VCO_SHORT_IDAC_FILTER_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_vco_short_idac_filter`"]
 pub struct LO_VCO_SHORT_IDAC_FILTER_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> LO_VCO_SHORT_IDAC_FILTER_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_vco_short_vbias_filter` reader - "]
-pub struct LO_VCO_SHORT_VBIAS_FILTER_R(crate::FieldReader<bool, bool>);
-impl LO_VCO_SHORT_VBIAS_FILTER_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_VCO_SHORT_VBIAS_FILTER_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_VCO_SHORT_VBIAS_FILTER_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_vco_short_vbias_filter` writer - "]
+#[doc = "Reader of field `lo_vco_short_vbias_filter`"]
+pub type LO_VCO_SHORT_VBIAS_FILTER_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_vco_short_vbias_filter`"]
 pub struct LO_VCO_SHORT_VBIAS_FILTER_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> LO_VCO_SHORT_VBIAS_FILTER_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_vco_idac_boot` reader - "]
-pub struct LO_VCO_IDAC_BOOT_R(crate::FieldReader<bool, bool>);
-impl LO_VCO_IDAC_BOOT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_VCO_IDAC_BOOT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_VCO_IDAC_BOOT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_vco_idac_boot` writer - "]
+#[doc = "Reader of field `lo_vco_idac_boot`"]
+pub type LO_VCO_IDAC_BOOT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_vco_idac_boot`"]
 pub struct LO_VCO_IDAC_BOOT_W<'a> {
     w: &'a mut W,
 }
@@ -238,21 +144,9 @@ impl<'a> LO_VCO_IDAC_BOOT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_vco_vbias_cw` reader - "]
-pub struct LO_VCO_VBIAS_CW_R(crate::FieldReader<u8, u8>);
-impl LO_VCO_VBIAS_CW_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LO_VCO_VBIAS_CW_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_VCO_VBIAS_CW_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_vco_vbias_cw` writer - "]
+#[doc = "Reader of field `lo_vco_vbias_cw`"]
+pub type LO_VCO_VBIAS_CW_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `lo_vco_vbias_cw`"]
 pub struct LO_VCO_VBIAS_CW_W<'a> {
     w: &'a mut W,
 }
@@ -336,30 +230,5 @@ impl W {
     #[inline(always)]
     pub fn lo_vco_vbias_cw(&mut self) -> LO_VCO_VBIAS_CW_W {
         LO_VCO_VBIAS_CW_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "vco2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [vco2](index.html) module"]
-pub struct VCO2_SPEC;
-impl crate::RegisterSpec for VCO2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [vco2::R](R) reader structure"]
-impl crate::Readable for VCO2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [vco2::W](W) writer structure"]
-impl crate::Writable for VCO2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets vco2 to value 0"]
-impl crate::Resettable for VCO2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

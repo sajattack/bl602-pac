@@ -1,52 +1,18 @@
-#[doc = "Register `clkpll_output_en` reader"]
-pub struct R(crate::R<CLKPLL_OUTPUT_EN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CLKPLL_OUTPUT_EN_SPEC>;
+#[doc = "Reader of register clkpll_output_en"]
+pub type R = crate::R<u32, super::CLKPLL_OUTPUT_EN>;
+#[doc = "Writer for register clkpll_output_en"]
+pub type W = crate::W<u32, super::CLKPLL_OUTPUT_EN>;
+#[doc = "Register clkpll_output_en `reset()`'s with value 0"]
+impl crate::ResetValue for super::CLKPLL_OUTPUT_EN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CLKPLL_OUTPUT_EN_SPEC>> for R {
-    fn from(reader: crate::R<CLKPLL_OUTPUT_EN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `clkpll_output_en` writer"]
-pub struct W(crate::W<CLKPLL_OUTPUT_EN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CLKPLL_OUTPUT_EN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CLKPLL_OUTPUT_EN_SPEC>> for W {
-    fn from(writer: crate::W<CLKPLL_OUTPUT_EN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `clkpll_en_div2_480m` reader - "]
-pub struct CLKPLL_EN_DIV2_480M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_DIV2_480M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_DIV2_480M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_DIV2_480M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_div2_480m` writer - "]
+#[doc = "Reader of field `clkpll_en_div2_480m`"]
+pub type CLKPLL_EN_DIV2_480M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_div2_480m`"]
 pub struct CLKPLL_EN_DIV2_480M_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CLKPLL_EN_DIV2_480M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_32m` reader - "]
-pub struct CLKPLL_EN_32M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_32M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_32M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_32M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_32m` writer - "]
+#[doc = "Reader of field `clkpll_en_32m`"]
+pub type CLKPLL_EN_32M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_32m`"]
 pub struct CLKPLL_EN_32M_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CLKPLL_EN_32M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_48m` reader - "]
-pub struct CLKPLL_EN_48M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_48M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_48M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_48M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_48m` writer - "]
+#[doc = "Reader of field `clkpll_en_48m`"]
+pub type CLKPLL_EN_48M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_48m`"]
 pub struct CLKPLL_EN_48M_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CLKPLL_EN_48M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_80m` reader - "]
-pub struct CLKPLL_EN_80M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_80M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_80M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_80M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_80m` writer - "]
+#[doc = "Reader of field `clkpll_en_80m`"]
+pub type CLKPLL_EN_80M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_80m`"]
 pub struct CLKPLL_EN_80M_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> CLKPLL_EN_80M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_96m` reader - "]
-pub struct CLKPLL_EN_96M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_96M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_96M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_96M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_96m` writer - "]
+#[doc = "Reader of field `clkpll_en_96m`"]
+pub type CLKPLL_EN_96M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_96m`"]
 pub struct CLKPLL_EN_96M_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> CLKPLL_EN_96M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_120m` reader - "]
-pub struct CLKPLL_EN_120M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_120M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_120M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_120M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_120m` writer - "]
+#[doc = "Reader of field `clkpll_en_120m`"]
+pub type CLKPLL_EN_120M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_120m`"]
 pub struct CLKPLL_EN_120M_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> CLKPLL_EN_120M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_160m` reader - "]
-pub struct CLKPLL_EN_160M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_160M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_160M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_160M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_160m` writer - "]
+#[doc = "Reader of field `clkpll_en_160m`"]
+pub type CLKPLL_EN_160M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_160m`"]
 pub struct CLKPLL_EN_160M_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> CLKPLL_EN_160M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_192m` reader - "]
-pub struct CLKPLL_EN_192M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_192M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_192M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_192M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_192m` writer - "]
+#[doc = "Reader of field `clkpll_en_192m`"]
+pub type CLKPLL_EN_192M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_192m`"]
 pub struct CLKPLL_EN_192M_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> CLKPLL_EN_192M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_240m` reader - "]
-pub struct CLKPLL_EN_240M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_240M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_240M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_240M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_240m` writer - "]
+#[doc = "Reader of field `clkpll_en_240m`"]
+pub type CLKPLL_EN_240M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_240m`"]
 pub struct CLKPLL_EN_240M_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> CLKPLL_EN_240M_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_en_480m` reader - "]
-pub struct CLKPLL_EN_480M_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_EN_480M_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_EN_480M_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_EN_480M_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_en_480m` writer - "]
+#[doc = "Reader of field `clkpll_en_480m`"]
+pub type CLKPLL_EN_480M_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_en_480m`"]
 pub struct CLKPLL_EN_480M_W<'a> {
     w: &'a mut W,
 }
@@ -494,30 +352,5 @@ impl W {
     #[inline(always)]
     pub fn clkpll_en_480m(&mut self) -> CLKPLL_EN_480M_W {
         CLKPLL_EN_480M_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "clkpll_output_en.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [clkpll_output_en](index.html) module"]
-pub struct CLKPLL_OUTPUT_EN_SPEC;
-impl crate::RegisterSpec for CLKPLL_OUTPUT_EN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [clkpll_output_en::R](R) reader structure"]
-impl crate::Readable for CLKPLL_OUTPUT_EN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [clkpll_output_en::W](W) writer structure"]
-impl crate::Writable for CLKPLL_OUTPUT_EN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets clkpll_output_en to value 0"]
-impl crate::Resettable for CLKPLL_OUTPUT_EN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

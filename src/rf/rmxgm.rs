@@ -1,52 +1,18 @@
-#[doc = "Register `rmxgm` reader"]
-pub struct R(crate::R<RMXGM_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RMXGM_SPEC>;
+#[doc = "Reader of register rmxgm"]
+pub type R = crate::R<u32, super::RMXGM>;
+#[doc = "Writer for register rmxgm"]
+pub type W = crate::W<u32, super::RMXGM>;
+#[doc = "Register rmxgm `reset()`'s with value 0"]
+impl crate::ResetValue for super::RMXGM {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RMXGM_SPEC>> for R {
-    fn from(reader: crate::R<RMXGM_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rmxgm` writer"]
-pub struct W(crate::W<RMXGM_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RMXGM_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RMXGM_SPEC>> for W {
-    fn from(writer: crate::W<RMXGM_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rmxgm_10m_mode_en` reader - "]
-pub struct RMXGM_10M_MODE_EN_R(crate::FieldReader<bool, bool>);
-impl RMXGM_10M_MODE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RMXGM_10M_MODE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RMXGM_10M_MODE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rmxgm_10m_mode_en` writer - "]
+#[doc = "Reader of field `rmxgm_10m_mode_en`"]
+pub type RMXGM_10M_MODE_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rmxgm_10m_mode_en`"]
 pub struct RMXGM_10M_MODE_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> RMXGM_10M_MODE_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rmxgm_bm` reader - "]
-pub struct RMXGM_BM_R(crate::FieldReader<u8, u8>);
-impl RMXGM_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RMXGM_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RMXGM_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rmxgm_bm` writer - "]
+#[doc = "Reader of field `rmxgm_bm`"]
+pub type RMXGM_BM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rmxgm_bm`"]
 pub struct RMXGM_BM_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> RMXGM_BM_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rmx_bm` reader - "]
-pub struct RMX_BM_R(crate::FieldReader<u8, u8>);
-impl RMX_BM_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RMX_BM_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RMX_BM_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rmx_bm` writer - "]
+#[doc = "Reader of field `rmx_bm`"]
+pub type RMX_BM_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rmx_bm`"]
 pub struct RMX_BM_W<'a> {
     w: &'a mut W,
 }
@@ -152,30 +94,5 @@ impl W {
     #[inline(always)]
     pub fn rmx_bm(&mut self) -> RMX_BM_W {
         RMX_BM_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rmxgm.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rmxgm](index.html) module"]
-pub struct RMXGM_SPEC;
-impl crate::RegisterSpec for RMXGM_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rmxgm::R](R) reader structure"]
-impl crate::Readable for RMXGM_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rmxgm::W](W) writer structure"]
-impl crate::Writable for RMXGM_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rmxgm to value 0"]
-impl crate::Resettable for RMXGM_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

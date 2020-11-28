@@ -1,52 +1,18 @@
-#[doc = "Register `bmx_cfg1` reader"]
-pub struct R(crate::R<BMX_CFG1_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<BMX_CFG1_SPEC>;
+#[doc = "Reader of register bmx_cfg1"]
+pub type R = crate::R<u32, super::BMX_CFG1>;
+#[doc = "Writer for register bmx_cfg1"]
+pub type W = crate::W<u32, super::BMX_CFG1>;
+#[doc = "Register bmx_cfg1 `reset()`'s with value 0"]
+impl crate::ResetValue for super::BMX_CFG1 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<BMX_CFG1_SPEC>> for R {
-    fn from(reader: crate::R<BMX_CFG1_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `bmx_cfg1` writer"]
-pub struct W(crate::W<BMX_CFG1_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<BMX_CFG1_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<BMX_CFG1_SPEC>> for W {
-    fn from(writer: crate::W<BMX_CFG1_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hbn_apb_cfg` reader - "]
-pub struct HBN_APB_CFG_R(crate::FieldReader<u8, u8>);
-impl HBN_APB_CFG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HBN_APB_CFG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HBN_APB_CFG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hbn_apb_cfg` writer - "]
+#[doc = "Reader of field `hbn_apb_cfg`"]
+pub type HBN_APB_CFG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hbn_apb_cfg`"]
 pub struct HBN_APB_CFG_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> HBN_APB_CFG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pds_apb_cfg` reader - "]
-pub struct PDS_APB_CFG_R(crate::FieldReader<u8, u8>);
-impl PDS_APB_CFG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PDS_APB_CFG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PDS_APB_CFG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pds_apb_cfg` writer - "]
+#[doc = "Reader of field `pds_apb_cfg`"]
+pub type PDS_APB_CFG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pds_apb_cfg`"]
 pub struct PDS_APB_CFG_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> PDS_APB_CFG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `hsel_option` reader - "]
-pub struct HSEL_OPTION_R(crate::FieldReader<u8, u8>);
-impl HSEL_OPTION_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HSEL_OPTION_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HSEL_OPTION_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hsel_option` writer - "]
+#[doc = "Reader of field `hsel_option`"]
+pub type HSEL_OPTION_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hsel_option`"]
 pub struct HSEL_OPTION_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> HSEL_OPTION_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_gating_dis` reader - "]
-pub struct BMX_GATING_DIS_R(crate::FieldReader<bool, bool>);
-impl BMX_GATING_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_GATING_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_GATING_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_gating_dis` writer - "]
+#[doc = "Reader of field `bmx_gating_dis`"]
+pub type BMX_GATING_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_gating_dis`"]
 pub struct BMX_GATING_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> BMX_GATING_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_busy_option_dis` reader - "]
-pub struct BMX_BUSY_OPTION_DIS_R(crate::FieldReader<bool, bool>);
-impl BMX_BUSY_OPTION_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_BUSY_OPTION_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_BUSY_OPTION_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_busy_option_dis` writer - "]
+#[doc = "Reader of field `bmx_busy_option_dis`"]
+pub type BMX_BUSY_OPTION_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_busy_option_dis`"]
 pub struct BMX_BUSY_OPTION_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -182,21 +100,9 @@ impl<'a> BMX_BUSY_OPTION_DIS_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_err_en` reader - "]
-pub struct BMX_ERR_EN_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_en` writer - "]
+#[doc = "Reader of field `bmx_err_en`"]
+pub type BMX_ERR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_err_en`"]
 pub struct BMX_ERR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -218,21 +124,9 @@ impl<'a> BMX_ERR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_arb_mode` reader - "]
-pub struct BMX_ARB_MODE_R(crate::FieldReader<u8, u8>);
-impl BMX_ARB_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        BMX_ARB_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ARB_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_arb_mode` writer - "]
+#[doc = "Reader of field `bmx_arb_mode`"]
+pub type BMX_ARB_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `bmx_arb_mode`"]
 pub struct BMX_ARB_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -244,21 +138,9 @@ impl<'a> BMX_ARB_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_timeout_en` reader - "]
-pub struct BMX_TIMEOUT_EN_R(crate::FieldReader<u8, u8>);
-impl BMX_TIMEOUT_EN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        BMX_TIMEOUT_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_TIMEOUT_EN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_timeout_en` writer - "]
+#[doc = "Reader of field `bmx_timeout_en`"]
+pub type BMX_TIMEOUT_EN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `bmx_timeout_en`"]
 pub struct BMX_TIMEOUT_EN_W<'a> {
     w: &'a mut W,
 }
@@ -352,30 +234,5 @@ impl W {
     #[inline(always)]
     pub fn bmx_timeout_en(&mut self) -> BMX_TIMEOUT_EN_W {
         BMX_TIMEOUT_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "bmx_cfg1.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bmx_cfg1](index.html) module"]
-pub struct BMX_CFG1_SPEC;
-impl crate::RegisterSpec for BMX_CFG1_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [bmx_cfg1::R](R) reader structure"]
-impl crate::Readable for BMX_CFG1_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [bmx_cfg1::W](W) writer structure"]
-impl crate::Writable for BMX_CFG1_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets bmx_cfg1 to value 0"]
-impl crate::Resettable for BMX_CFG1_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `rf_rev` reader"]
-pub struct R(crate::R<RF_REV_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RF_REV_SPEC>;
+#[doc = "Reader of register rf_rev"]
+pub type R = crate::R<u32, super::RF_REV>;
+#[doc = "Writer for register rf_rev"]
+pub type W = crate::W<u32, super::RF_REV>;
+#[doc = "Register rf_rev `reset()`'s with value 0"]
+impl crate::ResetValue for super::RF_REV {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RF_REV_SPEC>> for R {
-    fn from(reader: crate::R<RF_REV_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rf_rev` writer"]
-pub struct W(crate::W<RF_REV_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RF_REV_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RF_REV_SPEC>> for W {
-    fn from(writer: crate::W<RF_REV_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `hw_rev` reader - "]
-pub struct HW_REV_R(crate::FieldReader<u8, u8>);
-impl HW_REV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        HW_REV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for HW_REV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `hw_rev` writer - "]
+#[doc = "Reader of field `hw_rev`"]
+pub type HW_REV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `hw_rev`"]
 pub struct HW_REV_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> HW_REV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fw_rev` reader - "]
-pub struct FW_REV_R(crate::FieldReader<u8, u8>);
-impl FW_REV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        FW_REV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FW_REV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fw_rev` writer - "]
+#[doc = "Reader of field `fw_rev`"]
+pub type FW_REV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `fw_rev`"]
 pub struct FW_REV_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> FW_REV_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rf_id` reader - "]
-pub struct RF_ID_R(crate::FieldReader<u8, u8>);
-impl RF_ID_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RF_ID_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RF_ID_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rf_id` writer - "]
+#[doc = "Reader of field `rf_id`"]
+pub type RF_ID_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rf_id`"]
 pub struct RF_ID_W<'a> {
     w: &'a mut W,
 }
@@ -142,30 +84,5 @@ impl W {
     #[inline(always)]
     pub fn rf_id(&mut self) -> RF_ID_W {
         RF_ID_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "Silicon revision\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rf_rev](index.html) module"]
-pub struct RF_REV_SPEC;
-impl crate::RegisterSpec for RF_REV_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rf_rev::R](R) reader structure"]
-impl crate::Readable for RF_REV_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rf_rev::W](W) writer structure"]
-impl crate::Writable for RF_REV_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rf_rev to value 0"]
-impl crate::Resettable for RF_REV_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `HBN_BOR_CFG` reader"]
-pub struct R(crate::R<HBN_BOR_CFG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<HBN_BOR_CFG_SPEC>;
+#[doc = "Reader of register HBN_BOR_CFG"]
+pub type R = crate::R<u32, super::HBN_BOR_CFG>;
+#[doc = "Writer for register HBN_BOR_CFG"]
+pub type W = crate::W<u32, super::HBN_BOR_CFG>;
+#[doc = "Register HBN_BOR_CFG `reset()`'s with value 0"]
+impl crate::ResetValue for super::HBN_BOR_CFG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<HBN_BOR_CFG_SPEC>> for R {
-    fn from(reader: crate::R<HBN_BOR_CFG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `HBN_BOR_CFG` writer"]
-pub struct W(crate::W<HBN_BOR_CFG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<HBN_BOR_CFG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<HBN_BOR_CFG_SPEC>> for W {
-    fn from(writer: crate::W<HBN_BOR_CFG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `r_bor_out` reader - "]
-pub struct R_BOR_OUT_R(crate::FieldReader<bool, bool>);
-impl R_BOR_OUT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        R_BOR_OUT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for R_BOR_OUT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `r_bor_out` writer - "]
+#[doc = "Reader of field `r_bor_out`"]
+pub type R_BOR_OUT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `r_bor_out`"]
 pub struct R_BOR_OUT_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> R_BOR_OUT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_bor` reader - "]
-pub struct PU_BOR_R(crate::FieldReader<bool, bool>);
-impl PU_BOR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_BOR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_BOR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_bor` writer - "]
+#[doc = "Reader of field `pu_bor`"]
+pub type PU_BOR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_bor`"]
 pub struct PU_BOR_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PU_BOR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bor_vth` reader - "]
-pub struct BOR_VTH_R(crate::FieldReader<bool, bool>);
-impl BOR_VTH_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BOR_VTH_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BOR_VTH_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bor_vth` writer - "]
+#[doc = "Reader of field `bor_vth`"]
+pub type BOR_VTH_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bor_vth`"]
 pub struct BOR_VTH_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> BOR_VTH_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bor_sel` reader - "]
-pub struct BOR_SEL_R(crate::FieldReader<bool, bool>);
-impl BOR_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BOR_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BOR_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bor_sel` writer - "]
+#[doc = "Reader of field `bor_sel`"]
+pub type BOR_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bor_sel`"]
 pub struct BOR_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -218,30 +148,5 @@ impl W {
     #[inline(always)]
     pub fn bor_sel(&mut self) -> BOR_SEL_W {
         BOR_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "HBN_BOR_CFG.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [hbn_bor_cfg](index.html) module"]
-pub struct HBN_BOR_CFG_SPEC;
-impl crate::RegisterSpec for HBN_BOR_CFG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [hbn_bor_cfg::R](R) reader structure"]
-impl crate::Readable for HBN_BOR_CFG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [hbn_bor_cfg::W](W) writer structure"]
-impl crate::Writable for HBN_BOR_CFG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets HBN_BOR_CFG to value 0"]
-impl crate::Resettable for HBN_BOR_CFG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

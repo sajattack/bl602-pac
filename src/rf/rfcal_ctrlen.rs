@@ -1,52 +1,18 @@
-#[doc = "Register `rfcal_ctrlen` reader"]
-pub struct R(crate::R<RFCAL_CTRLEN_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RFCAL_CTRLEN_SPEC>;
+#[doc = "Reader of register rfcal_ctrlen"]
+pub type R = crate::R<u32, super::RFCAL_CTRLEN>;
+#[doc = "Writer for register rfcal_ctrlen"]
+pub type W = crate::W<u32, super::RFCAL_CTRLEN>;
+#[doc = "Register rfcal_ctrlen `reset()`'s with value 0"]
+impl crate::ResetValue for super::RFCAL_CTRLEN {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RFCAL_CTRLEN_SPEC>> for R {
-    fn from(reader: crate::R<RFCAL_CTRLEN_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rfcal_ctrlen` writer"]
-pub struct W(crate::W<RFCAL_CTRLEN_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RFCAL_CTRLEN_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RFCAL_CTRLEN_SPEC>> for W {
-    fn from(writer: crate::W<RFCAL_CTRLEN_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `dpd_en` reader - "]
-pub struct DPD_EN_R(crate::FieldReader<bool, bool>);
-impl DPD_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DPD_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DPD_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dpd_en` writer - "]
+#[doc = "Reader of field `dpd_en`"]
+pub type DPD_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dpd_en`"]
 pub struct DPD_EN_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> DPD_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tsencal_en` reader - "]
-pub struct TSENCAL_EN_R(crate::FieldReader<bool, bool>);
-impl TSENCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TSENCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TSENCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tsencal_en` writer - "]
+#[doc = "Reader of field `tsencal_en`"]
+pub type TSENCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tsencal_en`"]
 pub struct TSENCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> TSENCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pwdet_cal_en` reader - "]
-pub struct PWDET_CAL_EN_R(crate::FieldReader<bool, bool>);
-impl PWDET_CAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PWDET_CAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PWDET_CAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pwdet_cal_en` writer - "]
+#[doc = "Reader of field `pwdet_cal_en`"]
+pub type PWDET_CAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pwdet_cal_en`"]
 pub struct PWDET_CAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> PWDET_CAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `riqcal_en` reader - "]
-pub struct RIQCAL_EN_R(crate::FieldReader<bool, bool>);
-impl RIQCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RIQCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RIQCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `riqcal_en` writer - "]
+#[doc = "Reader of field `riqcal_en`"]
+pub type RIQCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `riqcal_en`"]
 pub struct RIQCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> RIQCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tiqcal_en` reader - "]
-pub struct TIQCAL_EN_R(crate::FieldReader<bool, bool>);
-impl TIQCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TIQCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TIQCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tiqcal_en` writer - "]
+#[doc = "Reader of field `tiqcal_en`"]
+pub type TIQCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tiqcal_en`"]
 pub struct TIQCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> TIQCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `lo_leakcal_en` reader - "]
-pub struct LO_LEAKCAL_EN_R(crate::FieldReader<bool, bool>);
-impl LO_LEAKCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LO_LEAKCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LO_LEAKCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `lo_leakcal_en` writer - "]
+#[doc = "Reader of field `lo_leakcal_en`"]
+pub type LO_LEAKCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `lo_leakcal_en`"]
 pub struct LO_LEAKCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> LO_LEAKCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rccal_en` reader - "]
-pub struct RCCAL_EN_R(crate::FieldReader<bool, bool>);
-impl RCCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rccal_en` writer - "]
+#[doc = "Reader of field `rccal_en`"]
+pub type RCCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rccal_en`"]
 pub struct RCCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> RCCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `toscal_en` reader - "]
-pub struct TOSCAL_EN_R(crate::FieldReader<bool, bool>);
-impl TOSCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TOSCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TOSCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `toscal_en` writer - "]
+#[doc = "Reader of field `toscal_en`"]
+pub type TOSCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `toscal_en`"]
 pub struct TOSCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -320,21 +202,9 @@ impl<'a> TOSCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `roscal_en` reader - "]
-pub struct ROSCAL_EN_R(crate::FieldReader<bool, bool>);
-impl ROSCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `roscal_en` writer - "]
+#[doc = "Reader of field `roscal_en`"]
+pub type ROSCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `roscal_en`"]
 pub struct ROSCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -356,21 +226,9 @@ impl<'a> ROSCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `clkpll_cal_en` reader - "]
-pub struct CLKPLL_CAL_EN_R(crate::FieldReader<bool, bool>);
-impl CLKPLL_CAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CLKPLL_CAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CLKPLL_CAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `clkpll_cal_en` writer - "]
+#[doc = "Reader of field `clkpll_cal_en`"]
+pub type CLKPLL_CAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `clkpll_cal_en`"]
 pub struct CLKPLL_CAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -392,21 +250,9 @@ impl<'a> CLKPLL_CAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `roscal_inc_en` reader - "]
-pub struct ROSCAL_INC_EN_R(crate::FieldReader<bool, bool>);
-impl ROSCAL_INC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ROSCAL_INC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ROSCAL_INC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `roscal_inc_en` writer - "]
+#[doc = "Reader of field `roscal_inc_en`"]
+pub type ROSCAL_INC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `roscal_inc_en`"]
 pub struct ROSCAL_INC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -428,21 +274,9 @@ impl<'a> ROSCAL_INC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_inc_en` reader - "]
-pub struct ACAL_INC_EN_R(crate::FieldReader<bool, bool>);
-impl ACAL_INC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_INC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_INC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_inc_en` writer - "]
+#[doc = "Reader of field `acal_inc_en`"]
+pub type ACAL_INC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acal_inc_en`"]
 pub struct ACAL_INC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -464,21 +298,9 @@ impl<'a> ACAL_INC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fcal_inc_en` reader - "]
-pub struct FCAL_INC_EN_R(crate::FieldReader<bool, bool>);
-impl FCAL_INC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_INC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_INC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_inc_en` writer - "]
+#[doc = "Reader of field `fcal_inc_en`"]
+pub type FCAL_INC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `fcal_inc_en`"]
 pub struct FCAL_INC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -500,21 +322,9 @@ impl<'a> FCAL_INC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `acal_en` reader - "]
-pub struct ACAL_EN_R(crate::FieldReader<bool, bool>);
-impl ACAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ACAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ACAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `acal_en` writer - "]
+#[doc = "Reader of field `acal_en`"]
+pub type ACAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `acal_en`"]
 pub struct ACAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -536,21 +346,9 @@ impl<'a> ACAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `fcal_en` reader - "]
-pub struct FCAL_EN_R(crate::FieldReader<bool, bool>);
-impl FCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        FCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for FCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `fcal_en` writer - "]
+#[doc = "Reader of field `fcal_en`"]
+pub type FCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `fcal_en`"]
 pub struct FCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -572,21 +370,9 @@ impl<'a> FCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `dl_rfcal_table_en` reader - "]
-pub struct DL_RFCAL_TABLE_EN_R(crate::FieldReader<bool, bool>);
-impl DL_RFCAL_TABLE_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        DL_RFCAL_TABLE_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for DL_RFCAL_TABLE_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `dl_rfcal_table_en` writer - "]
+#[doc = "Reader of field `dl_rfcal_table_en`"]
+pub type DL_RFCAL_TABLE_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `dl_rfcal_table_en`"]
 pub struct DL_RFCAL_TABLE_EN_W<'a> {
     w: &'a mut W,
 }
@@ -608,21 +394,9 @@ impl<'a> DL_RFCAL_TABLE_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adc_oscal_en` reader - "]
-pub struct ADC_OSCAL_EN_R(crate::FieldReader<bool, bool>);
-impl ADC_OSCAL_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        ADC_OSCAL_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADC_OSCAL_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adc_oscal_en` writer - "]
+#[doc = "Reader of field `adc_oscal_en`"]
+pub type ADC_OSCAL_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `adc_oscal_en`"]
 pub struct ADC_OSCAL_EN_W<'a> {
     w: &'a mut W,
 }
@@ -644,21 +418,9 @@ impl<'a> ADC_OSCAL_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rcal_en_resv` reader - "]
-pub struct RCAL_EN_RESV_R(crate::FieldReader<bool, bool>);
-impl RCAL_EN_RESV_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        RCAL_EN_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RCAL_EN_RESV_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rcal_en_resv` writer - "]
+#[doc = "Reader of field `rcal_en_resv`"]
+pub type RCAL_EN_RESV_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `rcal_en_resv`"]
 pub struct RCAL_EN_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -862,30 +624,5 @@ impl W {
     #[inline(always)]
     pub fn rcal_en_resv(&mut self) -> RCAL_EN_RESV_W {
         RCAL_EN_RESV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "Calibration mode register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rfcal_ctrlen](index.html) module"]
-pub struct RFCAL_CTRLEN_SPEC;
-impl crate::RegisterSpec for RFCAL_CTRLEN_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rfcal_ctrlen::R](R) reader structure"]
-impl crate::Readable for RFCAL_CTRLEN_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rfcal_ctrlen::W](W) writer structure"]
-impl crate::Writable for RFCAL_CTRLEN_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rfcal_ctrlen to value 0"]
-impl crate::Resettable for RFCAL_CTRLEN_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

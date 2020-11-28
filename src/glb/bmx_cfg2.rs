@@ -1,52 +1,18 @@
-#[doc = "Register `bmx_cfg2` reader"]
-pub struct R(crate::R<BMX_CFG2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<BMX_CFG2_SPEC>;
+#[doc = "Reader of register bmx_cfg2"]
+pub type R = crate::R<u32, super::BMX_CFG2>;
+#[doc = "Writer for register bmx_cfg2"]
+pub type W = crate::W<u32, super::BMX_CFG2>;
+#[doc = "Register bmx_cfg2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::BMX_CFG2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<BMX_CFG2_SPEC>> for R {
-    fn from(reader: crate::R<BMX_CFG2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `bmx_cfg2` writer"]
-pub struct W(crate::W<BMX_CFG2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<BMX_CFG2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<BMX_CFG2_SPEC>> for W {
-    fn from(writer: crate::W<BMX_CFG2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `bmx_dbg_sel` reader - "]
-pub struct BMX_DBG_SEL_R(crate::FieldReader<u8, u8>);
-impl BMX_DBG_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        BMX_DBG_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_DBG_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_dbg_sel` writer - "]
+#[doc = "Reader of field `bmx_dbg_sel`"]
+pub type BMX_DBG_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `bmx_dbg_sel`"]
 pub struct BMX_DBG_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> BMX_DBG_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_err_tz` reader - "]
-pub struct BMX_ERR_TZ_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_TZ_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_TZ_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_TZ_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_tz` writer - "]
+#[doc = "Reader of field `bmx_err_tz`"]
+pub type BMX_ERR_TZ_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_err_tz`"]
 pub struct BMX_ERR_TZ_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> BMX_ERR_TZ_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_err_dec` reader - "]
-pub struct BMX_ERR_DEC_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_DEC_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_DEC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_DEC_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_dec` writer - "]
+#[doc = "Reader of field `bmx_err_dec`"]
+pub type BMX_ERR_DEC_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_err_dec`"]
 pub struct BMX_ERR_DEC_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> BMX_ERR_DEC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `bmx_err_addr_dis` reader - "]
-pub struct BMX_ERR_ADDR_DIS_R(crate::FieldReader<bool, bool>);
-impl BMX_ERR_ADDR_DIS_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BMX_ERR_ADDR_DIS_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BMX_ERR_ADDR_DIS_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bmx_err_addr_dis` writer - "]
+#[doc = "Reader of field `bmx_err_addr_dis`"]
+pub type BMX_ERR_ADDR_DIS_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bmx_err_addr_dis`"]
 pub struct BMX_ERR_ADDR_DIS_W<'a> {
     w: &'a mut W,
 }
@@ -208,30 +138,5 @@ impl W {
     #[inline(always)]
     pub fn bmx_err_addr_dis(&mut self) -> BMX_ERR_ADDR_DIS_W {
         BMX_ERR_ADDR_DIS_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "bmx_cfg2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bmx_cfg2](index.html) module"]
-pub struct BMX_CFG2_SPEC;
-impl crate::RegisterSpec for BMX_CFG2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [bmx_cfg2::R](R) reader structure"]
-impl crate::Readable for BMX_CFG2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [bmx_cfg2::W](W) writer structure"]
-impl crate::Writable for BMX_CFG2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets bmx_cfg2 to value 0"]
-impl crate::Resettable for BMX_CFG2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

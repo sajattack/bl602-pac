@@ -1,52 +1,18 @@
-#[doc = "Register `uart_int_mask` reader"]
-pub struct R(crate::R<UART_INT_MASK_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<UART_INT_MASK_SPEC>;
+#[doc = "Reader of register uart_int_mask"]
+pub type R = crate::R<u32, super::UART_INT_MASK>;
+#[doc = "Writer for register uart_int_mask"]
+pub type W = crate::W<u32, super::UART_INT_MASK>;
+#[doc = "Register uart_int_mask `reset()`'s with value 0"]
+impl crate::ResetValue for super::UART_INT_MASK {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<UART_INT_MASK_SPEC>> for R {
-    fn from(reader: crate::R<UART_INT_MASK_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `uart_int_mask` writer"]
-pub struct W(crate::W<UART_INT_MASK_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<UART_INT_MASK_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<UART_INT_MASK_SPEC>> for W {
-    fn from(writer: crate::W<UART_INT_MASK_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_urx_fer_mask` reader - "]
-pub struct CR_URX_FER_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_URX_FER_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_FER_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_FER_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_fer_mask` writer - "]
+#[doc = "Reader of field `cr_urx_fer_mask`"]
+pub type CR_URX_FER_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_fer_mask`"]
 pub struct CR_URX_FER_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> CR_URX_FER_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_utx_fer_mask` reader - "]
-pub struct CR_UTX_FER_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_FER_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_FER_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_FER_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_fer_mask` writer - "]
+#[doc = "Reader of field `cr_utx_fer_mask`"]
+pub type CR_UTX_FER_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_utx_fer_mask`"]
 pub struct CR_UTX_FER_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> CR_UTX_FER_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_pce_mask` reader - "]
-pub struct CR_URX_PCE_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_URX_PCE_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_PCE_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_PCE_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_pce_mask` writer - "]
+#[doc = "Reader of field `cr_urx_pce_mask`"]
+pub type CR_URX_PCE_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_pce_mask`"]
 pub struct CR_URX_PCE_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> CR_URX_PCE_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_rto_mask` reader - "]
-pub struct CR_URX_RTO_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_URX_RTO_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_RTO_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_RTO_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_rto_mask` writer - "]
+#[doc = "Reader of field `cr_urx_rto_mask`"]
+pub type CR_URX_RTO_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_rto_mask`"]
 pub struct CR_URX_RTO_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> CR_URX_RTO_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_fifo_mask` reader - "]
-pub struct CR_URX_FIFO_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_URX_FIFO_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_FIFO_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_FIFO_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_fifo_mask` writer - "]
+#[doc = "Reader of field `cr_urx_fifo_mask`"]
+pub type CR_URX_FIFO_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_fifo_mask`"]
 pub struct CR_URX_FIFO_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -212,21 +130,9 @@ impl<'a> CR_URX_FIFO_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_utx_fifo_mask` reader - "]
-pub struct CR_UTX_FIFO_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_FIFO_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_FIFO_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_FIFO_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_fifo_mask` writer - "]
+#[doc = "Reader of field `cr_utx_fifo_mask`"]
+pub type CR_UTX_FIFO_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_utx_fifo_mask`"]
 pub struct CR_UTX_FIFO_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -248,21 +154,9 @@ impl<'a> CR_UTX_FIFO_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_urx_end_mask` reader - "]
-pub struct CR_URX_END_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_URX_END_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_URX_END_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_URX_END_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_urx_end_mask` writer - "]
+#[doc = "Reader of field `cr_urx_end_mask`"]
+pub type CR_URX_END_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_urx_end_mask`"]
 pub struct CR_URX_END_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -284,21 +178,9 @@ impl<'a> CR_URX_END_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_utx_end_mask` reader - "]
-pub struct CR_UTX_END_MASK_R(crate::FieldReader<bool, bool>);
-impl CR_UTX_END_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_UTX_END_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_UTX_END_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_utx_end_mask` writer - "]
+#[doc = "Reader of field `cr_utx_end_mask`"]
+pub type CR_UTX_END_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_utx_end_mask`"]
 pub struct CR_UTX_END_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -402,30 +284,5 @@ impl W {
     #[inline(always)]
     pub fn cr_utx_end_mask(&mut self) -> CR_UTX_END_MASK_W {
         CR_UTX_END_MASK_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "UART interrupt mask\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [uart_int_mask](index.html) module"]
-pub struct UART_INT_MASK_SPEC;
-impl crate::RegisterSpec for UART_INT_MASK_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [uart_int_mask::R](R) reader structure"]
-impl crate::Readable for UART_INT_MASK_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [uart_int_mask::W](W) writer structure"]
-impl crate::Writable for UART_INT_MASK_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets uart_int_mask to value 0"]
-impl crate::Resettable for UART_INT_MASK_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

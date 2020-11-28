@@ -1,52 +1,18 @@
-#[doc = "Register `UART_SIG_SEL_0` reader"]
-pub struct R(crate::R<UART_SIG_SEL_0_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<UART_SIG_SEL_0_SPEC>;
+#[doc = "Reader of register UART_SIG_SEL_0"]
+pub type R = crate::R<u32, super::UART_SIG_SEL_0>;
+#[doc = "Writer for register UART_SIG_SEL_0"]
+pub type W = crate::W<u32, super::UART_SIG_SEL_0>;
+#[doc = "Register UART_SIG_SEL_0 `reset()`'s with value 0"]
+impl crate::ResetValue for super::UART_SIG_SEL_0 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<UART_SIG_SEL_0_SPEC>> for R {
-    fn from(reader: crate::R<UART_SIG_SEL_0_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `UART_SIG_SEL_0` writer"]
-pub struct W(crate::W<UART_SIG_SEL_0_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<UART_SIG_SEL_0_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<UART_SIG_SEL_0_SPEC>> for W {
-    fn from(writer: crate::W<UART_SIG_SEL_0_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `uart_sig_7_sel` reader - "]
-pub struct UART_SIG_7_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_7_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_7_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_7_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_7_sel` writer - "]
+#[doc = "Reader of field `uart_sig_7_sel`"]
+pub type UART_SIG_7_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_7_sel`"]
 pub struct UART_SIG_7_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> UART_SIG_7_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_6_sel` reader - "]
-pub struct UART_SIG_6_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_6_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_6_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_6_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_6_sel` writer - "]
+#[doc = "Reader of field `uart_sig_6_sel`"]
+pub type UART_SIG_6_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_6_sel`"]
 pub struct UART_SIG_6_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> UART_SIG_6_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_5_sel` reader - "]
-pub struct UART_SIG_5_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_5_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_5_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_5_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_5_sel` writer - "]
+#[doc = "Reader of field `uart_sig_5_sel`"]
+pub type UART_SIG_5_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_5_sel`"]
 pub struct UART_SIG_5_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> UART_SIG_5_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_4_sel` reader - "]
-pub struct UART_SIG_4_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_4_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_4_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_4_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_4_sel` writer - "]
+#[doc = "Reader of field `uart_sig_4_sel`"]
+pub type UART_SIG_4_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_4_sel`"]
 pub struct UART_SIG_4_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> UART_SIG_4_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_3_sel` reader - "]
-pub struct UART_SIG_3_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_3_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_3_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_3_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_3_sel` writer - "]
+#[doc = "Reader of field `uart_sig_3_sel`"]
+pub type UART_SIG_3_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_3_sel`"]
 pub struct UART_SIG_3_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> UART_SIG_3_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_2_sel` reader - "]
-pub struct UART_SIG_2_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_2_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_2_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_2_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_2_sel` writer - "]
+#[doc = "Reader of field `uart_sig_2_sel`"]
+pub type UART_SIG_2_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_2_sel`"]
 pub struct UART_SIG_2_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -188,21 +94,9 @@ impl<'a> UART_SIG_2_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_1_sel` reader - "]
-pub struct UART_SIG_1_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_1_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_1_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_1_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_1_sel` writer - "]
+#[doc = "Reader of field `uart_sig_1_sel`"]
+pub type UART_SIG_1_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_1_sel`"]
 pub struct UART_SIG_1_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -214,21 +108,9 @@ impl<'a> UART_SIG_1_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `uart_sig_0_sel` reader - "]
-pub struct UART_SIG_0_SEL_R(crate::FieldReader<u8, u8>);
-impl UART_SIG_0_SEL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        UART_SIG_0_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for UART_SIG_0_SEL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `uart_sig_0_sel` writer - "]
+#[doc = "Reader of field `uart_sig_0_sel`"]
+pub type UART_SIG_0_SEL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `uart_sig_0_sel`"]
 pub struct UART_SIG_0_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -322,30 +204,5 @@ impl W {
     #[inline(always)]
     pub fn uart_sig_0_sel(&mut self) -> UART_SIG_0_SEL_W {
         UART_SIG_0_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "UART_SIG_SEL_0.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [uart_sig_sel_0](index.html) module"]
-pub struct UART_SIG_SEL_0_SPEC;
-impl crate::RegisterSpec for UART_SIG_SEL_0_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [uart_sig_sel_0::R](R) reader structure"]
-impl crate::Readable for UART_SIG_SEL_0_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [uart_sig_sel_0::W](W) writer structure"]
-impl crate::Writable for UART_SIG_SEL_0_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets UART_SIG_SEL_0 to value 0"]
-impl crate::Resettable for UART_SIG_SEL_0_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

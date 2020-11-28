@@ -1,52 +1,18 @@
-#[doc = "Register `ldo11soc_and_dctest` reader"]
-pub struct R(crate::R<LDO11SOC_AND_DCTEST_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<LDO11SOC_AND_DCTEST_SPEC>;
+#[doc = "Reader of register ldo11soc_and_dctest"]
+pub type R = crate::R<u32, super::LDO11SOC_AND_DCTEST>;
+#[doc = "Writer for register ldo11soc_and_dctest"]
+pub type W = crate::W<u32, super::LDO11SOC_AND_DCTEST>;
+#[doc = "Register ldo11soc_and_dctest `reset()`'s with value 0"]
+impl crate::ResetValue for super::LDO11SOC_AND_DCTEST {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<LDO11SOC_AND_DCTEST_SPEC>> for R {
-    fn from(reader: crate::R<LDO11SOC_AND_DCTEST_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `ldo11soc_and_dctest` writer"]
-pub struct W(crate::W<LDO11SOC_AND_DCTEST_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<LDO11SOC_AND_DCTEST_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<LDO11SOC_AND_DCTEST_SPEC>> for W {
-    fn from(writer: crate::W<LDO11SOC_AND_DCTEST_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pmip_dc_tp_out_en_aon` reader - "]
-pub struct PMIP_DC_TP_OUT_EN_AON_R(crate::FieldReader<bool, bool>);
-impl PMIP_DC_TP_OUT_EN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PMIP_DC_TP_OUT_EN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PMIP_DC_TP_OUT_EN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pmip_dc_tp_out_en_aon` writer - "]
+#[doc = "Reader of field `pmip_dc_tp_out_en_aon`"]
+pub type PMIP_DC_TP_OUT_EN_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pmip_dc_tp_out_en_aon`"]
 pub struct PMIP_DC_TP_OUT_EN_AON_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PMIP_DC_TP_OUT_EN_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_vddcore_misc_aon` reader - "]
-pub struct PU_VDDCORE_MISC_AON_R(crate::FieldReader<bool, bool>);
-impl PU_VDDCORE_MISC_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_VDDCORE_MISC_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_VDDCORE_MISC_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_vddcore_misc_aon` writer - "]
+#[doc = "Reader of field `pu_vddcore_misc_aon`"]
+pub type PU_VDDCORE_MISC_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_vddcore_misc_aon`"]
 pub struct PU_VDDCORE_MISC_AON_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PU_VDDCORE_MISC_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_power_good_aon` reader - "]
-pub struct LDO11SOC_POWER_GOOD_AON_R(crate::FieldReader<bool, bool>);
-impl LDO11SOC_POWER_GOOD_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11SOC_POWER_GOOD_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_POWER_GOOD_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_power_good_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_power_good_aon`"]
+pub type LDO11SOC_POWER_GOOD_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11soc_power_good_aon`"]
 pub struct LDO11SOC_POWER_GOOD_AON_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> LDO11SOC_POWER_GOOD_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_rdy_aon` reader - "]
-pub struct LDO11SOC_RDY_AON_R(crate::FieldReader<bool, bool>);
-impl LDO11SOC_RDY_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11SOC_RDY_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_RDY_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_rdy_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_rdy_aon`"]
+pub type LDO11SOC_RDY_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11soc_rdy_aon`"]
 pub struct LDO11SOC_RDY_AON_W<'a> {
     w: &'a mut W,
 }
@@ -176,21 +106,9 @@ impl<'a> LDO11SOC_RDY_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_cc_aon` reader - "]
-pub struct LDO11SOC_CC_AON_R(crate::FieldReader<u8, u8>);
-impl LDO11SOC_CC_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LDO11SOC_CC_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_CC_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_cc_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_cc_aon`"]
+pub type LDO11SOC_CC_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ldo11soc_cc_aon`"]
 pub struct LDO11SOC_CC_AON_W<'a> {
     w: &'a mut W,
 }
@@ -202,21 +120,9 @@ impl<'a> LDO11SOC_CC_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_vth_sel_aon` reader - "]
-pub struct LDO11SOC_VTH_SEL_AON_R(crate::FieldReader<u8, u8>);
-impl LDO11SOC_VTH_SEL_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LDO11SOC_VTH_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_VTH_SEL_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_vth_sel_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_vth_sel_aon`"]
+pub type LDO11SOC_VTH_SEL_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ldo11soc_vth_sel_aon`"]
 pub struct LDO11SOC_VTH_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> LDO11SOC_VTH_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_pulldown_sel_aon` reader - "]
-pub struct LDO11SOC_PULLDOWN_SEL_AON_R(crate::FieldReader<bool, bool>);
-impl LDO11SOC_PULLDOWN_SEL_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11SOC_PULLDOWN_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_PULLDOWN_SEL_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_pulldown_sel_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_pulldown_sel_aon`"]
+pub type LDO11SOC_PULLDOWN_SEL_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11soc_pulldown_sel_aon`"]
 pub struct LDO11SOC_PULLDOWN_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> LDO11SOC_PULLDOWN_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_pulldown_aon` reader - "]
-pub struct LDO11SOC_PULLDOWN_AON_R(crate::FieldReader<bool, bool>);
-impl LDO11SOC_PULLDOWN_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11SOC_PULLDOWN_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_PULLDOWN_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_pulldown_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_pulldown_aon`"]
+pub type LDO11SOC_PULLDOWN_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11soc_pulldown_aon`"]
 pub struct LDO11SOC_PULLDOWN_AON_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> LDO11SOC_PULLDOWN_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_sstart_delay_aon` reader - "]
-pub struct LDO11SOC_SSTART_DELAY_AON_R(crate::FieldReader<u8, u8>);
-impl LDO11SOC_SSTART_DELAY_AON_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        LDO11SOC_SSTART_DELAY_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_SSTART_DELAY_AON_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_sstart_delay_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_sstart_delay_aon`"]
+pub type LDO11SOC_SSTART_DELAY_AON_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ldo11soc_sstart_delay_aon`"]
 pub struct LDO11SOC_SSTART_DELAY_AON_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> LDO11SOC_SSTART_DELAY_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `ldo11soc_sstart_sel_aon` reader - "]
-pub struct LDO11SOC_SSTART_SEL_AON_R(crate::FieldReader<bool, bool>);
-impl LDO11SOC_SSTART_SEL_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        LDO11SOC_SSTART_SEL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for LDO11SOC_SSTART_SEL_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ldo11soc_sstart_sel_aon` writer - "]
+#[doc = "Reader of field `ldo11soc_sstart_sel_aon`"]
+pub type LDO11SOC_SSTART_SEL_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `ldo11soc_sstart_sel_aon`"]
 pub struct LDO11SOC_SSTART_SEL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -362,21 +220,9 @@ impl<'a> LDO11SOC_SSTART_SEL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_ldo11soc_aon` reader - "]
-pub struct PU_LDO11SOC_AON_R(crate::FieldReader<bool, bool>);
-impl PU_LDO11SOC_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_LDO11SOC_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_LDO11SOC_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_ldo11soc_aon` writer - "]
+#[doc = "Reader of field `pu_ldo11soc_aon`"]
+pub type PU_LDO11SOC_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_ldo11soc_aon`"]
 pub struct PU_LDO11SOC_AON_W<'a> {
     w: &'a mut W,
 }
@@ -510,30 +356,5 @@ impl W {
     #[inline(always)]
     pub fn pu_ldo11soc_aon(&mut self) -> PU_LDO11SOC_AON_W {
         PU_LDO11SOC_AON_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "ldo11soc_and_dctest.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ldo11soc_and_dctest](index.html) module"]
-pub struct LDO11SOC_AND_DCTEST_SPEC;
-impl crate::RegisterSpec for LDO11SOC_AND_DCTEST_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [ldo11soc_and_dctest::R](R) reader structure"]
-impl crate::Readable for LDO11SOC_AND_DCTEST_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [ldo11soc_and_dctest::W](W) writer structure"]
-impl crate::Writable for LDO11SOC_AND_DCTEST_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets ldo11soc_and_dctest to value 0"]
-impl crate::Resettable for LDO11SOC_AND_DCTEST_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

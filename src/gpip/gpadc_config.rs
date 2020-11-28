@@ -1,52 +1,18 @@
-#[doc = "Register `gpadc_config` reader"]
-pub struct R(crate::R<GPADC_CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<GPADC_CONFIG_SPEC>;
+#[doc = "Reader of register gpadc_config"]
+pub type R = crate::R<u32, super::GPADC_CONFIG>;
+#[doc = "Writer for register gpadc_config"]
+pub type W = crate::W<u32, super::GPADC_CONFIG>;
+#[doc = "Register gpadc_config `reset()`'s with value 0"]
+impl crate::ResetValue for super::GPADC_CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<GPADC_CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<GPADC_CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `gpadc_config` writer"]
-pub struct W(crate::W<GPADC_CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<GPADC_CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<GPADC_CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<GPADC_CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rsvd_31_24` reader - "]
-pub struct RSVD_31_24_R(crate::FieldReader<u8, u8>);
-impl RSVD_31_24_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RSVD_31_24_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RSVD_31_24_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rsvd_31_24` writer - "]
+#[doc = "Reader of field `rsvd_31_24`"]
+pub type RSVD_31_24_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rsvd_31_24`"]
 pub struct RSVD_31_24_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RSVD_31_24_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_thl` reader - "]
-pub struct GPADC_FIFO_THL_R(crate::FieldReader<u8, u8>);
-impl GPADC_FIFO_THL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_FIFO_THL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_THL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_thl` writer - "]
+#[doc = "Reader of field `gpadc_fifo_thl`"]
+pub type GPADC_FIFO_THL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_fifo_thl`"]
 pub struct GPADC_FIFO_THL_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> GPADC_FIFO_THL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_data_count` reader - "]
-pub struct GPADC_FIFO_DATA_COUNT_R(crate::FieldReader<u8, u8>);
-impl GPADC_FIFO_DATA_COUNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        GPADC_FIFO_DATA_COUNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_DATA_COUNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_data_count` writer - "]
+#[doc = "Reader of field `gpadc_fifo_data_count`"]
+pub type GPADC_FIFO_DATA_COUNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `gpadc_fifo_data_count`"]
 pub struct GPADC_FIFO_DATA_COUNT_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> GPADC_FIFO_DATA_COUNT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_underrun_mask` reader - "]
-pub struct GPADC_FIFO_UNDERRUN_MASK_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_UNDERRUN_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_UNDERRUN_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_UNDERRUN_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_underrun_mask` writer - "]
+#[doc = "Reader of field `gpadc_fifo_underrun_mask`"]
+pub type GPADC_FIFO_UNDERRUN_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_underrun_mask`"]
 pub struct GPADC_FIFO_UNDERRUN_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -146,21 +76,9 @@ impl<'a> GPADC_FIFO_UNDERRUN_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_overrun_mask` reader - "]
-pub struct GPADC_FIFO_OVERRUN_MASK_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_OVERRUN_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_OVERRUN_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_OVERRUN_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_overrun_mask` writer - "]
+#[doc = "Reader of field `gpadc_fifo_overrun_mask`"]
+pub type GPADC_FIFO_OVERRUN_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_overrun_mask`"]
 pub struct GPADC_FIFO_OVERRUN_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -182,21 +100,9 @@ impl<'a> GPADC_FIFO_OVERRUN_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_rdy_mask` reader - "]
-pub struct GPADC_RDY_MASK_R(crate::FieldReader<bool, bool>);
-impl GPADC_RDY_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_RDY_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_RDY_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_rdy_mask` writer - "]
+#[doc = "Reader of field `gpadc_rdy_mask`"]
+pub type GPADC_RDY_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_rdy_mask`"]
 pub struct GPADC_RDY_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -218,21 +124,9 @@ impl<'a> GPADC_RDY_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_underrun_clr` reader - "]
-pub struct GPADC_FIFO_UNDERRUN_CLR_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_UNDERRUN_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_UNDERRUN_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_UNDERRUN_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_underrun_clr` writer - "]
+#[doc = "Reader of field `gpadc_fifo_underrun_clr`"]
+pub type GPADC_FIFO_UNDERRUN_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_underrun_clr`"]
 pub struct GPADC_FIFO_UNDERRUN_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -254,21 +148,9 @@ impl<'a> GPADC_FIFO_UNDERRUN_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_overrun_clr` reader - "]
-pub struct GPADC_FIFO_OVERRUN_CLR_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_OVERRUN_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_OVERRUN_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_OVERRUN_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_overrun_clr` writer - "]
+#[doc = "Reader of field `gpadc_fifo_overrun_clr`"]
+pub type GPADC_FIFO_OVERRUN_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_overrun_clr`"]
 pub struct GPADC_FIFO_OVERRUN_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -290,21 +172,9 @@ impl<'a> GPADC_FIFO_OVERRUN_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_rdy_clr` reader - "]
-pub struct GPADC_RDY_CLR_R(crate::FieldReader<bool, bool>);
-impl GPADC_RDY_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_RDY_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_RDY_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_rdy_clr` writer - "]
+#[doc = "Reader of field `gpadc_rdy_clr`"]
+pub type GPADC_RDY_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_rdy_clr`"]
 pub struct GPADC_RDY_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -326,21 +196,9 @@ impl<'a> GPADC_RDY_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_underrun` reader - "]
-pub struct GPADC_FIFO_UNDERRUN_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_UNDERRUN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_UNDERRUN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_UNDERRUN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_underrun` writer - "]
+#[doc = "Reader of field `gpadc_fifo_underrun`"]
+pub type GPADC_FIFO_UNDERRUN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_underrun`"]
 pub struct GPADC_FIFO_UNDERRUN_W<'a> {
     w: &'a mut W,
 }
@@ -362,21 +220,9 @@ impl<'a> GPADC_FIFO_UNDERRUN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_overrun` reader - "]
-pub struct GPADC_FIFO_OVERRUN_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_OVERRUN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_OVERRUN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_OVERRUN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_overrun` writer - "]
+#[doc = "Reader of field `gpadc_fifo_overrun`"]
+pub type GPADC_FIFO_OVERRUN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_overrun`"]
 pub struct GPADC_FIFO_OVERRUN_W<'a> {
     w: &'a mut W,
 }
@@ -398,21 +244,9 @@ impl<'a> GPADC_FIFO_OVERRUN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_rdy` reader - "]
-pub struct GPADC_RDY_R(crate::FieldReader<bool, bool>);
-impl GPADC_RDY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_RDY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_RDY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_rdy` writer - "]
+#[doc = "Reader of field `gpadc_rdy`"]
+pub type GPADC_RDY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_rdy`"]
 pub struct GPADC_RDY_W<'a> {
     w: &'a mut W,
 }
@@ -434,21 +268,9 @@ impl<'a> GPADC_RDY_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_full` reader - "]
-pub struct GPADC_FIFO_FULL_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_FULL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_FULL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_FULL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_full` writer - "]
+#[doc = "Reader of field `gpadc_fifo_full`"]
+pub type GPADC_FIFO_FULL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_full`"]
 pub struct GPADC_FIFO_FULL_W<'a> {
     w: &'a mut W,
 }
@@ -470,21 +292,9 @@ impl<'a> GPADC_FIFO_FULL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_ne` reader - "]
-pub struct GPADC_FIFO_NE_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_NE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_NE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_NE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_ne` writer - "]
+#[doc = "Reader of field `gpadc_fifo_ne`"]
+pub type GPADC_FIFO_NE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_ne`"]
 pub struct GPADC_FIFO_NE_W<'a> {
     w: &'a mut W,
 }
@@ -506,21 +316,9 @@ impl<'a> GPADC_FIFO_NE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_fifo_clr` reader - "]
-pub struct GPADC_FIFO_CLR_R(crate::FieldReader<bool, bool>);
-impl GPADC_FIFO_CLR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_FIFO_CLR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_FIFO_CLR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_fifo_clr` writer - "]
+#[doc = "Reader of field `gpadc_fifo_clr`"]
+pub type GPADC_FIFO_CLR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_fifo_clr`"]
 pub struct GPADC_FIFO_CLR_W<'a> {
     w: &'a mut W,
 }
@@ -542,21 +340,9 @@ impl<'a> GPADC_FIFO_CLR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `gpadc_dma_en` reader - "]
-pub struct GPADC_DMA_EN_R(crate::FieldReader<bool, bool>);
-impl GPADC_DMA_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        GPADC_DMA_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for GPADC_DMA_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `gpadc_dma_en` writer - "]
+#[doc = "Reader of field `gpadc_dma_en`"]
+pub type GPADC_DMA_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `gpadc_dma_en`"]
 pub struct GPADC_DMA_EN_W<'a> {
     w: &'a mut W,
 }
@@ -740,30 +526,5 @@ impl W {
     #[inline(always)]
     pub fn gpadc_dma_en(&mut self) -> GPADC_DMA_EN_W {
         GPADC_DMA_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "gpadc_config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [gpadc_config](index.html) module"]
-pub struct GPADC_CONFIG_SPEC;
-impl crate::RegisterSpec for GPADC_CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [gpadc_config::R](R) reader structure"]
-impl crate::Readable for GPADC_CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [gpadc_config::W](W) writer structure"]
-impl crate::Writable for GPADC_CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets gpadc_config to value 0"]
-impl crate::Resettable for GPADC_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

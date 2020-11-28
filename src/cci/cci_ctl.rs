@@ -1,52 +1,18 @@
-#[doc = "Register `cci_ctl` reader"]
-pub struct R(crate::R<CCI_CTL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<CCI_CTL_SPEC>;
+#[doc = "Reader of register cci_ctl"]
+pub type R = crate::R<u32, super::CCI_CTL>;
+#[doc = "Writer for register cci_ctl"]
+pub type W = crate::W<u32, super::CCI_CTL>;
+#[doc = "Register cci_ctl `reset()`'s with value 0"]
+impl crate::ResetValue for super::CCI_CTL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<CCI_CTL_SPEC>> for R {
-    fn from(reader: crate::R<CCI_CTL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `cci_ctl` writer"]
-pub struct W(crate::W<CCI_CTL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<CCI_CTL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<CCI_CTL_SPEC>> for W {
-    fn from(writer: crate::W<CCI_CTL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `ahb_state` reader - "]
-pub struct AHB_STATE_R(crate::FieldReader<u8, u8>);
-impl AHB_STATE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        AHB_STATE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for AHB_STATE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `ahb_state` writer - "]
+#[doc = "Reader of field `ahb_state`"]
+pub type AHB_STATE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `ahb_state`"]
 pub struct AHB_STATE_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> AHB_STATE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_read_flag` reader - "]
-pub struct CCI_READ_FLAG_R(crate::FieldReader<bool, bool>);
-impl CCI_READ_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_READ_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_READ_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_read_flag` writer - "]
+#[doc = "Reader of field `cci_read_flag`"]
+pub type CCI_READ_FLAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_read_flag`"]
 pub struct CCI_READ_FLAG_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> CCI_READ_FLAG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cci_write_flag` reader - "]
-pub struct CCI_WRITE_FLAG_R(crate::FieldReader<bool, bool>);
-impl CCI_WRITE_FLAG_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CCI_WRITE_FLAG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CCI_WRITE_FLAG_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cci_write_flag` writer - "]
+#[doc = "Reader of field `cci_write_flag`"]
+pub type CCI_WRITE_FLAG_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cci_write_flag`"]
 pub struct CCI_WRITE_FLAG_W<'a> {
     w: &'a mut W,
 }
@@ -162,30 +104,5 @@ impl W {
     #[inline(always)]
     pub fn cci_write_flag(&mut self) -> CCI_WRITE_FLAG_W {
         CCI_WRITE_FLAG_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "cci_ctl.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cci_ctl](index.html) module"]
-pub struct CCI_CTL_SPEC;
-impl crate::RegisterSpec for CCI_CTL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [cci_ctl::R](R) reader structure"]
-impl crate::Readable for CCI_CTL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [cci_ctl::W](W) writer structure"]
-impl crate::Writable for CCI_CTL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets cci_ctl to value 0"]
-impl crate::Resettable for CCI_CTL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

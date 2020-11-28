@@ -1,52 +1,18 @@
-#[doc = "Register `singen_ctrl4` reader"]
-pub struct R(crate::R<SINGEN_CTRL4_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SINGEN_CTRL4_SPEC>;
+#[doc = "Reader of register singen_ctrl4"]
+pub type R = crate::R<u32, super::SINGEN_CTRL4>;
+#[doc = "Writer for register singen_ctrl4"]
+pub type W = crate::W<u32, super::SINGEN_CTRL4>;
+#[doc = "Register singen_ctrl4 `reset()`'s with value 0"]
+impl crate::ResetValue for super::SINGEN_CTRL4 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SINGEN_CTRL4_SPEC>> for R {
-    fn from(reader: crate::R<SINGEN_CTRL4_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `singen_ctrl4` writer"]
-pub struct W(crate::W<SINGEN_CTRL4_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SINGEN_CTRL4_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SINGEN_CTRL4_SPEC>> for W {
-    fn from(writer: crate::W<SINGEN_CTRL4_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `singen_fix_en_i` reader - "]
-pub struct SINGEN_FIX_EN_I_R(crate::FieldReader<bool, bool>);
-impl SINGEN_FIX_EN_I_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SINGEN_FIX_EN_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_EN_I_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_en_i` writer - "]
+#[doc = "Reader of field `singen_fix_en_i`"]
+pub type SINGEN_FIX_EN_I_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `singen_fix_en_i`"]
 pub struct SINGEN_FIX_EN_I_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> SINGEN_FIX_EN_I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `singen_fix_i` reader - "]
-pub struct SINGEN_FIX_I_R(crate::FieldReader<u16, u16>);
-impl SINGEN_FIX_I_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_FIX_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_I_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_i` writer - "]
+#[doc = "Reader of field `singen_fix_i`"]
+pub type SINGEN_FIX_I_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `singen_fix_i`"]
 pub struct SINGEN_FIX_I_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> SINGEN_FIX_I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `singen_fix_en_q` reader - "]
-pub struct SINGEN_FIX_EN_Q_R(crate::FieldReader<bool, bool>);
-impl SINGEN_FIX_EN_Q_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SINGEN_FIX_EN_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_EN_Q_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_en_q` writer - "]
+#[doc = "Reader of field `singen_fix_en_q`"]
+pub type SINGEN_FIX_EN_Q_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `singen_fix_en_q`"]
 pub struct SINGEN_FIX_EN_Q_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SINGEN_FIX_EN_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Field `singen_fix_q` reader - "]
-pub struct SINGEN_FIX_Q_R(crate::FieldReader<u16, u16>);
-impl SINGEN_FIX_Q_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SINGEN_FIX_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SINGEN_FIX_Q_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `singen_fix_q` writer - "]
+#[doc = "Reader of field `singen_fix_q`"]
+pub type SINGEN_FIX_Q_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `singen_fix_q`"]
 pub struct SINGEN_FIX_Q_W<'a> {
     w: &'a mut W,
 }
@@ -198,30 +128,5 @@ impl W {
     #[inline(always)]
     pub fn singen_fix_q(&mut self) -> SINGEN_FIX_Q_W {
         SINGEN_FIX_Q_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "singen_ctrl4.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [singen_ctrl4](index.html) module"]
-pub struct SINGEN_CTRL4_SPEC;
-impl crate::RegisterSpec for SINGEN_CTRL4_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [singen_ctrl4::R](R) reader structure"]
-impl crate::Readable for SINGEN_CTRL4_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [singen_ctrl4::W](W) writer structure"]
-impl crate::Writable for SINGEN_CTRL4_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets singen_ctrl4 to value 0"]
-impl crate::Resettable for SINGEN_CTRL4_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

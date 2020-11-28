@@ -1,52 +1,18 @@
-#[doc = "Register `pa_reg_ctrl_hw2` reader"]
-pub struct R(crate::R<PA_REG_CTRL_HW2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<PA_REG_CTRL_HW2_SPEC>;
+#[doc = "Reader of register pa_reg_ctrl_hw2"]
+pub type R = crate::R<u32, super::PA_REG_CTRL_HW2>;
+#[doc = "Writer for register pa_reg_ctrl_hw2"]
+pub type W = crate::W<u32, super::PA_REG_CTRL_HW2>;
+#[doc = "Register pa_reg_ctrl_hw2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::PA_REG_CTRL_HW2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<PA_REG_CTRL_HW2_SPEC>> for R {
-    fn from(reader: crate::R<PA_REG_CTRL_HW2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `pa_reg_ctrl_hw2` writer"]
-pub struct W(crate::W<PA_REG_CTRL_HW2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<PA_REG_CTRL_HW2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<PA_REG_CTRL_HW2_SPEC>> for W {
-    fn from(writer: crate::W<PA_REG_CTRL_HW2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pa_vbcas_11b` reader - "]
-pub struct PA_VBCAS_11B_R(crate::FieldReader<u8, u8>);
-impl PA_VBCAS_11B_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_VBCAS_11B_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_VBCAS_11B_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_vbcas_11b` writer - "]
+#[doc = "Reader of field `pa_vbcas_11b`"]
+pub type PA_VBCAS_11B_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_vbcas_11b`"]
 pub struct PA_VBCAS_11B_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> PA_VBCAS_11B_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_vbcore_11b` reader - "]
-pub struct PA_VBCORE_11B_R(crate::FieldReader<u8, u8>);
-impl PA_VBCORE_11B_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_VBCORE_11B_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_VBCORE_11B_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_vbcore_11b` writer - "]
+#[doc = "Reader of field `pa_vbcore_11b`"]
+pub type PA_VBCORE_11B_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_vbcore_11b`"]
 pub struct PA_VBCORE_11B_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> PA_VBCORE_11B_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_iet_11b` reader - "]
-pub struct PA_IET_11B_R(crate::FieldReader<u8, u8>);
-impl PA_IET_11B_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_IET_11B_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_IET_11B_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_iet_11b` writer - "]
+#[doc = "Reader of field `pa_iet_11b`"]
+pub type PA_IET_11B_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_iet_11b`"]
 pub struct PA_IET_11B_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> PA_IET_11B_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_vbcas_11g` reader - "]
-pub struct PA_VBCAS_11G_R(crate::FieldReader<u8, u8>);
-impl PA_VBCAS_11G_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_VBCAS_11G_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_VBCAS_11G_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_vbcas_11g` writer - "]
+#[doc = "Reader of field `pa_vbcas_11g`"]
+pub type PA_VBCAS_11G_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_vbcas_11g`"]
 pub struct PA_VBCAS_11G_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> PA_VBCAS_11G_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_vbcore_11g` reader - "]
-pub struct PA_VBCORE_11G_R(crate::FieldReader<u8, u8>);
-impl PA_VBCORE_11G_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_VBCORE_11G_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_VBCORE_11G_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_vbcore_11g` writer - "]
+#[doc = "Reader of field `pa_vbcore_11g`"]
+pub type PA_VBCORE_11G_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_vbcore_11g`"]
 pub struct PA_VBCORE_11G_W<'a> {
     w: &'a mut W,
 }
@@ -162,21 +80,9 @@ impl<'a> PA_VBCORE_11G_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pa_iet_11g` reader - "]
-pub struct PA_IET_11G_R(crate::FieldReader<u8, u8>);
-impl PA_IET_11G_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PA_IET_11G_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PA_IET_11G_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pa_iet_11g` writer - "]
+#[doc = "Reader of field `pa_iet_11g`"]
+pub type PA_IET_11G_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pa_iet_11g`"]
 pub struct PA_IET_11G_W<'a> {
     w: &'a mut W,
 }
@@ -250,30 +156,5 @@ impl W {
     #[inline(always)]
     pub fn pa_iet_11g(&mut self) -> PA_IET_11G_W {
         PA_IET_11G_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "pa_reg_ctrl_hw2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pa_reg_ctrl_hw2](index.html) module"]
-pub struct PA_REG_CTRL_HW2_SPEC;
-impl crate::RegisterSpec for PA_REG_CTRL_HW2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [pa_reg_ctrl_hw2::R](R) reader structure"]
-impl crate::Readable for PA_REG_CTRL_HW2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [pa_reg_ctrl_hw2::W](W) writer structure"]
-impl crate::Writable for PA_REG_CTRL_HW2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets pa_reg_ctrl_hw2 to value 0"]
-impl crate::Resettable for PA_REG_CTRL_HW2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

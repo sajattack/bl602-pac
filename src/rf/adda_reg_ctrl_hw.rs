@@ -1,52 +1,18 @@
-#[doc = "Register `adda_reg_ctrl_hw` reader"]
-pub struct R(crate::R<ADDA_REG_CTRL_HW_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<ADDA_REG_CTRL_HW_SPEC>;
+#[doc = "Reader of register adda_reg_ctrl_hw"]
+pub type R = crate::R<u32, super::ADDA_REG_CTRL_HW>;
+#[doc = "Writer for register adda_reg_ctrl_hw"]
+pub type W = crate::W<u32, super::ADDA_REG_CTRL_HW>;
+#[doc = "Register adda_reg_ctrl_hw `reset()`'s with value 0"]
+impl crate::ResetValue for super::ADDA_REG_CTRL_HW {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<ADDA_REG_CTRL_HW_SPEC>> for R {
-    fn from(reader: crate::R<ADDA_REG_CTRL_HW_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `adda_reg_ctrl_hw` writer"]
-pub struct W(crate::W<ADDA_REG_CTRL_HW_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<ADDA_REG_CTRL_HW_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<ADDA_REG_CTRL_HW_SPEC>> for W {
-    fn from(writer: crate::W<ADDA_REG_CTRL_HW_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `adda_ldo_dvdd_sel_tx` reader - "]
-pub struct ADDA_LDO_DVDD_SEL_TX_R(crate::FieldReader<u8, u8>);
-impl ADDA_LDO_DVDD_SEL_TX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADDA_LDO_DVDD_SEL_TX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADDA_LDO_DVDD_SEL_TX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adda_ldo_dvdd_sel_tx` writer - "]
+#[doc = "Reader of field `adda_ldo_dvdd_sel_tx`"]
+pub type ADDA_LDO_DVDD_SEL_TX_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adda_ldo_dvdd_sel_tx`"]
 pub struct ADDA_LDO_DVDD_SEL_TX_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> ADDA_LDO_DVDD_SEL_TX_W<'a> {
         self.w
     }
 }
-#[doc = "Field `adda_ldo_dvdd_sel_rx` reader - "]
-pub struct ADDA_LDO_DVDD_SEL_RX_R(crate::FieldReader<u8, u8>);
-impl ADDA_LDO_DVDD_SEL_RX_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        ADDA_LDO_DVDD_SEL_RX_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for ADDA_LDO_DVDD_SEL_RX_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `adda_ldo_dvdd_sel_rx` writer - "]
+#[doc = "Reader of field `adda_ldo_dvdd_sel_rx`"]
+pub type ADDA_LDO_DVDD_SEL_RX_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `adda_ldo_dvdd_sel_rx`"]
 pub struct ADDA_LDO_DVDD_SEL_RX_W<'a> {
     w: &'a mut W,
 }
@@ -106,30 +60,5 @@ impl W {
     #[inline(always)]
     pub fn adda_ldo_dvdd_sel_rx(&mut self) -> ADDA_LDO_DVDD_SEL_RX_W {
         ADDA_LDO_DVDD_SEL_RX_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "adda_reg_ctrl_hw.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [adda_reg_ctrl_hw](index.html) module"]
-pub struct ADDA_REG_CTRL_HW_SPEC;
-impl crate::RegisterSpec for ADDA_REG_CTRL_HW_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [adda_reg_ctrl_hw::R](R) reader structure"]
-impl crate::Readable for ADDA_REG_CTRL_HW_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [adda_reg_ctrl_hw::W](W) writer structure"]
-impl crate::Writable for ADDA_REG_CTRL_HW_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets adda_reg_ctrl_hw to value 0"]
-impl crate::Resettable for ADDA_REG_CTRL_HW_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `bg_sys_top` reader"]
-pub struct R(crate::R<BG_SYS_TOP_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<BG_SYS_TOP_SPEC>;
+#[doc = "Reader of register bg_sys_top"]
+pub type R = crate::R<u32, super::BG_SYS_TOP>;
+#[doc = "Writer for register bg_sys_top"]
+pub type W = crate::W<u32, super::BG_SYS_TOP>;
+#[doc = "Register bg_sys_top `reset()`'s with value 0"]
+impl crate::ResetValue for super::BG_SYS_TOP {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<BG_SYS_TOP_SPEC>> for R {
-    fn from(reader: crate::R<BG_SYS_TOP_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `bg_sys_top` writer"]
-pub struct W(crate::W<BG_SYS_TOP_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<BG_SYS_TOP_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<BG_SYS_TOP_SPEC>> for W {
-    fn from(writer: crate::W<BG_SYS_TOP_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `bg_sys_start_ctrl_aon` reader - "]
-pub struct BG_SYS_START_CTRL_AON_R(crate::FieldReader<bool, bool>);
-impl BG_SYS_START_CTRL_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        BG_SYS_START_CTRL_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for BG_SYS_START_CTRL_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `bg_sys_start_ctrl_aon` writer - "]
+#[doc = "Reader of field `bg_sys_start_ctrl_aon`"]
+pub type BG_SYS_START_CTRL_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `bg_sys_start_ctrl_aon`"]
 pub struct BG_SYS_START_CTRL_AON_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> BG_SYS_START_CTRL_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_bg_sys_aon` reader - "]
-pub struct PU_BG_SYS_AON_R(crate::FieldReader<bool, bool>);
-impl PU_BG_SYS_AON_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_BG_SYS_AON_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_BG_SYS_AON_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_bg_sys_aon` writer - "]
+#[doc = "Reader of field `pu_bg_sys_aon`"]
+pub type PU_BG_SYS_AON_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_bg_sys_aon`"]
 pub struct PU_BG_SYS_AON_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PU_BG_SYS_AON_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pmip_resv` reader - "]
-pub struct PMIP_RESV_R(crate::FieldReader<u8, u8>);
-impl PMIP_RESV_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PMIP_RESV_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PMIP_RESV_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pmip_resv` writer - "]
+#[doc = "Reader of field `pmip_resv`"]
+pub type PMIP_RESV_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `pmip_resv`"]
 pub struct PMIP_RESV_W<'a> {
     w: &'a mut W,
 }
@@ -162,30 +104,5 @@ impl W {
     #[inline(always)]
     pub fn pmip_resv(&mut self) -> PMIP_RESV_W {
         PMIP_RESV_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "bg_sys_top.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bg_sys_top](index.html) module"]
-pub struct BG_SYS_TOP_SPEC;
-impl crate::RegisterSpec for BG_SYS_TOP_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [bg_sys_top::R](R) reader structure"]
-impl crate::Readable for BG_SYS_TOP_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [bg_sys_top::W](W) writer structure"]
-impl crate::Writable for BG_SYS_TOP_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets bg_sys_top to value 0"]
-impl crate::Resettable for BG_SYS_TOP_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

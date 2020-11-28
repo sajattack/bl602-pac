@@ -1,52 +1,18 @@
-#[doc = "Register `se_aes_0_ctrl` reader"]
-pub struct R(crate::R<SE_AES_0_CTRL_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<SE_AES_0_CTRL_SPEC>;
+#[doc = "Reader of register se_aes_0_ctrl"]
+pub type R = crate::R<u32, super::SE_AES_0_CTRL>;
+#[doc = "Writer for register se_aes_0_ctrl"]
+pub type W = crate::W<u32, super::SE_AES_0_CTRL>;
+#[doc = "Register se_aes_0_ctrl `reset()`'s with value 0"]
+impl crate::ResetValue for super::SE_AES_0_CTRL {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<SE_AES_0_CTRL_SPEC>> for R {
-    fn from(reader: crate::R<SE_AES_0_CTRL_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `se_aes_0_ctrl` writer"]
-pub struct W(crate::W<SE_AES_0_CTRL_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<SE_AES_0_CTRL_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<SE_AES_0_CTRL_SPEC>> for W {
-    fn from(writer: crate::W<SE_AES_0_CTRL_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `se_aes_0_msg_len` reader - "]
-pub struct SE_AES_0_MSG_LEN_R(crate::FieldReader<u16, u16>);
-impl SE_AES_0_MSG_LEN_R {
-    pub(crate) fn new(bits: u16) -> Self {
-        SE_AES_0_MSG_LEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_MSG_LEN_R {
-    type Target = crate::FieldReader<u16, u16>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_msg_len` writer - "]
+#[doc = "Reader of field `se_aes_0_msg_len`"]
+pub type SE_AES_0_MSG_LEN_R = crate::R<u16, u16>;
+#[doc = "Write proxy for field `se_aes_0_msg_len`"]
 pub struct SE_AES_0_MSG_LEN_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> SE_AES_0_MSG_LEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_link_mode` reader - "]
-pub struct SE_AES_0_LINK_MODE_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_LINK_MODE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_LINK_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_LINK_MODE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_link_mode` writer - "]
+#[doc = "Reader of field `se_aes_0_link_mode`"]
+pub type SE_AES_0_LINK_MODE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_link_mode`"]
 pub struct SE_AES_0_LINK_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -94,21 +48,9 @@ impl<'a> SE_AES_0_LINK_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_iv_sel` reader - "]
-pub struct SE_AES_0_IV_SEL_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_IV_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_IV_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_IV_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_iv_sel` writer - "]
+#[doc = "Reader of field `se_aes_0_iv_sel`"]
+pub type SE_AES_0_IV_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_iv_sel`"]
 pub struct SE_AES_0_IV_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -130,21 +72,9 @@ impl<'a> SE_AES_0_IV_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_block_mode` reader - "]
-pub struct SE_AES_0_BLOCK_MODE_R(crate::FieldReader<u8, u8>);
-impl SE_AES_0_BLOCK_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_AES_0_BLOCK_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_BLOCK_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_block_mode` writer - "]
+#[doc = "Reader of field `se_aes_0_block_mode`"]
+pub type SE_AES_0_BLOCK_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `se_aes_0_block_mode`"]
 pub struct SE_AES_0_BLOCK_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -156,21 +86,9 @@ impl<'a> SE_AES_0_BLOCK_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_int_mask` reader - "]
-pub struct SE_AES_0_INT_MASK_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_INT_MASK_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_INT_MASK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_INT_MASK_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_int_mask` writer - "]
+#[doc = "Reader of field `se_aes_0_int_mask`"]
+pub type SE_AES_0_INT_MASK_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_int_mask`"]
 pub struct SE_AES_0_INT_MASK_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> SE_AES_0_INT_MASK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_int_set_1t` reader - "]
-pub struct SE_AES_0_INT_SET_1T_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_INT_SET_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_INT_SET_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_INT_SET_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_int_set_1t` writer - "]
+#[doc = "Reader of field `se_aes_0_int_set_1t`"]
+pub type SE_AES_0_INT_SET_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_int_set_1t`"]
 pub struct SE_AES_0_INT_SET_1T_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> SE_AES_0_INT_SET_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_int_clr_1t` reader - "]
-pub struct SE_AES_0_INT_CLR_1T_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_INT_CLR_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_INT_CLR_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_INT_CLR_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_int_clr_1t` writer - "]
+#[doc = "Reader of field `se_aes_0_int_clr_1t`"]
+pub type SE_AES_0_INT_CLR_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_int_clr_1t`"]
 pub struct SE_AES_0_INT_CLR_1T_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> SE_AES_0_INT_CLR_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_int` reader - "]
-pub struct SE_AES_0_INT_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_INT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_INT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_INT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_int` writer - "]
+#[doc = "Reader of field `se_aes_0_int`"]
+pub type SE_AES_0_INT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_int`"]
 pub struct SE_AES_0_INT_W<'a> {
     w: &'a mut W,
 }
@@ -300,21 +182,9 @@ impl<'a> SE_AES_0_INT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_hw_key_en` reader - "]
-pub struct SE_AES_0_HW_KEY_EN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_HW_KEY_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_HW_KEY_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_HW_KEY_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_hw_key_en` writer - "]
+#[doc = "Reader of field `se_aes_0_hw_key_en`"]
+pub type SE_AES_0_HW_KEY_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_hw_key_en`"]
 pub struct SE_AES_0_HW_KEY_EN_W<'a> {
     w: &'a mut W,
 }
@@ -336,21 +206,9 @@ impl<'a> SE_AES_0_HW_KEY_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_dec_key_sel` reader - "]
-pub struct SE_AES_0_DEC_KEY_SEL_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_DEC_KEY_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_DEC_KEY_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_DEC_KEY_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_dec_key_sel` writer - "]
+#[doc = "Reader of field `se_aes_0_dec_key_sel`"]
+pub type SE_AES_0_DEC_KEY_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_dec_key_sel`"]
 pub struct SE_AES_0_DEC_KEY_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -372,21 +230,9 @@ impl<'a> SE_AES_0_DEC_KEY_SEL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_dec_en` reader - "]
-pub struct SE_AES_0_DEC_EN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_DEC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_DEC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_DEC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_dec_en` writer - "]
+#[doc = "Reader of field `se_aes_0_dec_en`"]
+pub type SE_AES_0_DEC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_dec_en`"]
 pub struct SE_AES_0_DEC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -408,21 +254,9 @@ impl<'a> SE_AES_0_DEC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_mode` reader - "]
-pub struct SE_AES_0_MODE_R(crate::FieldReader<u8, u8>);
-impl SE_AES_0_MODE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        SE_AES_0_MODE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_MODE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_mode` writer - "]
+#[doc = "Reader of field `se_aes_0_mode`"]
+pub type SE_AES_0_MODE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `se_aes_0_mode`"]
 pub struct SE_AES_0_MODE_W<'a> {
     w: &'a mut W,
 }
@@ -434,21 +268,9 @@ impl<'a> SE_AES_0_MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_en` reader - "]
-pub struct SE_AES_0_EN_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_en` writer - "]
+#[doc = "Reader of field `se_aes_0_en`"]
+pub type SE_AES_0_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_en`"]
 pub struct SE_AES_0_EN_W<'a> {
     w: &'a mut W,
 }
@@ -470,21 +292,9 @@ impl<'a> SE_AES_0_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_trig_1t` reader - "]
-pub struct SE_AES_0_TRIG_1T_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_TRIG_1T_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_TRIG_1T_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_TRIG_1T_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_trig_1t` writer - "]
+#[doc = "Reader of field `se_aes_0_trig_1t`"]
+pub type SE_AES_0_TRIG_1T_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_trig_1t`"]
 pub struct SE_AES_0_TRIG_1T_W<'a> {
     w: &'a mut W,
 }
@@ -506,21 +316,9 @@ impl<'a> SE_AES_0_TRIG_1T_W<'a> {
         self.w
     }
 }
-#[doc = "Field `se_aes_0_busy` reader - "]
-pub struct SE_AES_0_BUSY_R(crate::FieldReader<bool, bool>);
-impl SE_AES_0_BUSY_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        SE_AES_0_BUSY_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for SE_AES_0_BUSY_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `se_aes_0_busy` writer - "]
+#[doc = "Reader of field `se_aes_0_busy`"]
+pub type SE_AES_0_BUSY_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `se_aes_0_busy`"]
 pub struct SE_AES_0_BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -694,30 +492,5 @@ impl W {
     #[inline(always)]
     pub fn se_aes_0_busy(&mut self) -> SE_AES_0_BUSY_W {
         SE_AES_0_BUSY_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "se_aes_0_ctrl.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [se_aes_0_ctrl](index.html) module"]
-pub struct SE_AES_0_CTRL_SPEC;
-impl crate::RegisterSpec for SE_AES_0_CTRL_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [se_aes_0_ctrl::R](R) reader structure"]
-impl crate::Readable for SE_AES_0_CTRL_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [se_aes_0_ctrl::W](W) writer structure"]
-impl crate::Writable for SE_AES_0_CTRL_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets se_aes_0_ctrl to value 0"]
-impl crate::Resettable for SE_AES_0_CTRL_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

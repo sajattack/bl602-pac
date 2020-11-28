@@ -1,52 +1,18 @@
-#[doc = "Register `rbb2` reader"]
-pub struct R(crate::R<RBB2_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<RBB2_SPEC>;
+#[doc = "Reader of register rbb2"]
+pub type R = crate::R<u32, super::RBB2>;
+#[doc = "Writer for register rbb2"]
+pub type W = crate::W<u32, super::RBB2>;
+#[doc = "Register rbb2 `reset()`'s with value 0"]
+impl crate::ResetValue for super::RBB2 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<RBB2_SPEC>> for R {
-    fn from(reader: crate::R<RBB2_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `rbb2` writer"]
-pub struct W(crate::W<RBB2_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<RBB2_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<RBB2_SPEC>> for W {
-    fn from(writer: crate::W<RBB2_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `rbb_cap1_fc_i` reader - "]
-pub struct RBB_CAP1_FC_I_R(crate::FieldReader<u8, u8>);
-impl RBB_CAP1_FC_I_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_CAP1_FC_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_CAP1_FC_I_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_cap1_fc_i` writer - "]
+#[doc = "Reader of field `rbb_cap1_fc_i`"]
+pub type RBB_CAP1_FC_I_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_cap1_fc_i`"]
 pub struct RBB_CAP1_FC_I_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> RBB_CAP1_FC_I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_cap1_fc_q` reader - "]
-pub struct RBB_CAP1_FC_Q_R(crate::FieldReader<u8, u8>);
-impl RBB_CAP1_FC_Q_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_CAP1_FC_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_CAP1_FC_Q_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_cap1_fc_q` writer - "]
+#[doc = "Reader of field `rbb_cap1_fc_q`"]
+pub type RBB_CAP1_FC_Q_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_cap1_fc_q`"]
 pub struct RBB_CAP1_FC_Q_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> RBB_CAP1_FC_Q_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_cap2_fc_i` reader - "]
-pub struct RBB_CAP2_FC_I_R(crate::FieldReader<u8, u8>);
-impl RBB_CAP2_FC_I_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_CAP2_FC_I_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_CAP2_FC_I_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_cap2_fc_i` writer - "]
+#[doc = "Reader of field `rbb_cap2_fc_i`"]
+pub type RBB_CAP2_FC_I_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_cap2_fc_i`"]
 pub struct RBB_CAP2_FC_I_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> RBB_CAP2_FC_I_W<'a> {
         self.w
     }
 }
-#[doc = "Field `rbb_cap2_fc_q` reader - "]
-pub struct RBB_CAP2_FC_Q_R(crate::FieldReader<u8, u8>);
-impl RBB_CAP2_FC_Q_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        RBB_CAP2_FC_Q_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for RBB_CAP2_FC_Q_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `rbb_cap2_fc_q` writer - "]
+#[doc = "Reader of field `rbb_cap2_fc_q`"]
+pub type RBB_CAP2_FC_Q_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `rbb_cap2_fc_q`"]
 pub struct RBB_CAP2_FC_Q_W<'a> {
     w: &'a mut W,
 }
@@ -178,30 +108,5 @@ impl W {
     #[inline(always)]
     pub fn rbb_cap2_fc_q(&mut self) -> RBB_CAP2_FC_Q_W {
         RBB_CAP2_FC_Q_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "rbb2.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rbb2](index.html) module"]
-pub struct RBB2_SPEC;
-impl crate::RegisterSpec for RBB2_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [rbb2::R](R) reader structure"]
-impl crate::Readable for RBB2_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [rbb2::W](W) writer structure"]
-impl crate::Writable for RBB2_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets rbb2 to value 0"]
-impl crate::Resettable for RBB2_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

@@ -1,52 +1,18 @@
-#[doc = "Register `i2c_config` reader"]
-pub struct R(crate::R<I2C_CONFIG_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<I2C_CONFIG_SPEC>;
+#[doc = "Reader of register i2c_config"]
+pub type R = crate::R<u32, super::I2C_CONFIG>;
+#[doc = "Writer for register i2c_config"]
+pub type W = crate::W<u32, super::I2C_CONFIG>;
+#[doc = "Register i2c_config `reset()`'s with value 0"]
+impl crate::ResetValue for super::I2C_CONFIG {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<I2C_CONFIG_SPEC>> for R {
-    fn from(reader: crate::R<I2C_CONFIG_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `i2c_config` writer"]
-pub struct W(crate::W<I2C_CONFIG_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<I2C_CONFIG_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<I2C_CONFIG_SPEC>> for W {
-    fn from(writer: crate::W<I2C_CONFIG_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `cr_i2c_deg_cnt` reader - "]
-pub struct CR_I2C_DEG_CNT_R(crate::FieldReader<u8, u8>);
-impl CR_I2C_DEG_CNT_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_I2C_DEG_CNT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_DEG_CNT_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_deg_cnt` writer - "]
+#[doc = "Reader of field `cr_i2c_deg_cnt`"]
+pub type CR_I2C_DEG_CNT_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_i2c_deg_cnt`"]
 pub struct CR_I2C_DEG_CNT_W<'a> {
     w: &'a mut W,
 }
@@ -58,21 +24,9 @@ impl<'a> CR_I2C_DEG_CNT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_pkt_len` reader - "]
-pub struct CR_I2C_PKT_LEN_R(crate::FieldReader<u8, u8>);
-impl CR_I2C_PKT_LEN_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_I2C_PKT_LEN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_PKT_LEN_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_pkt_len` writer - "]
+#[doc = "Reader of field `cr_i2c_pkt_len`"]
+pub type CR_I2C_PKT_LEN_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_i2c_pkt_len`"]
 pub struct CR_I2C_PKT_LEN_W<'a> {
     w: &'a mut W,
 }
@@ -84,21 +38,9 @@ impl<'a> CR_I2C_PKT_LEN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_slv_addr` reader - "]
-pub struct CR_I2C_SLV_ADDR_R(crate::FieldReader<u8, u8>);
-impl CR_I2C_SLV_ADDR_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_I2C_SLV_ADDR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_SLV_ADDR_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_slv_addr` writer - "]
+#[doc = "Reader of field `cr_i2c_slv_addr`"]
+pub type CR_I2C_SLV_ADDR_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_i2c_slv_addr`"]
 pub struct CR_I2C_SLV_ADDR_W<'a> {
     w: &'a mut W,
 }
@@ -110,21 +52,9 @@ impl<'a> CR_I2C_SLV_ADDR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_sub_addr_bc` reader - "]
-pub struct CR_I2C_SUB_ADDR_BC_R(crate::FieldReader<u8, u8>);
-impl CR_I2C_SUB_ADDR_BC_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        CR_I2C_SUB_ADDR_BC_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_SUB_ADDR_BC_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_sub_addr_bc` writer - "]
+#[doc = "Reader of field `cr_i2c_sub_addr_bc`"]
+pub type CR_I2C_SUB_ADDR_BC_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `cr_i2c_sub_addr_bc`"]
 pub struct CR_I2C_SUB_ADDR_BC_W<'a> {
     w: &'a mut W,
 }
@@ -136,21 +66,9 @@ impl<'a> CR_I2C_SUB_ADDR_BC_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_sub_addr_en` reader - "]
-pub struct CR_I2C_SUB_ADDR_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_SUB_ADDR_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_SUB_ADDR_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_SUB_ADDR_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_sub_addr_en` writer - "]
+#[doc = "Reader of field `cr_i2c_sub_addr_en`"]
+pub type CR_I2C_SUB_ADDR_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_sub_addr_en`"]
 pub struct CR_I2C_SUB_ADDR_EN_W<'a> {
     w: &'a mut W,
 }
@@ -172,21 +90,9 @@ impl<'a> CR_I2C_SUB_ADDR_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_scl_sync_en` reader - "]
-pub struct CR_I2C_SCL_SYNC_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_SCL_SYNC_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_SCL_SYNC_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_SCL_SYNC_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_scl_sync_en` writer - "]
+#[doc = "Reader of field `cr_i2c_scl_sync_en`"]
+pub type CR_I2C_SCL_SYNC_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_scl_sync_en`"]
 pub struct CR_I2C_SCL_SYNC_EN_W<'a> {
     w: &'a mut W,
 }
@@ -208,21 +114,9 @@ impl<'a> CR_I2C_SCL_SYNC_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_deg_en` reader - "]
-pub struct CR_I2C_DEG_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_DEG_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_DEG_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_DEG_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_deg_en` writer - "]
+#[doc = "Reader of field `cr_i2c_deg_en`"]
+pub type CR_I2C_DEG_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_deg_en`"]
 pub struct CR_I2C_DEG_EN_W<'a> {
     w: &'a mut W,
 }
@@ -244,21 +138,9 @@ impl<'a> CR_I2C_DEG_EN_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_pkt_dir` reader - "]
-pub struct CR_I2C_PKT_DIR_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_PKT_DIR_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_PKT_DIR_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_PKT_DIR_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_pkt_dir` writer - "]
+#[doc = "Reader of field `cr_i2c_pkt_dir`"]
+pub type CR_I2C_PKT_DIR_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_pkt_dir`"]
 pub struct CR_I2C_PKT_DIR_W<'a> {
     w: &'a mut W,
 }
@@ -280,21 +162,9 @@ impl<'a> CR_I2C_PKT_DIR_W<'a> {
         self.w
     }
 }
-#[doc = "Field `cr_i2c_m_en` reader - "]
-pub struct CR_I2C_M_EN_R(crate::FieldReader<bool, bool>);
-impl CR_I2C_M_EN_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        CR_I2C_M_EN_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for CR_I2C_M_EN_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `cr_i2c_m_en` writer - "]
+#[doc = "Reader of field `cr_i2c_m_en`"]
+pub type CR_I2C_M_EN_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `cr_i2c_m_en`"]
 pub struct CR_I2C_M_EN_W<'a> {
     w: &'a mut W,
 }
@@ -408,30 +278,5 @@ impl W {
     #[inline(always)]
     pub fn cr_i2c_m_en(&mut self) -> CR_I2C_M_EN_W {
         CR_I2C_M_EN_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "i2c_config.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [i2c_config](index.html) module"]
-pub struct I2C_CONFIG_SPEC;
-impl crate::RegisterSpec for I2C_CONFIG_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [i2c_config::R](R) reader structure"]
-impl crate::Readable for I2C_CONFIG_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [i2c_config::W](W) writer structure"]
-impl crate::Writable for I2C_CONFIG_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets i2c_config to value 0"]
-impl crate::Resettable for I2C_CONFIG_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

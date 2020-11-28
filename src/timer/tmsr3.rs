@@ -1,52 +1,18 @@
-#[doc = "Register `TMSR3` reader"]
-pub struct R(crate::R<TMSR3_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<TMSR3_SPEC>;
+#[doc = "Reader of register TMSR3"]
+pub type R = crate::R<u32, super::TMSR3>;
+#[doc = "Writer for register TMSR3"]
+pub type W = crate::W<u32, super::TMSR3>;
+#[doc = "Register TMSR3 `reset()`'s with value 0"]
+impl crate::ResetValue for super::TMSR3 {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<TMSR3_SPEC>> for R {
-    fn from(reader: crate::R<TMSR3_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `TMSR3` writer"]
-pub struct W(crate::W<TMSR3_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<TMSR3_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<TMSR3_SPEC>> for W {
-    fn from(writer: crate::W<TMSR3_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `tmsr_2` reader - "]
-pub struct TMSR_2_R(crate::FieldReader<bool, bool>);
-impl TMSR_2_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_2_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_2_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmsr_2` writer - "]
+#[doc = "Reader of field `tmsr_2`"]
+pub type TMSR_2_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tmsr_2`"]
 pub struct TMSR_2_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> TMSR_2_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmsr_1` reader - "]
-pub struct TMSR_1_R(crate::FieldReader<bool, bool>);
-impl TMSR_1_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_1_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_1_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmsr_1` writer - "]
+#[doc = "Reader of field `tmsr_1`"]
+pub type TMSR_1_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tmsr_1`"]
 pub struct TMSR_1_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> TMSR_1_W<'a> {
         self.w
     }
 }
-#[doc = "Field `tmsr_0` reader - "]
-pub struct TMSR_0_R(crate::FieldReader<bool, bool>);
-impl TMSR_0_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        TMSR_0_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for TMSR_0_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `tmsr_0` writer - "]
+#[doc = "Reader of field `tmsr_0`"]
+pub type TMSR_0_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `tmsr_0`"]
 pub struct TMSR_0_W<'a> {
     w: &'a mut W,
 }
@@ -172,30 +114,5 @@ impl W {
     #[inline(always)]
     pub fn tmsr_0(&mut self) -> TMSR_0_W {
         TMSR_0_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "TMSR3.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tmsr3](index.html) module"]
-pub struct TMSR3_SPEC;
-impl crate::RegisterSpec for TMSR3_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [tmsr3::R](R) reader structure"]
-impl crate::Readable for TMSR3_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [tmsr3::W](W) writer structure"]
-impl crate::Writable for TMSR3_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets TMSR3 to value 0"]
-impl crate::Resettable for TMSR3_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }

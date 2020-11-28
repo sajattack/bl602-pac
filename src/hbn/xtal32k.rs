@@ -1,52 +1,18 @@
-#[doc = "Register `xtal32k` reader"]
-pub struct R(crate::R<XTAL32K_SPEC>);
-impl core::ops::Deref for R {
-    type Target = crate::R<XTAL32K_SPEC>;
+#[doc = "Reader of register xtal32k"]
+pub type R = crate::R<u32, super::XTAL32K>;
+#[doc = "Writer for register xtal32k"]
+pub type W = crate::W<u32, super::XTAL32K>;
+#[doc = "Register xtal32k `reset()`'s with value 0"]
+impl crate::ResetValue for super::XTAL32K {
+    type Type = u32;
     #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
+    fn reset_value() -> Self::Type {
+        0
     }
 }
-impl core::convert::From<crate::R<XTAL32K_SPEC>> for R {
-    fn from(reader: crate::R<XTAL32K_SPEC>) -> Self {
-        R(reader)
-    }
-}
-#[doc = "Register `xtal32k` writer"]
-pub struct W(crate::W<XTAL32K_SPEC>);
-impl core::ops::Deref for W {
-    type Target = crate::W<XTAL32K_SPEC>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-impl core::ops::DerefMut for W {
-    #[inline(always)]
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        &mut self.0
-    }
-}
-impl core::convert::From<crate::W<XTAL32K_SPEC>> for W {
-    fn from(writer: crate::W<XTAL32K_SPEC>) -> Self {
-        W(writer)
-    }
-}
-#[doc = "Field `pu_xtal32k` reader - "]
-pub struct PU_XTAL32K_R(crate::FieldReader<bool, bool>);
-impl PU_XTAL32K_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_XTAL32K_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_XTAL32K_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_xtal32k` writer - "]
+#[doc = "Reader of field `pu_xtal32k`"]
+pub type PU_XTAL32K_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_xtal32k`"]
 pub struct PU_XTAL32K_W<'a> {
     w: &'a mut W,
 }
@@ -68,21 +34,9 @@ impl<'a> PU_XTAL32K_W<'a> {
         self.w
     }
 }
-#[doc = "Field `pu_xtal32k_buf` reader - "]
-pub struct PU_XTAL32K_BUF_R(crate::FieldReader<bool, bool>);
-impl PU_XTAL32K_BUF_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        PU_XTAL32K_BUF_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for PU_XTAL32K_BUF_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `pu_xtal32k_buf` writer - "]
+#[doc = "Reader of field `pu_xtal32k_buf`"]
+pub type PU_XTAL32K_BUF_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `pu_xtal32k_buf`"]
 pub struct PU_XTAL32K_BUF_W<'a> {
     w: &'a mut W,
 }
@@ -104,21 +58,9 @@ impl<'a> PU_XTAL32K_BUF_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_ac_cap_short` reader - "]
-pub struct XTAL32K_AC_CAP_SHORT_R(crate::FieldReader<bool, bool>);
-impl XTAL32K_AC_CAP_SHORT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL32K_AC_CAP_SHORT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_AC_CAP_SHORT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_ac_cap_short` writer - "]
+#[doc = "Reader of field `xtal32k_ac_cap_short`"]
+pub type XTAL32K_AC_CAP_SHORT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal32k_ac_cap_short`"]
 pub struct XTAL32K_AC_CAP_SHORT_W<'a> {
     w: &'a mut W,
 }
@@ -140,21 +82,9 @@ impl<'a> XTAL32K_AC_CAP_SHORT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_capbank` reader - "]
-pub struct XTAL32K_CAPBANK_R(crate::FieldReader<u8, u8>);
-impl XTAL32K_CAPBANK_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        XTAL32K_CAPBANK_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_CAPBANK_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_capbank` writer - "]
+#[doc = "Reader of field `xtal32k_capbank`"]
+pub type XTAL32K_CAPBANK_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `xtal32k_capbank`"]
 pub struct XTAL32K_CAPBANK_W<'a> {
     w: &'a mut W,
 }
@@ -166,21 +96,9 @@ impl<'a> XTAL32K_CAPBANK_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_inv_stre` reader - "]
-pub struct XTAL32K_INV_STRE_R(crate::FieldReader<u8, u8>);
-impl XTAL32K_INV_STRE_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        XTAL32K_INV_STRE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_INV_STRE_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_inv_stre` writer - "]
+#[doc = "Reader of field `xtal32k_inv_stre`"]
+pub type XTAL32K_INV_STRE_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `xtal32k_inv_stre`"]
 pub struct XTAL32K_INV_STRE_W<'a> {
     w: &'a mut W,
 }
@@ -192,21 +110,9 @@ impl<'a> XTAL32K_INV_STRE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_otf_short` reader - "]
-pub struct XTAL32K_OTF_SHORT_R(crate::FieldReader<bool, bool>);
-impl XTAL32K_OTF_SHORT_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL32K_OTF_SHORT_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_OTF_SHORT_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_otf_short` writer - "]
+#[doc = "Reader of field `xtal32k_otf_short`"]
+pub type XTAL32K_OTF_SHORT_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal32k_otf_short`"]
 pub struct XTAL32K_OTF_SHORT_W<'a> {
     w: &'a mut W,
 }
@@ -228,21 +134,9 @@ impl<'a> XTAL32K_OTF_SHORT_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_outbuf_stre` reader - "]
-pub struct XTAL32K_OUTBUF_STRE_R(crate::FieldReader<bool, bool>);
-impl XTAL32K_OUTBUF_STRE_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL32K_OUTBUF_STRE_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_OUTBUF_STRE_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_outbuf_stre` writer - "]
+#[doc = "Reader of field `xtal32k_outbuf_stre`"]
+pub type XTAL32K_OUTBUF_STRE_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal32k_outbuf_stre`"]
 pub struct XTAL32K_OUTBUF_STRE_W<'a> {
     w: &'a mut W,
 }
@@ -264,21 +158,9 @@ impl<'a> XTAL32K_OUTBUF_STRE_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_reg` reader - "]
-pub struct XTAL32K_REG_R(crate::FieldReader<u8, u8>);
-impl XTAL32K_REG_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        XTAL32K_REG_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_REG_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_reg` writer - "]
+#[doc = "Reader of field `xtal32k_reg`"]
+pub type XTAL32K_REG_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `xtal32k_reg`"]
 pub struct XTAL32K_REG_W<'a> {
     w: &'a mut W,
 }
@@ -290,21 +172,9 @@ impl<'a> XTAL32K_REG_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_amp_ctrl` reader - "]
-pub struct XTAL32K_AMP_CTRL_R(crate::FieldReader<u8, u8>);
-impl XTAL32K_AMP_CTRL_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        XTAL32K_AMP_CTRL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_AMP_CTRL_R {
-    type Target = crate::FieldReader<u8, u8>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_amp_ctrl` writer - "]
+#[doc = "Reader of field `xtal32k_amp_ctrl`"]
+pub type XTAL32K_AMP_CTRL_R = crate::R<u8, u8>;
+#[doc = "Write proxy for field `xtal32k_amp_ctrl`"]
 pub struct XTAL32K_AMP_CTRL_W<'a> {
     w: &'a mut W,
 }
@@ -316,21 +186,9 @@ impl<'a> XTAL32K_AMP_CTRL_W<'a> {
         self.w
     }
 }
-#[doc = "Field `xtal32k_ext_sel` reader - "]
-pub struct XTAL32K_EXT_SEL_R(crate::FieldReader<bool, bool>);
-impl XTAL32K_EXT_SEL_R {
-    pub(crate) fn new(bits: bool) -> Self {
-        XTAL32K_EXT_SEL_R(crate::FieldReader::new(bits))
-    }
-}
-impl core::ops::Deref for XTAL32K_EXT_SEL_R {
-    type Target = crate::FieldReader<bool, bool>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
-#[doc = "Field `xtal32k_ext_sel` writer - "]
+#[doc = "Reader of field `xtal32k_ext_sel`"]
+pub type XTAL32K_EXT_SEL_R = crate::R<bool, bool>;
+#[doc = "Write proxy for field `xtal32k_ext_sel`"]
 pub struct XTAL32K_EXT_SEL_W<'a> {
     w: &'a mut W,
 }
@@ -454,30 +312,5 @@ impl W {
     #[inline(always)]
     pub fn xtal32k_ext_sel(&mut self) -> XTAL32K_EXT_SEL_W {
         XTAL32K_EXT_SEL_W { w: self }
-    }
-    #[doc = "Writes raw bits to the register."]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.0.bits(bits);
-        self
-    }
-}
-#[doc = "xtal32k.\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [xtal32k](index.html) module"]
-pub struct XTAL32K_SPEC;
-impl crate::RegisterSpec for XTAL32K_SPEC {
-    type Ux = u32;
-}
-#[doc = "`read()` method returns [xtal32k::R](R) reader structure"]
-impl crate::Readable for XTAL32K_SPEC {
-    type Reader = R;
-}
-#[doc = "`write(|w| ..)` method takes [xtal32k::W](W) writer structure"]
-impl crate::Writable for XTAL32K_SPEC {
-    type Writer = W;
-}
-#[doc = "`reset()` method sets xtal32k to value 0"]
-impl crate::Resettable for XTAL32K_SPEC {
-    #[inline(always)]
-    fn reset_value() -> Self::Ux {
-        0
     }
 }
